@@ -1,0 +1,11 @@
+Next.js App Router + TypeScript
+Tailwind CSS
+PostgreSQL 16
+Prisma
+Cloudflare R2
+Docker
+Docker Compose
+Nginx
+VPS Hostinger Ubuntu
+Cloudflare
+GitHub

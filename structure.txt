@@ -1,0 +1,30 @@
+[ Home ]
+├── About EBI
+│   ├── Company Overview
+│   ├── Vision & Mission
+│   └── Board of Directors
+│
+├── Our Businesses
+│   ├── Hotels
+│   │   ├── Hadith Hotel
+│   │   ├── Kampoeng Indonesia Hotel
+│   │   ├── Graha Nusantara Hotel
+│   │   └── Mecca Hotel
+│   │
+│   ├── Restaurants
+│   │   ├── Kampoeng Indonesia Restaurant
+│   │   └── Mecca Hotel Restaurants
+│   │
+│   ├── Café
+│   │   └── 7oz Espresso
+│   │
+│   ├── IT & Technology
+│   │   └── One page covering Artificial Intelligence,
+│   │       cybersecurity, blockchain, control systems,
+│   │       and data integration
+│   │
+│   └── Travel
+│       └── Coming Soon
+│
+├── Careers
+└── Contact
