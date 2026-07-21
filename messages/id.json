@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "businesses": "Bisnis Kami",
+    "careers": "Karier",
+    "contact": "Kontak"
+  },
+  "header": {
+    "partner": "Bermitra Dengan Kami",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "close": "Tutup"
+  },
+  "footer": {
+    "tagline": "Holding yang dibangun atas kepercayaan."
+  },
+  "a11y": {
+    "scrollDown": "Gulir ke bawah",
+    "previousSlide": "Slide sebelumnya",
+    "nextSlide": "Slide berikutnya",
+    "goToSlide": "Ke slide {number}",
+    "highlights": "Properti dan pengalaman unggulan"
+  },
+  "common": {
+    "readMore": "Selengkapnya",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "discover": "Jelajahi",
+    "comingSoon": "Segera Hadir",
+    "language": "Bahasa",
+    "skipToContent": "Lewati ke konten"
+  },
+  "home": {
+    "hero": {
+      "cta": "Jelajahi Bisnis Kami",
+      "hadith": {
+        "kicker": "Kompleks Imam Al Bukhari · Samarkand",
+        "title": "Warisan Samarkand, Kehangatan Indonesia",
+        "supporting": "Hadith Hotel — ikon bintang lima di jantung spiritual Samarkand."
+      },
+      "mecca": {
+        "kicker": "Berseberangan dengan Centre of Islamic Civilization · Tashkent",
+        "title": "Alamat Butik dengan Posisi yang Terpilih",
+        "supporting": "Mecca — perhotelan halal tepat di hadapan ikon Islam utama Tashkent."
+      },
+      "graha": {
+        "kicker": "Bersebelahan dengan Kompleks Imam al-Bukhari · Samarkand",
+        "title": "Keanggunan di Jantung Samarkand Kuno",
+        "supporting": "Graha Nusantara — kompleks vila privat bernuansa Nusantara sejangkauan dari makam."
+      },
+      "kampoeng": {
+        "kicker": "Kompleks Peringatan Imam Al Bukhari · Samarkand",
+        "title": "Perjalanan Iman dan Warisan",
+        "supporting": "Hotel Kampoeng Indonesia — kehangatan kampung Indonesia di tempat ziarah."
+      },
+      "dining": {
+        "kicker": "Restoran",
+        "title": "Cita Rasa Indonesia, Suasana Jalur Sutra",
+        "supporting": "Hidangan halal dan kopi spesialti, dari plov hingga aneka kudapan Indonesia."
+      },
+      "cafe": {
+        "kicker": "7OZ Espresso · Kafe",
+        "title": "Dari Jakarta ke Tashkent",
+        "supporting": "Budaya kopi spesialti Indonesia, diracik untuk Asia Tengah masa kini."
+      }
+    },
+    "intro": {
+      "kicker": "Siapa Kami",
+      "title": "Kehangatan Indonesia, Dibawa ke Jalur Sutra",
+      "body1": "EBI Resources adalah perusahaan holding yang menyatukan portofolio destinasi perhotelan dan gaya hidup dalam satu identitas korporat — tempat kehangatan keramahan Indonesia berpadu dengan warisan Jalur Sutra Uzbekistan.",
+      "body2": "Bisnis kami mencakup hotel, restoran, dan kafe spesialti, dilengkapi praktik teknologi yang terus berkembang serta lini perjalanan yang tengah disiapkan.",
+      "cta": "Tentang EBI Resources"
+    },
+    "lines": {
+      "kicker": "Bisnis Kami",
+      "title": "Lima Lini, Satu Standar",
+      "intro": "Grup yang terdiversifikasi di bidang perhotelan, keahlian kuliner, dan teknologi.",
+      "hotels": {
+        "title": "Hotel",
+        "text": "Portofolio bintang lima, butik, hingga penginapan bernuansa kampung di Samarkand dan Tashkent."
+      },
+      "restaurants": {
+        "title": "Restoran",
+        "text": "Hidangan otentik Indonesia, Eropa, dan Asia Tengah — halal, di lokasi bersejarah."
+      },
+      "cafe": {
+        "title": "Kafe",
+        "text": "7OZ Espresso — kopi spesialti Indonesia, dari Jakarta ke Tashkent."
+      },
+      "tech": {
+        "title": "IT & Teknologi",
+        "text": "Infrastruktur digital berdaulat — AI, keamanan siber, blockchain, sistem kendali, dan integrasi data."
+      },
+      "travel": {
+        "title": "Travel",
+        "text": "Lini perjalanan baru yang sedang dalam pengembangan."
+      }
+    },
+    "featured": {
+      "kicker": "Properti Unggulan",
+      "title": "Portofolio Multi-Properti yang Nyata",
+      "intro": "Hotel dan hunian di sisi ikon bersejarah, tersebar di Samarkand dan Tashkent.",
+      "hadith": {
+        "title": "Hadith Hotel",
+        "positioning": "Ikon bintang lima di dalam Kompleks Imam Al Bukhari, Samarkand."
+      },
+      "mecca": {
+        "title": "Mecca Boutique Hotel",
+        "positioning": "Hotel butik bintang empat berseberangan dengan Tashkent Centre of Islamic Civilization."
+      },
+      "graha": {
+        "title": "Graha Nusantara",
+        "positioning": "Kompleks vila mewah bernuansa Nusantara di sisi makam di Samarkand."
+      },
+      "kampoeng": {
+        "title": "Hotel Kampoeng Indonesia",
+        "positioning": "Pengalaman kampung Indonesia bintang tiga di Kompleks Peringatan Imam Al Bukhari."
+      }
+    },
+    "pillars": {
+      "kicker": "Jati Diri Kami",
+      "title": "Dirancang untuk Bertahan",
+      "trusted": {
+        "label": "Terpercaya",
+        "text": "Keramahan Indonesia yang otentik dan kenyamanan ramah-halal di setiap properti."
+      },
+      "crafted": {
+        "label": "Penuh Kriya",
+        "text": "Kuliner Indonesia dan kopi spesialti, diracik dengan cermat di setiap kelas."
+      },
+      "enduring": {
+        "label": "Abadi",
+        "text": "Berakar di sisi situs warisan dan ziarah Islam paling penting di Asia Tengah."
+      },
+      "innovative": {
+        "label": "Inovatif",
+        "text": "Jembatan lintas budaya Indonesia–Uzbekistan, serta praktik teknologi yang berkembang."
+      }
+    },
+    "credibility": {
+      "kicker": "Mengapa Mitra Memilih EBI",
+      "title": "Substansi di Atas Superlatif",
+      "intro": "Kredibilitas yang berpijak pada aset nyata, lokasi utama, dan kredensial yang terverifikasi.",
+      "locations": {
+        "title": "Lokasi di Sisi Ikon",
+        "text": "Properti di dalam atau bersebelahan dengan Kompleks Imam Al Bukhari, serta berseberangan dengan Tashkent Centre of Islamic Civilization."
+      },
+      "certification": {
+        "title": "Bersertifikasi Nasional",
+        "text": "Hotel Kampoeng Indonesia tersertifikasi standar pariwisata nasional Uzbekistan, O'z DSt 3220:2023."
+      },
+      "tiers": {
+        "title": "Rentang Kelas yang Lengkap",
+        "text": "Hotel bintang lima, butik bintang empat, dan bintang tiga, ditambah vila warisan mewah."
+      },
+      "positioning": {
+        "title": "Posisi yang Khas",
+        "text": "Keramahan Indonesia berpadu dengan warisan Jalur Sutra — jembatan antara dua bangsa."
+      }
+    },
+    "cta": {
+      "kicker": "Kemitraan & Investasi",
+      "title": "Bangun Sesuatu yang Abadi Bersama Kami",
+      "body": "Kami menyambut mitra, investor, dan klien teknologi yang berbagi komitmen kami pada kualitas dan warisan.",
+      "primary": "Bermitra Dengan Kami",
+      "secondary": "Jelajahi Karier"
+    },
+    "alt": {
+      "hadithGolden": "Hadith Hotel saat golden hour, terpantul di kolam reflektif, Samarkand",
+      "hadithLobby": "Lobi utama Hadith Hotel dengan lantai marmer dan tangga melengkung",
+      "hadithExterior": "Fasad Hadith Hotel yang bercahaya di malam hari di atas air mancurnya, di dalam Kompleks Imam Al Bukhari, Samarkand",
+      "hadithLounge": "The Bar & Lounge di Hadith Hotel dengan konter kudapan dan pencahayaan hangat",
+      "hadithRestaurant": "Restoran di Hadith Hotel, bercahaya hangat untuk santap malam di bawah lengkung marmer berukir",
+      "hadithDining": "Ruang santap di Hadith Hotel dengan penataan meja elegan dan rangkaian bunga",
+      "hadithNight": "Hadith Hotel yang bercahaya di malam hari di balik air mancurnya",
+      "meccaFacade": "Hotel butik Mecca saat senja, Tashkent",
+      "meccaRooftop": "Kafe rooftop di Mecca menghadap Centre of Islamic Civilization",
+      "sevenOzRooftop": "Kafe rooftop 7OZ Espresso saat matahari terbenam, menghadap Islamic Civilization Centre Tashkent",
+      "sevenOzInterior": "Interior kafe 7OZ Espresso dengan konter kopi dan etalase kudapan",
+      "grahaVilla": "Vila Graha Nusantara saat golden hour, dekat Kompleks Imam al-Bukhari",
+      "grahaNight": "Kompleks Imam al-Bukhari yang bercahaya di malam hari, Samarkand",
+      "kampoengFacade": "Hotel Kampoeng Indonesia yang bercahaya di malam hari, Samarkand"
+    }
+  },
+  "metadata": {
+    "title": "EBI Resources",
+    "description": "EBI Resources — perusahaan holding yang membawa kehangatan keramahan Indonesia ke Jalur Sutra: hotel, restoran, kafe spesialti, dan teknologi di Indonesia dan Uzbekistan."
+  }
+}

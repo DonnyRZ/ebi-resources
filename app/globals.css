@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Design tokens — single source of truth mirrored from DESIGN.md (§2).
+ * NOTE: --font-serif / --font-sans are injected by next/font via app/layout.tsx
+ * and intentionally not redefined here.
+ */
+:root {
+  /* Base & neutral */
+  --color-base-white: #ffffff;
+  --color-ivory: #ffffff; /* alias used by header transparent→solid (DESIGN.md §5.3) */
+  --color-cream: #f7f3ec;
+  --color-beige: #f1ece1;
+  --color-zebra: #fbf8f3;
+
+  /* Accent (rare, <=5%) */
+  --color-gold: #b8873b;
+  --color-bronze: #9c6d37;
+
+  /* Ink & navy */
+  --color-navy-text: #2a2b4e;
+  --color-navy-footer: #0b1330;
+  --color-ink: #1c1b19;
+  --color-text-muted: #5a6570;
+
+  /* Lines & overlay */
+  --color-border: #e7e6ec;
+  --color-overlay: rgba(0, 0, 0, 0.45);
+  --color-data-alert: #c0392b;
+
+  /* Spacing scale (8px base, 4px half-step) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  --space-9: 128px;
+
+  /* Containers */
+  --container-wide: 1200px;
+  --container-normal: 1100px;
+  --container-read: 800px;
+
+  /* Radius, border, shadow */
+  --radius-default: 0px;
+  --radius-table: 4px;
+
+  /* Motion */
+  --ease-primary: cubic-bezier(0.25, 1, 0.5, 1);
+  --dur-micro: 0.2s;
+  --dur-struct: 0.35s;
+  --dur-image: 1s;
+  --dur-hero: 1.5s;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-base-white);
+    color: var(--color-navy-text);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Accessible, on-brand focus ring (gold) — never removed silently. */
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--color-navy-text);
+    color: #ffffff;
+  }
+}
+
+/* HeroCarousel progress-bar fill (0 → 100% over the slide interval). */
+@keyframes hero-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

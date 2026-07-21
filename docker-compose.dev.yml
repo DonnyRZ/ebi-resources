@@ -1,0 +1,42 @@
+# =============================================================================
+# EBI Resources - Local development helpers
+# Runs ONLY Postgres (+ Adminer) so you can `npm run dev` on the host while the
+# database lives in a container.
+#
+#   docker compose -f docker-compose.dev.yml up -d
+#
+# Then set in your local .env:
+#   DATABASE_URL=postgresql://ebi:ebi@localhost:5432/ebi?schema=public
+# =============================================================================
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ebi
+      POSTGRES_PASSWORD: ebi
+      POSTGRES_DB: ebi
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_dev:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ebi -d ebi"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # Lightweight DB UI at http://localhost:8080 (System: PostgreSQL, Server: db).
+  adminer:
+    image: adminer:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+
+volumes:
+  pgdata_dev:
+    driver: local

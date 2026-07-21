@@ -1,0 +1,69 @@
+name: Deploy to VPS
+
+# Deploy EBI Resources ke VPS Hostinger (Ubuntu) via SSH.
+#
+# TEMPLATE AMAN:
+# - Hanya berjalan saat push tag `v*` (rilis) atau dijalankan manual (workflow_dispatch),
+#   sehingga tidak auto-deploy sembarangan pada setiap push.
+# - Semua langkah yang bergantung environment di-guard dengan `if: ${{ secrets.VPS_HOST != '' }}`
+#   agar workflow tidak gagal bila secrets belum diisi.
+#
+# GITHUB SECRETS YANG WAJIB DIISI (Settings > Secrets and variables > Actions):
+#   - VPS_HOST     : IP / hostname VPS Hostinger (mis. 123.45.67.89)
+#   - VPS_USER     : user SSH di VPS (mis. deploy / root)
+#   - VPS_SSH_KEY  : private key SSH (isi lengkap, format PEM/OpenSSH) untuk login ke VPS
+#   - VPS_APP_DIR  : path absolut direktori aplikasi di VPS (mis. /home/deploy/ebi-resources)
+# OPSIONAL:
+#   - VPS_PORT     : port SSH (default 22 bila tidak diisi)
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+# Cegah dua deploy berjalan bersamaan.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: SSH Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Guard - pastikan secrets tersedia
+        if: ${{ secrets.VPS_HOST == '' }}
+        run: |
+          echo "::warning::Secrets VPS_* belum diisi. Langkah deploy dilewati."
+          echo "Isi VPS_HOST, VPS_USER, VPS_SSH_KEY, VPS_APP_DIR untuk mengaktifkan deploy."
+
+      - name: Deploy via SSH
+        if: ${{ secrets.VPS_HOST != '' }}
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script_stop: true
+          script: |
+            set -e
+            cd "${{ secrets.VPS_APP_DIR }}"
+
+            # Ambil kode terbaru dari repository.
+            git pull --ff-only
+
+            # Bangun / tarik image terbaru, lalu jalankan container.
+            # `docker compose pull` untuk image dari registry; bila image dibangun
+            # lokal dari Dockerfile, `build` di bawah yang akan dipakai.
+            docker compose pull || true
+            docker compose build
+            docker compose up -d
+
+            # Jalankan migrasi database Prisma di dalam container app.
+            docker compose exec -T app npx prisma migrate deploy
+
+            # Bersihkan image lama yang menggantung (opsional).
+            docker image prune -f

@@ -1,0 +1,86 @@
+# =============================================================================
+# EBI Resources - Production stack (app + db + nginx)
+# Copy .env.example -> .env before running: `docker compose up -d --build`
+# =============================================================================
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ebi-resources-app:latest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    # Values come from .env (see .env.example). The defaults below keep the
+    # stack self-consistent even if a variable is missing from .env.
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      # DB service is reachable by its compose service name "db".
+      DATABASE_URL: postgresql://ebi:ebi@db:5432/ebi?schema=public
+      # Cloudflare R2 (server-side)
+      R2_ACCOUNT_ID: ${R2_ACCOUNT_ID:-}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
+      R2_BUCKET: ${R2_BUCKET:-}
+      R2_PUBLIC_URL: ${R2_PUBLIC_URL:-}
+      # Public (client-exposed) vars
+      NEXT_PUBLIC_R2_PUBLIC_URL: ${NEXT_PUBLIC_R2_PUBLIC_URL:-}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+    env_file:
+      - .env
+    # Not published to the host directly: nginx terminates traffic and proxies
+    # to the app over the internal network. "expose" documents the port and
+    # makes it reachable by linked services only.
+    expose:
+      - "3000"
+    networks:
+      - ebi-net
+
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ebi
+      POSTGRES_PASSWORD: ebi
+      POSTGRES_DB: ebi
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    # Not published to the host in production. Uncomment to inspect locally.
+    # ports:
+    #   - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ebi -d ebi"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - ebi-net
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      # HTTPS: uncomment once TLS certs are mounted (see nginx/conf.d comments).
+      # - "443:443"
+    volumes:
+      # Reverse-proxy config (read-only).
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      # TLS certificates (uncomment when serving HTTPS directly on the VPS).
+      # - ./nginx/certs:/etc/nginx/certs:ro
+    networks:
+      - ebi-net
+
+volumes:
+  pgdata:
+    driver: local
+
+networks:
+  ebi-net:
+    driver: bridge

@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "businesses": "Our Businesses",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "header": {
+    "partner": "Partner With Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "close": "Close"
+  },
+  "footer": {
+    "tagline": "A holding built on trust."
+  },
+  "a11y": {
+    "scrollDown": "Scroll down",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide {number}",
+    "highlights": "Featured properties and experiences"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "discover": "Discover",
+    "comingSoon": "Coming Soon",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "home": {
+    "hero": {
+      "cta": "Explore Our Businesses",
+      "hadith": {
+        "kicker": "Imam Al Bukhari Complex · Samarkand",
+        "title": "Samarkand's Heritage, Indonesian Warmth",
+        "supporting": "Hadith Hotel — a five-star landmark set within the spiritual heart of Samarkand."
+      },
+      "mecca": {
+        "kicker": "Opposite the Centre of Islamic Civilization · Tashkent",
+        "title": "A Boutique Address, Deliberate in Position",
+        "supporting": "Mecca — halal-aligned hospitality facing Tashkent's flagship Islamic landmark."
+      },
+      "graha": {
+        "kicker": "Beside the Imam al-Bukhari Complex · Samarkand",
+        "title": "Elevating Elegance in Ancient Samarkand",
+        "supporting": "Graha Nusantara — private Indonesian-heritage villa compounds moments from the shrine."
+      },
+      "kampoeng": {
+        "kicker": "Imam Al Bukhari Memorial Complex · Samarkand",
+        "title": "A Journey of Faith and Heritage",
+        "supporting": "Hotel Kampoeng Indonesia — the warmth of an Indonesian village at a place of pilgrimage."
+      },
+      "dining": {
+        "kicker": "Restaurants",
+        "title": "Indonesian Flavour, Silk Road Setting",
+        "supporting": "Halal dining and specialty coffee, from candlelit plov to Indonesian pastries."
+      },
+      "cafe": {
+        "kicker": "7OZ Espresso · Café",
+        "title": "From Jakarta to Tashkent",
+        "supporting": "Indonesian specialty-coffee culture, crafted for a modern Central Asia."
+      }
+    },
+    "intro": {
+      "kicker": "Who We Are",
+      "title": "Indonesian Hospitality, Brought to the Silk Road",
+      "body1": "EBI Resources is a holding company that unites a portfolio of hospitality and lifestyle destinations under one corporate identity — where the warmth of Indonesian hospitality meets the Silk Road heritage of Uzbekistan.",
+      "body2": "Our businesses span hotels, restaurants, and a specialty café, complemented by a growing technology practice and a travel line in development.",
+      "cta": "About EBI Resources"
+    },
+    "lines": {
+      "kicker": "Our Businesses",
+      "title": "Five Lines, One Standard",
+      "intro": "A diversified group built around hospitality, craft, and technology.",
+      "hotels": {
+        "title": "Hotels",
+        "text": "A portfolio spanning five-star, boutique, and heritage-village stays across Samarkand and Tashkent."
+      },
+      "restaurants": {
+        "title": "Restaurants",
+        "text": "Authentic Indonesian, European, and Central Asian dining — halal by design, in landmark settings."
+      },
+      "cafe": {
+        "title": "Café",
+        "text": "7OZ Espresso — Indonesian specialty coffee, from Jakarta to Tashkent."
+      },
+      "tech": {
+        "title": "IT & Technology",
+        "text": "Sovereign digital infrastructure — AI, cybersecurity, blockchain, control systems, and data integration."
+      },
+      "travel": {
+        "title": "Travel",
+        "text": "A new travel line, currently in development."
+      }
+    },
+    "featured": {
+      "kicker": "Featured Properties",
+      "title": "A Real, Multi-Property Portfolio",
+      "intro": "Landmark-adjacent hotels and residences across Samarkand and Tashkent.",
+      "hadith": {
+        "title": "Hadith Hotel",
+        "positioning": "Five-star flagship within the Imam Al Bukhari Complex, Samarkand."
+      },
+      "mecca": {
+        "title": "Mecca Boutique Hotel",
+        "positioning": "Four-star boutique hotel opposite the Tashkent Centre of Islamic Civilization."
+      },
+      "graha": {
+        "title": "Graha Nusantara",
+        "positioning": "Luxury Indonesian-heritage villa compounds beside the shrine in Samarkand."
+      },
+      "kampoeng": {
+        "title": "Hotel Kampoeng Indonesia",
+        "positioning": "A three-star Indonesian-village experience at the Imam Al Bukhari Memorial Complex."
+      }
+    },
+    "pillars": {
+      "kicker": "What Defines Us",
+      "title": "Crafted to Endure",
+      "trusted": {
+        "label": "Trusted",
+        "text": "Authentic Indonesian hospitality and halal-friendly comfort in every property."
+      },
+      "crafted": {
+        "label": "Crafted",
+        "text": "Indonesian cuisine and specialty coffee, made with care across every tier."
+      },
+      "enduring": {
+        "label": "Enduring",
+        "text": "Rooted beside Central Asia's most significant Islamic heritage and pilgrimage sites."
+      },
+      "innovative": {
+        "label": "Innovative",
+        "text": "A cross-cultural bridge between Indonesia and Uzbekistan, and a growing technology practice."
+      }
+    },
+    "credibility": {
+      "kicker": "Why Partners Choose EBI",
+      "title": "Substance Over Superlatives",
+      "intro": "Credibility grounded in real assets, prime locations, and verifiable credentials.",
+      "locations": {
+        "title": "Landmark-Adjacent Locations",
+        "text": "Properties set at or beside the Imam Al Bukhari Complex, and opposite the Tashkent Centre of Islamic Civilization."
+      },
+      "certification": {
+        "title": "Nationally Certified",
+        "text": "Hotel Kampoeng Indonesia is certified to Uzbekistan's national tourism standard, O'z DSt 3220:2023."
+      },
+      "tiers": {
+        "title": "A Full Range of Tiers",
+        "text": "Five-star, four-star boutique, and three-star hotels, plus luxury heritage villas."
+      },
+      "positioning": {
+        "title": "A Distinctive Positioning",
+        "text": "Indonesian hospitality meeting Silk Road heritage — a bridge between two nations."
+      }
+    },
+    "cta": {
+      "kicker": "Partnership & Investment",
+      "title": "Build Something Enduring With Us",
+      "body": "We welcome partners, investors, and technology clients who share our commitment to quality and heritage.",
+      "primary": "Partner With Us",
+      "secondary": "Explore Careers"
+    },
+    "alt": {
+      "hadithGolden": "Hadith Hotel at golden hour, mirrored in its reflecting pool, Samarkand",
+      "hadithLobby": "The grand lobby of Hadith Hotel, with marble floors and a sweeping staircase",
+      "hadithExterior": "Hadith Hotel's illuminated facade at night above its fountains, within the Imam Al Bukhari Complex, Samarkand",
+      "hadithLounge": "The Bar & Lounge at Hadith Hotel, with its pastry counter and warm lighting",
+      "hadithRestaurant": "The restaurant at Hadith Hotel, warmly lit for candlelit dining beneath a carved marble arch",
+      "hadithDining": "The dining hall at Hadith Hotel, set with elegant tables and floral centerpieces",
+      "hadithNight": "Hadith Hotel illuminated at night behind its fountains",
+      "meccaFacade": "The Mecca boutique hotel at dusk, Tashkent",
+      "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
+      "sevenOzRooftop": "7OZ Espresso rooftop café at sunset, overlooking Tashkent's Islamic Civilization Centre",
+      "sevenOzInterior": "Inside a 7OZ Espresso café, with its coffee counter and pastry display",
+      "grahaVilla": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
+      "grahaNight": "The Imam al-Bukhari Complex illuminated at night, Samarkand",
+      "kampoengFacade": "Hotel Kampoeng Indonesia illuminated at night, Samarkand"
+    }
+  },
+  "metadata": {
+    "title": "EBI Resources",
+    "description": "EBI Resources — a holding company bringing the warmth of Indonesian hospitality to the Silk Road: hotels, restaurants, a specialty café, and technology across Indonesia and Uzbekistan."
+  }
+}

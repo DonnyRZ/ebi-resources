@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # Update dependency npm secara mingguan.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore(deps)"
+
+  # Update versi GitHub Actions yang dipakai di workflow secara mingguan.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(ci)"

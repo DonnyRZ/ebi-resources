@@ -1,0 +1,43 @@
+// Prisma schema for EBI Resources.
+// This is an initial skeleton (Contact + Careers) — not the final data model.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model JobPosting {
+  id           String           @id @default(cuid())
+  title        String
+  slug         String           @unique
+  department   String
+  location     String
+  description  String
+  isPublished  Boolean          @default(false)
+  createdAt    DateTime         @default(now())
+  applications JobApplication[]
+}
+
+model JobApplication {
+  id           String     @id @default(cuid())
+  jobPostingId String
+  jobPosting   JobPosting @relation(fields: [jobPostingId], references: [id], onDelete: Cascade)
+  name         String
+  email        String
+  resumeUrl    String
+  createdAt    DateTime   @default(now())
+
+  @@index([jobPostingId])
+}

@@ -1,0 +1,15 @@
+# Build output & dependencies
+node_modules
+.next
+out
+build
+
+# Generated
+next-env.d.ts
+package-lock.json
+prisma/generated
+
+# Assets & reference material
+Assets
+Design-Reference
+Other-reference

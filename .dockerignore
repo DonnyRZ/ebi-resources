@@ -1,0 +1,49 @@
+# Dependencies (reinstalled inside the image via npm ci)
+node_modules
+**/node_modules
+
+# Build output / caches
+.next
+out
+dist
+build
+.turbo
+.cache
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Environment files (never bake secrets into the image)
+.env
+.env.*
+!.env.example
+
+# Local / editor / OS cruft
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Docker / infra files (not needed inside the build context)
+Dockerfile
+.dockerignore
+docker-compose*.yml
+nginx
+
+# Project reference material & docs (not needed for the app build)
+Design-Reference
+Other-reference
+Assets
+*.md
+structure.txt
+techstack.txt
+
+# Tests & coverage
+coverage
+.nyc_output
