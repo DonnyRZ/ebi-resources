@@ -1137,6 +1137,243 @@
       "body": "Lini perjalanan kami sedang disiapkan. Belum ada nama merek, daftar layanan, atau alur pemesanan — semua detail akan disediakan klien."
     }
   },
+  "contact": {
+    "meta": {
+      "title": "Kontak — EBI Resources",
+      "description": "Hubungi EBI Resources untuk kemitraan, investasi, media, dan pertanyaan umum. Detail korporat memakai placeholder hingga dikonfirmasi."
+    },
+    "hero": {
+      "kicker": "Kontak",
+      "title": "Hubungi Kami",
+      "supporting": "Mitra, investor, klien, dan media — kami menyambut percakapan yang penuh pertimbangan."
+    },
+    "corporate": {
+      "kicker": "Kantor Pusat",
+      "title": "Kontak Korporat",
+      "supporting": "Detail kontak grup akan menggantikan placeholder ini setelah dikonfirmasi klien.",
+      "emailLabel": "Email",
+      "email": "[email]",
+      "phoneLabel": "Telepon",
+      "phone": "[phone]",
+      "addressLabel": "Alamat",
+      "address": "[address]"
+    },
+    "inquiry": {
+      "kicker": "Pertanyaan Umum",
+      "title": "Kirim Pesan",
+      "supporting": "Sampaikan catatan singkat. Hingga kotak masuk korporat dikonfirmasi, formulir ini belum mengirim — gunakan placeholder di atas bila detail asli tersedia.",
+      "nameLabel": "Nama lengkap",
+      "namePlaceholder": "Nama Anda",
+      "emailLabel": "Email",
+      "emailPlaceholder": "anda@contoh.com",
+      "organisationLabel": "Organisasi",
+      "organisationPlaceholder": "Perusahaan atau afiliasi (opsional)",
+      "messageLabel": "Pesan",
+      "messagePlaceholder": "Bagaimana kami dapat membantu?",
+      "submit": "Kirim Pertanyaan",
+      "notice": "Pengiriman formulir belum aktif. Perutean korporat memakai [email] hingga klien menyediakan kotak masuk yang sah.",
+      "submitted": "Terima kasih. Draf Anda siap secara lokal — kirim email ke [email] setelah alamat korporat dikonfirmasi."
+    },
+    "whereWeAre": {
+      "kicker": "Lokasi Kami",
+      "title": "Properti di sepanjang Jalur Sutra",
+      "supporting": "Berada di landmark Samarkand dan Tashkent.",
+      "listHeading": "Lokasi",
+      "opensMaps": "Membuka Google Maps",
+      "placeholder": "Atlas interaktif akan hadir di pita ini.",
+      "pins": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarkand",
+          "aria": "HADITH Hotel, Samarkand. Membuka Google Maps."
+        },
+        "kampoeng-indonesia": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarkand",
+          "aria": "Hotel Kampoeng Indonesia, Samarkand. Membuka Google Maps."
+        },
+        "graha-nusantara": {
+          "name": "Graha Nusantara",
+          "city": "Samarkand",
+          "aria": "Graha Nusantara, Samarkand. Membuka Google Maps."
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Tashkent",
+          "aria": "Mecca Boutique Hotel, dekat Centre of Islamic Civilization, Tashkent. Membuka Google Maps."
+        }
+      },
+      "cities": {
+        "samarkand": "Samarkand",
+        "tashkent": "Tashkent"
+      }
+    },
+    "directory": {
+      "kicker": "Direktori Properti",
+      "title": "Hotel & Kafe",
+      "supporting": "Situs publik tercantum dalam materi sumber — pastikan masing-masing masih aktif sebelum diandalkan. Telepon/email Hadith dan Mecca dihilangkan hingga klien menyediakannya.",
+      "websiteLabel": "Situs web",
+      "hedgeWebsite": "Tercantum dalam materi proyek — pastikan situs masih aktif dan mutakhir.",
+      "hedgePending": "Telepon dan email properti akan disediakan klien.",
+      "hedgeConfirm": "Tercantum dalam materi sumber — konfirmasi dengan klien sebelum menghubungi.",
+      "citySamarkand": "Samarkand",
+      "cityTashkent": "Tashkent",
+      "properties": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarkand",
+          "websiteLabel": "Kunjungi hadith-hotel.com"
+        },
+        "kampoeng": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarkand",
+          "websiteLabel": "Kunjungi hotel-kampoengindonesia.com"
+        },
+        "graha": {
+          "name": "Graha Nusantara",
+          "city": "Samarkand",
+          "websiteLabel": "Kunjungi grahanusantara-samarkand.com"
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Tashkent",
+          "websiteLabel": "Kunjungi mecca-hotel.com"
+        },
+        "sevenOz": {
+          "name": "7OZ Espresso",
+          "city": "Tashkent",
+          "note": "Lini kafe — kafe rooftop di dalam Mecca Boutique Hotel; alamat City Park tercantum di situs merek.",
+          "websiteLabel": "Kunjungi 7oz-espresso.com"
+        }
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Karier — EBI Resources",
+      "description": "Lowongan terbuka di EBI Resources — hotel, restoran, kafe, dan posisi korporat di Indonesia dan Uzbekistan. Rekrutmen berlangsung secara bergulir."
+    },
+    "hero": {
+      "kicker": "Lowongan Terbuka · EBI Resources",
+      "title": "Bangun bab berikutnya grup ini.",
+      "supporting": "Jelajahi posisi terbuka di lini perhotelan dan korporat kami. Lowongan baru dibuka secara bergulir seiring pertumbuhan grup."
+    },
+    "alt": {
+      "hero": "Lobi utama properti perhotelan EBI Resources"
+    },
+    "filters": {
+      "aria": "Filter lowongan menurut lini bisnis",
+      "all": "Semua",
+      "hospitality": "Properti & Hospitality",
+      "restaurants": "Restoran",
+      "cafe": "Kafe",
+      "corporate": "Korporat"
+    },
+    "lines": {
+      "hospitality": "Properti & Hospitality",
+      "restaurants": "Restoran",
+      "cafe": "Kafe",
+      "corporate": "Korporat"
+    },
+    "listing": {
+      "kicker": "Posisi terbuka",
+      "title": "Bergabung dengan EBI Resources",
+      "body": "Bawa kehangatan keramahan Indonesia ke Jalur Sutra — hotel, restoran, kafe, dan operasional grup di Indonesia dan Uzbekistan.",
+      "empty": "Belum ada lowongan yang cocok dengan filter ini. Cek lagi nanti, atau jelajahi lini lain.",
+      "viewRole": "Lihat Peran",
+      "apply": "Lamar",
+      "prev": "Sebelumnya",
+      "next": "Berikutnya",
+      "pageOf": "Halaman {current} dari {total}"
+    },
+    "detail": {
+      "metaTitle": "{title} — Karier — EBI Resources",
+      "back": "Kembali ke semua lowongan",
+      "summaryKicker": "Tentang peran ini",
+      "requirementsTitle": "Yang kami cari",
+      "applyCta": "Lamar untuk peran ini"
+    },
+    "apply": {
+      "title": "Lamar untuk peran ini",
+      "intro": "Tulis catatan singkat lalu buka aplikasi email Anda untuk mengirimnya ke {email}. Tanpa unggah berkas — tempel tautan CV atau portofolio jika ada.",
+      "name": "Nama lengkap",
+      "email": "Email",
+      "phone": "Telepon",
+      "phoneHint": "(opsional)",
+      "coverNote": "Catatan lamaran",
+      "coverHint": "Mengapa peran ini, mengapa EBI?",
+      "cvLink": "Tautan CV / portofolio",
+      "cvHint": "URL LinkedIn, Drive, atau portofolio",
+      "submit": "Buka email untuk melamar",
+      "mailtoNote": "Aplikasi email Anda akan terbuka dengan draf. Kirim ke {email} setelah kotak masuk rekrutmen dikonfirmasi.",
+      "confirm": "Tim talenta kami meninjau setiap lamaran dan akan menghubungi dalam 5 hari kerja jika ada kecocokan. Hingga kotak masuk rekrutmen tersedia, gunakan {email}.",
+      "nameRequired": "Silakan masukkan nama lengkap Anda.",
+      "emailRequired": "Silakan masukkan email Anda.",
+      "emailInvalid": "Silakan masukkan alamat email yang valid."
+    },
+    "jobs": {
+      "hotel-marketing-manager": {
+        "title": "Hotel Marketing Manager",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Penuh waktu",
+        "level": "Menengah",
+        "summary": "Keterampilan interpersonal yang kuat dan kemampuan untuk membangun hubungan klien untuk divisi perhotelan kami.",
+        "requirements": [
+          "Pengalaman terbukti di pemasaran perhotelan",
+          "Kemampuan membangun dan mengelola hubungan klien",
+          "Kemampuan komunikasi dan negosiasi yang kuat"
+        ]
+      },
+      "chef-uzbekistan": {
+        "title": "Chef (Penempatan: Uzbekistan)",
+        "location": "Tashkent / Samarkand, Uzbekistan",
+        "type": "Penuh waktu",
+        "level": "Menengah",
+        "summary": "Memimpin operasional dapur untuk restoran dan kafe bertema Indonesia kami di Uzbekistan.",
+        "requirements": [
+          "Pengalaman kuat dalam masakan otentik Indonesia",
+          "Bersedia ditempatkan di Uzbekistan (Tashkent/Samarkand)",
+          "Kemampuan mengelola inventaris dapur dan melatih staf lokal"
+        ]
+      },
+      "hr-manager": {
+        "title": "Manajer HR & GA",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Penuh waktu",
+        "level": "Manajer",
+        "summary": "Manajer HR & GA yang mampu memimpin tim dengan baik di berbagai lini bisnis EBI Resources.",
+        "requirements": [
+          "Minimal 5 tahun pengalaman sebagai Manajer HR & GA",
+          "Pemahaman yang kuat tentang undang-undang ketenagakerjaan Indonesia",
+          "Pengalaman dalam akuisisi talenta dan manajemen kinerja"
+        ]
+      },
+      "cafe-manager": {
+        "title": "Manajer Kafe",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Penuh waktu",
+        "level": "Menengah",
+        "summary": "Mengawasi operasional harian, memastikan kepuasan pelanggan, dan mendorong profitabilitas untuk gerai F&B kami.",
+        "requirements": [
+          "Pengalaman sebelumnya mengelola kafe atau restoran yang sibuk",
+          "Keterampilan kepemimpinan dan manajemen tim yang kuat",
+          "Kemampuan layanan pelanggan dan pemecahan masalah yang sangat baik"
+        ]
+      },
+      "project-manager-construction": {
+        "title": "Project Manager (Konstruksi Risiko Tinggi)",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Penuh waktu",
+        "level": "Senior",
+        "summary": "Memimpin proyek konstruksi risiko tinggi dengan memastikan kepatuhan ketat terhadap standar keselamatan, anggaran, dan jadwal.",
+        "requirements": [
+          "Gelar Sarjana Teknik Sipil atau Arsitektur",
+          "Rekam jejak terbukti mengelola proyek konstruksi risiko tinggi",
+          "Sertifikasi HSE/K3 aktif (Ahli K3 Konstruksi)"
+        ]
+      }
+    }
+  },
   "metadata": {
     "title": "EBI Resources",
     "description": "EBI Resources — perusahaan holding yang membawa kehangatan keramahan Indonesia ke Jalur Sutra: hotel, restoran, kafe spesialti, dan teknologi di Indonesia dan Uzbekistan."

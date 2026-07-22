@@ -1137,6 +1137,243 @@
       "body": "Our travel line is in preparation. There is no brand name, service list, or booking flow yet — all details will be provided by the client."
     }
   },
+  "contact": {
+    "meta": {
+      "title": "Contact — EBI Resources",
+      "description": "Reach EBI Resources for partnership, investment, media, and general inquiries. Corporate details use placeholders until confirmed."
+    },
+    "hero": {
+      "kicker": "Contact",
+      "title": "Get in Touch",
+      "supporting": "Partners, investors, clients, and media — we welcome a considered conversation."
+    },
+    "corporate": {
+      "kicker": "Headquarters",
+      "title": "Corporate Contact",
+      "supporting": "Group contact details will replace these placeholders once confirmed by the client.",
+      "emailLabel": "Email",
+      "email": "[email]",
+      "phoneLabel": "Phone",
+      "phone": "[phone]",
+      "addressLabel": "Address",
+      "address": "[address]"
+    },
+    "inquiry": {
+      "kicker": "General Inquiry",
+      "title": "Send a Message",
+      "supporting": "Share a brief note. Until a corporate inbox is confirmed, this form does not transmit — use the placeholders above when real details are available.",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "organisationLabel": "Organisation",
+      "organisationPlaceholder": "Company or affiliation (optional)",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help?",
+      "submit": "Send Inquiry",
+      "notice": "Form submission is not live yet. Corporate routing uses [email] until the client provides a real inbox.",
+      "submitted": "Thank you. Your draft is ready locally — please email [email] once the corporate address is confirmed."
+    },
+    "whereWeAre": {
+      "kicker": "Where We Are",
+      "title": "Properties along the Silk Road",
+      "supporting": "Landmark settings in Samarkand and Tashkent.",
+      "listHeading": "Locations",
+      "opensMaps": "Opens Google Maps",
+      "placeholder": "Interactive atlas arrives in this band.",
+      "pins": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarkand",
+          "aria": "HADITH Hotel, Samarkand. Opens Google Maps."
+        },
+        "kampoeng-indonesia": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarkand",
+          "aria": "Hotel Kampoeng Indonesia, Samarkand. Opens Google Maps."
+        },
+        "graha-nusantara": {
+          "name": "Graha Nusantara",
+          "city": "Samarkand",
+          "aria": "Graha Nusantara, Samarkand. Opens Google Maps."
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Tashkent",
+          "aria": "Mecca Boutique Hotel, near the Islamic Civilization Centre, Tashkent. Opens Google Maps."
+        }
+      },
+      "cities": {
+        "samarkand": "Samarkand",
+        "tashkent": "Tashkent"
+      }
+    },
+    "directory": {
+      "kicker": "Property Directory",
+      "title": "Hotels & Café",
+      "supporting": "Public websites listed in source materials — confirm each site is live before relying on it. Hadith and Mecca phone/email are omitted until the client provides them.",
+      "websiteLabel": "Website",
+      "hedgeWebsite": "Listed in project materials — please confirm the site is live and current.",
+      "hedgePending": "Property phone and email are to be provided by the client.",
+      "hedgeConfirm": "Listed in source materials — confirm with the client before outreach.",
+      "citySamarkand": "Samarkand",
+      "cityTashkent": "Tashkent",
+      "properties": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarkand",
+          "websiteLabel": "Visit hadith-hotel.com"
+        },
+        "kampoeng": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarkand",
+          "websiteLabel": "Visit hotel-kampoengindonesia.com"
+        },
+        "graha": {
+          "name": "Graha Nusantara",
+          "city": "Samarkand",
+          "websiteLabel": "Visit grahanusantara-samarkand.com"
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Tashkent",
+          "websiteLabel": "Visit mecca-hotel.com"
+        },
+        "sevenOz": {
+          "name": "7OZ Espresso",
+          "city": "Tashkent",
+          "note": "Café line — rooftop café within Mecca Boutique Hotel; City Park address listed on the brand site.",
+          "websiteLabel": "Visit 7oz-espresso.com"
+        }
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Careers — EBI Resources",
+      "description": "Open roles at EBI Resources — hotels, restaurants, café, and corporate positions across Indonesia and Uzbekistan. Apply on a rolling basis."
+    },
+    "hero": {
+      "kicker": "Open Roles · EBI Resources",
+      "title": "Build the group's next chapter.",
+      "supporting": "Browse open positions across our hospitality and corporate lines. New roles open on a rolling basis as the group scales."
+    },
+    "alt": {
+      "hero": "Grand lobby of an EBI Resources hospitality property"
+    },
+    "filters": {
+      "aria": "Filter roles by business line",
+      "all": "All",
+      "hospitality": "Property & Hospitality",
+      "restaurants": "Restaurants",
+      "cafe": "Café",
+      "corporate": "Corporate"
+    },
+    "lines": {
+      "hospitality": "Property & Hospitality",
+      "restaurants": "Restaurants",
+      "cafe": "Café",
+      "corporate": "Corporate"
+    },
+    "listing": {
+      "kicker": "Open positions",
+      "title": "Join EBI Resources",
+      "body": "Bring the warmth of Indonesian hospitality to the Silk Road — hotels, restaurants, café, and group operations across Indonesia and Uzbekistan.",
+      "empty": "No open roles match this filter yet. Check back soon, or browse other lines.",
+      "viewRole": "View Role",
+      "apply": "Apply",
+      "prev": "Prev",
+      "next": "Next",
+      "pageOf": "Page {current} of {total}"
+    },
+    "detail": {
+      "metaTitle": "{title} — Careers — EBI Resources",
+      "back": "Back to all roles",
+      "summaryKicker": "About this role",
+      "requirementsTitle": "What we look for",
+      "applyCta": "Apply for this role"
+    },
+    "apply": {
+      "title": "Apply for this role",
+      "intro": "Share a short note and open your email client to send it to {email}. No file upload — paste a CV or portfolio link if you have one.",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "phoneHint": "(optional)",
+      "coverNote": "Cover note",
+      "coverHint": "Why this role, why EBI?",
+      "cvLink": "CV / portfolio link",
+      "cvHint": "LinkedIn, Drive, or portfolio URL",
+      "submit": "Open email to apply",
+      "mailtoNote": "Your email app will open with a draft. Send it to {email} when the recruiting inbox is confirmed.",
+      "confirm": "Our talent team reviews every application and will reach out within 5 business days if there's a fit. Until a recruiting inbox is provided, use {email}.",
+      "nameRequired": "Please enter your full name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address."
+    },
+    "jobs": {
+      "hotel-marketing-manager": {
+        "title": "Hotel Marketing Manager",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Full-time",
+        "level": "Mid Level",
+        "summary": "Strong interpersonal skills and ability to build client relationships for our hospitality division.",
+        "requirements": [
+          "Proven experience in hospitality marketing",
+          "Ability to build and manage client relationships",
+          "Strong communication and negotiation skills"
+        ]
+      },
+      "chef-uzbekistan": {
+        "title": "Chef (Placement: Uzbekistan)",
+        "location": "Tashkent / Samarkand, Uzbekistan",
+        "type": "Full-time",
+        "level": "Mid Level",
+        "summary": "Lead the kitchen operations for our Indonesian-themed restaurants and cafés in Uzbekistan.",
+        "requirements": [
+          "Strong experience in authentic Indonesian cuisine",
+          "Willingness to be placed in Uzbekistan (Tashkent/Samarkand)",
+          "Ability to manage kitchen inventory and train local staff"
+        ]
+      },
+      "hr-manager": {
+        "title": "HR & GA Manager",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Full-time",
+        "level": "Manager",
+        "summary": "HR & GA Manager capable of leading the team effectively across EBI Resources' diverse business lines.",
+        "requirements": [
+          "Minimum 5 years experience as HR & GA Manager",
+          "Strong understanding of Indonesian labor laws",
+          "Experience in talent acquisition and performance management"
+        ]
+      },
+      "cafe-manager": {
+        "title": "Café Manager",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Full-time",
+        "level": "Mid Level",
+        "summary": "Oversee daily operations, ensure customer satisfaction, and drive profitability for our F&B outlets.",
+        "requirements": [
+          "Prior experience managing a busy café or restaurant",
+          "Strong leadership and team management skills",
+          "Excellent customer service and problem-solving abilities"
+        ]
+      },
+      "project-manager-construction": {
+        "title": "Project Manager (High Risk Construction)",
+        "location": "Jakarta Selatan, Indonesia",
+        "type": "Full-time",
+        "level": "Senior Level",
+        "summary": "Lead high-risk construction projects ensuring strict adherence to safety standards, budget, and timeline.",
+        "requirements": [
+          "Bachelor Degree in Civil Engineering or Architecture",
+          "Proven track record managing high-risk construction projects",
+          "Active HSE/K3 certification (Ahli K3 Konstruksi)"
+        ]
+      }
+    }
+  },
   "metadata": {
     "title": "EBI Resources",
     "description": "EBI Resources — a holding company bringing the warmth of Indonesian hospitality to the Silk Road: hotels, restaurants, a specialty café, and technology across Indonesia and Uzbekistan."

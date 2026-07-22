@@ -67,6 +67,16 @@ export default async function LocaleLayout({
     businesses: {
       subnav: allMessages.businesses.subnav,
     },
+    // Inquiry form (client) — scoped; atlas stays RSC via getTranslations.
+    contact: {
+      inquiry: allMessages.contact.inquiry,
+    },
+    // Careers listing pagination ICU (client filter island).
+    careers: {
+      listing: {
+        pageOf: allMessages.careers.listing.pageOf,
+      },
+    },
   };
 
   return (

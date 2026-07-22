@@ -16,6 +16,11 @@ export type RevealProps = {
   as?: ElementType;
   /** Stagger delay in ms. */
   delay?: number;
+  /**
+   * Transition duration class. Default keeps homepage/businesses at 700ms.
+   * Prefer `duration-struct` (~350ms) on interior soft-nav surfaces (Contact/Careers).
+   */
+  durationClass?: "duration-[700ms]" | "duration-struct";
   className?: string;
   children: ReactNode;
 };
@@ -23,6 +28,7 @@ export type RevealProps = {
 export function Reveal({
   as: Tag = "div",
   delay = 0,
+  durationClass = "duration-[700ms]",
   className = "",
   children,
 }: RevealProps) {
@@ -69,7 +75,7 @@ export function Reveal({
     <Tag
       ref={ref}
       style={visible ? { transitionDelay: `${delay}ms` } : undefined}
-      className={`transition-[opacity,transform] duration-[700ms] ease-quart motion-reduce:transition-none ${
+      className={`transition-[opacity,transform] ${durationClass} ease-quart motion-reduce:transition-none ${
         visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
       } ${className}`.trim()}
     >

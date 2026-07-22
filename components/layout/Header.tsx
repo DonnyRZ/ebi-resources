@@ -27,7 +27,7 @@ const NAV_ITEMS = [
 ] as const;
 
 /** Routes without built pages — skip prefetch to avoid wasted work / latency. */
-const PREFETCH_OFF = ["/careers", "/contact"] as const;
+const PREFETCH_OFF: readonly string[] = [];
 
 export type HeaderProps = {
   /** True when the header overlays a hero and should start transparent. */
@@ -43,12 +43,16 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  /** Solid header on interior sections with early SubNav (About, Businesses). */
+  /** Solid header on interior sections (About, Businesses, Careers, Contact). */
   const onInteriorSection =
     pathname === "/about" ||
     pathname.startsWith("/about/") ||
     pathname === "/businesses" ||
-    pathname.startsWith("/businesses/");
+    pathname.startsWith("/businesses/") ||
+    pathname === "/careers" ||
+    pathname.startsWith("/careers/") ||
+    pathname === "/contact" ||
+    pathname.startsWith("/contact/");
   const effectiveOverHero = overHero && !onInteriorSection;
 
   useEffect(() => {
@@ -79,8 +83,7 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  const shouldPrefetch = (href: string) =>
-    !PREFETCH_OFF.includes(href as (typeof PREFETCH_OFF)[number]);
+  const shouldPrefetch = (href: string) => !PREFETCH_OFF.includes(href);
 
   return (
     <header
@@ -95,7 +98,6 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
         <div className="hidden flex-1 md:block">
           <Link
             href="/contact"
-            prefetch={false}
             className="font-sans text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors duration-micro ease-quart hover:text-gold"
           >
             {tHeader("partner")}
@@ -244,9 +246,7 @@ function MobileMenu({
               key={item.key}
               href={item.href}
               prefetch={
-                PREFETCH_OFF.includes(item.href as (typeof PREFETCH_OFF)[number])
-                  ? false
-                  : undefined
+                PREFETCH_OFF.includes(item.href) ? false : undefined
               }
               onClick={onClose}
               aria-current={active ? "page" : undefined}
