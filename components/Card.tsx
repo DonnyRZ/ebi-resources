@@ -25,6 +25,13 @@ export type CardProps = {
   badge?: string;
   /** Label for the read-more affordance; omit to hide it. */
   cta?: ReactNode;
+  /** Responsive image sizes hint; defaults to a 3-col card layout. */
+  sizes?: string;
+  /**
+   * When `href` is set, forwarded to the locale Link.
+   * Pass `false` on dense Businesses grids to avoid prefetch storms.
+   */
+  prefetch?: boolean;
   className?: string;
 };
 
@@ -37,6 +44,8 @@ export function Card({
   aspect = "4 / 3",
   badge,
   cta,
+  sizes = "(max-width: 768px) 100vw, 33vw",
+  prefetch,
   className = "",
 }: CardProps) {
   const inner = (
@@ -50,7 +59,7 @@ export function Card({
             src={image.src}
             alt={image.alt}
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
+            sizes={sizes}
             className="scale-105 object-cover transition-transform duration-image ease-quart group-hover:scale-[1.12]"
           />
         ) : (
@@ -97,7 +106,11 @@ export function Card({
 
   if (href) {
     return (
-      <Link href={href} className="block h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
+      <Link
+        href={href}
+        prefetch={prefetch}
+        className="block h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+      >
         {inner}
       </Link>
     );

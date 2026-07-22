@@ -26,6 +26,9 @@ const NAV_ITEMS = [
   { key: "contact", href: "/contact" },
 ] as const;
 
+/** Routes without built pages — skip prefetch to avoid wasted work / latency. */
+const PREFETCH_OFF = ["/careers", "/contact"] as const;
+
 export type HeaderProps = {
   /** True when the header overlays a hero and should start transparent. */
   overHero?: boolean;
@@ -40,13 +43,21 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  /** Solid header on interior sections with early SubNav (About, Businesses). */
+  const onInteriorSection =
+    pathname === "/about" ||
+    pathname.startsWith("/about/") ||
+    pathname === "/businesses" ||
+    pathname.startsWith("/businesses/");
+  const effectiveOverHero = overHero && !onInteriorSection;
+
   useEffect(() => {
-    if (!overHero) return;
+    if (!effectiveOverHero) return;
     const onScroll = () => setScrolled(window.scrollY > threshold);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [overHero, threshold]);
+  }, [effectiveOverHero, threshold]);
 
   // Lock body scroll while the mobile overlay is open.
   useEffect(() => {
@@ -63,10 +74,13 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
     setMenuOpen(false);
   }, [pathname]);
 
-  const solid = scrolled || !overHero;
+  const solid = scrolled || !effectiveOverHero;
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+  const shouldPrefetch = (href: string) =>
+    !PREFETCH_OFF.includes(href as (typeof PREFETCH_OFF)[number]);
 
   return (
     <header
@@ -81,6 +95,7 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
         <div className="hidden flex-1 md:block">
           <Link
             href="/contact"
+            prefetch={false}
             className="font-sans text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors duration-micro ease-quart hover:text-gold"
           >
             {tHeader("partner")}
@@ -120,6 +135,7 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
             <Link
               key={item.key}
               href={item.href}
+              prefetch={shouldPrefetch(item.href) ? undefined : false}
               aria-current={active ? "page" : undefined}
               className={`relative font-sans text-[12px] font-semibold uppercase tracking-[0.12em] transition-colors duration-micro ease-quart hover:text-gold ${
                 active ? "text-gold" : ""
@@ -227,6 +243,11 @@ function MobileMenu({
             <Link
               key={item.key}
               href={item.href}
+              prefetch={
+                PREFETCH_OFF.includes(item.href as (typeof PREFETCH_OFF)[number])
+                  ? false
+                  : undefined
+              }
               onClick={onClose}
               aria-current={active ? "page" : undefined}
               className={`font-serif text-[28px] font-light uppercase tracking-[0.1em] transition-colors duration-micro ease-quart hover:text-gold ${

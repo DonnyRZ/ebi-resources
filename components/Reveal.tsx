@@ -9,6 +9,8 @@ import { useReducedMotion } from "@/lib/useReducedMotion";
  * when reduced, content renders immediately with no transform.
  *
  * Keep motion disciplined — one easeOutQuart curve, ~0.7s, no bounce.
+ * SSR / above-fold content starts visible; only below-fold nodes hide then
+ * reveal on intersection (avoids a blank first paint).
  */
 export type RevealProps = {
   as?: ElementType;
@@ -26,7 +28,7 @@ export function Reveal({
 }: RevealProps) {
   const reducedMotion = useReducedMotion();
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     if (reducedMotion) {
@@ -35,6 +37,17 @@ export function Reveal({
     }
     const node = ref.current;
     if (!node) return;
+
+    const rect = node.getBoundingClientRect();
+    // Already near/in viewport — leave SSR-visible state alone.
+    const nearViewport = rect.top < window.innerHeight * 0.9;
+    if (nearViewport) {
+      setVisible(true);
+      return;
+    }
+
+    // Below the fold: hide, then reveal on intersection.
+    setVisible(false);
 
     const observer = new IntersectionObserver(
       (entries) => {

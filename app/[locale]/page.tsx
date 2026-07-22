@@ -45,7 +45,7 @@ export default async function Home({
       primaryCta: heroCta,
       media: {
         type: "image" as const,
-        src: "/images/seven-oz/rooftop-sunset.png",
+        src: "/images/seven-oz/rooftop-sunset.jpg",
         alt: t("alt.sevenOzRooftop"),
       },
     },
@@ -56,7 +56,7 @@ export default async function Home({
       primaryCta: heroCta,
       media: {
         type: "image" as const,
-        src: "/images/hadith/golden-hour.jpg",
+        src: "/images/hadith/facade-night-landscape.jpg",
         alt: t("alt.hadithGolden"),
       },
     },
@@ -96,9 +96,9 @@ export default async function Home({
   ];
 
   const lines = [
-    { key: "hotels", image: { src: "/images/hadith/golden-hour.jpg", alt: t("alt.hadithGolden") } },
+    { key: "hotels", image: { src: "/images/hadith/facade-night-landscape.jpg", alt: t("alt.hadithGolden") } },
     { key: "restaurants", image: { src: "/images/hadith/restaurant-dining.jpg", alt: t("alt.hadithDining") } },
-    { key: "cafe", image: { src: "/images/seven-oz/rooftop-sunset.png", alt: t("alt.sevenOzRooftop") } },
+    { key: "cafe", image: { src: "/images/seven-oz/rooftop-sunset.jpg", alt: t("alt.sevenOzRooftop") } },
     { key: "tech", image: undefined },
     { key: "travel", image: undefined, comingSoon: true },
   ] as const;
@@ -135,7 +135,7 @@ export default async function Home({
     {
       key: "crafted",
       span: "lg:col-span-5",
-      image: { src: "/images/mecca/rooftop-winter.png", alt: t("alt.meccaRooftop") },
+      image: { src: "/images/mecca/rooftop-winter.jpg", alt: t("alt.meccaRooftop") },
     },
     {
       key: "enduring",
@@ -234,6 +234,7 @@ export default async function Home({
                 href="/businesses"
                 image={line.image}
                 aspect="4 / 3"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
                 title={t(`lines.${line.key}.title`)}
                 text={t(`lines.${line.key}.text`)}
                 badge={"comingSoon" in line && line.comingSoon ? common("comingSoon") : undefined}
@@ -265,6 +266,7 @@ export default async function Home({
                 href="/businesses"
                 image={p.image}
                 aspect="3 / 4"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 kicker={p.city}
                 title={t(`featured.${p.key}.title`)}
                 text={t(`featured.${p.key}.positioning`)}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -56,10 +56,27 @@ export default async function LocaleLayout({
   // Enable static rendering for this locale.
   setRequestLocale(locale);
 
+  const allMessages = await getMessages();
+  const messages = {
+    nav: allMessages.nav,
+    header: allMessages.header,
+    footer: allMessages.footer,
+    about: {
+      subnav: allMessages.about.subnav,
+    },
+    businesses: {
+      subnav: allMessages.businesses.subnav,
+    },
+  };
+
   return (
-    <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
+    <html
+      lang={locale}
+      className={`${playfair.variable} ${inter.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <body className="bg-white text-navy antialiased">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
           <Footer />

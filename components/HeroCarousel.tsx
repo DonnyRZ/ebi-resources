@@ -65,23 +65,32 @@ export function HeroCarousel({
       style={{ height, minHeight: "560px" }}
       aria-roledescription="carousel"
       aria-label={labels.region ?? "Highlights"}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
     >
       {slides.map((slide, i) => {
         const active = i === index;
+        const prevIdx = (index - 1 + count) % count;
+        const nextIdx = (index + 1) % count;
+        const nearby = active || i === prevIdx || i === nextIdx;
         return (
           <div
             key={i}
-            className={`absolute inset-0 transition-opacity duration-hero ease-quart ${active ? "z-[1] opacity-100" : "z-0 opacity-0"}`}
+            className={`absolute inset-0 transition-opacity duration-struct ease-quart ${active ? "z-[1] opacity-100" : "z-0 opacity-0"}`}
             aria-hidden={!active}
+            inert={!active ? true : undefined}
             role="group"
             aria-roledescription="slide"
             aria-label={`${i + 1} / ${count}`}
           >
-            <HeroMediaLayer media={slide.media} />
+            {nearby ? (
+              <HeroMediaLayer media={slide.media} priority={active} active={active} />
+            ) : (
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-footer"
+              />
+            )}
             <div
               aria-hidden="true"
               className="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/25 to-transparent"
@@ -93,12 +102,12 @@ export function HeroCarousel({
 
       {/* Prev / next controls */}
       {count > 1 && (
-        <div className="absolute inset-y-0 left-0 right-0 z-20 hidden items-center justify-between px-4 md:flex">
+        <div className="pointer-events-none absolute inset-y-0 left-0 right-0 z-20 hidden items-center justify-between px-4 md:flex">
           <button
             type="button"
             onClick={prev}
             aria-label={labels.previous ?? "Previous slide"}
-            className="flex h-11 w-11 items-center justify-center text-2xl text-white/80 transition-colors duration-micro ease-quart hover:text-gold"
+            className="pointer-events-auto flex h-11 w-11 items-center justify-center text-2xl text-white/80 transition-colors duration-micro ease-quart hover:text-gold"
           >
             <span aria-hidden="true">&larr;</span>
           </button>
@@ -106,7 +115,7 @@ export function HeroCarousel({
             type="button"
             onClick={next}
             aria-label={labels.next ?? "Next slide"}
-            className="flex h-11 w-11 items-center justify-center text-2xl text-white/80 transition-colors duration-micro ease-quart hover:text-gold"
+            className="pointer-events-auto flex h-11 w-11 items-center justify-center text-2xl text-white/80 transition-colors duration-micro ease-quart hover:text-gold"
           >
             <span aria-hidden="true">&rarr;</span>
           </button>

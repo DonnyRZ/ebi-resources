@@ -87,9 +87,17 @@ export function Button({
   );
 
   if ("href" in rest && rest.href !== undefined) {
-    const { href, ...linkRest } = rest as ButtonAsLink;
+    const { href, prefetch, ...linkRest } = rest as ButtonAsLink;
+    // Skip prefetch for routes that do not exist yet (Header PREFETCH_OFF).
+    const skipPrefetch =
+      prefetch === false || href === "/contact" || href === "/careers";
     return (
-      <Link href={href} className={classes} {...linkRest}>
+      <Link
+        href={href}
+        className={classes}
+        prefetch={skipPrefetch ? false : prefetch}
+        {...linkRest}
+      >
         {content}
       </Link>
     );
