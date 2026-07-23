@@ -5,8 +5,9 @@ name: Deploy to VPS
 # TEMPLATE AMAN:
 # - Hanya berjalan saat push tag `v*` (rilis) atau dijalankan manual (workflow_dispatch),
 #   sehingga tidak auto-deploy sembarangan pada setiap push.
-# - Semua langkah yang bergantung environment di-guard dengan `if: ${{ secrets.VPS_HOST != '' }}`
-#   agar workflow tidak gagal bila secrets belum diisi.
+# - Langkah SSH selalu dijalankan pada trigger di atas. Jika secrets belum diisi,
+#   step akan gagal dengan error jelas (GitHub Actions tidak mengizinkan `if:`
+#   yang mereferensikan `secrets.*`).
 #
 # GITHUB SECRETS YANG WAJIB DIISI (Settings > Secrets and variables > Actions):
 #   - VPS_HOST     : IP / hostname VPS Hostinger (mis. 123.45.67.89)
@@ -33,14 +34,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Guard - pastikan secrets tersedia
-        if: ${{ secrets.VPS_HOST == '' }}
-        run: |
-          echo "::warning::Secrets VPS_* belum diisi. Langkah deploy dilewati."
-          echo "Isi VPS_HOST, VPS_USER, VPS_SSH_KEY, VPS_APP_DIR untuk mengaktifkan deploy."
-
       - name: Deploy via SSH
-        if: ${{ secrets.VPS_HOST != '' }}
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -56,6 +50,7 @@ jobs:
             git pull --ff-only
 
             # Bangun / tarik image terbaru, lalu jalankan container.
+            # Hanya stack ebi-resources di direktori ini (docker compose lokal).
             # `docker compose pull` untuk image dari registry; bila image dibangun
             # lokal dari Dockerfile, `build` di bawah yang akan dipakai.
             docker compose pull || true
