@@ -11,7 +11,7 @@ import { routing, type Locale } from "@/i18n/routing";
  * Transparent over the hero (white wordmark/nav) → solid on scroll past ~80px
  * (ivory background, hair border, subtle shadow, navy wordmark/nav), transition
  * `duration-struct ease-quart`. Serif text wordmark "EBI RESOURCES" (no logo
- * image, deferred). Locale-aware nav + EN/ID language toggle. Fixed/overlay so
+ * image, deferred). Locale-aware nav + EN/UZ/RU language toggle. Fixed/overlay so
  * it sits over the hero; a full-screen overlay drives mobile navigation.
  *
  * `overHero` (default true) lets interior pages without a hero start in the

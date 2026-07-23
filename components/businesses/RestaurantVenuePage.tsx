@@ -92,6 +92,8 @@ export type RestaurantVenuePageProps = {
     body: string;
     backLabel: string;
     partnerLabel: string;
+    /** Defaults to Food & Beverage line hub. */
+    backHref?: string;
   };
 };
 
@@ -405,7 +407,11 @@ export function RestaurantVenuePage({
             <Button variant="filled" tone="navy" href="/contact">
               {cta.partnerLabel}
             </Button>
-            <Button variant="outline" tone="navy" href="/businesses/restaurants">
+            <Button
+              variant="outline"
+              tone="navy"
+              href={cta.backHref ?? "/businesses/food-and-beverage"}
+            >
               {cta.backLabel}
             </Button>
           </div>

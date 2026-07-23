@@ -7,14 +7,15 @@ import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { WhereWeAreSection } from "@/components/contact/WhereWeAreSection";
 import { InquiryForm } from "./InquiryForm";
+import { withoutGrahaNusantara } from "@/lib/features";
 
 /**
  * Contact — quiet-luxury shell (DESIGN archetype c).
- * Corporate placeholders, light inquiry form, WhereWeAre atlas slot (M6),
+ * Corporate HQ contacts, light inquiry form, WhereWeAre atlas slot (M6),
  * property directory with website hedges. No Maps JS / payments / CMS.
  */
 
-const DIRECTORY = [
+const DIRECTORY = withoutGrahaNusantara([
   {
     key: "hadith" as const,
     href: "https://hadith-hotel.com",
@@ -40,7 +41,7 @@ const DIRECTORY = [
     href: "https://7oz-espresso.com/",
     mode: "confirm" as const,
   },
-];
+]);
 
 export async function generateMetadata({
   params,
@@ -88,7 +89,7 @@ export default async function ContactPage({
         </div>
       </section>
 
-      {/* Corporate HQ — placeholders only */}
+      {/* Corporate HQ */}
       <Section tone="white" width="read">
         <Reveal durationClass="duration-struct">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
@@ -107,7 +108,12 @@ export default async function ContactPage({
                 {t("corporate.emailLabel")}
               </dt>
               <dd className="mt-2 font-sans text-[18px] text-navy">
-                {t("corporate.email")}
+                <a
+                  href={`mailto:${t("corporate.email")}`}
+                  className="transition-colors duration-micro ease-quart hover:text-gold"
+                >
+                  {t("corporate.email")}
+                </a>
               </dd>
             </div>
             <div>
@@ -115,7 +121,12 @@ export default async function ContactPage({
                 {t("corporate.phoneLabel")}
               </dt>
               <dd className="mt-2 font-sans text-[18px] text-navy">
-                {t("corporate.phone")}
+                <a
+                  href="tel:+622130629515"
+                  className="transition-colors duration-micro ease-quart hover:text-gold"
+                >
+                  {t("corporate.phone")}
+                </a>
               </dd>
             </div>
             <div>

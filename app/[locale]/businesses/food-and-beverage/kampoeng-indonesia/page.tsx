@@ -3,29 +3,20 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { HotelPropertyPage } from "@/components/businesses/HotelPropertyPage";
-import { isGrahaNusantaraVisible } from "@/lib/features";
-
-/**
- * Graha Nusantara hotel detail — kept in repo; gated while publicly hidden.
- * Flip `SHOW_GRAHA_NUSANTARA` in `lib/features.ts` to restore.
- */
+import { RestaurantVenuePage } from "@/components/businesses/RestaurantVenuePage";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  if (!isGrahaNusantaraVisible()) {
-    return { title: "Not Found" };
-  }
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   const t = await getTranslations({
     locale,
-    namespace: "businesses.hotels.properties.graha",
+    namespace: "businesses.restaurants.kampoeng",
   });
   return {
     title: t("meta.title"),
@@ -33,30 +24,22 @@ export async function generateMetadata({
   };
 }
 
-export default async function GrahaNusantaraHotelPage({
+export default async function KampoengIndonesiaFnBPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  if (!isGrahaNusantaraVisible()) {
-    notFound();
-  }
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   setRequestLocale(locale);
 
-  const t = await getTranslations("businesses.hotels.properties.graha");
-  const d = await getTranslations("businesses.hotels.propertyDetail");
+  const t = await getTranslations("businesses.restaurants.kampoeng");
+  const d = await getTranslations("businesses.restaurants.venueDetail");
   const a = await getTranslations("a11y");
 
-  const highlightKeys = [
-    "format",
-    "dining",
-    "amenities",
-    "services",
-  ] as const;
+  const highlightKeys = ["cuisine", "setting", "detail"] as const;
 
   const emails = t("contact.emails")
     .split("|")
@@ -64,14 +47,15 @@ export default async function GrahaNusantaraHotelPage({
     .filter(Boolean);
 
   return (
-    <HotelPropertyPage
+    <RestaurantVenuePage
       scrollCueLabel={a("scrollDown")}
       hero={{
         kicker: t("hero.kicker"),
         title: t("hero.title"),
         supporting: t("hero.supporting"),
         image: {
-          src: "/images/graha-nusantara/exterior-day.jpg",
+          // Atrium dining hall (DSC07726) — distinct from carousel dining.jpg (DSC07737).
+          src: "/images/kampoeng-indonesia/restaurant.jpg",
           alt: t("alt.hero"),
         },
       }}
@@ -98,22 +82,21 @@ export default async function GrahaNusantaraHotelPage({
       gallery={{
         kicker: d("galleryKicker"),
         title: d("galleryTitle"),
-        variant: "editorial",
         images: [
           {
-            src: "/images/graha-nusantara/villa-golden-hour.jpg",
+            src: "/images/kampoeng-indonesia/dining.jpg",
             alt: t("alt.g1"),
           },
           {
-            src: "/images/graha-nusantara/complex-night.jpg",
+            src: "/images/kampoeng-indonesia/restaurant.jpg",
             alt: t("alt.g2"),
           },
           {
-            src: "/images/graha-nusantara/compound-interior.jpg",
+            src: "/images/kampoeng-indonesia/restaurant-wide.jpg",
             alt: t("alt.g3"),
           },
           {
-            src: "/images/graha-nusantara/exterior-day.jpg",
+            src: "/images/kampoeng-indonesia/restaurant-fountain.jpg",
             alt: t("alt.g4"),
           },
         ],
@@ -125,7 +108,7 @@ export default async function GrahaNusantaraHotelPage({
           address: t("contact.address"),
           phone: t("contact.phone"),
           emails,
-          websiteHref: "https://grahanusantara-samarkand.com",
+          websiteHref: "https://hotel-kampoengindonesia.com",
           websiteLabel: d("visitWebsite"),
           websiteNote: d("websiteNote"),
           toBeProvided: t("contact.toBeConfirmed"),
@@ -134,12 +117,20 @@ export default async function GrahaNusantaraHotelPage({
           addressLabel: d("address"),
         },
       }}
+      related={{
+        kicker: t("related.kicker"),
+        title: t("related.title"),
+        body: t("related.body"),
+        href: "/businesses/hotels/kampoeng-indonesia",
+        label: t("related.label"),
+      }}
       cta={{
         kicker: d("ctaKicker"),
         title: d("ctaTitle"),
         body: d("ctaBody"),
         backLabel: d("back"),
         partnerLabel: d("partner"),
+        backHref: "/businesses/food-and-beverage",
       }}
     />
   );

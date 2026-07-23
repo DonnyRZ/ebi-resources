@@ -59,6 +59,8 @@ export default async function HadithHotelPage({
           src: "/images/hadith/facade-night-landscape.jpg",
           alt: t("alt.hero"),
         },
+        siteHref: "https://hadith-hotel.com",
+        siteLabel: d("visitHotelSite"),
       }}
       concept={{
         kicker: t("concept.kicker"),
@@ -110,6 +112,13 @@ export default async function HadithHotelPage({
         body: d("ctaBody"),
         backLabel: d("back"),
         partnerLabel: d("partner"),
+      }}
+      related={{
+        kicker: t("related.kicker"),
+        title: t("related.title"),
+        body: t("related.body"),
+        href: "/businesses/food-and-beverage/seven-oz",
+        label: t("related.label"),
       }}
     />
   );

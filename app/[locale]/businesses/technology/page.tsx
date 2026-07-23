@@ -7,7 +7,6 @@ import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
-import { PlaceholderNotice } from "@/components/about/PlaceholderNotice";
 
 /**
  * IT & Technology — single capabilities page (CONTENT-REFERENCE §C / §D.4).
@@ -138,7 +137,7 @@ export default async function TechnologyLinePage({
         </div>
       </Section>
 
-      {/* Application areas + target clients — hedged pending client input */}
+      {/* Application areas + target clients */}
       <Section tone="white">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
@@ -151,12 +150,6 @@ export default async function TechnologyLinePage({
             <p className="mt-4 max-w-[48ch] font-sans text-[15px] leading-[1.75] text-text-muted">
               {t("applications.body")}
             </p>
-            <div className="mt-6">
-              <PlaceholderNotice
-                label={t("applications.hedgeLabel")}
-                detail={t("applications.hedgeDetail")}
-              />
-            </div>
           </Reveal>
 
           <Reveal delay={80}>
@@ -169,12 +162,6 @@ export default async function TechnologyLinePage({
             <p className="mt-4 max-w-[48ch] font-sans text-[15px] leading-[1.75] text-text-muted">
               {t("clients.body")}
             </p>
-            <div className="mt-6">
-              <PlaceholderNotice
-                label={t("clients.hedgeLabel")}
-                detail={t("clients.hedgeDetail")}
-              />
-            </div>
           </Reveal>
         </div>
       </Section>

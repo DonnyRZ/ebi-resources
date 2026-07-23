@@ -36,6 +36,9 @@ export type HotelPropertyPageProps = {
     title: string;
     supporting: string;
     image: HotelGalleryImage;
+    /** Outbound property website shown as a quiet top-right hero CTA. */
+    siteHref?: string;
+    siteLabel?: string;
   };
   scrollCueLabel: string;
   concept: {
@@ -67,6 +70,14 @@ export type HotelPropertyPageProps = {
     title: string;
     details?: HotelContact;
   };
+  /** Optional cross-link (e.g. Hadith → 7OZ Espresso). */
+  related?: {
+    kicker: string;
+    title: string;
+    body: string;
+    href: string;
+    label: string;
+  };
   cta: {
     kicker: string;
     title: string;
@@ -88,6 +99,7 @@ export function HotelPropertyPage({
   highlights,
   gallery,
   contact,
+  related,
   cta,
 }: HotelPropertyPageProps) {
   const variant = gallery.variant ?? "strip";
@@ -109,6 +121,15 @@ export function HotelPropertyPage({
         overlayHeader={false}
         showScrollCue
         scrollCueLabel={scrollCueLabel}
+        cornerCta={
+          hero.siteHref && hero.siteLabel
+            ? {
+                href: hero.siteHref,
+                label: hero.siteLabel,
+                external: true,
+              }
+            : undefined
+        }
       />
 
       {/* Concept + place — editorial split */}
@@ -293,6 +314,27 @@ export function HotelPropertyPage({
           </div>
         </Reveal>
       </Section>
+
+      {related ? (
+        <Section tone="beige" width="normal">
+          <Reveal className="mx-auto max-w-read text-center">
+            <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
+              {related.kicker}
+            </p>
+            <h2 className="font-serif text-[clamp(1.5rem,2.8vw,2.25rem)] font-light leading-[1.2] text-navy">
+              {related.title}
+            </h2>
+            <p className="mx-auto mt-4 max-w-[52ch] font-sans text-[15px] leading-relaxed text-text-muted">
+              {related.body}
+            </p>
+            <div className="mt-6">
+              <Button variant="outline" tone="navy" href={related.href}>
+                {related.label}
+              </Button>
+            </div>
+          </Reveal>
+        </Section>
+      ) : null}
 
       {/* Back + partner CTA */}
       <Section tone="cream" width="normal">

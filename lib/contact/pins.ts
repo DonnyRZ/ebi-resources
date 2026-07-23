@@ -6,6 +6,7 @@
  * Phase-2 `seven-oz-city-park` omitted until Product asks.
  */
 
+import { withoutGrahaNusantara } from "@/lib/features";
 import { UZBEKISTAN_ATLAS_CITIES } from "@/lib/contact/uzbekistanPaths";
 
 export type ContactPinId =
@@ -30,7 +31,7 @@ export type ContactPin = {
 const hadith = UZBEKISTAN_ATLAS_CITIES.hadith;
 const mecca = UZBEKISTAN_ATLAS_CITIES.mecca;
 
-export const CONTACT_PINS: readonly ContactPin[] = [
+const CONTACT_PINS_ALL: readonly ContactPin[] = [
   {
     id: "hadith",
     shortLabel: "Hadith",
@@ -74,3 +75,8 @@ export const CONTACT_PINS: readonly ContactPin[] = [
     labelSide: "left",
   },
 ] as const;
+
+/** Public atlas pins — Graha omitted while `SHOW_GRAHA_NUSANTARA` is false. */
+export const CONTACT_PINS: readonly ContactPin[] = withoutGrahaNusantara(
+  CONTACT_PINS_ALL,
+);

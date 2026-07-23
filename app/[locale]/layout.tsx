@@ -10,13 +10,13 @@ import "../globals.css";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   display: "swap",
 });
 

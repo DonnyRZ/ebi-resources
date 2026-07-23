@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { HotelPropertyPage } from "@/components/businesses/HotelPropertyPage";
+import { RestaurantVenuePage } from "@/components/businesses/RestaurantVenuePage";
 
 export async function generateMetadata({
   params,
@@ -16,7 +16,7 @@ export async function generateMetadata({
   }
   const t = await getTranslations({
     locale,
-    namespace: "businesses.hotels.properties.mecca",
+    namespace: "businesses.restaurants.mecca",
   });
   return {
     title: t("meta.title"),
@@ -24,7 +24,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function MeccaHotelPage({
+export default async function MeccaFnBPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -35,32 +35,24 @@ export default async function MeccaHotelPage({
   }
   setRequestLocale(locale);
 
-  const t = await getTranslations("businesses.hotels.properties.mecca");
-  const d = await getTranslations("businesses.hotels.propertyDetail");
+  const t = await getTranslations("businesses.restaurants.mecca");
+  const d = await getTranslations("businesses.restaurants.venueDetail");
   const a = await getTranslations("a11y");
 
-  const highlightKeys = [
-    "rooms",
-    "indonesiaResto",
-    "europeResto",
-    "rooftop",
-    "services",
-    "rating",
-  ] as const;
-
   return (
-    <HotelPropertyPage
+    <RestaurantVenuePage
       scrollCueLabel={a("scrollDown")}
       hero={{
         kicker: t("hero.kicker"),
         title: t("hero.title"),
         supporting: t("hero.supporting"),
         image: {
-          src: "/images/mecca/facade-dusk.jpg",
+          src: "/images/mecca/dining.jpg",
           alt: t("alt.hero"),
+          // 1280×960 (1.33) — no wider Mecca dining master in Assets/public;
+          // bias crop toward tables/chandeliers (not floor). Do not swap to bar-lounge.
+          objectPosition: "center 38%",
         },
-        siteHref: "https://mecca-hotel.com",
-        siteLabel: d("visitHotelSite"),
       }}
       concept={{
         kicker: t("concept.kicker"),
@@ -74,24 +66,39 @@ export default async function MeccaHotelPage({
         body: t("place.body"),
         landmark: t("place.landmark"),
       }}
-      highlights={{
-        kicker: t("highlights.kicker"),
-        title: t("highlights.title"),
-        items: highlightKeys.map((key) => ({
-          title: t(`highlights.${key}.title`),
-          text: t(`highlights.${key}.text`),
-        })),
+      venues={{
+        kicker: t("venues.kicker"),
+        title: t("venues.title"),
+        items: [
+          {
+            kicker: t("venues.indonesia.kicker"),
+            title: t("venues.indonesia.title"),
+            text: t("venues.indonesia.text"),
+          },
+          {
+            kicker: t("venues.europe.kicker"),
+            title: t("venues.europe.title"),
+            text: t("venues.europe.text"),
+          },
+          {
+            kicker: t("venues.rooftop.kicker"),
+            title: t("venues.rooftop.title"),
+            text: t("venues.rooftop.text"),
+            linkHref: "/businesses/food-and-beverage/seven-oz",
+            linkLabel: t("venues.rooftop.link"),
+          },
+        ],
       }}
       gallery={{
         kicker: d("galleryKicker"),
         title: d("galleryTitle"),
-        variant: "strip",
         images: [
-          { src: "/images/mecca/facade-boulevard.jpg", alt: t("alt.g1") },
+          { src: "/images/mecca/dining.jpg", alt: t("alt.g1") },
           { src: "/images/mecca/lobby.jpg", alt: t("alt.g2") },
-          { src: "/images/mecca/dining.jpg", alt: t("alt.g3") },
-          // Finished winter rooftop — unfinished rooftop-terrace.jpg removed.
-          { src: "/images/mecca/rooftop-winter.jpg", alt: t("alt.g4") },
+          // Finished winter rooftop — unfinished rooftop-terrace.jpg removed until a
+          // finished terrace master exists.
+          { src: "/images/mecca/rooftop-winter.jpg", alt: t("alt.g3") },
+          { src: "/images/mecca/facade-boulevard.jpg", alt: t("alt.g4") },
         ],
       }}
       contact={{
@@ -107,19 +114,20 @@ export default async function MeccaHotelPage({
           addressLabel: d("address"),
         },
       }}
+      related={{
+        kicker: t("related.kicker"),
+        title: t("related.title"),
+        body: t("related.body"),
+        href: "/businesses/hotels/mecca",
+        label: t("related.label"),
+      }}
       cta={{
         kicker: d("ctaKicker"),
         title: d("ctaTitle"),
         body: d("ctaBody"),
         backLabel: d("back"),
         partnerLabel: d("partner"),
-      }}
-      related={{
-        kicker: t("related.kicker"),
-        title: t("related.title"),
-        body: t("related.body"),
-        href: "/businesses/food-and-beverage/seven-oz",
-        label: t("related.label"),
+        backHref: "/businesses/food-and-beverage",
       }}
     />
   );

@@ -1,7 +1,7 @@
 # EBI Resources — Website Content Reference
 
 > **Purpose:** Master content blueprint for the EBI Resources corporate-profile website. It defines what copy/content belongs on each page so the web build has a single source of truth.
-> **Language (bilingual):** The site is **bilingual — English (default/primary) + Indonesian (secondary)**. Ship an EN/ID language toggle; English is the default and Indonesian is available.
+> **Language (locales):** The site supports **English (default/primary), Uzbek (`uz`, Latin script), and Russian (`ru`)**. Ship an EN/UZ/RU language toggle; English is the default.
 > **Website type:** Corporate profile & business portfolio only — **no** booking, ordering, payments, investor portal, or CMS (per README limitations).
 > **Brand name rule:** The public website uses the brand name **“EBI Resources”** exclusively. See the internal appendix (Section H) for how to handle naming found in source materials.
 > **Logos (deferred — use text wordmark):** Brand/property logos are **deferred until the client provides files**. For now, use a **text wordmark ("EBI RESOURCES", serif)** in the header instead of a logo image. Note that **EBI Resources has no logo yet, and Mecca has no logo yet** (most other properties do have logos). See DESIGN.md §3.1.
@@ -34,7 +34,7 @@ EBI Resources is a **holding company** that unites a portfolio of businesses und
 2. **Restaurants**
 3. **Café**
 4. **IT & Technology**
-5. **Travel** (positioned as *Coming Soon* — in development)
+5. **Travel** (Coming Soon — **PT EGI Travel Buana**; destinations: Tashkent → Samarkand, Jakarta, Denpasar)
 
 ### Value proposition (grounded synthesis)
 EBI Resources develops and operates hospitality and lifestyle destinations that bring **the warmth of Indonesian hospitality to the Silk Road heritage of Uzbekistan**, anchored around Central Asia’s most significant Islamic heritage and pilgrimage sites — complemented by a growing technology practice and an emerging travel line.
@@ -135,7 +135,7 @@ Contact
 - **Build status (decided):** Build **all three** pages now. **Company Overview** uses real, factual content. **Vision & Mission** and **Board of Directors** are built now with **clearly-marked Lorem ipsum placeholder content**, to be swapped for real content once the client provides it. Placeholder copy must never ship to production — replace before launch.
 - **Sub-pages / sections:**
   - **Company Overview** — ✅ **Build now with real content.** Who EBI is (holding company), the value proposition and brand pillars from Section A, and the real multi-property portfolio (Section D/E). *Company history/founding narrative and scale figures: content to be provided by client (leave those as gaps, don’t fabricate).*
-  - **Vision & Mission** — 🟡 **Build page now with Lorem ipsum placeholder.** Layout/structure ready; body copy = lorem ipsum until the client provides real vision/mission text. Do NOT present placeholder as fact.
+  - **Vision & Mission** — ✅ **Drafted on-page** (EN/UZ/RU). Qualitative holding direction grounded in existing positioning; client may refine wording.
   - **Board of Directors** — 🟡 **Build page now with Lorem ipsum placeholder.** Layout ready (leadership grid: photo + name + title + bio); use placeholder avatars and lorem ipsum names/bios. Only real source fact is **Erslan Ibrahim, Chairman & CEO** — optionally seed that one card. Full board (names, titles, photos, bios) to be provided by client and swapped in later.
 - **Content type:** Corporate narrative, leadership bios, values. Company Overview = real content now; Vision & Mission and Board of Directors = placeholder (lorem ipsum) now, real content later.
 
@@ -169,9 +169,11 @@ Contact
 - **Content type:** Capability copy is now defined (see Section D.4). Still to be provided by client: case studies/projects, named target sectors/clients, and the business contact for IT engagements.
 
 #### Travel — Coming Soon (single page)
-- **Purpose:** Signal a business line in development.
-- **Sections:** A simple “Coming Soon” statement.
-- **Content type (per README):** No brand name yet, no services, no transactions. Keep to a placeholder/teaser; **all details to be provided by client.**
+- **Brand:** **PT EGI Travel Buana** (travel company within the EBI Resources group).
+- **Status:** Still **Coming Soon** — no booking flow, schedules, or transport modes published.
+- **Destinations (places only; do not name aircraft/ships/vehicles while mode remains ambiguous):** Tashkent → Samarkand; Jakarta; Denpasar.
+- **Assets:** `Assets/Travel/` (logo only as of 2026-07-23) → `public/images/travel/logo.png`.
+- **Sections:** Hero (brand name) → brand + logo → destinations list → Coming Soon CTA.
 
 ### Careers
 - **Purpose:** Support group recruitment.
@@ -190,7 +192,7 @@ Contact
 | **Cafe Manager** | Café | Jakarta Selatan, Indonesia | Full-time | Mid |
 | **Project Manager (High Risk Construction)** | Property & Hospitality (development) | Jakarta Selatan, Indonesia | Full-time | Senior |
 
-  - Each role has a short summary + a "What we look for" requirements list (EN + ID available — see `research/careers.md` §3). No salary/department/responsibilities fields exist in the source; don't fabricate them.
+  - Each role has a short summary + a "What we look for" requirements list (site locales EN/UZ/RU; research source also had EN/ID — see `research/careers.md` §3). No salary/department/responsibilities fields exist in the source; don't fabricate them.
 - **How to apply:** On-site **"Apply for this role"** form on each job detail page — fields: full name*, email*, phone (optional), a short cover note ("why this role, why EBI?"), and a **CV/résumé** (PDF/DOC upload ≤5 MB **or** a link to LinkedIn/Drive/portfolio). Confirmation: *"Our talent team reviews every application and will reach out within 5 business days if there's a fit."* **Scope note:** file-upload + applicant storage may exceed the "no transactions/CMS" scope — MVP can use a simple form to a recruiting inbox or an **`APPLY` → `[careers-email]`** contact CTA (placeholder until the client provides the address). Add a spam challenge (e.g., Turnstile) if a live form ships.
 - **If no roles are open (future state):** show the **empty state** — "No open roles match this filter yet. Check back soon." — and keep the hero + filter + apply structure in place so roles can be added via the same card/row layout.
 - **Content ownership:** Careers copy is now **populated from research** (`research/careers.md`); the build agent renders these roles into the custom listing page and drafts final on-page wording on the live site.
@@ -199,7 +201,7 @@ Contact
 - **Purpose:** Make EBI easy to reach for partners, clients, and media.
 - **Primary persona:** Partners, investors, IT clients, media.
 - **Sections:** Corporate contact (email/phone/address), a general inquiry form (form submission only — no transactions), and a directory of property contacts.
-- **Content type (use placeholders now, swap later):** No corporate email/phone/address exists yet, so **build the Contact section with placeholders**: use **`[email]`**, **`[phone]`**, and **`[address]`** wherever corporate HQ details would appear. These placeholders stay in place now and are **swapped for real details later** once provided. Individual property contacts exist for some properties (see Section E) — confirm before publishing.
+- **Corporate HQ (confirmed):** **secretary@ebiresources.com** · **+62 21 3062 9515** · **Complex of Imam Al Bukhari, Samarkand, Uzbekistan**. Individual property contacts exist for some properties (see Section E) — confirm before publishing.
 
 ---
 
@@ -227,7 +229,7 @@ The group operates multiple dining concepts, several embedded in its hotels:
 Line message: authentic Indonesian cuisine (plus European — Europe Resto — at Mecca and Uzbek/Continental at Hadith), halal, in landmark settings. **Menus, hours, and seat counts are largely unpublished — mark “to be provided.”**
 
 ### 3. Café
-- **7OZ Espresso** — the group’s specialty-coffee café brand; “From Jakarta to Tashkent,” Indonesian coffee culture. Present 7OZ as EBI’s Café line **and** as part of the Mecca Hotel F&B experience (see reconciliation note in Section E). Detail in Section E.
+- **7OZ Espresso** — the group’s specialty-coffee café brand; “From Jakarta to Tashkent,” Indonesian coffee culture. Present 7OZ as EBI’s specialty-coffee brand on the F&B line **and** as part of both **Mecca Boutique Hotel** (Tashkent rooftop) and **Hadith Hotel** (Samarkand) F&B experiences (see reconciliation note in Section E). Detail in Section E.
 
 ### 4. IT & Technology
 - **Line tagline:** *Sovereign digital infrastructure.*
@@ -245,7 +247,10 @@ Line message: authentic Indonesian cuisine (plus European — Europe Resto — a
 - **Note (to confirm):** The source reference for Blockchain read “tied to … mineral, energy, and trade flows.” Mineral/energy are **not** among EBI Resources’ stated business lines (Hotels, Restaurants, Café, IT & Technology, Travel), so this was generalized to “the group’s supply-chain and trade flows.” Confirm the intended wording.
 
 ### 5. Travel
-- **Status: Coming Soon.** Per README: no brand name yet, no services, no direct transactions. **All content to be provided by client.** Present only a teaser/placeholder.
+- **Brand:** **PT EGI Travel Buana**.
+- **Status: Coming Soon** — no bookings or published transport modes.
+- **Destinations:** Tashkent → Samarkand (Uzbekistan); Jakarta; Denpasar (Bali, Indonesia).
+- **Asset:** Travel logo in `Assets/Travel/` / `public/images/travel/logo.png`.
 
 ---
 
@@ -280,7 +285,7 @@ Line message: authentic Indonesian cuisine (plus European — Europe Resto — a
   - **Two restaurants: Indonesia Resto + Europe Resto.**
   - **Indonesia Resto** — authentic Indonesian; named dishes: Rendang, Nasi Goreng, Sate, Soto, Gado-Gado; 497 m², ground floor; Indonesian chefs.
   - **Europe Resto** — European cuisine (fresh pasta, risotto, wood-fired pizza, osso buco, tiramisu); 452 m², second floor; positioned as premium European dining, rare in Central Asia.
-  - **Rooftop café (7OZ)** — 600.7 m² terrace; coffee, light meals, and shisha; views to the Islamic Civilization Centre dome. This rooftop café is **7OZ Espresso**, EBI’s café brand located in the Mecca Hotel (see E.5).
+  - **Rooftop café (7OZ)** — 600.7 m² terrace; coffee, light meals, and shisha; views to the Islamic Civilization Centre dome. This rooftop café is **7OZ Espresso**, EBI’s specialty-coffee brand at Mecca (also confirmed at Hadith Hotel — see E.5).
 - **Other facilities (facts):** Double-height lobby, reading lounge; prayer room; 24H concierge; multilingual front desk (Uzbek, Russian, English, Indonesian, Arabic); event venue up to 500. *(No spa/gym/pool mentioned.)*
 - **Target guests:** Halal/faith travelers, regional business guests, pilgrims; plus local residents for the restaurants; weddings/events.
 - **Website copy angle:** Landmark adjacency + boutique halal design + strong F&B (Indonesia Resto + Europe Resto + the 7OZ rooftop café). Position as a partnership-worthy, distinctive Tashkent asset.
@@ -317,8 +322,8 @@ Line message: authentic Indonesian cuisine (plus European — Europe Resto — a
 ### E.5 7OZ Espresso (Café line)
 - **Positioning line:** “From Jakarta to Tashkent” — specialty Indonesian coffee culture, crafted for a modern Central Asian audience.
 - **Concept/story:** EBI’s specialty-coffee café brand: Indonesian coffee heritage (Jakarta roots) brought to Tashkent; “more than just a café — a space where craftsmanship and connection meet.” Name meaning: “7oz” represents the ideal volume for a perfect cup.
-- **Placement / reconciliation (confirmed by client):** 7OZ Espresso is the **café located inside the Mecca Hotel** — i.e., the hotel’s rooftop café. Present 7OZ both as **EBI’s Café line** and as **Mecca Hotel’s rooftop café**. Note: the 7OZ website also lists a **City Park, Ukchi ko‘chasi 3A, Tashkent** address — confirm whether this refers to the same Mecca Hotel location or an additional outlet (see Section H).
-- **Location(s):** Confirmed operating café — **City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan.** The brand also displays a heritage banner “Tashkent · Jakarta · Samarkand · Bali,” but **only Tashkent has published operating details** — treat other locations as heritage/aspirational until confirmed; do not fabricate addresses.
+- **Placement / reconciliation (confirmed by client):** 7OZ Espresso operates at **Mecca Boutique Hotel** (Tashkent rooftop café) **and Hadith Hotel** (Samarkand). Present 7OZ as EBI’s specialty-coffee brand on the F&B line and as part of both hotels’ F&B experience. Note: the 7OZ website also lists a **City Park, Ukchi ko‘chasi 3A, Tashkent** address — confirm whether this refers to the same Mecca Hotel location or an additional outlet (see Section H).
+- **Location(s):** Confirmed operating cafés — **Mecca Boutique Hotel, Tashkent** and **Hadith Hotel, Samarkand.** Published street address for Tashkent: **City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan** (identity vs Mecca rooftop still to confirm). The brand also displays a heritage banner “Tashkent · Jakarta · Samarkand · Bali,” but **confirmed hotel outlets are Mecca and Hadith** — treat other cities as heritage/aspirational until confirmed; do not fabricate addresses.
 - **Key products (menu categories, facts):** Hot coffee (espresso, americano, cappuccino, latte, flat white, raf); manual/single-origin brews (V60, Aeropress, Batch Brew); matcha; chocolate; teas; lemonades/mojito/flavored drinks; milkshakes; fresh & detox juices. **No prices published; online store not live.** Differentiators: experienced baristas, selected Indonesian beans, modern equipment, premium packaging, fresh beans daily, specialty brewing.
 - **Target guests:** Urban professionals, freelancers, informal business meetings, young people; coffee enthusiasts drawn to Indonesian specialty coffee.
 - **Website copy angle:** The Indonesia → Central Asia coffee-expansion story; Indonesian beans + modern craft. This is a strong, differentiated brand narrative for the Café line.
@@ -385,7 +390,7 @@ Local assets live under `d:\Project\ebi-resources\Assets\`. Property-to-folder m
 
 ### Corporate / About
 - **Company Overview:** ✅ build now with real content; founding year, history, group scale (number of properties/countries/employees) — none in sources (leave as gaps).
-- **Vision & Mission:** 🟡 **decided: build page now with lorem ipsum placeholder, swap for real content later.** Not in sources — client to provide.
+- **Vision & Mission:** ✅ **on-page draft** (EN/UZ/RU) — trusted bridge / hospitality + Silk Road; client may refine.
 - **Board of Directors:** 🟡 **decided: build page now with lorem ipsum placeholder, swap for real content later.** Only **Erslan Ibrahim, Chairman & CEO** is named in sources. Full board list, titles, bios, and photos needed.
 - **⚠️ Placeholder guardrail:** All lorem ipsum / placeholder avatars are temporary and must be replaced before the site goes live; never present placeholder text as real fact.
 - **Corporate HQ contact:** address, phone, email, and the general inquiry routing for Contact page.
@@ -402,7 +407,7 @@ Local assets live under `d:\Project\ebi-resources\Assets\`. Property-to-folder m
 - **Mecca:** confirm operating status and opening date; resolve source note that “500” is an event/banquet capacity (not simultaneous restaurant covers); confirm alcohol policy of the “café & bar” given 100% halal positioning.
 - **Graha Nusantara:** verify per-compound specs (Sultan Hasanudin floor area shows both 420 m² and 414 m²; one section repeats Brawijaya’s narrative — a copy-paste error). Do not publish placeholder “$XX/night” prices.
 - **Kampoeng Indonesia:** obtain room types/counts/capacity; confirm/brand the Indonesian restaurant (name, cuisine detail, hours); confirm whether the generic schema hours (Mon–Sun 09:00–17:00) are reception hours.
-- **7OZ Espresso:** confirmed as the café **inside the Mecca Hotel** (rooftop café). Remaining: confirm whether the 7OZ site’s **City Park, Ukchi ko‘chasi 3A** address is the same Mecca location or a separate outlet; confirm which other locations are actually operational (Jakarta/Samarkand/Bali vs. Tashkent-only); resolve conflicting opening hours (About vs Contact pages); do not use placeholder team names, Lorem ipsum, or the non-live store content; confirm real menu/pricing scope for the corporate site (likely categories only, no prices, per no-transactions scope).
+- **7OZ Espresso:** confirmed at **Mecca Hotel** (rooftop café, Tashkent) **and Hadith Hotel** (Samarkand). Remaining: confirm whether the 7OZ site’s **City Park, Ukchi ko‘chasi 3A** address is the same Mecca location or a separate outlet; confirm which other locations are actually operational (Jakarta/Bali vs. confirmed hotel outlets); resolve conflicting opening hours (About vs Contact pages); do not use placeholder team names, Lorem ipsum, or the non-live store content; confirm real menu/pricing scope for the corporate site (likely categories only, no prices, per no-transactions scope).
 
 ### Contact details to verify before publishing
 - Graha Nusantara: +998 90 463 04 04; marketing@ / sales@grahanusantara-samarkand.com.

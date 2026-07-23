@@ -8,6 +8,10 @@ import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/Reveal";
+import {
+  isGrahaNusantaraVisible,
+  withoutGrahaNusantara,
+} from "@/lib/features";
 
 /**
  * EBI Resources — Homepage.
@@ -37,7 +41,7 @@ export default async function Home({
 
   const heroCta = { label: t("hero.cta"), href: "/businesses" };
 
-  const slides = [
+  const slidesAll = [
     {
       kicker: t("hero.cafe.kicker"),
       title: t("hero.cafe.title"),
@@ -61,6 +65,7 @@ export default async function Home({
       },
     },
     {
+      key: "graha" as const,
       kicker: t("hero.graha.kicker"),
       title: t("hero.graha.title"),
       supporting: t("hero.graha.supporting"),
@@ -95,36 +100,51 @@ export default async function Home({
     },
   ];
 
+  const slides = withoutGrahaNusantara(slidesAll).map(
+    ({ key: _key, ...slide }) => slide,
+  );
+
   const lines = [
-    { key: "hotels", image: { src: "/images/hadith/facade-night-landscape.jpg", alt: t("alt.hadithGolden") } },
-    { key: "restaurants", image: { src: "/images/hadith/restaurant-dining.jpg", alt: t("alt.hadithDining") } },
-    { key: "cafe", image: { src: "/images/seven-oz/rooftop-sunset.jpg", alt: t("alt.sevenOzRooftop") } },
-    { key: "tech", image: undefined },
-    { key: "travel", image: undefined, comingSoon: true },
+    {
+      key: "hotels",
+      href: "/businesses/hotels",
+      image: { src: "/images/hadith/facade-night-landscape.jpg", alt: t("alt.hadithGolden") },
+    },
+    {
+      key: "fnb",
+      href: "/businesses/food-and-beverage",
+      image: { src: "/images/hadith/restaurant-dining.jpg", alt: t("alt.hadithDining") },
+    },
+    { key: "travel", href: "/businesses/travel", image: undefined, comingSoon: true },
+    { key: "tech", href: "/businesses/technology", image: undefined },
   ] as const;
 
-  const properties = [
+  const properties = withoutGrahaNusantara([
     {
       key: "hadith",
+      href: "/businesses/hotels/hadith",
       city: "Samarkand",
       image: { src: "/images/hadith/exterior-night.jpg", alt: t("alt.hadithExterior") },
     },
     {
       key: "mecca",
+      href: "/businesses/hotels/mecca",
       city: "Tashkent",
       image: { src: "/images/mecca/facade-dusk.jpg", alt: t("alt.meccaFacade") },
     },
     {
       key: "graha",
+      href: "/businesses/hotels/graha-nusantara",
       city: "Samarkand",
       image: { src: "/images/graha-nusantara/villa-golden-hour.jpg", alt: t("alt.grahaVilla") },
     },
     {
       key: "kampoeng",
+      href: "/businesses/hotels/kampoeng-indonesia",
       city: "Samarkand",
       image: { src: "/images/kampoeng-indonesia/facade-night.jpg", alt: t("alt.kampoengFacade") },
     },
-  ] as const;
+  ] as const);
 
   const pillars = [
     {
@@ -140,7 +160,15 @@ export default async function Home({
     {
       key: "enduring",
       span: "lg:col-span-5",
-      image: { src: "/images/graha-nusantara/complex-night.jpg", alt: t("alt.grahaNight") },
+      image: isGrahaNusantaraVisible()
+        ? {
+            src: "/images/graha-nusantara/complex-night.jpg",
+            alt: t("alt.grahaNight"),
+          }
+        : {
+            src: "/images/kampoeng-indonesia/facade-night.jpg",
+            alt: t("alt.kampoengFacade"),
+          },
     },
     {
       key: "innovative",
@@ -192,8 +220,16 @@ export default async function Home({
             <div className="relative mx-auto aspect-[5/4] w-full max-w-[560px]">
               <div className="absolute right-0 top-0 h-[74%] w-[82%] overflow-hidden">
                 <Image
-                  src="/images/graha-nusantara/complex-night.jpg"
-                  alt={t("alt.grahaNight")}
+                  src={
+                    isGrahaNusantaraVisible()
+                      ? "/images/graha-nusantara/complex-night.jpg"
+                      : "/images/hadith/facade-night-landscape.jpg"
+                  }
+                  alt={
+                    isGrahaNusantaraVisible()
+                      ? t("alt.grahaNight")
+                      : t("alt.hadithGolden")
+                  }
                   fill
                   sizes="(max-width: 1024px) 82vw, 40vw"
                   className="object-cover -scale-x-100"
@@ -213,7 +249,7 @@ export default async function Home({
         </div>
       </Section>
 
-      {/* 3 — Business lines: five compact cards (DESIGN.md §4 pattern #8a) */}
+      {/* 3 — Business lines: four compact cards (DESIGN.md §4 pattern #8a) */}
       <Section tone="cream">
         <Reveal className="mb-8 text-center">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
@@ -227,11 +263,11 @@ export default async function Home({
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {lines.map((line, i) => (
             <Reveal key={line.key} delay={i * 80}>
               <Card
-                href="/businesses"
+                href={line.href}
                 image={line.image}
                 aspect="4 / 3"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
@@ -259,11 +295,11 @@ export default async function Home({
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {properties.map((p, i) => (
             <Reveal key={p.key} delay={i * 80}>
               <Card
-                href="/businesses"
+                href={p.href}
                 image={p.image}
                 aspect="3 / 4"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

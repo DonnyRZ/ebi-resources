@@ -9,14 +9,10 @@ import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
 import { PropertyCarousel } from "@/components/businesses/PropertyCarousel";
-import {
-  isGrahaNusantaraVisible,
-  withoutGrahaNusantara,
-} from "@/lib/features";
 
 /**
- * Hotels line — quiet-luxury portfolio page (CONTENT-REFERENCE §D.1 / §E).
- * Property cards link through to full detail pages (Wave 2).
+ * Food & Beverage line — dining + specialty coffee (merged restaurants + café).
+ * Patterned after Hotels: hero → intro → PropertyCarousel → proof → CTA.
  */
 export async function generateMetadata({
   params,
@@ -27,14 +23,14 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  const t = await getTranslations({ locale, namespace: "businesses.hotels" });
+  const t = await getTranslations({ locale, namespace: "businesses.fnb" });
   return {
     title: t("meta.title"),
     description: t("meta.description"),
   };
 }
 
-export default async function HotelsLinePage({
+export default async function FoodAndBeverageLinePage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -45,46 +41,38 @@ export default async function HotelsLinePage({
   }
   setRequestLocale(locale);
 
-  const t = await getTranslations("businesses.hotels");
+  const t = await getTranslations("businesses.fnb");
   const common = await getTranslations("common");
   const a = await getTranslations("a11y");
 
-  const properties = withoutGrahaNusantara([
-    {
-      key: "hadith" as const,
-      href: "/businesses/hotels/hadith",
-      image: {
-        src: "/images/hadith/facade-night-landscape.jpg",
-        alt: t("alt.hadith"),
-      },
-    },
+  const venues = [
     {
       key: "mecca" as const,
-      href: "/businesses/hotels/mecca",
+      href: "/businesses/food-and-beverage/mecca",
       image: {
-        src: "/images/mecca/facade-dusk.jpg",
+        src: "/images/mecca/dining.jpg",
         alt: t("alt.mecca"),
       },
     },
     {
-      key: "graha" as const,
-      href: "/businesses/hotels/graha-nusantara",
-      image: {
-        src: "/images/graha-nusantara/villa-golden-hour.jpg",
-        alt: t("alt.graha"),
-      },
-    },
-    {
       key: "kampoeng" as const,
-      href: "/businesses/hotels/kampoeng-indonesia",
+      href: "/businesses/food-and-beverage/kampoeng-indonesia",
       image: {
-        src: "/images/kampoeng-indonesia/facade-night.jpg",
+        src: "/images/kampoeng-indonesia/dining.jpg",
         alt: t("alt.kampoeng"),
       },
     },
-  ]);
+    {
+      key: "sevenOz" as const,
+      href: "/businesses/food-and-beverage/seven-oz",
+      image: {
+        src: "/images/seven-oz/rooftop-sunset.jpg",
+        alt: t("alt.sevenOz"),
+      },
+    },
+  ];
 
-  const proof = ["landmarks", "tiers", "hospitality"] as const;
+  const proof = ["indonesian", "halal", "landmarks"] as const;
 
   return (
     <main>
@@ -94,7 +82,7 @@ export default async function HotelsLinePage({
         supporting={t("hero.supporting")}
         media={{
           type: "image",
-          src: "/images/mecca/facade-boulevard.jpg",
+          src: "/images/hadith/restaurant-dining.jpg",
           alt: t("alt.hero"),
         }}
         height="58vh"
@@ -104,7 +92,6 @@ export default async function HotelsLinePage({
         scrollCueLabel={a("scrollDown")}
       />
 
-      {/* Line intro — editorial split, one job */}
       <Section tone="white">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <Reveal className="lg:col-span-5">
@@ -125,14 +112,8 @@ export default async function HotelsLinePage({
           <Reveal delay={120} className="lg:col-span-7">
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
-                src={
-                  isGrahaNusantaraVisible()
-                    ? "/images/graha-nusantara/complex-night.jpg"
-                    : "/images/hadith/facade-night-landscape.jpg"
-                }
-                alt={
-                  isGrahaNusantaraVisible() ? t("alt.intro") : t("alt.hadith")
-                }
+                src="/images/hadith/restaurant.jpg"
+                alt={t("alt.intro")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover"
@@ -142,8 +123,7 @@ export default async function HotelsLinePage({
         </div>
       </Section>
 
-      {/* Property filmstrip — horizontal scroll, peek next card */}
-      <Section tone="cream" id="properties">
+      <Section tone="cream" id="venues">
         <Reveal className="mb-6 max-w-normal md:mb-8">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {t("grid.kicker")}
@@ -164,20 +144,19 @@ export default async function HotelsLinePage({
               next: a("nextSlide"),
               goToSlide: a.raw("goToSlide"),
             }}
-            slides={properties.map((p) => ({
-              key: p.key,
-              href: p.href,
-              image: p.image,
-              kicker: t(`properties.${p.key}.kicker`),
-              title: t(`properties.${p.key}.title`),
-              text: t(`properties.${p.key}.text`),
+            slides={venues.map((v) => ({
+              key: v.key,
+              href: v.href,
+              image: v.image,
+              kicker: t(`venues.${v.key}.kicker`),
+              title: t(`venues.${v.key}.title`),
+              text: t(`venues.${v.key}.text`),
               cta: common("discover"),
             }))}
           />
         </Reveal>
       </Section>
 
-      {/* Qualitative proof — no numeric stat-band */}
       <Section tone="navy">
         <Reveal className="mb-8 max-w-normal">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
@@ -208,7 +187,6 @@ export default async function HotelsLinePage({
         </div>
       </Section>
 
-      {/* Partnership CTA → /contact */}
       <Section tone="cream" width="normal">
         <Reveal className="mx-auto max-w-read text-center">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">

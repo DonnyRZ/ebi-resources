@@ -5,15 +5,14 @@ import { Link, usePathname } from "@/i18n/navigation";
 
 /**
  * Our Businesses secondary nav — same quiet-luxury strip language as AboutSubNav.
- * Overview = hub; remaining items = five business lines.
+ * Overview = hub; remaining items = four business lines (F&B merges restaurants + café).
  */
 const ITEMS = [
   { key: "overview", href: "/businesses" },
   { key: "hotels", href: "/businesses/hotels" },
-  { key: "restaurants", href: "/businesses/restaurants" },
-  { key: "cafe", href: "/businesses/cafe" },
-  { key: "technology", href: "/businesses/technology" },
+  { key: "fnb", href: "/businesses/food-and-beverage" },
   { key: "travel", href: "/businesses/travel" },
+  { key: "technology", href: "/businesses/technology" },
 ] as const;
 
 export function BusinessesSubNav() {

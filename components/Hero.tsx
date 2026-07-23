@@ -19,6 +19,14 @@ import { useReducedMotion } from "@/lib/useReducedMotion";
 
 export type HeroCta = { label: string; href: string };
 
+/** Optional top-right action (e.g. visit property website). */
+export type HeroCornerCta = {
+  label: string;
+  href: string;
+  /** Open in a new tab (external hotel sites). */
+  external?: boolean;
+};
+
 export type HeroMedia =
   | { type: "image"; src: string; alt: string; objectPosition?: string }
   | { type: "video"; src: string; poster?: string; alt?: string };
@@ -45,6 +53,8 @@ export type HeroProps = HeroSlideContent & {
    * hero. Interior pages under a solid header + SubNav should pass false.
    */
   overlayHeader?: boolean;
+  /** Quiet top-right CTA — visible on media, not competing with the headline. */
+  cornerCta?: HeroCornerCta;
 };
 
 /** Full-bleed media (image, video, or token placeholder) with a base ken-burns scale. */
@@ -208,6 +218,7 @@ export function Hero({
   scrollCueLabel = "Scroll down",
   className = "",
   overlayHeader = true,
+  cornerCta,
 }: HeroProps) {
   // Start entered so SSR / first paint always exposes a visible h1.
   // Soft fade still applies on client remounts when reduced motion is off.
@@ -217,6 +228,9 @@ export function Hero({
     const id = requestAnimationFrame(() => setEntered(true));
     return () => cancelAnimationFrame(id);
   }, []);
+
+  const cornerClasses =
+    "group/btn inline-flex items-center gap-2 border border-white/80 bg-white/95 px-5 py-3 font-sans text-[11px] font-semibold uppercase leading-none tracking-[0.1em] text-navy shadow-sm backdrop-blur-sm transition-colors duration-micro ease-quart hover:bg-white hover:border-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:px-6 md:py-3.5 md:text-[12px]";
 
   return (
     <section
@@ -230,6 +244,35 @@ export function Hero({
         aria-hidden="true"
         className="absolute inset-0 z-0 bg-gradient-to-tr from-black/70 via-black/25 to-transparent"
       />
+      {cornerCta ? (
+        <div className="absolute top-4 right-4 z-20 md:top-6 md:right-6 lg:right-8">
+          {cornerCta.external ? (
+            <a
+              href={cornerCta.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cornerClasses}
+            >
+              {cornerCta.label}
+              <span
+                aria-hidden="true"
+                className="transition-transform duration-micro ease-quart group-hover/btn:translate-x-0.5"
+              >
+                ↗
+              </span>
+            </a>
+          ) : (
+            <Button
+              variant="filled"
+              tone="light"
+              href={cornerCta.href}
+              className="!px-5 !py-3 text-[11px] md:!px-6 md:!py-3.5 md:text-[12px]"
+            >
+              {cornerCta.label}
+            </Button>
+          )}
+        </div>
+      ) : null}
       <HeroContent
         kicker={kicker}
         title={title}

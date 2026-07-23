@@ -62,6 +62,8 @@ export default async function KampoengIndonesiaHotelPage({
           src: "/images/kampoeng-indonesia/facade-day.jpg",
           alt: t("alt.hero"),
         },
+        siteHref: "https://hotel-kampoengindonesia.com",
+        siteLabel: d("visitHotelSite"),
       }}
       concept={{
         kicker: t("concept.kicker"),

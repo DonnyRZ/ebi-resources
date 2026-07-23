@@ -8,6 +8,7 @@ import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/Reveal";
+import { withoutGrahaNusantara } from "@/lib/features";
 
 /**
  * About — Company Overview (`/about`).
@@ -51,7 +52,7 @@ export default async function AboutOverviewPage({
     { key: "innovative" as const },
   ];
 
-  const portfolio = [
+  const portfolio = withoutGrahaNusantara([
     {
       key: "hadith",
       image: { src: "/images/hadith/exterior-night.jpg", alt: t("alt.hadith") },
@@ -81,7 +82,7 @@ export default async function AboutOverviewPage({
         alt: t("alt.sevenOz"),
       },
     },
-  ] as const;
+  ] as const);
 
   return (
     <main>
@@ -91,7 +92,7 @@ export default async function AboutOverviewPage({
         supporting={t("hero.supporting")}
         media={{
           type: "image",
-          src: "/images/hadith/facade-night-landscape.jpg",
+          src: "/images/hadith/facade-golden.jpg",
           alt: t("alt.hero"),
         }}
         height="62vh"

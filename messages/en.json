@@ -60,40 +60,36 @@
       },
       "cafe": {
         "kicker": "7OZ Espresso · Café",
-        "title": "From Jakarta to Tashkent",
-        "supporting": "Indonesian specialty-coffee culture, crafted for a modern Central Asia."
+        "title": "From Jakarta to the Silk Road",
+        "supporting": "Indonesian specialty-coffee culture at Mecca and Hadith."
       }
     },
     "intro": {
       "kicker": "Who We Are",
       "title": "Indonesian Hospitality, Brought to the Silk Road",
       "body1": "EBI Resources is a holding company that unites a portfolio of hospitality and lifestyle destinations under one corporate identity — where the warmth of Indonesian hospitality meets the Silk Road heritage of Uzbekistan.",
-      "body2": "Our businesses span hotels, restaurants, and a specialty café, complemented by a growing technology practice and a travel line in development.",
+      "body2": "Our businesses span hotels and food & beverage, complemented by a growing technology practice and a travel line in development.",
       "cta": "About EBI Resources"
     },
     "lines": {
       "kicker": "Our Businesses",
-      "title": "Five Lines, One Standard",
+      "title": "Four Lines, One Standard",
       "intro": "A diversified group built around hospitality, craft, and technology.",
       "hotels": {
         "title": "Hotels",
         "text": "A portfolio spanning five-star, boutique, and heritage-village stays across Samarkand and Tashkent."
       },
-      "restaurants": {
-        "title": "Restaurants",
-        "text": "Authentic Indonesian, European, and Central Asian dining — halal by design, in landmark settings."
+      "fnb": {
+        "title": "Food & Beverage",
+        "text": "Indonesian dining and specialty coffee — halal-aligned, in landmark settings across the portfolio."
       },
-      "cafe": {
-        "title": "Café",
-        "text": "7OZ Espresso — Indonesian specialty coffee, from Jakarta to Tashkent."
+      "travel": {
+        "title": "Travel",
+        "text": "PT EGI Travel Buana — connecting Uzbekistan and Indonesia. Coming soon."
       },
       "tech": {
         "title": "IT & Technology",
         "text": "Sovereign digital infrastructure — AI, cybersecurity, blockchain, control systems, and data integration."
-      },
-      "travel": {
-        "title": "Travel",
-        "text": "A new travel line, currently in development."
       }
     },
     "featured": {
@@ -192,7 +188,7 @@
     "overview": {
       "meta": {
         "title": "About EBI Resources — Company Overview",
-        "description": "EBI Resources is a holding company uniting Indonesian hospitality with Silk Road heritage across hotels, restaurants, café, technology, and travel."
+        "description": "EBI Resources is a holding company uniting Indonesian hospitality with Silk Road heritage across hotels, food & beverage, technology, and travel."
       },
       "hero": {
         "kicker": "About EBI Resources",
@@ -220,7 +216,7 @@
         },
         "crafted": {
           "label": "Crafted",
-          "text": "Indonesian cuisine and specialty coffee, made with intention across hotels, restaurants, and café."
+          "text": "Indonesian cuisine and specialty coffee, made with intention across hotels and food & beverage."
         },
         "enduring": {
           "label": "Enduring",
@@ -265,7 +261,7 @@
         "secondary": "Our Businesses"
       },
       "alt": {
-        "hero": "Hadith Hotel at golden hour, mirrored in its reflecting pool, Samarkand",
+        "hero": "Hadith Hotel facade at golden hour under a glowing sky, Samarkand",
         "hadith": "Hadith Hotel's illuminated facade at night, Samarkand",
         "hadithGolden": "Hadith Hotel at golden hour, mirrored in its reflecting pool",
         "mecca": "The Mecca boutique hotel at dusk, Tashkent",
@@ -279,90 +275,73 @@
     "visionMission": {
       "meta": {
         "title": "Vision & Mission — EBI Resources",
-        "description": "Vision and mission for EBI Resources — placeholder layout pending client-provided copy."
+        "description": "The vision and mission of EBI Resources — Indonesian hospitality meeting Silk Road heritage."
       },
       "hero": {
         "kicker": "About EBI Resources",
         "title": "Vision & Mission",
-        "supporting": "The direction of the group — layout ready; final wording to follow."
-      },
-      "placeholder": {
-        "label": "Placeholder content",
-        "detail": "The text below is Lorem ipsum for layout only. It is not EBI Resources' vision or mission and must be replaced before launch."
+        "supporting": "The direction that guides our holding, our destinations, and how we grow."
       },
       "vision": {
         "kicker": "Vision",
         "title": "Our Vision",
-        "lorem1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "lorem2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "lorem3": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "lead": "To be the trusted bridge between Indonesian hospitality and Silk Road heritage — building destinations and capabilities that endure for guests, partners, and the communities we serve.",
+        "body": "We envision a group known for warmth with integrity: places where Indonesian hospitality meets Uzbekistan’s landmark heritage settings, and where technology and travel strengthen how people connect across our network."
       },
       "mission": {
         "kicker": "Mission",
         "title": "Our Mission",
-        "lorem1": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "lorem2": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra.",
-        "lorem3": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat."
+        "items": {
+          "holding": {
+            "title": "One coherent holding",
+            "text": "Present EBI Resources with clarity — hotels, food & beverage, technology, and an emerging travel line — under a single corporate identity."
+          },
+          "hospitality": {
+            "title": "Hospitality rooted in place",
+            "text": "Craft hospitality and dining experiences grounded in Indonesian warmth, suited to heritage and pilgrimage contexts in Uzbekistan."
+          },
+          "growth": {
+            "title": "Responsible growth",
+            "text": "Grow through partnership, operational care, and technology capabilities that support the group and the clients who trust us."
+          },
+          "connection": {
+            "title": "Connection across borders",
+            "text": "Connect people and places between Indonesia and Uzbekistan as our travel line comes into being — without rushing what is still in preparation."
+          }
+        }
       },
-      "footerNote": "Final vision and mission statements will be provided by the client and swapped in here.",
+      "closing": "These commitments shape how we present the group, steward our destinations, and welcome conversation with partners and investors.",
+      "ctaContact": "Contact Us",
+      "ctaAbout": "Company Overview",
       "alt": {
-        "hero": "The Imam al-Bukhari Complex illuminated at night, Samarkand"
+        "hero": "Rooftop balcony and bar at Mecca Boutique Hotel at sunset, Tashkent"
       }
     },
     "board": {
       "meta": {
         "title": "Board of Directors — EBI Resources",
-        "description": "Leadership of EBI Resources — board profiles pending full client details."
+        "description": "Leadership of EBI Resources — Erslan Ibrahim, Chairman & CEO."
       },
       "hero": {
         "kicker": "About EBI Resources",
         "title": "Board of Directors",
-        "supporting": "Governance and leadership — profiles will be completed with client-provided details."
+        "supporting": "Governance and leadership of EBI Resources."
       },
       "intro": {
         "kicker": "Leadership",
         "title": "Those Who Steward the Group",
-        "body": "One confirmed appointment is shown below. Remaining seats use placeholder names and biographies until the full board is provided."
-      },
-      "placeholder": {
-        "label": "Placeholder content",
-        "detail": "Except for Erslan Ibrahim (Chairman & CEO), names, titles, and biographies below are Lorem ipsum placeholders — not real directors. Replace before launch.",
-        "cardLabel": "Placeholder profile"
+        "body": "The confirmed leadership of EBI Resources is introduced below."
       },
       "members": {
         "erslan": {
           "name": "Erslan Ibrahim",
           "title": "Chairman & CEO",
           "bio": "Chairman and Chief Executive Officer of EBI Resources."
-        },
-        "member2": {
-          "name": "Aenean Vestibulum",
-          "title": "Lorem Director",
-          "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
-        },
-        "member3": {
-          "name": "Dolor Sit Amet",
-          "title": "Ipsum Director",
-          "bio": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta."
-        },
-        "member4": {
-          "name": "Mauris Commodo",
-          "title": "Independent Director",
-          "bio": "Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra."
-        },
-        "member5": {
-          "name": "Nullam Varius",
-          "title": "Non-Executive Director",
-          "bio": "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh."
-        },
-        "member6": {
-          "name": "Quisque Rutrum",
-          "title": "Board Member",
-          "bio": "Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor."
         }
       },
       "alt": {
-        "hero": "Hadith Hotel's illuminated facade at night above its fountains, Samarkand"
+        "hero": "Grand lobby atrium of Hadith Hotel, Samarkand",
+        "erslan": "Portrait of Erslan Ibrahim, Chairman and CEO of EBI Resources"
       }
     }
   },
@@ -371,10 +350,9 @@
       "label": "Business lines",
       "overview": "Overview",
       "hotels": "Hotels",
-      "restaurants": "Restaurants",
-      "cafe": "Café",
-      "technology": "IT & Technology",
-      "travel": "Travel"
+      "fnb": "F&B",
+      "travel": "Travel",
+      "technology": "IT & Technology"
     },
     "shared": {
       "backToHub": "Back to Our Businesses"
@@ -382,7 +360,7 @@
     "hub": {
       "meta": {
         "title": "Our Businesses — EBI Resources",
-        "description": "Explore EBI Resources' business lines: hotels, restaurants, café, IT & technology, and travel."
+        "description": "Explore EBI Resources' business lines: hotels, food & beverage, IT & technology, and travel."
       },
       "hero": {
         "kicker": "Our Businesses",
@@ -392,7 +370,7 @@
       "intro": {
         "kicker": "Portfolio",
         "title": "Organized by Business Line",
-        "body": "EBI Resources unites hotels, restaurants, a specialty café, an IT & technology practice, and a travel line in development. Explore each line below — then drill into properties where detail is available."
+        "body": "EBI Resources unites hotels, food & beverage, an IT & technology practice, and a travel line in development. Explore each line below — then drill into properties where detail is available."
       },
       "lines": {
         "kicker": "Business Lines",
@@ -401,34 +379,29 @@
           "title": "Hotels",
           "text": "Landmark hotels and residences in Samarkand and Tashkent, rooted in Indonesian hospitality and Silk Road heritage."
         },
-        "restaurants": {
-          "title": "Restaurants",
-          "text": "Halal-aligned dining concepts across the portfolio — Indonesian cuisine and more, in landmark settings."
+        "fnb": {
+          "title": "Food & Beverage",
+          "text": "Halal-aligned dining and specialty coffee — Indonesian cuisine and craft espresso, in landmark settings."
         },
-        "cafe": {
-          "title": "Café",
-          "text": "7OZ Espresso — Indonesian coffee culture, from Jakarta to Tashkent."
+        "travel": {
+          "title": "Travel",
+          "text": "PT EGI Travel Buana — destinations across Tashkent–Samarkand, Jakarta, and Denpasar. Coming soon."
         },
         "technology": {
           "title": "IT & Technology",
           "text": "Sovereign digital infrastructure — enterprise software, AI, cybersecurity, and data platforms."
-        },
-        "travel": {
-          "title": "Travel",
-          "text": "A travel line in preparation. Brand, services, and details to be provided by the client."
         }
       },
       "alt": {
         "hero": "Graha Nusantara villa compounds by day near the Imam al-Bukhari Complex, Samarkand",
         "hotels": "Hadith Hotel facade illuminated at night, Samarkand",
-        "restaurants": "Dining room at Hadith Hotel with set tables and warm lighting",
-        "cafe": "Inside a 7OZ Espresso café, with its coffee counter and pastry display"
+        "fnb": "Dining room at Hadith Hotel with set tables and warm lighting"
       }
     },
     "hotels": {
       "meta": {
         "title": "Hotels — EBI Resources",
-        "description": "EBI Resources hotel portfolio in Samarkand and Tashkent — Hadith, Mecca Boutique Hotel, Graha Nusantara, and Hotel Kampoeng Indonesia."
+        "description": "EBI Resources hotel portfolio in Samarkand and Tashkent — Hadith, Mecca Boutique Hotel, and Hotel Kampoeng Indonesia."
       },
       "hero": {
         "kicker": "Our Businesses · Hotels",
@@ -444,7 +417,8 @@
       "grid": {
         "kicker": "Portfolio",
         "title": "Our Properties",
-        "intro": "Across Samarkand and Tashkent — from a five-star landmark hotel to boutique, villa, and village-inspired stays."
+        "intro": "Across Samarkand and Tashkent — from a five-star landmark hotel to boutique, villa, and village-inspired stays.",
+        "carouselLabel": "Hotel properties"
       },
       "proof": {
         "kicker": "What Sets the Line Apart",
@@ -473,6 +447,7 @@
         "back": "Back to Hotels",
         "partner": "Partner With Us",
         "visitWebsite": "Visit Website (confirm)",
+        "visitHotelSite": "Visit Hotel Website",
         "websiteNote": "Listed in source materials — please confirm the site is live and current before relying on it.",
         "phone": "Phone",
         "email": "Email",
@@ -520,8 +495,8 @@
               "text": "Total inventory of 114 rooms as stated in project materials. Documented examples include Standard Rooms (62 rooms, 35 m²) and Junior Suites (9 rooms, 71 m², 24-hour butler). A full published tier list is to be provided."
             },
             "dining": {
-              "title": "Dining",
-              "text": "The Restaurant — signature dining (120 seats) with Uzbek, Indonesian, and Continental cuisine, stated as halal. The Bar & Lounge — Indonesian pastries and specialty coffees, including Kopi Luwak. Outdoor Café — specialty coffee and pastry on a sheltered terrace. Opening hours are to be confirmed."
+              "title": "Dining & 7OZ Espresso",
+              "text": "The Restaurant — signature dining (120 seats) with Uzbek, Indonesian, and Continental cuisine, stated as halal. The Bar & Lounge — Indonesian pastries and specialty coffees, including Kopi Luwak. Confirmed: 7OZ Espresso also operates at Hadith Hotel. Opening hours are to be confirmed."
             },
             "wellness": {
               "title": "Wellness & Recreation",
@@ -542,6 +517,12 @@
           },
           "contact": {
             "toBeProvided": "Property phone and email are to be provided by the client. A public website is listed in source materials — please confirm it is live before relying on it."
+          },
+          "related": {
+            "kicker": "Food & Beverage",
+            "title": "7OZ Espresso at Hadith",
+            "body": "Hadith Hotel is a confirmed home of 7OZ Espresso — EBI Resources' specialty-coffee brand, also at Mecca Boutique Hotel in Tashkent.",
+            "label": "Discover 7OZ Espresso"
           },
           "alt": {
             "hero": "Hadith Hotel facade illuminated at night, Samarkand — landscape view",
@@ -594,7 +575,7 @@
             },
             "rooftop": {
               "title": "Rooftop Café — 7OZ",
-              "text": "A 600.7 m² terrace café — coffee, light meals, and shisha as listed in source materials — with views to the Islamic Civilization Centre dome. This rooftop café is 7OZ Espresso, EBI Resources' café brand within the Mecca Hotel. How shisha sits alongside the hotel's stated halal dining certification is to be confirmed with the client."
+              "text": "A 600.7 m² terrace café — coffee, light meals, and shisha as listed in source materials — with views to the Islamic Civilization Centre dome. This rooftop café is 7OZ Espresso, EBI Resources' specialty-coffee brand (also at Hadith Hotel in Samarkand). How shisha sits alongside the hotel's stated halal dining certification is to be confirmed with the client."
             },
             "services": {
               "title": "Guest Services",
@@ -607,6 +588,12 @@
           },
           "contact": {
             "toBeProvided": "Property phone and email are to be provided by the client. A public website is listed in source materials — please confirm it is live before relying on it."
+          },
+          "related": {
+            "kicker": "Food & Beverage",
+            "title": "7OZ Espresso at Mecca",
+            "body": "Mecca's rooftop café is 7OZ Espresso — EBI Resources' specialty-coffee brand, also at Hadith Hotel in Samarkand.",
+            "label": "Discover 7OZ Espresso"
           },
           "alt": {
             "hero": "Mecca Boutique Hotel facade at dusk, Tashkent",
@@ -746,6 +733,76 @@
         "mecca": "The Mecca boutique hotel at dusk, Tashkent"
       }
     },
+    "fnb": {
+      "meta": {
+        "title": "Food & Beverage — EBI Resources",
+        "description": "EBI Resources food & beverage — Indonesian dining and specialty coffee in landmark settings across Samarkand and Tashkent."
+      },
+      "hero": {
+        "kicker": "Our Businesses · F&B",
+        "title": "Food & Beverage",
+        "supporting": "Indonesian dining and specialty coffee — halal-aligned, in landmark Silk Road settings."
+      },
+      "intro": {
+        "kicker": "The Line",
+        "title": "Tables and Cups on the Silk Road",
+        "body": "EBI Resources' food & beverage line brings Indonesian cuisine and specialty coffee to Uzbekistan — from Mecca Hotel's restaurants and rooftop 7OZ in Tashkent, to Indonesian dining at Kampoeng Indonesia and 7OZ at Hadith Hotel in Samarkand.",
+        "body2": "Several venues are stated as halal or halal-certified in source materials; certifying bodies and full scopes are to be confirmed. Menus, opening hours, and seat counts are largely unpublished."
+      },
+      "grid": {
+        "kicker": "Venues",
+        "title": "Where to Dine & Drink",
+        "intro": "Three destinations on the F&B line — Mecca Hotel restaurants, Kampoeng Indonesia dining, and 7OZ Espresso at Mecca and Hadith.",
+        "carouselLabel": "Food & beverage venues"
+      },
+      "venues": {
+        "mecca": {
+          "kicker": "Tashkent · Mecca Hotel",
+          "title": "Mecca Hotel Restaurants",
+          "text": "Indonesia Resto and Europe Resto — plus a rooftop café (7OZ) — all dining stated as halal-certified in source materials."
+        },
+        "kampoeng": {
+          "kicker": "Samarkand · Kampoeng Indonesia",
+          "title": "Indonesian Dining On Site",
+          "text": "Authentic Indonesian cuisine at Hotel Kampoeng Indonesia. The outlet name is not published — detail to be provided by the client."
+        },
+        "sevenOz": {
+          "kicker": "Tashkent & Samarkand · 7OZ",
+          "title": "7OZ Espresso",
+          "text": "Indonesian specialty coffee at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
+        }
+      },
+      "proof": {
+        "kicker": "What Defines the Line",
+        "title": "Cuisine, Care, and Place",
+        "indonesian": {
+          "title": "Indonesian Cuisine Abroad",
+          "text": "From Mecca's Indonesia Resto to Kampoeng Indonesia's on-site dining and Hadith's Indonesian offerings — a consistent thread of Indonesian hospitality at the table."
+        },
+        "halal": {
+          "title": "Halal-Aligned Framing",
+          "text": "Mecca's dining is stated as halal-certified; Hadith's The Restaurant is stated as halal. Certifying bodies and alcohol/shisha policy details are to be confirmed where not published."
+        },
+        "landmarks": {
+          "title": "Landmark Settings",
+          "text": "Tables and terraces sit opposite the Tashkent Centre of Islamic Civilization, within or beside the Imam Al Bukhari Complex in Samarkand — F&B tied to place."
+        }
+      },
+      "cta": {
+        "kicker": "Partnership",
+        "title": "Partner on Food & Beverage",
+        "body": "Explore collaboration or institutional engagement with EBI Resources' dining and café concepts and hospitality portfolio.",
+        "primary": "Partner With Us",
+        "secondary": "All Business Lines"
+      },
+      "alt": {
+        "hero": "Dining room at Hadith Hotel with set tables and warm lighting",
+        "intro": "Signature restaurant dining at Hadith Hotel, Samarkand",
+        "mecca": "Dining interior at Mecca Boutique Hotel, Tashkent",
+        "kampoeng": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
+        "sevenOz": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent"
+      }
+    },
     "restaurants": {
       "meta": {
         "title": "Restaurants — EBI Resources",
@@ -824,7 +881,7 @@
         "secondary": "All Business Lines"
       },
       "venueDetail": {
-        "back": "Back to Restaurants",
+        "back": "Back to Food & Beverage",
         "partner": "Partner With Us",
         "visitWebsite": "Visit Website (confirm)",
         "websiteNote": "Listed in source materials — please confirm the site is live and current before relying on it.",
@@ -852,7 +909,7 @@
         "concept": {
           "kicker": "Concept",
           "title": "A Boutique Address with a Strong F&B Core",
-          "body1": "Mecca Boutique Hotel & Restaurant in Tashkent presents three F&B venues: Indonesia Resto, Europe Resto, and a rooftop café operated as 7OZ Espresso — EBI Resources’ café brand within the hotel.",
+          "body1": "Mecca Boutique Hotel & Restaurant in Tashkent presents three F&B venues: Indonesia Resto, Europe Resto, and a rooftop café operated as 7OZ Espresso — EBI Resources’ specialty-coffee brand (also at Hadith Hotel in Samarkand).",
           "body2": "All dining is stated as halal-certified in source materials. Full menus, opening hours, and the certifying body are to be provided. Operating status is to be confirmed with the client."
         },
         "place": {
@@ -875,10 +932,10 @@
             "text": "European cuisine — including fresh pasta, risotto, wood-fired pizza, osso buco, and tiramisu as cited. Floor area stated at 452 m²; positioned as premium European dining. Menus and hours are to be provided."
           },
           "rooftop": {
-            "kicker": "Rooftop · Café line",
+            "kicker": "Rooftop · F&B",
             "title": "Rooftop Café — 7OZ",
-            "text": "A terrace café for coffee, light meals, and shisha as listed in source materials, with views to the Islamic Civilization Centre dome. This is 7OZ Espresso — presented fully on the Café line. How shisha sits alongside the hotel’s stated halal dining certification is to be confirmed.",
-            "link": "Explore the Café Line"
+            "text": "A terrace café for coffee, light meals, and shisha as listed in source materials, with views to the Islamic Civilization Centre dome. This is 7OZ Espresso — presented fully on the Food & Beverage line. How shisha sits alongside the hotel’s stated halal dining certification is to be confirmed.",
+            "link": "Explore 7OZ Espresso"
           }
         },
         "contact": {
@@ -949,11 +1006,11 @@
           "label": "View Kampoeng Indonesia Hotel"
         },
         "alt": {
-          "hero": "Daytime facade of Hotel Kampoeng Indonesia, Samarkand",
-          "g1": "Courtyard and grounds at Hotel Kampoeng Indonesia, Samarkand",
-          "g2": "Daytime facade of Hotel Kampoeng Indonesia",
-          "g3": "Hotel Kampoeng Indonesia illuminated at night",
-          "g4": "Guest room interior at Hotel Kampoeng Indonesia — hotel atmosphere, not a published dining room"
+          "hero": "Atrium dining hall at Hotel Kampoeng Indonesia with set tables and central fountain, Samarkand",
+          "g1": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
+          "g2": "Atrium restaurant at Hotel Kampoeng Indonesia with dining tables under a glass roof, Samarkand",
+          "g3": "Wide view of the Kampoeng Indonesia restaurant atrium with fountain and set tables, Samarkand",
+          "g4": "Kampoeng Indonesia restaurant atrium with fountain and dining tables, Samarkand"
         }
       },
       "alt": {
@@ -967,27 +1024,39 @@
     },
     "cafe": {
       "meta": {
-        "title": "7OZ Espresso — Café — EBI Resources",
-        "description": "7OZ Espresso — EBI Resources' specialty-coffee café brand, from Jakarta to Tashkent, including the rooftop café at Mecca Boutique Hotel."
+        "title": "7OZ Espresso — F&B — EBI Resources",
+        "description": "7OZ Espresso — EBI Resources' specialty-coffee brand at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
       },
       "hero": {
-        "kicker": "Our Businesses · Café",
+        "kicker": "Our Businesses · F&B",
         "title": "7OZ Espresso",
-        "supporting": "From Jakarta to Tashkent — Indonesian specialty coffee on the Silk Road."
+        "supporting": "From Jakarta to the Silk Road — Indonesian specialty coffee at Mecca and Hadith."
       },
       "brand": {
         "kicker": "Brand",
-        "title": "From Jakarta to Tashkent",
-        "body1": "7OZ Espresso is EBI Resources' specialty-coffee café brand — Indonesian coffee heritage, rooted in Jakarta, crafted for a modern Central Asian audience in Tashkent. More than a café: a space where craftsmanship and connection meet.",
+        "title": "From Jakarta to the Silk Road",
+        "body1": "7OZ Espresso is EBI Resources' specialty-coffee café brand — Indonesian coffee heritage, rooted in Jakarta, crafted for a modern Central Asian audience. More than a café: a space where craftsmanship and connection meet.",
         "body2": "The name \"7oz\" points to the ideal volume for a perfect cup. Selected Indonesian beans, modern equipment, and specialty brewing sit at the centre of the experience — without inventing awards, hours, or a full published menu."
       },
       "placement": {
         "kicker": "Where You'll Find Us",
-        "title": "EBI's Café Line — and Mecca's Rooftop",
-        "body": "7OZ Espresso is the café located inside Mecca Boutique Hotel & Restaurant in Tashkent — the hotel's rooftop café, with views toward the Islamic Civilization Centre dome.",
-        "note": "7OZ is both EBI Resources' Café line and part of Mecca Hotel's F&B experience. Dining concepts at Mecca and across the portfolio are covered under Restaurants.",
-        "meccaLabel": "Mecca Boutique Hotel",
-        "restaurantsLabel": "Mecca Hotel restaurants"
+        "title": "Two Hotels, One Coffee Brand",
+        "body": "7OZ Espresso operates within EBI Resources hotels — confirmed at Mecca Boutique Hotel in Tashkent and at Hadith Hotel in Samarkand.",
+        "note": "7OZ sits on the Food & Beverage line as the group's specialty-coffee brand. Full dining concepts at each hotel are covered on the hotel and F&B venue pages.",
+        "outlets": {
+          "mecca": {
+            "detail": "Tashkent · Rooftop café",
+            "label": "Mecca Boutique Hotel"
+          },
+          "hadith": {
+            "detail": "Samarkand · Hadith Hotel",
+            "label": "Hadith Hotel"
+          },
+          "meccaDining": {
+            "detail": "Tashkent · Hotel restaurants",
+            "label": "Mecca Hotel restaurants"
+          }
+        }
       },
       "products": {
         "kicker": "Offerings",
@@ -1021,18 +1090,18 @@
         }
       },
       "location": {
-        "kicker": "Location",
-        "title": "Tashkent",
-        "body": "7OZ Espresso operates as the rooftop café inside Mecca Boutique Hotel. A street address is also published for the brand — its relationship to the Mecca rooftop is still being confirmed.",
-        "addressLabel": "Published address",
+        "kicker": "Locations",
+        "title": "Tashkent & Samarkand",
+        "body": "Confirmed outlets: the rooftop café at Mecca Boutique Hotel in Tashkent, and 7OZ Espresso at Hadith Hotel in Samarkand. A published City Park street address for the brand still needs client confirmation of how it relates to the Mecca rooftop.",
+        "addressLabel": "Published Tashkent address",
         "address": "City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan",
         "identityLabel": "Address identity",
-        "identityDetail": "Placement is confirmed: Mecca Hotel rooftop café. The published City Park street address still needs client confirmation — whether it names the same Mecca rooftop location or a separate outlet.",
-        "heritageNote": "Brand materials also show a heritage banner — Tashkent · Jakarta · Samarkand · Bali. Only Tashkent has published operating details; other cities read as heritage or aspirational until confirmed."
+        "identityDetail": "Hotel placements are confirmed: Mecca (Tashkent) and Hadith (Samarkand). The City Park street address still needs confirmation — whether it names the Mecca rooftop location or a separate outlet.",
+        "heritageNote": "Brand materials also show a heritage banner — Tashkent · Jakarta · Samarkand · Bali. Confirmed operating hotel outlets are Mecca and Hadith; other cities remain heritage or aspirational until confirmed."
       },
       "gallery": {
         "kicker": "Gallery",
-        "title": "Craft & Terrace"
+        "title": "Craft & Place"
       },
       "contact": {
         "kicker": "Contact",
@@ -1048,13 +1117,14 @@
         "kicker": "Partnership",
         "title": "Partner With EBI Resources",
         "body": "Explore collaboration around specialty coffee, hospitality F&B, or the wider EBI Resources portfolio.",
-        "back": "Back to Our Businesses",
+        "back": "Back to Food & Beverage",
         "partner": "Partner With Us"
       },
       "alt": {
         "hero": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
         "galleryRooftop": "7OZ Espresso rooftop café at sunset overlooking Tashkent's Islamic Civilization Centre",
         "galleryWinter": "Mecca Hotel rooftop terrace in winter light, Tashkent — home to 7OZ Espresso",
+        "galleryHadith": "Specialty coffee and pastry lounge at Hadith Hotel, Samarkand — atmosphere of the 7OZ outlet context",
         "galleryFacade": "Mecca Boutique Hotel boulevard facade, Tashkent — home to the 7OZ rooftop café"
       }
     },
@@ -1105,42 +1175,74 @@
       "applications": {
         "kicker": "Application areas",
         "title": "Where capability meets context",
-        "body": "Named industries, deployment contexts, and application narratives will be published once the client confirms them. Until then, we do not invent sector lists or project claims.",
-        "hedgeLabel": "To be provided",
-        "hedgeDetail": "Application areas and industry mappings are still to be provided by the client. Case studies and project references are also pending."
+        "body": "Named industries, deployment contexts, and application narratives will be published once the client confirms them. Until then, we do not invent sector lists or project claims."
       },
       "clients": {
         "kicker": "Target clients",
         "title": "Who we engage",
-        "body": "We welcome technology clients and partners evaluating sovereign digital infrastructure. Named target sectors and client references remain unpublished until supplied.",
-        "hedgeLabel": "To be provided",
-        "hedgeDetail": "Named target sectors, client logos, and engagement profiles are still to be provided by the client."
+        "body": "We welcome technology clients and partners evaluating sovereign digital infrastructure. Named target sectors and client references remain unpublished until supplied."
       },
       "contact": {
         "kicker": "Business contact",
         "title": "Start a conversation",
         "body": "Reach the group through Contact to discuss technology capabilities, partnership, or engagement. A dedicated IT business contact will replace this path when provided.",
-        "note": "Until then, use the group Contact placeholders — [email], [phone], [address].",
+        "note": "Until then, use the group Contact details — secretary@ebiresources.com.",
         "primary": "Talk to Our Team"
       }
     },
     "travel": {
       "meta": {
-        "title": "Travel — Coming Soon — EBI Resources",
-        "description": "EBI Resources Travel — a business line in development. Details to be provided by the client."
+        "title": "Travel — PT EGI Travel Buana — EBI Resources",
+        "description": "PT EGI Travel Buana — EBI Resources' travel line. Destinations include Tashkent–Samarkand, Jakarta, and Denpasar. Coming soon."
       },
       "hero": {
         "kicker": "Our Businesses · Travel",
-        "title": "Travel",
-        "supporting": "A line in development — details to follow."
+        "title": "PT EGI Travel Buana",
+        "supporting": "Connecting guests across Uzbekistan and Indonesia — coming soon."
       },
-      "body": "Our travel line is in preparation. There is no brand name, service list, or booking flow yet — all details will be provided by the client."
+      "brand": {
+        "kicker": "The Brand",
+        "title": "PT EGI Travel Buana",
+        "body1": "PT EGI Travel Buana is the travel company within the EBI Resources group — prepared to connect guests between the Silk Road cities of Uzbekistan and destinations in Indonesia.",
+        "body2": "Services, schedules, and booking details are not yet published. This page introduces the brand and the destinations in focus while the line remains in preparation."
+      },
+      "destinations": {
+        "kicker": "Destinations",
+        "title": "Where We Connect",
+        "intro": "The destinations below are confirmed for the travel line. How journeys will be arranged is still being finalized — we share places only, not modes of travel.",
+        "items": {
+          "tashkentSamarkand": {
+            "title": "Tashkent → Samarkand",
+            "region": "Uzbekistan",
+            "text": "A corridor between the capital and the heritage heart of Samarkand — aligned with EBI’s hospitality presence on the Silk Road."
+          },
+          "jakarta": {
+            "title": "Jakarta",
+            "region": "Indonesia",
+            "text": "Indonesia’s capital — a primary gateway for guests connecting with the group’s network."
+          },
+          "denpasar": {
+            "title": "Denpasar",
+            "region": "Indonesia · Bali",
+            "text": "Bali’s principal city — linking Indonesian hospitality with journeys toward Central Asia."
+          }
+        }
+      },
+      "status": {
+        "kicker": "Coming Soon",
+        "title": "In Preparation",
+        "body": "PT EGI Travel Buana is not open for bookings yet. For partnership or early conversations, reach the EBI Resources team.",
+        "primary": "Contact Us"
+      },
+      "alt": {
+        "logo": "PT EGI Travel Buana logo"
+      }
     }
   },
   "contact": {
     "meta": {
       "title": "Contact — EBI Resources",
-      "description": "Reach EBI Resources for partnership, investment, media, and general inquiries. Corporate details use placeholders until confirmed."
+      "description": "Reach EBI Resources for partnership, investment, media, and general inquiries — secretary@ebiresources.com."
     },
     "hero": {
       "kicker": "Contact",
@@ -1150,18 +1252,18 @@
     "corporate": {
       "kicker": "Headquarters",
       "title": "Corporate Contact",
-      "supporting": "Group contact details will replace these placeholders once confirmed by the client.",
+      "supporting": "Reach the EBI Resources group through the contacts below.",
       "emailLabel": "Email",
-      "email": "[email]",
+      "email": "secretary@ebiresources.com",
       "phoneLabel": "Phone",
-      "phone": "[phone]",
+      "phone": "+62 21 3062 9515",
       "addressLabel": "Address",
-      "address": "[address]"
+      "address": "Complex of Imam Al Bukhari, Samarkand, Uzbekistan"
     },
     "inquiry": {
       "kicker": "General Inquiry",
       "title": "Send a Message",
-      "supporting": "Share a brief note. Until a corporate inbox is confirmed, this form does not transmit — use the placeholders above when real details are available.",
+      "supporting": "Share a brief note. Form submission is not live yet — please email secretary@ebiresources.com directly.",
       "nameLabel": "Full name",
       "namePlaceholder": "Your name",
       "emailLabel": "Email",
@@ -1171,8 +1273,8 @@
       "messageLabel": "Message",
       "messagePlaceholder": "How can we help?",
       "submit": "Send Inquiry",
-      "notice": "Form submission is not live yet. Corporate routing uses [email] until the client provides a real inbox.",
-      "submitted": "Thank you. Your draft is ready locally — please email [email] once the corporate address is confirmed."
+      "notice": "Form submission is not live yet. Please email secretary@ebiresources.com for partnership and general inquiries.",
+      "submitted": "Thank you. Your draft is ready locally — please send it to secretary@ebiresources.com."
     },
     "whereWeAre": {
       "kicker": "Where We Are",
@@ -1241,8 +1343,8 @@
         },
         "sevenOz": {
           "name": "7OZ Espresso",
-          "city": "Tashkent",
-          "note": "Café line — rooftop café within Mecca Boutique Hotel; City Park address listed on the brand site.",
+          "city": "Tashkent & Samarkand",
+          "note": "Specialty coffee at Mecca Boutique Hotel (Tashkent rooftop) and Hadith Hotel (Samarkand). City Park street address on the brand site still needs confirmation.",
           "websiteLabel": "Visit 7oz-espresso.com"
         }
       }
@@ -1251,7 +1353,7 @@
   "careers": {
     "meta": {
       "title": "Careers — EBI Resources",
-      "description": "Open roles at EBI Resources — hotels, restaurants, café, and corporate positions across Indonesia and Uzbekistan. Apply on a rolling basis."
+      "description": "Open roles at EBI Resources — hotels, food & beverage, and corporate positions across Indonesia and Uzbekistan. Apply on a rolling basis."
     },
     "hero": {
       "kicker": "Open Roles · EBI Resources",
@@ -1278,7 +1380,7 @@
     "listing": {
       "kicker": "Open positions",
       "title": "Join EBI Resources",
-      "body": "Bring the warmth of Indonesian hospitality to the Silk Road — hotels, restaurants, café, and group operations across Indonesia and Uzbekistan.",
+      "body": "Bring the warmth of Indonesian hospitality to the Silk Road — hotels, food & beverage, and group operations across Indonesia and Uzbekistan.",
       "empty": "No open roles match this filter yet. Check back soon, or browse other lines.",
       "viewRole": "View Role",
       "apply": "Apply",
@@ -1376,6 +1478,6 @@
   },
   "metadata": {
     "title": "EBI Resources",
-    "description": "EBI Resources — a holding company bringing the warmth of Indonesian hospitality to the Silk Road: hotels, restaurants, a specialty café, and technology across Indonesia and Uzbekistan."
+    "description": "EBI Resources — a holding company bringing the warmth of Indonesian hospitality to the Silk Road: hotels, food & beverage, and technology across Indonesia and Uzbekistan."
   }
 }

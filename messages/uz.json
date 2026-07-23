@@ -1,0 +1,1483 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "businesses": "Bizneslarimiz",
+    "careers": "Karyera",
+    "contact": "Aloqa"
+  },
+  "header": {
+    "partner": "Hamkorlik",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "close": "Yopish"
+  },
+  "footer": {
+    "tagline": "Ishonch ustiga qurilgan holding."
+  },
+  "a11y": {
+    "scrollDown": "Pastga aylantirish",
+    "previousSlide": "Oldingi slayd",
+    "nextSlide": "Keyingi slayd",
+    "goToSlide": "{number}-slaydga o‘tish",
+    "highlights": "Tanlangan mulklar va tajribalar"
+  },
+  "common": {
+    "readMore": "Batafsil",
+    "learnMore": "Ko‘proq bilish",
+    "discover": "Kashf etish",
+    "comingSoon": "Tez orada",
+    "language": "Til",
+    "skipToContent": "Asosiy kontentga o‘tish"
+  },
+  "home": {
+    "hero": {
+      "cta": "Bizneslarimizni o‘rganing",
+      "hadith": {
+        "kicker": "Imom Al-Buxoriy majmuasi · Samarqand",
+        "title": "Samarqand merosi, indoneziya iliqlik",
+        "supporting": "Hadith Hotel — Samarqandning ma’naviy qalbida joylashgan besh yulduzli diqqatga sazovor mehmonxona."
+      },
+      "mecca": {
+        "kicker": "Islom sivilizatsiyasi markazi qarshisida · Toshkent",
+        "title": "Butik manzil, ongli joylashuv",
+        "supporting": "Mecca — Toshkentning yetakchi islomiy yodgorligiga qaragan, halol me’yorlarga mos mehmondo‘stlik."
+      },
+      "graha": {
+        "kicker": "Imom Al-Buxoriy majmuasi yonida · Samarqand",
+        "title": "Qadimiy Samarqandda nafislik",
+        "supporting": "Graha Nusantara — ziyoratgoh yonida xususiy indoneziya merosi villalari."
+      },
+      "kampoeng": {
+        "kicker": "Imom Al-Buxoriy memorial majmuasi · Samarqand",
+        "title": "Iymon va meros sayohati",
+        "supporting": "Hotel Kampoeng Indonesia — ziyorat maskanida indoneziya qishlog‘i iliqlikligi."
+      },
+      "dining": {
+        "kicker": "Restoranlar",
+        "title": "Indoneziya ta’mi, Ipak yo‘li muhiti",
+        "supporting": "Halol ovqatlanish va maxsus qahva — sham chiroqli plovdan indoneziya pishiriqlarigacha."
+      },
+      "cafe": {
+        "kicker": "7OZ Espresso · Kafe",
+        "title": "Jakartadan Ipak yo‘ligacha",
+        "supporting": "Mecca va Hadith’da indoneziya maxsus qahva madaniyati."
+      }
+    },
+    "intro": {
+      "kicker": "Biz kimimiz",
+      "title": "Indoneziya mehmondo‘stligi — Ipak yo‘liga",
+      "body1": "EBI Resources — mehmondo‘stlik va turmush tarzi manzillarini bitta korporativ brend ostida birlashtiruvchi holding: indoneziya mehmondo‘stligi iliqlikligi O‘zbekistonning Ipak yo‘li merosi bilan uchrashadi.",
+      "body2": "Bizneslarimiz mehmonxonalar hamda ovqatlanish va ichimliklarni qamrab oladi; ularga o‘sib borayotgan texnologiya amaliyoti va rivojlanayotgan sayohat yo‘nalishi qo‘shimcha qilinadi.",
+      "cta": "EBI Resources haqida"
+    },
+    "lines": {
+      "kicker": "Bizneslarimiz",
+      "title": "To‘rt yo‘nalish, bitta standart",
+      "intro": "Mehmondo‘stlik, hunarmandlik va texnologiya atrofida qurilgan diversifikatsiyalangan guruh.",
+      "hotels": {
+        "title": "Mehmonxonalar",
+        "text": "Samarqand va Toshkent bo‘ylab besh yulduzli, butik va meros qishloq mehmonxonalari portfeli."
+      },
+      "fnb": {
+        "title": "Ovqatlanish va ichimliklar",
+        "text": "Indoneziya oshxonasi va maxsus qahva — portfel bo‘ylab diqqatga sazovor joylarda, halol me’yorlarga mos."
+      },
+      "travel": {
+        "title": "Sayohat",
+        "text": "PT EGI Travel Buana — O‘zbekiston va Indoneziyani bog‘laydi. Tez orada."
+      },
+      "tech": {
+        "title": "IT va texnologiya",
+        "text": "Suveren raqamli infratuzilma — AI, kiberxavfsizlik, blokcheyn, boshqaruv tizimlari va ma’lumotlar integratsiyasi."
+      }
+    },
+    "featured": {
+      "kicker": "Tanlangan mulklar",
+      "title": "Haqiqiy, ko‘p mulkli portfel",
+      "intro": "Samarqand va Toshkentdagi diqqatga sazovor joylar yonidagi mehmonxonalar va turar joylar.",
+      "hadith": {
+        "title": "Hadith Hotel",
+        "positioning": "Samarqanddagi Imom Al-Buxoriy majmuasidagi besh yulduzli flagman."
+      },
+      "mecca": {
+        "title": "Mecca Boutique Hotel",
+        "positioning": "Toshkent Islom sivilizatsiyasi markazi qarshisidagi to‘rt yulduzli butik mehmonxona."
+      },
+      "graha": {
+        "title": "Graha Nusantara",
+        "positioning": "Samarqanddagi ziyoratgoh yonida hashamatli indoneziya merosi villa majmualari."
+      },
+      "kampoeng": {
+        "title": "Hotel Kampoeng Indonesia",
+        "positioning": "Imom Al-Buxoriy memorial majmuasidagi uch yulduzli indoneziya qishlog‘i tajribasi."
+      }
+    },
+    "pillars": {
+      "kicker": "Bizni belgilovchi narsa",
+      "title": "Davomiylik uchun yaratilgan",
+      "trusted": {
+        "label": "Ishonchli",
+        "text": "Har bir mulkda haqiqiy indoneziya mehmondo‘stligi va halol qulaylik."
+      },
+      "crafted": {
+        "label": "Mahorat bilan",
+        "text": "Har bir darajada ehtiyotkorlik bilan tayyorlangan indoneziya oshxonasi va maxsus qahva."
+      },
+      "enduring": {
+        "label": "Barqaror",
+        "text": "Markaziy Osiyoning eng muhim islomiy meros va ziyorat maskanlari yonida ildiz otgan."
+      },
+      "innovative": {
+        "label": "Innovatsion",
+        "text": "Indoneziya va O‘zbekiston o‘rtasidagi madaniyatlararo ko‘prik va o‘sib borayotgan texnologiya amaliyoti."
+      }
+    },
+    "credibility": {
+      "kicker": "Hamkorlar nima uchun EBI ni tanlaydi",
+      "title": "Mubolag‘adan ko‘ra mohiyat",
+      "intro": "Haqiqiy aktivlar, muhim joylashuvlar va tekshiriladigan kredensiallarga asoslangan ishonch.",
+      "locations": {
+        "title": "Diqqatga sazovor joylar yonida",
+        "text": "Imom Al-Buxoriy majmuasida yoki yonida va Toshkent Islom sivilizatsiyasi markazi qarshisida joylashgan mulklar."
+      },
+      "certification": {
+        "title": "Milliy sertifikatlangan",
+        "text": "Hotel Kampoeng Indonesia O‘zbekiston milliy turizm standarti O‘z DSt 3220:2023 bo‘yicha sertifikatlangan."
+      },
+      "tiers": {
+        "title": "To‘liq darajalar qatori",
+        "text": "Besh yulduzli, to‘rt yulduzli butik va uch yulduzli mehmonxonalar, shuningdek hashamatli meros villalari."
+      },
+      "positioning": {
+        "title": "O‘ziga xos pozitsiya",
+        "text": "Indoneziya mehmondo‘stligi Ipak yo‘li merosi bilan uchrashadi — ikki xalq o‘rtasidagi ko‘prik."
+      }
+    },
+    "cta": {
+      "kicker": "Hamkorlik va investitsiya",
+      "title": "Biz bilan uzoq muddatli narsa quring",
+      "body": "Sifat va merosga sodiqligimizni baham ko‘radigan hamkorlar, investorlar va texnologiya mijozlarini kutib olamiz.",
+      "primary": "Hamkorlik",
+      "secondary": "Karyerani ko‘rish"
+    },
+    "alt": {
+      "hadithGolden": "Oltin soatda Hadith Hotel, aks ettiruvchi hovuzda aks etgan holda, Samarqand",
+      "hadithLobby": "Hadith Hotelning marmar polli va keng zinapoyali katta lobbisi",
+      "hadithExterior": "Imom Al-Buxoriy majmuasidagi Hadith Hotelning tungi yoritilgan fasadi va favvoralari, Samarqand",
+      "hadithLounge": "Hadith Hotel Bar & Lounge — pishiriqlar vitrinasi va iliqlik yoritish",
+      "hadithRestaurant": "Hadith Hotel restorani — o‘yilgan marmar ark ostida sham chiroqli kechki ovqat",
+      "hadithDining": "Hadith Hotel ovqat zali — nafis stollar va gulli kompozitsiyalar",
+      "hadithNight": "Favvoralar ortida tungi yoritilgan Hadith Hotel",
+      "meccaFacade": "Mecca butik mehmonxonasi shafaqda, Toshkent",
+      "meccaRooftop": "Mecca tomidagi kafe — Islom sivilizatsiyasi markaziga qaragan manzara",
+      "sevenOzRooftop": "7OZ Espresso tom kafesi quyosh botishida, Toshkent Islom sivilizatsiyasi markaziga qaragan",
+      "sevenOzInterior": "7OZ Espresso kafesi ichida — qahva stoli va pishiriqlar vitrinasi",
+      "grahaVilla": "Oltin soatda Graha Nusantara villasi, Imom Al-Buxoriy majmuasi yonida",
+      "grahaNight": "Tungi yoritilgan Imom Al-Buxoriy majmuasi, Samarqand",
+      "kampoengFacade": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand"
+    }
+  },
+  "about": {
+    "subnav": {
+      "label": "Kompaniya haqida bo‘limlari",
+      "overview": "Kompaniya haqida",
+      "visionMission": "Vazifa va maqsad",
+      "board": "Boshqaruv kengashi"
+    },
+    "overview": {
+      "meta": {
+        "title": "EBI Resources haqida — Kompaniya haqida",
+        "description": "EBI Resources — indoneziya mehmondo‘stligini Ipak yo‘li merosi bilan mehmonxonalar, ovqatlanish va ichimliklar, texnologiya hamda sayohat yo‘nalishlarida birlashtiruvchi holding."
+      },
+      "hero": {
+        "kicker": "EBI Resources haqida",
+        "title": "Ishonchga qurilgan holding",
+        "supporting": "Indoneziya mehmondo‘stligi Ipak yo‘li merosi bilan uchrashadi — bitta korporativ identifikatsiya ostida."
+      },
+      "who": {
+        "kicker": "Biz kimimiz",
+        "title": "Bitta identifikatsiya, manzillar portfeli",
+        "body1": "EBI Resources — mehmondo‘stlik va turmush tarzi manzillarini bitta korporativ identifikatsiya ostida birlashtiruvchi holding. Maqsadimiz — guruhni professional taqdim etish, biznes yo‘nalishlarimizni birlashtirish hamda hamkorlik, investitsiya va ishga qabul qilish eshiklarini ochish.",
+        "body2": "Biz indoneziya mehmondo‘stligi iliqlikligi O‘zbekistonning Ipak yo‘li merosi bilan uchrashadigan manzillarni ishlab chiqamiz va boshqaramiz — ularga o‘sib borayotgan texnologiya amaliyoti va rivojlanayotgan sayohat yo‘nalishi qo‘shimcha qilinadi."
+      },
+      "value": {
+        "kicker": "Bizning taklifimiz",
+        "title": "Indoneziyadan Ipak yo‘ligacha",
+        "body": "Biz haqiqiy indoneziya iliqligi, oshxonasi va qahva madaniyatini Markaziy Osiyoning eng muhim islomiy meros va ziyorat maskanlariga olib kelamiz — hamkorlar, mehmonlar va jamoalar uchun ildizlangan va mehmondo‘st his qilinadigan joylarni yaratamiz."
+      },
+      "pillars": {
+        "kicker": "Bizni nima yo‘naltiradi",
+        "title": "Brend ustunlari",
+        "intro": "Portfelimiz bo‘ylab takrorlanadigan mavzular — haqiqiy mulklarga tayangan, o‘ylab topilgan da’volarsiz.",
+        "trusted": {
+          "label": "Ishonchli",
+          "text": "Haqiqiy indoneziya mehmondo‘stligi va halol me’yorlarga mos qulaylik — har bir mulkda g‘amxo‘rlik bilan taqdim etiladi."
+        },
+        "crafted": {
+          "label": "Hunarmandona",
+          "text": "Indoneziya oshxonasi va maxsus qahva — mehmonxonalar hamda ovqatlanish va ichimliklar bo‘ylab niyat bilan tayyorlanadi."
+        },
+        "enduring": {
+          "label": "Barqaror",
+          "text": "Markaziy Osiyoning diqqatga sazovor islomiy meros va ziyorat maskanlari yonida ildizlangan — uzoq muddatga qurilgan joylar."
+        },
+        "innovative": {
+          "label": "Innovatsion",
+          "text": "Indoneziya va O‘zbekiston o‘rtasidagi madaniyaralar ko‘prigi — mehmondo‘stlik bilan bir qatorda o‘sib borayotgan texnologiya amaliyoti."
+        }
+      },
+      "portfolio": {
+        "kicker": "Bizning portfelimiz",
+        "title": "Haqiqiy, ko‘p mulkli mavjudlik",
+        "intro": "Samarqand va Toshkent bo‘ylab mehmonxonalar, turar joylar, restoranlar va kafe — o‘ylab topilgan miqyos raqamlarisiz.",
+        "cta": "Bizneslarimizni o‘rganing",
+        "hadith": {
+          "kicker": "Samarqand",
+          "title": "Hadith Hotel"
+        },
+        "mecca": {
+          "kicker": "Toshkent",
+          "title": "Mecca Boutique Hotel"
+        },
+        "graha": {
+          "kicker": "Samarqand",
+          "title": "Graha Nusantara"
+        },
+        "kampoeng": {
+          "kicker": "Samarqand",
+          "title": "Hotel Kampoeng Indonesia"
+        },
+        "sevenOz": {
+          "kicker": "Kafe",
+          "title": "7OZ Espresso"
+        }
+      },
+      "cta": {
+        "kicker": "Hamkorlik",
+        "title": "Barqaror narsa qura olaylik",
+        "body": "Hamkor, investor yoki texnologiya mijozi bo‘lsangiz ham — suhbatni mamnuniyat bilan kutamiz.",
+        "primary": "Biz bilan bog‘laning",
+        "secondary": "Bizneslarimiz"
+      },
+      "alt": {
+        "hero": "Oltin soatda porlab turgan osmon ostida Hadith Hotel fasadi, Samarqand",
+        "hadith": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand",
+        "hadithGolden": "Oltin soatda Hadith Hotel, aks ettiruvchi hovuzda aks etgan holda",
+        "mecca": "G‘orong‘u paytida Mecca butik mehmonxonasi, Toshkent",
+        "meccaRooftop": "Mecca tom qavatidagi kafe — Islom sivilizatsiyasi markaziga qaragan",
+        "graha": "Oltin soatda Graha Nusantara villasi, Imom Al-Buxoriy majmuasi yonida",
+        "kampoeng": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
+        "sevenOz": "7OZ Espresso kafe ichkarisi — qahva peshtaxtasi va pishiriqlar vitrinasi",
+        "sevenOzRooftop": "7OZ Espresso tom qavatidagi kafe, quyosh botishida, Toshkent"
+      }
+    },
+    "visionMission": {
+      "meta": {
+        "title": "Vazifa va maqsad — EBI Resources",
+        "description": "EBI Resources vazifasi va maqsadi — indoneziya mehmondo‘stligi Ipak yo‘li merosi bilan uchrashadi."
+      },
+      "hero": {
+        "kicker": "EBI Resources haqida",
+        "title": "Vazifa va maqsad",
+        "supporting": "Holdingimiz, manzillarimiz va o‘sish yo‘limizni yo‘naltiradigan yo‘nalish."
+      },
+      "vision": {
+        "kicker": "Maqsad",
+        "title": "Bizning maqsadimiz",
+        "lead": "Indoneziya mehmondo‘stligi va Ipak yo‘li merosi o‘rtasidagi ishonchli ko‘prik bo‘lish — mehmonlar, hamkorlar va xizmat ko‘rsatadigan jamoalar uchun barqaror manzillar va imkoniyatlar yaratish.",
+        "body": "Biz guruhni iliqlik va halollik bilan tanilgan deb tasavvur qilamiz: indoneziya mehmondo‘stligi O‘zbekistonning diqqatga sazovor meros maskanlarida uchrashadigan joylar; texnologiya va sayohat esa tarmog‘imiz bo‘ylab odamlarni bog‘lashni kuchaytiradi."
+      },
+      "mission": {
+        "kicker": "Vazifa",
+        "title": "Bizning vazifamiz",
+        "items": {
+          "holding": {
+            "title": "Yagona izchil holding",
+            "text": "EBI Resources’ni aniq taqdim etish — mehmonxonalar, ovqatlanish va ichimliklar, texnologiya hamda rivojlanayotgan sayohat yo‘nalishi — bitta korporativ identifikatsiya ostida."
+          },
+          "hospitality": {
+            "title": "Joyga ildizlangan mehmondo‘stlik",
+            "text": "Indoneziya iliqligiga tayangan mehmondo‘stlik va ovqatlanish tajribalarini yaratish — O‘zbekistondagi meros va ziyorat kontekstlariga mos."
+          },
+          "growth": {
+            "title": "Mas’uliyatli o‘sish",
+            "text": "Hamkorlik, operatsion g‘amxo‘rlik va bizga ishonadigan mijozlarni qo‘llab-quvvatlaydigan texnologiya imkoniyatlari orqali o‘sish."
+          },
+          "connection": {
+            "title": "Chegaralar o‘tib bog‘lanish",
+            "text": "Sayohat yo‘nalishimiz shakllanayotgan paytda Indoneziya va O‘zbekiston o‘rtasida odamlar va joylarni bog‘lash — hali tayyorlanayotgan narsani shoshiltirmasdan."
+          }
+        }
+      },
+      "closing": "Bu majburiyatlar guruhni qanday taqdim etishimiz, manzillarimizni qanday boshqarishimiz hamda hamkorlar va investorlar bilan suhbatni qanday kutib olishimizni shakllantiradi.",
+      "ctaContact": "Biz bilan bog‘laning",
+      "ctaAbout": "Kompaniya haqida",
+      "alt": {
+        "hero": "Mecca Boutique Hotel tom qavatidagi balkon va bar, quyosh botishida, Toshkent"
+      }
+    },
+    "board": {
+      "meta": {
+        "title": "Boshqaruv kengashi — EBI Resources",
+        "description": "EBI Resources rahbariyati — Erslan Ibrahim, Rais va bosh direktor."
+      },
+      "hero": {
+        "kicker": "EBI Resources haqida",
+        "title": "Boshqaruv kengashi",
+        "supporting": "EBI Resources boshqaruvi va rahbariyati."
+      },
+      "intro": {
+        "kicker": "Rahbariyat",
+        "title": "Guruhni boshqaruvchilar",
+        "body": "EBI Resources tasdiqlangan rahbariyati quyida tanishtirilgan."
+      },
+      "members": {
+        "erslan": {
+          "name": "Erslan Ibrahim",
+          "title": "Rais va bosh direktor",
+          "bio": "EBI Resources raisi va bosh direktori."
+        }
+      },
+      "alt": {
+        "hero": "Hadith Hotel grand lobisidagi atrium, Samarqand",
+        "erslan": "Erslan Ibrahim portreti, EBI Resources raisi va bosh direktori"
+      }
+    }
+  },
+  "businesses": {
+    "subnav": {
+      "label": "Biznes yo‘nalishlari",
+      "overview": "Umumiy ko‘rinish",
+      "hotels": "Mehmonxonalar",
+      "fnb": "F&B",
+      "travel": "Sayohat",
+      "technology": "IT va texnologiya"
+    },
+    "shared": {
+      "backToHub": "Bizneslarimizga qaytish"
+    },
+    "hub": {
+      "meta": {
+        "title": "Bizneslarimiz — EBI Resources",
+        "description": "EBI Resources biznes yo‘nalishlarini o‘rganing: mehmonxonalar, ovqatlanish va ichimliklar, IT va texnologiya hamda sayohat."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz",
+        "title": "Manzillar portfeli",
+        "supporting": "Mehmondo‘stlik va turmush tarzi — texnologiya va sayohat bilan birga."
+      },
+      "intro": {
+        "kicker": "Portfel",
+        "title": "Biznes yo‘nalishlari bo‘yicha tartiblangan",
+        "body": "EBI Resources mehmonxonalar, ovqatlanish va ichimliklar, IT va texnologiya amaliyotini hamda rivojlanayotgan sayohat yo‘nalishini birlashtiradi. Quyida har bir yo‘nalishni o‘rganing — keyin tafsilotlar mavjud bo‘lgan mulklarga chuqurlashing."
+      },
+      "lines": {
+        "kicker": "Biznes yo‘nalishlari",
+        "title": "Qayerda faoliyat yuritamiz",
+        "hotels": {
+          "title": "Mehmonxonalar",
+          "text": "Samarqand va Toshkentdagi diqqatga sazovor mehmonxonalar va turar joylar — indoneziya mehmondo‘stligi va Ipak yo‘li merosi asosida."
+        },
+        "fnb": {
+          "title": "Ovqatlanish va ichimliklar",
+          "text": "Halol me’yorlarga mos ovqatlanish va maxsus qahva — indoneziya oshxonasi va hunarmand espresso, diqqatga sazovor joylarda."
+        },
+        "travel": {
+          "title": "Sayohat",
+          "text": "PT EGI Travel Buana — Toshkent–Samarqand, Jakarta va Denpasar bo‘ylab manzillar. Tez orada."
+        },
+        "technology": {
+          "title": "IT va texnologiya",
+          "text": "Suveren raqamli infratuzilma — korporativ dasturiy ta’minot, AI, kiberxavfsizlik va ma’lumot platformalari."
+        }
+      },
+      "alt": {
+        "hero": "Kunduzi Imom al-Buxoriy majmuasi yonidagi Graha Nusantara villa majmualari, Samarqand",
+        "hotels": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand",
+        "fnb": "Hadith Hotel ovqatlanish zali — bezatilgan stollar va iliq yoritish"
+      }
+    },
+    "hotels": {
+      "meta": {
+        "title": "Mehmonxonalar — EBI Resources",
+        "description": "EBI Resources mehmonxona portfeli Samarqand va Toshkentda — Hadith, Mecca Boutique Hotel va Hotel Kampoeng Indonesia."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz · Mehmonxonalar",
+        "title": "Mehmonxonalar",
+        "supporting": "Ipak yo‘li diqqatga sazovor joylarida indoneziya mehmondo‘stligi — Samarqand va Toshkent."
+      },
+      "intro": {
+        "kicker": "Yo‘nalish",
+        "title": "Indoneziyadan iliqlik, Ipak yo‘li muhiti",
+        "body": "EBI Resources mehmonxonalari indoneziya mehmondo‘stligini O‘zbekiston meros shaharlariga olib keladi — iymon, ziyorat va muhim islomiy yodgorliklar yonida qulaylik izlaydigan halol sayohatchilarga yo‘naltirilgan.",
+        "body2": "Portfel Samarqand va Toshkentdagi zamonaviy yulduzli mehmonxonalar hamda hashamatli villa majmualarini qamrab oladi — har biri o‘z formatiga ega, umumiy mehmondo‘stlik falsafasi bilan birlashtirilgan."
+      },
+      "grid": {
+        "kicker": "Portfel",
+        "title": "Mulklarimiz",
+        "intro": "Samarqand va Toshkent bo‘ylab — besh yulduzli diqqatga sazovor mehmonxonadan butik, villa va qishloq uslubidagi joylargacha.",
+        "carouselLabel": "Mehmonxona mulklari"
+      },
+      "proof": {
+        "kicker": "Yo‘nalishni ajratib turadigan narsa",
+        "title": "Joy va mehmondo‘stlikka tayanchlangan",
+        "landmarks": {
+          "title": "Diqqatga sazovor joy yaqinligi",
+          "text": "Mulklar Samarqanddagi Imom Al-Buxoriy majmuasi ichida yoki yonida, Toshkentda esa Islom sivilizatsiyasi markazi qarshisida joylashgan."
+        },
+        "tiers": {
+          "title": "Darajalar bo‘ylab zamonaviy sifat",
+          "text": "Manba materiallarda taqdim etilganidek besh, to‘rt va uch yulduzli pozitsiyalar — shuningdek hashamatli meros villalari — turli mehmon sayohatlariga mos formatlar. Nomlanmagan hollarda sertifikatlash organlari tasdiqlanishi kerak."
+        },
+        "hospitality": {
+          "title": "Chet elda indoneziya mehmondo‘stligi",
+          "text": "Haqiqiy indoneziya iliqligi, oshxonasi va xizmat madaniyati — ziyorat va dam olish sayohatchilari uchun Ipak yo‘li meros muhitida taqdim etiladi."
+        }
+      },
+      "cta": {
+        "kicker": "Hamkorlik",
+        "title": "Mehmondo‘stlik manzillarida hamkorlik",
+        "body": "EBI Resources mehmonxona portfeli bo‘yicha hamkorlik, investitsiya yoki institutsional hamkorlik imkoniyatlarini o‘rganing.",
+        "primary": "Hamkorlik",
+        "secondary": "Barcha biznes yo‘nalishlari"
+      },
+      "propertyDetail": {
+        "back": "Mehmonxonalarga qaytish",
+        "partner": "Hamkorlik",
+        "visitWebsite": "Veb-saytga tashrif (tasdiqlash)",
+        "visitHotelSite": "Mehmonxona veb-saytiga tashrif",
+        "websiteNote": "Manba materiallarda ko‘rsatilgan — unga tayanishdan oldin sayt faol va dolzarb ekanligini tasdiqlang.",
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Manzil",
+        "ctaKicker": "Hamkorlik",
+        "ctaTitle": "EBI Resources bilan hamkorlik",
+        "ctaBody": "Ushbu mulk va kengroq mehmonxona portfeli bo‘yicha hamkorlik yoki institutsional hamkorlik imkoniyatlarini o‘rganing.",
+        "contactKicker": "Aloqa",
+        "contactTitle": "Bog‘lanish",
+        "galleryKicker": "Galereya",
+        "galleryTitle": "Fazolar va muhit"
+      },
+      "properties": {
+        "hadith": {
+          "meta": {
+            "title": "Hadith Hotel — EBI Resources",
+            "description": "Hadith Hotel — Samarqanddagi Imom Al-Buxoriy majmuasi ichidagi diqqatga sazovor mehmonxona."
+          },
+          "kicker": "Samarqand · Besh yulduzli pozitsiya",
+          "title": "Hadith Hotel",
+          "location": "Samarqand — Imom Al-Buxoriy majmuasi ichida",
+          "text": "Samarqand merosi indoneziya mehmondo‘stligi bilan uchrashadigan diqqatga sazovor joy — Imom Al-Buxoriyga zamonaviy hurmat.",
+          "hero": {
+            "kicker": "Samarqand · Besh yulduzli pozitsiya",
+            "title": "Hadith Hotel",
+            "supporting": "Samarqand merosi indoneziya mehmondo‘stligi iliqligi bilan uchrashadi — Imom Al-Buxoriyga zamonaviy hurmat."
+          },
+          "concept": {
+            "kicker": "Konsepsiya",
+            "title": "Samarqandning ma’naviy qalbida diqqatga sazovor hurmat",
+            "body1": "Hadith Hotel hadis olimi Imom Al-Buxoriyga hurmat qiluvchi zamonaviy besh yulduzli mehmonxona sifatida taqdim etiladi — Ipak yo‘li ulug‘vorligi e’tiborli indoneziya mehmondo‘stligi va indoneziya qahva madaniyati bilan uyg‘unlashgan.",
+            "body2": "Uning imzo hikoyasi 114 xonani Qur’on suralarini aks ettirishi haqida. Faoliyat holati, to‘liq xona toifalari va ob’ektlar ish vaqtlari mijoz bilan tasdiqlanishi kerak."
+          },
+          "place": {
+            "kicker": "Joylashuv",
+            "title": "Imom Al-Buxoriy majmuasi ichida",
+            "body": "Samarqand, O‘zbekiston — Imom Al-Buxoriy majmuasi ichida joylashgan, ko‘pincha Samarqandning ma’naviy qalbi deb ataladi.",
+            "landmark": "Hovli Soekarno yodgorligi bilan bezatilgan — Indoneziya va O‘zbekiston umumiy meros ishorasi sifatida taqdim etiladi."
+          },
+          "highlights": {
+            "kicker": "Asosiy jihatlar",
+            "title": "Imkoniyatlar va ovqatlanish",
+            "rooms": {
+              "title": "114 xona",
+              "text": "Loyiha materiallarida ko‘rsatilganidek jami 114 xona. Hujjatlashtirilgan misollar: Standart xonalar (62 xona, 35 m²) va Junior Suites (9 xona, 71 m², 24 soatlik batler). To‘liq nashr etilgan toifalar ro‘yxati taqdim etilishi kerak."
+            },
+            "dining": {
+              "title": "Ovqatlanish va 7OZ Espresso",
+              "text": "The Restaurant — imzo ovqatlanish (120 o‘rin) o‘zbek, indoneziya va kontinental oshxonasi bilan, halol deb ko‘rsatilgan. Bar & Lounge — indoneziya pishiriqlari va maxsus qahvalar, jumladan Kopi Luwak. Tasdiqlangan: 7OZ Espresso Hadith Hotelda ham faoliyat yuritadi. Ish vaqtlari tasdiqlanishi kerak."
+            },
+            "wellness": {
+              "title": "Salomatlik va dam olish",
+              "text": "Isitilgan basseyn va sauna; spa (Nusantara / Balinese); turk hammomi; fitnes markazi; tennis va padel kortlari; bolalar maydonchasi. Ob’ektlar ish vaqtlari tasdiqlanishi kerak."
+            },
+            "mice": {
+              "title": "Uchrashuvlar va tadbirlar",
+              "text": "350 m² konferens / zal, e’lon qilingan sig‘im 250 mehmongacha — MICE va tantanali tadbirlar uchun mos."
+            },
+            "services": {
+              "title": "Mehmon xizmatlari",
+              "text": "Grand lobby; 24 soatlik ko‘p tilli konsyerj; Wall of Fame / galereya; o‘zbek va indoneziya hunarmandchiligini taqdim etuvchi butik. Yer maydoni taxminan 62 000 m² deb ko‘rsatilgan."
+            },
+            "rating": {
+              "title": "Sinf",
+              "text": "Manba materiallarda besh yulduzli (5★) mehmonxona sifatida taqdim etilgan. Sertifikatlash organi tasdiqlanishi kerak."
+            }
+          },
+          "contact": {
+            "toBeProvided": "Mulk telefoni va emaili mijoz tomonidan taqdim etiladi. Manba materiallarda ochiq veb-sayt ko‘rsatilgan — unga tayanishdan oldin faol ekanligini tasdiqlang."
+          },
+          "related": {
+            "kicker": "Ovqatlanish va ichimliklar",
+            "title": "Hadith’dagi 7OZ Espresso",
+            "body": "Hadith Hotel 7OZ Espresso ning tasdiqlangan manzili — EBI Resources maxsus qahva brendi, Toshkentdagi Mecca Boutique Hotelda ham mavjud.",
+            "label": "7OZ Espresso bilan tanishing"
+          },
+          "alt": {
+            "hero": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand — landshaft ko‘rinishi",
+            "g1": "Hadith Hotel isitilgan basseyni",
+            "g2": "Hadith Hotel The Restaurant ovqatlanish zali",
+            "g3": "Hadith Hotel Bar & Lounge maxsus qahva xizmati bilan",
+            "g4": "Hadith Hotel grand lobby"
+          }
+        },
+        "mecca": {
+          "meta": {
+            "title": "Mecca Boutique Hotel — EBI Resources",
+            "description": "Mecca Boutique Hotel & Restaurant Toshkent Islom sivilizatsiyasi markazi qarshisida."
+          },
+          "kicker": "Toshkent · To‘rt yulduzli butik",
+          "title": "Mecca Boutique Hotel",
+          "location": "Toshkent — Islom sivilizatsiyasi markazi qarshisida",
+          "text": "O‘zbekistonning yetakchi islomiy yodgorligi qarshisidagi butik halol manzil — ixcham hajm, ongli joylashuv.",
+          "hero": {
+            "kicker": "Toshkent · To‘rt yulduzli butik",
+            "title": "Mecca Boutique Hotel",
+            "supporting": "O‘zbekistonning yetakchi islomiy yodgorligi qarshisidagi butik halol manzil — ixcham hajm, ongli joylashuv."
+          },
+          "concept": {
+            "kicker": "Konsepsiya",
+            "title": "Butik hajm, diqqatga sazovor joy",
+            "body1": "Mecca Boutique Hotel & Restaurant Qur’onning 30 juzi ilhomida 30 xonali to‘rt yulduzli butik mehmonxona — Osiyo halol sayohatchilari, mintaqaviy biznes mehmonlari va ziyoratchilar uchun mo‘ljallangan.",
+            "body2": "Barcha ovqatlanish joylari halol sertifikatlangan deb ko‘rsatilgan. Faoliyat holati va ochilish sanasi mijoz bilan tasdiqlanishi kerak."
+          },
+          "place": {
+            "kicker": "Joylashuv",
+            "title": "Islom sivilizatsiyasi markazi qarshisida",
+            "body": "Toshkent, O‘zbekiston — Toshkent Islom sivilizatsiyasi markazi to‘g‘ridan-to‘g‘ri qarshisida, bulvar qirasi. Manba materiallariga ko‘ra aeroportgacha taxminan 30 daqiqa, temir yo‘l stansiyasigacha 20 daqiqa.",
+            "landmark": "Tomdan ko‘rinish Islom sivilizatsiyasi markazi gumbaziga qaratilgan — mehmonxonaning joy tuyg‘usini mustahkamlaydi."
+          },
+          "highlights": {
+            "kicker": "Asosiy jihatlar",
+            "title": "Xonalar, ovqatlanish va mehmondo‘stlik",
+            "rooms": {
+              "title": "30 mehmon xonasi",
+              "text": "O‘ttiz bir xil mehmon xonasi (~18 m², queen), qibla belgilangan va namoz gilami bilan ta’minlangan. Uch qavat va tom; yer maydoni 3 000 m²; qurilish maydoni 3 038,7 m² deb ko‘rsatilgan."
+            },
+            "indonesiaResto": {
+              "title": "Indonesia Resto",
+              "text": "Birinchi qavatda haqiqiy indoneziya ovqatlanishi (497 m²), indoneziya oshpazlari bilan. Manba materiallarda nomlangan taomlar: Rendang, Nasi Goreng, Sate, Soto va Gado-Gado. To‘liq menyu va ish vaqtlari taqdim etilishi kerak."
+            },
+            "europeResto": {
+              "title": "Europe Resto",
+              "text": "Ikkinchi qavatda Yevropa oshxonasi (452 m²) — yangi pasta, risotto, o‘t o‘chog‘i pizzasi, osso buco va tiramisu kabi taomlar keltirilgan. Premium Yevropa ovqatlanishi sifatida pozitsiyalangan. Menyu va ish vaqtlari taqdim etilishi kerak."
+            },
+            "rooftop": {
+              "title": "Tom kafe — 7OZ",
+              "text": "600,7 m² terasa kafe — qahva, yengil taomlar va shisha, manba materiallarda ko‘rsatilgan — Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Ushbu tom kafe 7OZ Espresso, EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham). Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi mijoz bilan tasdiqlanishi kerak."
+            },
+            "services": {
+              "title": "Mehmon xizmatlari",
+              "text": "Ikki qavatli lobby va o‘qish zaloni; namozxona; 24 soatlik konsyerj; ko‘p tilli resepsiya (o‘zbek, rus, ingliz, indoneziya, arab). 500 mehmongacha tadbir imkoniyati (banket/tadbir sig‘imi). Manbalarda spa, fitnes yoki basseyn ko‘rsatilmagan."
+            },
+            "rating": {
+              "title": "Sinf",
+              "text": "Manba materiallarda to‘rt yulduzli (4★) butik mehmonxona sifatida taqdim etilgan. Sertifikatlash organi tasdiqlanishi kerak."
+            }
+          },
+          "contact": {
+            "toBeProvided": "Mulk telefoni va emaili mijoz tomonidan taqdim etiladi. Manba materiallarda ochiq veb-sayt ko‘rsatilgan — unga tayanishdan oldin faol ekanligini tasdiqlang."
+          },
+          "related": {
+            "kicker": "Ovqatlanish va ichimliklar",
+            "title": "Mecca’dagi 7OZ Espresso",
+            "body": "Mecca tom kafesi 7OZ Espresso — EBI Resources maxsus qahva brendi, Samarqanddagi Hadith Hotelda ham mavjud.",
+            "label": "7OZ Espresso bilan tanishing"
+          },
+          "alt": {
+            "hero": "Shom payti Mecca Boutique Hotel fasadi, Toshkent",
+            "g1": "Mecca Hotel bulvar fasadi, Toshkent",
+            "g2": "Mecca Boutique Hotel lobby interyeri",
+            "g3": "Mecca Boutique Hotel ovqatlanish interyeri",
+            "g4": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7OZ Espresso manzili"
+          }
+        },
+        "graha": {
+          "meta": {
+            "title": "Graha Nusantara — EBI Resources",
+            "description": "Graha Nusantara — Imom al-Buxoriy majmuasi yonidagi hashamatli meros villa majmualari, Samarqand."
+          },
+          "kicker": "Samarqand · Hashamatli villalar",
+          "title": "Graha Nusantara",
+          "location": "Samarqand — Imom al-Buxoriy majmuasi yonida",
+          "text": "Imom al-Buxoriy majmuasi yonidagi hashamatli indoneziya merosi majmualari — qadimiy Samarqandda nafislikni oshiradi.",
+          "hero": {
+            "kicker": "Samarqand · Hashamatli villalar",
+            "title": "Graha Nusantara",
+            "supporting": "Qadimiy Samarqandda nafislik — Imom al-Buxoriy majmuasi yonidagi hashamatli indoneziya merosi majmualari."
+          },
+          "concept": {
+            "kicker": "Konsepsiya",
+            "title": "Nusantara merosining to‘rt ustuni",
+            "body1": "Graha Nusantara indoneziya qirollik davrlari va shaxslariga — Kartanegara, Brawijaya, Diponegoro va Sultan Hasanudin — bag‘ishlangan xususiy villa uslubidagi majmualarni taklif etadi; Nusantara merosining tanlovi, madaniy xarakter va zamonaviy hashamatni uyg‘unlashtiradi.",
+            "body2": "Majmua bo‘yicha yotoq sonlari, maydonlar va sig‘im raqamlari manba materiallarda mavjud, lekin nomuvofiqliklar bor — batafsil unit spetsifikatsiyalari tasdiqlanguncha e’lon qilinmaydi. Narxlar bu yerda nashr etilmagan."
+          },
+          "place": {
+            "kicker": "Joylashuv",
+            "title": "Imom al-Buxoriydan bir qadam",
+            "body": "Samarqand, O‘zbekiston — Imom Buxoriy memorial majmuasidan taxminan 50 metr, Registon maydonigacha manzarali yo‘l. Samarqand xalqaro aeroportidan taxminan 25 daqiqa; aeroport transferlari ko‘rsatilganidek taklif etiladi.",
+            "landmark": "Markaziy Osiyoning eng muhim ziyorat maskanlaridan biriga yaqinlik izlaydigan guruhlar va oilalar uchun butun majmua maxfiyligi."
+          },
+          "highlights": {
+            "kicker": "Asosiy jihatlar",
+            "title": "Yashash, ovqatlanish va xizmat",
+            "format": {
+              "title": "Xususiy majmualar",
+              "text": "Ko‘p yotoqli villa / xizmat ko‘rsatiladigan turar joy majmualari, unit ichidagi oshxonalar, terasa yoki bog‘ muhiti va yuqori guruh sig‘imi — an’anaviy mehmonxona xonalari o‘rniga butun villa maxfiyligi uchun mo‘ljallangan."
+            },
+            "dining": {
+              "title": "Silk Road Dining",
+              "text": "Markaziy Osiyo ziravorlari va indoneziya arxipelagi ta’mlarini uyg‘unlashtiruvchi ovqatlanish konsepsiyasi. Alohida brendlangan mustaqil restoran emas — menyu va ish vaqtlari taqdim etilishi kerak."
+            },
+            "amenities": {
+              "title": "Majmua ichidagi qulayliklar",
+              "text": "Ko‘rsatilganidek: kunlik nonushta, kutib olish ichimligi, 24 soatlik mehmondo‘stlik, cheksiz qahva; unit ichida TV, Wi‑Fi, CCTV, muzlatgich, amenitilar va kir yuvish mashinasi; har bir unitda oshxona/ovqatlanish va balkon."
+            },
+            "services": {
+              "title": "Konsyerj va transferlar",
+              "text": "Yuqori tezlikdagi Wi‑Fi, 24/7 mehmon xizmatlari va mulk materiallarida tasvirlangan aeroport avtoparki."
+            }
+          },
+          "contact": {
+            "address": "RW7X+297 Xoʻja Ismoil, Uzbekistan",
+            "phone": "+998 90 463 04 04",
+            "emails": "marketing@grahanusantara-samarkand.com|sales@grahanusantara-samarkand.com",
+            "toBeConfirmed": "Quyidagi telefon, email va manzil manba materiallarda ko‘rsatilgan — murojaat qilishdan oldin mijoz bilan tasdiqlanishi kerak."
+          },
+          "alt": {
+            "hero": "Kunduzi Imom al-Buxoriy majmuasi yonidagi Graha Nusantara villa tashqi ko‘rinishi",
+            "g1": "Oltin soatda Graha Nusantara villasi, Samarqand",
+            "g2": "Tungi yoritilgan Graha Nusantara majmuasi",
+            "g3": "Graha Nusantara meros majmuasi interyeri",
+            "g4": "Graha Nusantara majmualari kunduzgi tashqi ko‘rinishi"
+          }
+        },
+        "kampoeng": {
+          "meta": {
+            "title": "Hotel Kampoeng Indonesia — EBI Resources",
+            "description": "Hotel Kampoeng Indonesia Imom Al-Buxoriy memorial majmuasida, Samarqand."
+          },
+          "kicker": "Samarqand · Uch yulduzli mehmonxona",
+          "title": "Hotel Kampoeng Indonesia",
+          "location": "Samarqand — Imom Al-Buxoriy memorial majmuasida",
+          "text": "Imom Al-Buxoriy memorial majmuasida haqiqiy indoneziya qishloq tajribasi — ziyoratdan keyin tinch boshpana.",
+          "hero": {
+            "kicker": "Samarqand · Uch yulduzli mehmonxona",
+            "title": "Hotel Kampoeng Indonesia",
+            "supporting": "Iymon va meros sayohati — Imom Al-Buxoriy memorial majmuasida haqiqiy indoneziya qishloq tajribasi."
+          },
+          "concept": {
+            "kicker": "Konsepsiya",
+            "title": "Ziyorat diqqatga sazovor joyida kampoeng iliqligi",
+            "body1": "Hotel Kampoeng Indonesia uch yulduzli mehmonxona bo‘lib, indoneziya qishlog‘ining (kampoeng) jozibasi va jamoaviy iliqligini tarixiy islomiy ziyorat maskaniga olib keladi — ziyorat va sayohatdan keyin tinch boshpana.",
+            "body2": "Xona turlari, sonlari, sig‘im va narxlar mavjud manbalarda nashr etilmagan va mijoz tomonidan taqdim etilishi kerak."
+          },
+          "place": {
+            "kicker": "Joylashuv",
+            "title": "Imom Al-Buxoriy memorial majmuasida",
+            "body": "Samarqand, O‘zbekiston — Imom Al-Buxoriy memorial majmuasi ichida / to‘g‘ridan-to‘g‘ri oldida.",
+            "landmark": "Manzil: Samarqand, Payariq tumani, Xoja Ismoil tumani, Shokh ko‘chasi 34."
+          },
+          "highlights": {
+            "kicker": "Asosiy jihatlar",
+            "title": "Yashash, ovqatlanish va sertifikat",
+            "amenities": {
+              "title": "Mehmon qulayliklari",
+              "text": "Manbalarda ko‘rsatilgan qulayliklar: turar joy, xavfsizlik kameralari, bepul Wi‑Fi, 24/7 xizmat, ovqat va ichimliklar hamda galereya. Batafsil xona inventari taqdim etilishi kerak."
+            },
+            "dining": {
+              "title": "Indoneziya ovqatlanishi",
+              "text": "Joyida haqiqiy indoneziya oshxonasi xizmat ko‘rsatiladi. Nomlangan restoran, menyu yoki ish vaqtlari nashr etilmagan — ovqatlanish tafsilotlari mijoz tomonidan taqdim etiladi."
+            },
+            "certification": {
+              "title": "Milliy turizm standarti",
+              "text": "O‘zbekiston milliy turizm standarti O‘z DSt 3220:2023 bo‘yicha sertifikatlangan. Muvofiqlik sertifikati UZ.SMT.02.0003.018630, 2031-yil 19-iyungacha amal qiladi, O‘zbekiston Turizm qo‘mitasi huzuridagi Turizm xizmatlari sertifikatsiya markazi tomonidan berilgan."
+            },
+            "rating": {
+              "title": "Sinf",
+              "text": "Matbuot materiallarida uch yulduzli (3★) mehmonxona deb ko‘rsatilgan."
+            }
+          },
+          "contact": {
+            "address": "Samarqand, Payariq tumani, Xoja Ismoil tumani, Shokh ko‘chasi 34",
+            "phone": "+998 90 463 04 04",
+            "emails": "info@hotel-kampoengindonesia.com",
+            "toBeConfirmed": "Quyidagi telefon, email va manzil manba materiallarda ko‘rsatilgan — murojaat qilishdan oldin mijoz bilan tasdiqlanishi kerak."
+          },
+          "alt": {
+            "hero": "Kunduzi Hotel Kampoeng Indonesia fasadi, Samarqand",
+            "g1": "Tungi yoritilgan Hotel Kampoeng Indonesia",
+            "g2": "Hotel Kampoeng Indonesia hovli va hududi",
+            "g3": "Hotel Kampoeng Indonesia ichki fazosi",
+            "g4": "Kunduzi Hotel Kampoeng Indonesia fasadi"
+          }
+        }
+      },
+      "alt": {
+        "hero": "Mecca Boutique Hotel bulvar fasadi, Toshkent",
+        "intro": "Tungi yoritilgan Graha Nusantara majmuasi Imom al-Buxoriy majmuasi yonida, Samarqand",
+        "hadith": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand",
+        "kampoeng": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
+        "graha": "Oltin soatda Graha Nusantara villasi, Imom al-Buxoriy majmuasi yonida",
+        "mecca": "Shom payti Mecca butik mehmonxonasi, Toshkent"
+      }
+    },
+    "fnb": {
+      "meta": {
+        "title": "Ovqatlanish va ichimliklar — EBI Resources",
+        "description": "EBI Resources ovqatlanish va ichimliklar — Samarqand va Toshkent bo‘ylab diqqatga sazovor joylarda indoneziya ovqatlanishi va maxsus qahva."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz · F&B",
+        "title": "Ovqatlanish va ichimliklar",
+        "supporting": "Indoneziya ovqatlanishi va maxsus qahva — halol me’yorlarga mos, Ipak yo‘li diqqatga sazovor joylarida."
+      },
+      "intro": {
+        "kicker": "Yo‘nalish",
+        "title": "Ipak yo‘lida stollar va finjonlar",
+        "body": "EBI Resources ovqatlanish va ichimliklar yo‘nalishi indoneziya oshxonasi va maxsus qahvani O‘zbekistonga olib keladi — Toshkentdagi Mecca Hotel restoranlari va tom 7OZ dan Samarqanddagi Kampoeng Indonesia indoneziya ovqatlanishi va Hadith Hotel 7OZ gacha.",
+        "body2": "Bir qancha joylar manba materiallarda halol yoki halol sertifikatlangan deb ko‘rsatilgan; sertifikatlash organlari va to‘liq doirasi tasdiqlanishi kerak. Menyular, ish vaqtlari va o‘rinlar soni asosan nashr etilmagan."
+      },
+      "grid": {
+        "kicker": "Joylar",
+        "title": "Qayerda ovqatlanish va ichish",
+        "intro": "F&B yo‘nalishidagi uch manzil — Mecca Hotel restoranlari, Kampoeng Indonesia ovqatlanishi hamda Mecca va Hadith’dagi 7OZ Espresso.",
+        "carouselLabel": "Ovqatlanish va ichimlik joylari"
+      },
+      "venues": {
+        "mecca": {
+          "kicker": "Toshkent · Mecca Hotel",
+          "title": "Mecca Hotel restoranlari",
+          "text": "Indonesia Resto va Europe Resto — shuningdek tom kafe (7OZ) — manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan."
+        },
+        "kampoeng": {
+          "kicker": "Samarqand · Kampoeng Indonesia",
+          "title": "Joydagi indoneziya ovqatlanishi",
+          "text": "Hotel Kampoeng Indonesia’da haqiqiy indoneziya oshxonasi. Joy nomi nashr etilmagan — tafsilotlar mijoz tomonidan taqdim etiladi."
+        },
+        "sevenOz": {
+          "kicker": "Toshkent va Samarqand · 7OZ",
+          "title": "7OZ Espresso",
+          "text": "Indoneziya maxsus qahvasi Mecca Boutique Hotel (Toshkent) va Hadith Hotel (Samarqand)da."
+        }
+      },
+      "proof": {
+        "kicker": "Yo‘nalishni belgilovchi narsa",
+        "title": "Oshxona, g‘amxo‘rlik va joy",
+        "indonesian": {
+          "title": "Chet elda indoneziya oshxonasi",
+          "text": "Mecca Indonesia Resto dan Kampoeng Indonesia joydagi ovqatlanishiga va Hadith indoneziya takliflarigacha — stolda indoneziya mehmondo‘stligining izchil ipi."
+        },
+        "halal": {
+          "title": "Halol me’yorlarga mos yondashuv",
+          "text": "Mecca ovqatlanishi halol sertifikatlangan deb ko‘rsatilgan; Hadith The Restaurant halol deb ko‘rsatilgan. Sertifikatlash organlari va alkogol/shisha siyosati tafsilotlari nashr etilmagan joylarda tasdiqlanishi kerak."
+        },
+        "landmarks": {
+          "title": "Diqqatga sazovor joylar",
+          "text": "Stollar va terasalar Toshkent Islom sivilizatsiyasi markazi qarshisida, Samarqanddagi Imom Al-Buxoriy majmuasi ichida yoki yonida — F&B joy bilan bog‘langan."
+        }
+      },
+      "cta": {
+        "kicker": "Hamkorlik",
+        "title": "Ovqatlanish va ichimliklarda hamkorlik",
+        "body": "EBI Resources ovqatlanish va kafe konsepsiyalari hamda mehmondo‘stlik portfeli bo‘yicha hamkorlik yoki institutsional hamkorlik imkoniyatlarini o‘rganing.",
+        "primary": "Hamkorlik",
+        "secondary": "Barcha biznes yo‘nalishlari"
+      },
+      "alt": {
+        "hero": "Hadith Hotel ovqatlanish zali — bezatilgan stollar va iliq yoritish",
+        "intro": "Hadith Hotel imzo restoran ovqatlanishi, Samarqand",
+        "mecca": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
+        "kampoeng": "Hotel Kampoeng Indonesia ovqatlanish zali bezatilgan stollar va indoneziya san’ati bilan, Samarqand",
+        "sevenOz": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent"
+      }
+    },
+    "restaurants": {
+      "meta": {
+        "title": "Restoranlar — EBI Resources",
+        "description": "EBI Resources portfeli bo‘ylab ovqatlanish konsepsiyalari — indoneziya oshxonasi va boshqalar, diqqatga sazovor joylarda."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz · Restoranlar",
+        "title": "Restoranlar",
+        "supporting": "Haqiqiy indoneziya oshxonasi — Yevropa va Markaziy Osiyo ta’mlari bilan — diqqatga sazovor joylarda."
+      },
+      "intro": {
+        "kicker": "Yo‘nalish",
+        "title": "Ipak yo‘lida indoneziya stollari",
+        "body": "EBI Resources mehmonxonalari va tegishli joylarida ovqatlanish konsepsiyalarini boshqaradi — indoneziya oshxonasi yetakchilik qiladi, Mecca’da Yevropa ovqatlanishi va Hadith’da o‘zbek–kontinental takliflar bilan to‘ldiriladi.",
+        "body2": "Bir qancha joylar manba materiallarda halol yoki halol sertifikatlangan deb ko‘rsatilgan; sertifikatlash organlari va to‘liq doirasi tasdiqlanishi kerak. Menyular, ish vaqtlari va o‘rinlar soni asosan nashr etilmagan."
+      },
+      "grid": {
+        "kicker": "Tanlangan ovqatlanish",
+        "title": "Restoran manzillari",
+        "intro": "Sayt xaritasidagi ikki asosiy restoran profili — Toshkentdagi Mecca Hotel restoranlari va Samarqanddagi Hotel Kampoeng Indonesia indoneziya ovqatlanishi."
+      },
+      "venues": {
+        "mecca": {
+          "kicker": "Toshkent · Mecca Hotel",
+          "title": "Mecca Hotel restoranlari",
+          "text": "Indonesia Resto va Europe Resto — shuningdek tom kafe (7OZ) — manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan."
+        },
+        "kampoeng": {
+          "kicker": "Samarqand · Kampoeng Indonesia",
+          "title": "Joydagi indoneziya ovqatlanishi",
+          "text": "Hotel Kampoeng Indonesia’da haqiqiy indoneziya oshxonasi. Joy nomi nashr etilmagan — tafsilotlar mijoz tomonidan taqdim etiladi."
+        }
+      },
+      "context": {
+        "kicker": "Portfel ichida ham",
+        "title": "Mehmonxonalarimizda ovqatlanish",
+        "intro": "Qo‘shimcha ovqatlanish konsepsiyalari mehmonxona yo‘nalishi ichida. Ularni mulk sahifalarida o‘rganing — bu joylar uchun alohida restoran yo‘llari yo‘q.",
+        "hotelCta": "Mehmonxonani ko‘rish",
+        "hadith": {
+          "kicker": "Samarqand · Hadith Hotel",
+          "title": "The Restaurant, Bar & Lounge, Outdoor Café",
+          "text": "Imzo ovqatlanish (o‘zbek · indoneziya · kontinental, halol deb ko‘rsatilgan), shuningdek Bar & Lounge va Outdoor Café. Menyu va ish vaqtlari tasdiqlanishi kerak."
+        },
+        "graha": {
+          "kicker": "Samarqand · Graha Nusantara",
+          "title": "Silk Road Dining",
+          "text": "Markaziy Osiyo ziravorlari va indoneziya arxipelagi ta’mlarini uyg‘unlashtiruvchi ovqatlanish konsepsiyasi — alohida brendlangan mustaqil restoran emas."
+        }
+      },
+      "note": {
+        "kicker": "Mavjudlik",
+        "title": "Menyular, ish vaqtlari va o‘rinlar",
+        "body": "To‘liq menyular, ish vaqtlari va o‘rinlar soni portfel bo‘ylab asosan nashr etilmagan. Manba materiallar imzo taomlar yoki maydonlarni nomlaganda, ularni ehtiyotkorlik bilan keltiramiz; qolgan hammasi mijoz tomonidan taqdim etiladigan kontent deb belgilangan."
+      },
+      "proof": {
+        "kicker": "Yo‘nalishni belgilovchi narsa",
+        "title": "Oshxona, g‘amxo‘rlik va joy",
+        "indonesian": {
+          "title": "Chet elda indoneziya oshxonasi",
+          "text": "Mecca Indonesia Resto dan Kampoeng Indonesia joydagi ovqatlanishiga va Hadith indoneziya takliflarigacha — stolda indoneziya mehmondo‘stligining izchil ipi."
+        },
+        "halal": {
+          "title": "Halol me’yorlarga mos yondashuv",
+          "text": "Mecca ovqatlanishi halol sertifikatlangan deb ko‘rsatilgan; Hadith The Restaurant halol deb ko‘rsatilgan. Sertifikatlash organlari va alkogol/shisha siyosati tafsilotlari nashr etilmagan joylarda tasdiqlanishi kerak."
+        },
+        "landmarks": {
+          "title": "Diqqatga sazovor joylar",
+          "text": "Stollar Toshkent Islom sivilizatsiyasi markazi qarshisida, Samarqanddagi Imom Al-Buxoriy majmuasi ichida yoki yonida — ovqatlanish joy bilan bog‘langan."
+        }
+      },
+      "cta": {
+        "kicker": "Hamkorlik",
+        "title": "Ovqatlanish manzillarida hamkorlik",
+        "body": "EBI Resources restoran konsepsiyalari va mehmondo‘stlik portfeli bo‘yicha hamkorlik yoki institutsional hamkorlik imkoniyatlarini o‘rganing.",
+        "primary": "Hamkorlik",
+        "secondary": "Barcha biznes yo‘nalishlari"
+      },
+      "venueDetail": {
+        "back": "Ovqatlanish va ichimliklarga qaytish",
+        "partner": "Hamkorlik",
+        "visitWebsite": "Veb-saytga tashrif (tasdiqlash)",
+        "websiteNote": "Manba materiallarda ko‘rsatilgan — unga tayanishdan oldin sayt faol va dolzarb ekanligini tasdiqlang.",
+        "phone": "Telefon",
+        "email": "Email",
+        "address": "Manzil",
+        "ctaKicker": "Hamkorlik",
+        "ctaTitle": "EBI Resources bilan hamkorlik",
+        "ctaBody": "Ushbu ovqatlanish konsepsiyalari va kengroq portfel bo‘yicha hamkorlik yoki institutsional hamkorlik imkoniyatlarini o‘rganing.",
+        "contactKicker": "Aloqa",
+        "contactTitle": "Bog‘lanish",
+        "galleryKicker": "Galereya",
+        "galleryTitle": "Fazolar va muhit"
+      },
+      "mecca": {
+        "meta": {
+          "title": "Mecca Hotel restoranlari — EBI Resources",
+          "description": "Mecca Boutique Hotel, Toshkent — Indonesia Resto va Europe Resto, shuningdek 7OZ tom kafesi."
+        },
+        "hero": {
+          "kicker": "Toshkent · Mecca Boutique Hotel",
+          "title": "Mecca Hotel restoranlari",
+          "supporting": "Ikki restoran — Indonesia Resto va Europe Resto — Islom sivilizatsiyasi markaziga qaragan tom kafe (7OZ) bilan."
+        },
+        "concept": {
+          "kicker": "Konsepsiya",
+          "title": "Kuchli F&B markaziga ega butik manzil",
+          "body1": "Toshkentdagi Mecca Boutique Hotel & Restaurant uch F&B joyini taqdim etadi: Indonesia Resto, Europe Resto va 7OZ Espresso sifatida boshqariladigan tom kafe — EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham).",
+          "body2": "Manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan. To‘liq menyu, ish vaqtlari va sertifikatlash organi taqdim etilishi kerak. Faoliyat holati mijoz bilan tasdiqlanishi kerak."
+        },
+        "place": {
+          "kicker": "Joylashuv",
+          "title": "Islom sivilizatsiyasi markazi qarshisida",
+          "body": "Toshkent, O‘zbekiston — Toshkent Islom sivilizatsiyasi markazi to‘g‘ridan-to‘g‘ri qarshisida, bulvar qirasi. Mehmonlar va mahalliy aholi manba materiallarida tasvirlangan ovqatlanish auditoriyasining bir qismi.",
+          "landmark": "Tomdan ko‘rinish Islom sivilizatsiyasi markazi gumbaziga qaratilgan — mehmonxonaning joy tuyg‘usini mustahkamlaydi."
+        },
+        "venues": {
+          "kicker": "Joylar",
+          "title": "Indonesia Resto, Europe Resto va tom kafe",
+          "indonesia": {
+            "kicker": "Birinchi qavat",
+            "title": "Indonesia Resto",
+            "text": "Indoneziya oshpazlari bilan haqiqiy indoneziya ovqatlanishi. Manba materiallarda nomlangan taomlar: Rendang, Nasi Goreng, Sate, Soto va Gado-Gado. Maydon 497 m² deb ko‘rsatilgan. To‘liq menyu va ish vaqtlari taqdim etilishi kerak."
+          },
+          "europe": {
+            "kicker": "Ikkinchi qavat",
+            "title": "Europe Resto",
+            "text": "Yevropa oshxonasi — yangi pasta, risotto, o‘t o‘chog‘i pizzasi, osso buco va tiramisu kabi taomlar keltirilgan. Maydon 452 m² deb ko‘rsatilgan; premium Yevropa ovqatlanishi sifatida pozitsiyalangan. Menyu va ish vaqtlari taqdim etilishi kerak."
+          },
+          "rooftop": {
+            "kicker": "Tom · F&B",
+            "title": "Tom kafe — 7OZ",
+            "text": "Qahva, yengil taomlar va shisha uchun terasa kafe, manba materiallarda ko‘rsatilgan, Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Bu 7OZ Espresso — Ovqatlanish va ichimliklar yo‘nalishida to‘liq taqdim etilgan. Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi tasdiqlanishi kerak.",
+            "link": "7OZ Espresso bilan tanishing"
+          }
+        },
+        "contact": {
+          "toBeProvided": "Restoranga xos telefon va email mijoz tomonidan taqdim etiladi. Mecca mulk kontaktlari manba taqdimotlarida ko‘rsatilmagan. Ochiq veb-sayt ro‘yxatga olingan — unga tayanishdan oldin faol ekanligini tasdiqlang."
+        },
+        "related": {
+          "kicker": "Tegishli",
+          "title": "Mecca Boutique Hotel",
+          "body": "To‘liq mehmonxona profili — xonalar, mehmon xizmatlari va pozitsiya — Mehmonxonalar yo‘nalishida.",
+          "label": "Mecca Hotelni ko‘rish"
+        },
+        "alt": {
+          "hero": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
+          "g1": "Mecca Boutique Hotel ovqatlanish zali",
+          "g2": "Mecca Boutique Hotel lobby interyeri",
+          "g3": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7OZ Espresso manzili",
+          "g4": "Mecca Hotel bulvar fasadi, Toshkent"
+        }
+      },
+      "kampoeng": {
+        "meta": {
+          "title": "Kampoeng Indonesia ovqatlanishi — EBI Resources",
+          "description": "Hotel Kampoeng Indonesia, Samarqand — haqiqiy indoneziya ovqatlanishi. Joy nomi taqdim etiladi."
+        },
+        "hero": {
+          "kicker": "Samarqand · Hotel Kampoeng Indonesia",
+          "title": "Joydagi indoneziya ovqatlanishi",
+          "supporting": "Imom Al-Buxoriy memorial majmuasi yonidagi qishloq uslubidagi mehmonxonada haqiqiy indoneziya oshxonasi — joy nomi hali nashr etilmagan."
+        },
+        "concept": {
+          "kicker": "Konsepsiya",
+          "title": "Stolda indoneziya mehmondo‘stligi",
+          "body1": "Hotel Kampoeng Indonesia qishloq (kampoeng) mehmondo‘stlik tajribasining bir qismi sifatida joyida haqiqiy indoneziya oshxonasi xizmat ko‘rsatadi — memorial majmuasida sayohatdan keyin ziyoratchilar va mehmonlar uchun tinch muhit.",
+          "body2": "Nomlangan restoran, menyu yoki ochilish vaqtlari nashr etilmagan. Bu yerda brend nomi ixtiro qilinmaydi — to‘liq ovqatlanish tafsilotlari mijoz tomonidan taqdim etiladi."
+        },
+        "place": {
+          "kicker": "Joylashuv",
+          "title": "Imom Al-Buxoriy memorial majmuasida",
+          "body": "Samarqand, O‘zbekiston — Imom Al-Buxoriy memorial majmuasi ichida yoki to‘g‘ridan-to‘g‘ri oldida. Manzil: Samarqand, Payariq tumani, Xoja Ismoil tumani, Shokh ko‘chasi 34.",
+          "landmark": "Matbuot materiallari mulkning delegatsiya tushliklarini qabul qila olishini qayd etadi — ovqatlanishni iymon va meros mehmonlari uchun mehmondo‘stlikning bir qismi sifatida taqdim etadi."
+        },
+        "highlights": {
+          "kicker": "Nimalarni bilamiz",
+          "title": "Oshxona va muhit",
+          "cuisine": {
+            "title": "Haqiqiy indoneziya oshxonasi",
+            "text": "Joydagi indoneziya ovqatlanishi manba va matbuot materiallarida hujjatlashtirilgan. Imzo taomlar, menyu va xizmat uslubi tafsilotlari mijoz tomonidan taqdim etiladi."
+          },
+          "setting": {
+            "title": "Diqqatga sazovor joy yonida qishloq iliqligi",
+            "text": "Ovqatlanish uch yulduzli indoneziya qishloq mehmonxona tajribasi ichida — indoneziya va Malayziya musulmon ziyoratchilari hamda diniy (halol) sayohatchilarga yo‘naltirilgan; ikkinchi darajali biznes va diplomatik sayohatchilar ham qayd etilgan."
+          },
+          "detail": {
+            "title": "Joy nomi va ish vaqtlari",
+            "text": "Restoran joy nomi nashr etilmagan. Ish vaqtlari, o‘rinlar soni va band qilish ma’lumotlari taqdim etilishi kerak. Boshqa joylarda nashr etilgan umumiy mehmonxona vaqtlari restoran vaqti deb qabul qilinmasligi kerak."
+          }
+        },
+        "contact": {
+          "phone": "+998 90 463 04 04",
+          "emails": "info@hotel-kampoengindonesia.com",
+          "address": "Samarqand, Payariq tumani, Xoja Ismoil tumani, Shokh ko‘chasi 34, O‘zbekiston",
+          "toBeConfirmed": "Quyidagi kontaktlar manba materiallarda Hotel Kampoeng Indonesia uchun ko‘rsatilgan — tashqi nashrdan oldin dolzarb va ovqatlanish so‘rovlari uchun mos ekanligini tasdiqlang."
+        },
+        "related": {
+          "kicker": "Tegishli",
+          "title": "Hotel Kampoeng Indonesia",
+          "body": "To‘liq mehmonxona profili — sertifikat, qulayliklar va pozitsiya — Mehmonxonalar yo‘nalishida.",
+          "label": "Kampoeng Indonesia mehmonxonasini ko‘rish"
+        },
+        "alt": {
+          "hero": "Hotel Kampoeng Indonesia atrium ovqatlanish zali bezatilgan stollar va markaziy favvora bilan, Samarqand",
+          "g1": "Hotel Kampoeng Indonesia ovqatlanish zali bezatilgan stollar va indoneziya san’ati bilan, Samarqand",
+          "g2": "Hotel Kampoeng Indonesia atrium restorani shisha tom ostidagi stollar bilan, Samarqand",
+          "g3": "Kampoeng Indonesia restoran atriumining keng ko‘rinishi favvora va bezatilgan stollar bilan, Samarqand",
+          "g4": "Kampoeng Indonesia restoran atrium favvora va ovqatlanish stollari bilan, Samarqand"
+        }
+      },
+      "alt": {
+        "hero": "Hadith Hotel ovqatlanish zali — bezatilgan stollar va iliq yoritish",
+        "intro": "Hadith Hotel imzo restoran ovqatlanishi, Samarqand",
+        "mecca": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
+        "kampoeng": "Kunduzi Hotel Kampoeng Indonesia fasadi, Samarqand",
+        "hadith": "Hadith Hotel The Restaurant bezatilgan stollar bilan",
+        "graha": "Graha Nusantara majmuasi interyeri, Samarqand"
+      }
+    },
+    "cafe": {
+      "meta": {
+        "title": "7OZ Espresso — F&B — EBI Resources",
+        "description": "7OZ Espresso — EBI Resources maxsus qahva brendi Mecca Boutique Hotel (Toshkent) va Hadith Hotel (Samarqand)da."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz · F&B",
+        "title": "7OZ Espresso",
+        "supporting": "Jakartadan Ipak yo‘ligacha — Mecca va Hadith’da indoneziya maxsus qahvasi."
+      },
+      "brand": {
+        "kicker": "Brend",
+        "title": "Jakartadan Ipak yo‘ligacha",
+        "body1": "7OZ Espresso EBI Resources maxsus qahva kafe brendi — indoneziya qahva merosi, Jakartada ildizlangan, zamonaviy Markaziy Osiyo auditoriyasi uchun yaratilgan. Kafedan ko‘proq: hunarmandchilik va aloqa uchrashadigan joy.",
+        "body2": "«7oz» nomi mukammal finjon uchun ideal hajmga ishora qiladi. Tanlangan indoneziya donlari, zamonaviy uskunalar va maxsus qaynatish tajriba markazida — mukofotlar, ish vaqtlari yoki to‘liq nashr etilgan menyu ixtiro qilinmaydi."
+      },
+      "placement": {
+        "kicker": "Bizni qayerda topasiz",
+        "title": "Ikki mehmonxona, bitta qahva brendi",
+        "body": "7OZ Espresso EBI Resources mehmonxonalarida faoliyat yuritadi — Toshkentdagi Mecca Boutique Hotel va Samarqanddagi Hadith Hotelda tasdiqlangan.",
+        "note": "7OZ Ovqatlanish va ichimliklar yo‘nalishida guruhning maxsus qahva brendi sifatida joylashgan. Har bir mehmonxonadagi to‘liq ovqatlanish konsepsiyalari mehmonxona va F&B joy sahifalarida qamrab olingan.",
+        "outlets": {
+          "mecca": {
+            "detail": "Toshkent · Tom kafe",
+            "label": "Mecca Boutique Hotel"
+          },
+          "hadith": {
+            "detail": "Samarqand · Hadith Hotel",
+            "label": "Hadith Hotel"
+          },
+          "meccaDining": {
+            "detail": "Toshkent · Mehmonxona restoranlari",
+            "label": "Mecca Hotel restoranlari"
+          }
+        }
+      },
+      "products": {
+        "kicker": "Takliflar",
+        "title": "Menyu toifalari",
+        "intro": "Brend uchun nashr etilgan toifalar — narxlar va to‘liq bandlangan menyu yo‘q. Onlayn do‘kon kontenti faol emas va bu yerda aks ettirilmagan.",
+        "categories": {
+          "espresso": {
+            "title": "Issiq qahva",
+            "text": "Espresso, americano, cappuccino, latte, flat white va raf."
+          },
+          "brew": {
+            "title": "Qo‘lda va single-origin qaynatish",
+            "text": "V60, Aeropress va batch brew."
+          },
+          "matchaChocolate": {
+            "title": "Matcha va shokolad",
+            "text": "Qahva dasturi yonida matcha va shokolad ichimliklari."
+          },
+          "tea": {
+            "title": "Choylar",
+            "text": "Tinchroq finjon afzal ko‘radigan mehmonlar uchun choy tanlovi."
+          },
+          "refreshments": {
+            "title": "Salqin ichimliklar",
+            "text": "Limonadlar, mojito uslubidagi va aromatli ichimliklar hamda milkshake’lar."
+          },
+          "juices": {
+            "title": "Yangi va detoks sharbatlar",
+            "text": "Yangi va detoks sharbatlar nashr etilgan toifa sifatida. Batafsil ro‘yxatlar mijoz bilan tasdiqlanishi kerak."
+          }
+        }
+      },
+      "location": {
+        "kicker": "Manzillar",
+        "title": "Toshkent va Samarqand",
+        "body": "Tasdiqlangan joylar: Toshkentdagi Mecca Boutique Hotel tom kafesi va Samarqanddagi Hadith Hotel 7OZ Espresso. Brend uchun nashr etilgan City Park ko‘cha manzili Mecca tom bilan qanday bog‘liqligi hali mijoz tasdiqini talab qiladi.",
+        "addressLabel": "Nashr etilgan Toshkent manzili",
+        "address": "City Park, Ukchi ko‘chasi 3A, 100011, Toshkent, O‘zbekiston",
+        "identityLabel": "Manzil identifikatsiyasi",
+        "identityDetail": "Mehmonxona joylashuvlari tasdiqlangan: Mecca (Toshkent) va Hadith (Samarqand). City Park ko‘cha manzili hali tasdiqlanishi kerak — Mecca tom manzilini yoki alohida joyni nomlaydimi.",
+        "heritageNote": "Brend materiallari meros bannerini ham ko‘rsatadi — Toshkent · Jakarta · Samarqand · Bali. Tasdiqlangan faol mehmonxona joylari Mecca va Hadith; boshqa shaharlar tasdiqlanguncha meros yoki maqsadli qoladi."
+      },
+      "gallery": {
+        "kicker": "Galereya",
+        "title": "Hunarmandchilik va joy"
+      },
+      "contact": {
+        "kicker": "Aloqa",
+        "title": "Bog‘lanish",
+        "phoneLabel": "Telefon",
+        "emailLabel": "Email",
+        "phone": "+998 92 04 333 14",
+        "email": "support@7oz-espresso.com",
+        "websiteLabel": "7oz-espresso.com ga tashrif",
+        "websiteNote": "Loyiha materiallarida ko‘rsatilgan brend sayti — faol va dolzarb ekanligini tasdiqlang. Ish vaqtlari bitta tasdiqlangan jadval mavjud bo‘lguncha keltirilmagan."
+      },
+      "cta": {
+        "kicker": "Hamkorlik",
+        "title": "EBI Resources bilan hamkorlik",
+        "body": "Maxsus qahva, mehmondo‘stlik F&B yoki kengroq EBI Resources portfeli bo‘yicha hamkorlik imkoniyatlarini o‘rganing.",
+        "back": "Ovqatlanish va ichimliklarga qaytish",
+        "partner": "Hamkorlik"
+      },
+      "alt": {
+        "hero": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent",
+        "galleryRooftop": "Quyosh botishida Toshkent Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi",
+        "galleryWinter": "Qish yorug‘ligida Mecca Hotel tom terrasi, Toshkent — 7OZ Espresso manzili",
+        "galleryHadith": "Hadith Hotel maxsus qahva va pishiriq lounge, Samarqand — 7OZ joy konteksti muhiti",
+        "galleryFacade": "Mecca Boutique Hotel bulvar fasadi, Toshkent — 7OZ tom kafesi manzili"
+      }
+    },
+    "technology": {
+      "meta": {
+        "title": "IT va texnologiya — EBI Resources",
+        "description": "EBI Resources IT va texnologiya — suveren raqamli infratuzilma: korporativ dasturiy ta’minot, AI, kiberxavfsizlik, blokcheyn, boshqaruv tizimlari va ma’lumotlar integratsiyasi."
+      },
+      "hero": {
+        "kicker": "EBI Resources · IT va texnologiya",
+        "title": "Suveren raqamli infratuzilma",
+        "supporting": "Korporativ dasturiy ta’minot, AI platformalari, kiberxavfsizlik tizimlari va raqamli kadrlar platformalari — milliy miqyosdagi operatsiyalar talablariga mos.",
+        "cta": "Jamoamiz bilan bog‘laning"
+      },
+      "overview": {
+        "kicker": "Umumiy ko‘rinish",
+        "title": "Milliy miqyosdagi operatsiyalar uchun texnologiya",
+        "body1": "EBI Resources IT va texnologiya amaliyoti korporativ dasturiy ta’minot, AI platformalari, kiberxavfsizlik tizimlari va raqamli kadrlar platformalarini milliy miqyosdagi operatsiyalar talablariga mos yetkazadi.",
+        "body2": "Ish beshta imkoniyat yo‘nalishini qamrab oladi — sanoat boshqaruvi va kiber himoyadan suveren AI, ruxsatli blokcheyn va guruh bo‘ylab ma’lumotlar matosigacha — hamkorlar va texnologiya mijozlari uchun aniq xarita sifatida taqdim etilgan."
+      },
+      "capabilities": {
+        "kicker": "Imkoniyatlar",
+        "title": "Nima quramiz",
+        "intro": "Amaliyotni beshta imkoniyat yo‘nalishi belgilaydi. Quyidagi tavsiflar guruhning tasdiqlangan pozitsiyasiga amal qiladi — ixtiro qilingan keys-study yoki metrikalarsiz.",
+        "items": {
+          "controlSystems": {
+            "title": "Integratsiyalashgan avtomatik boshqaruv tizimlari",
+            "body": "Sanoat va muhim infratuzilma uchun suveren boshqaruv tizimi stacki — SCADA, DCS va ICS platformalari milliy darajadagi spetsifikatsiyalarga mos mustahkamlangan."
+          },
+          "cybersecurity": {
+            "title": "Kiberxavfsizlik",
+            "body": "Himoya va hujum kiber imkoniyatlari — tahdid aniqlash, hodisalarga javob, red-team xizmatlari va milliy ustuvor tizimlar uchun suveren kriptografiya."
+          },
+          "ai": {
+            "title": "Sun’iy intellekt",
+            "body": "Suveren AI modellari, agentli avtomatlashtirish va kompyuter ko‘rish platformalari — indoneziya tili, reglament va strategik ma’lumotlar rezidentligi uchun yaratilgan."
+          },
+          "blockchain": {
+            "title": "Blokcheyn texnologiyasi",
+            "body": "Ta’minot zanjiri kelib chiqishi, hisob-kitob va raqamli aktivlar chiqarish uchun ruxsatli zanjir platformalari — guruhning ta’minot zanjiri va savdo oqimlariga bog‘langan."
+          },
+          "dataIntegration": {
+            "title": "Ma’lumotlar integratsiyasi",
+            "body": "Uchdan-uchga ma’lumotlar matosi — ingest, lineage va ombor infratuzilmasi har bir EBI Resources sho’basini bitta analitik va operatsion haqiqat manbaiga birlashtiradi."
+          }
+        }
+      },
+      "applications": {
+        "kicker": "Qo‘llanish sohalari",
+        "title": "Imkoniyat va kontekst uchrashuvi",
+        "body": "Nomlangan sohalar, joylashtirish kontekstlari va qo‘llanish hikoyalari mijoz tasdiqlagach nashr etiladi. Hozircha sektor ro‘yxatlari yoki loyiha da’volarini ixtiro qilmaymiz."
+      },
+      "clients": {
+        "kicker": "Maqsadli mijozlar",
+        "title": "Kim bilan hamkorlik qilamiz",
+        "body": "Suveren raqamli infratuzilmani baholaydigan texnologiya mijozlari va hamkorlarni kutib olamiz. Nomlangan maqsadli sektorlar va mijoz referenslari taqdim etilguncha nashr etilmagan."
+      },
+      "contact": {
+        "kicker": "Biznes aloqa",
+        "title": "Suhbatni boshlang",
+        "body": "Texnologiya imkoniyatlari, hamkorlik yoki hamkorlikni muhokama qilish uchun Aloqa orqali guruhga murojaat qiling. Maxsus IT biznes kontakti taqdim etilganda ushbu yo‘l almashtiriladi.",
+        "note": "Hozircha guruh Aloqa ma’lumotlaridan foydalaning — secretary@ebiresources.com.",
+        "primary": "Jamoamiz bilan bog‘laning"
+      }
+    },
+    "travel": {
+      "meta": {
+        "title": "Sayohat — PT EGI Travel Buana — EBI Resources",
+        "description": "PT EGI Travel Buana — EBI Resources sayohat yo‘nalishi. Manzillar: Toshkent–Samarqand, Jakarta va Denpasar. Tez orada."
+      },
+      "hero": {
+        "kicker": "Bizneslarimiz · Sayohat",
+        "title": "PT EGI Travel Buana",
+        "supporting": "O‘zbekiston va Indoneziya bo‘ylab mehmonlarni bog‘lash — tez orada."
+      },
+      "brand": {
+        "kicker": "Brend",
+        "title": "PT EGI Travel Buana",
+        "body1": "PT EGI Travel Buana EBI Resources guruhi ichidagi sayohat kompaniyasi — O‘zbekistonning Ipak yo‘li shaharlarini va Indoneziyadagi manzillarni mehmonlar o‘rtasida bog‘lashga tayyor.",
+        "body2": "Xizmatlar, jadvallar va band qilish tafsilotlari hali nashr etilmagan. Ushbu sahifa yo‘nalish tayyorgarlikda bo‘lganida brend va diqqat markazidagi manzillarni tanishtiradi."
+      },
+      "destinations": {
+        "kicker": "Manzillar",
+        "title": "Qayerda bog‘laymiz",
+        "intro": "Quyidagi manzillar sayohat yo‘nalishi uchun tasdiqlangan. Sayohatlar qanday tashkil etilishi hali yakunlanmoqda — faqat joylarni ulashamiz, transport usullarini emas.",
+        "items": {
+          "tashkentSamarkand": {
+            "title": "Toshkent → Samarqand",
+            "region": "O‘zbekiston",
+            "text": "Poytaxt va Samarqand meros qalbi o‘rtasidagi yo‘nalish — EBI ning Ipak yo‘lidagi mehmondo‘stlik mavjudligi bilan uyg‘un."
+          },
+          "jakarta": {
+            "title": "Jakarta",
+            "region": "Indoneziya",
+            "text": "Indoneziya poytaxti — guruh tarmog‘i bilan bog‘lanadigan mehmonlar uchun asosiy eshik."
+          },
+          "denpasar": {
+            "title": "Denpasar",
+            "region": "Indoneziya · Bali",
+            "text": "Bali asosiy shahri — indoneziya mehmondo‘stligini Markaziy Osiyoga sayohatlar bilan bog‘laydi."
+          }
+        }
+      },
+      "status": {
+        "kicker": "Tez orada",
+        "title": "Tayyorgarlikda",
+        "body": "PT EGI Travel Buana hali band qilish uchun ochiq emas. Hamkorlik yoki erta suhbatlar uchun EBI Resources jamoasiga murojaat qiling.",
+        "primary": "Biz bilan bog‘laning"
+      },
+      "alt": {
+        "logo": "PT EGI Travel Buana logotipi"
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Aloqa — EBI Resources",
+      "description": "Hamkorlik, investitsiya, media va umumiy so‘rovlar uchun EBI Resources bilan bog‘laning — secretary@ebiresources.com."
+    },
+    "hero": {
+      "kicker": "Aloqa",
+      "title": "Biz bilan bog‘laning",
+      "supporting": "Hamkorlar, investorlar, mijozlar va media — o‘ylangan suhbatni mamnuniyat bilan kutamiz."
+    },
+    "corporate": {
+      "kicker": "Bosh ofis",
+      "title": "Korporativ aloqa",
+      "supporting": "Quyidagi kontaktlar orqali EBI Resources guruhiga murojaat qiling.",
+      "emailLabel": "Email",
+      "email": "secretary@ebiresources.com",
+      "phoneLabel": "Telefon",
+      "phone": "+62 21 3062 9515",
+      "addressLabel": "Manzil",
+      "address": "Complex of Imam Al Bukhari, Samarqand, O‘zbekiston"
+    },
+    "inquiry": {
+      "kicker": "Umumiy so‘rov",
+      "title": "Xabar yuboring",
+      "supporting": "Qisqa xabar qoldiring. Forma hali faol emas — iltimos, to‘g‘ridan-to‘g‘ri secretary@ebiresources.com manziliga yozing.",
+      "nameLabel": "To‘liq ism",
+      "namePlaceholder": "Ismingiz",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "organisationLabel": "Tashkilot",
+      "organisationPlaceholder": "Kompaniya yoki aloqadorlik (ixtiyoriy)",
+      "messageLabel": "Xabar",
+      "messagePlaceholder": "Qanday yordam bera olamiz?",
+      "submit": "So‘rov yuborish",
+      "notice": "Forma hali faol emas. Hamkorlik va umumiy so‘rovlar uchun iltimos, secretary@ebiresources.com manziliga yozing.",
+      "submitted": "Rahmat. Qoralama mahalliy ravishda tayyor — iltimos, uni secretary@ebiresources.com manziliga yuboring."
+    },
+    "whereWeAre": {
+      "kicker": "Biz qayerdamiz",
+      "title": "Ipak yo‘li bo‘ylab mulklar",
+      "supporting": "Samarqand va Toshkentdagi diqqatga sazovor joylar.",
+      "listHeading": "Manzillar",
+      "opensMaps": "Google Maps ochiladi",
+      "placeholder": "Interaktiv atlas ushbu bo‘limda paydo bo‘ladi.",
+      "pins": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarqand",
+          "aria": "HADITH Hotel, Samarqand. Google Maps ochiladi."
+        },
+        "kampoeng-indonesia": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarqand",
+          "aria": "Hotel Kampoeng Indonesia, Samarqand. Google Maps ochiladi."
+        },
+        "graha-nusantara": {
+          "name": "Graha Nusantara",
+          "city": "Samarqand",
+          "aria": "Graha Nusantara, Samarqand. Google Maps ochiladi."
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Toshkent",
+          "aria": "Mecca Boutique Hotel, Islom sivilizatsiyasi markazi yonida, Toshkent. Google Maps ochiladi."
+        }
+      },
+      "cities": {
+        "samarkand": "Samarqand",
+        "tashkent": "Toshkent"
+      }
+    },
+    "directory": {
+      "kicker": "Mulk katalogi",
+      "title": "Mehmonxonalar va kafe",
+      "supporting": "Manba materiallarida keltirilgan ochiq veb-saytlar — har bir sayt faol ekanligini tekshiring. Hadith va Mecca telefon/email manzillari mijoz taqdim etguncha ko‘rsatilmagan.",
+      "websiteLabel": "Veb-sayt",
+      "hedgeWebsite": "Loyiha materiallarida keltirilgan — sayt faol va dolzarb ekanligini tasdiqlang.",
+      "hedgePending": "Mulk telefoni va email manzili mijoz tomonidan taqdim etiladi.",
+      "hedgeConfirm": "Manba materiallarida keltirilgan — murojaatdan oldin mijoz bilan tasdiqlang.",
+      "citySamarkand": "Samarqand",
+      "cityTashkent": "Toshkent",
+      "properties": {
+        "hadith": {
+          "name": "HADITH Hotel",
+          "city": "Samarqand",
+          "websiteLabel": "hadith-hotel.com saytiga o‘ting"
+        },
+        "kampoeng": {
+          "name": "Hotel Kampoeng Indonesia",
+          "city": "Samarqand",
+          "websiteLabel": "hotel-kampoengindonesia.com saytiga o‘ting"
+        },
+        "graha": {
+          "name": "Graha Nusantara",
+          "city": "Samarqand",
+          "websiteLabel": "grahanusantara-samarkand.com saytiga o‘ting"
+        },
+        "mecca": {
+          "name": "Mecca Boutique Hotel",
+          "city": "Toshkent",
+          "websiteLabel": "mecca-hotel.com saytiga o‘ting"
+        },
+        "sevenOz": {
+          "name": "7OZ Espresso",
+          "city": "Toshkent va Samarqand",
+          "note": "Maxsus qahva Mecca Boutique Hotel (Toshkent tom qavati) va Hadith Hotel (Samarqand)da. Brend saytidagi City Park ko‘cha manzili hali tasdiqlanishi kerak.",
+          "websiteLabel": "7oz-espresso.com saytiga o‘ting"
+        }
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Karyera — EBI Resources",
+      "description": "EBI Resources’dagi ochiq lavozimlar — mehmonxonalar, ovqatlanish va ichimliklar hamda korporativ pozitsiyalar Indoneziya va O‘zbekiston bo‘ylab. Doimiy qabul."
+    },
+    "hero": {
+      "kicker": "Ochiq lavozimlar · EBI Resources",
+      "title": "Guruhning keyingi bobini quring.",
+      "supporting": "Mehmondo‘stlik va korporativ yo‘nalishlar bo‘ylab ochiq pozitsiyalarni ko‘ring. Guruh kengaygan sari yangi lavozimlar doimiy ochiladi."
+    },
+    "alt": {
+      "hero": "EBI Resources mehmondo‘stlik mulkining grand lobisi"
+    },
+    "filters": {
+      "aria": "Lavozimlarni biznes yo‘nalishi bo‘yicha filtrlash",
+      "all": "Barchasi",
+      "hospitality": "Mulk va mehmondo‘stlik",
+      "restaurants": "Restoranlar",
+      "cafe": "Kafe",
+      "corporate": "Korporativ"
+    },
+    "lines": {
+      "hospitality": "Mulk va mehmondo‘stlik",
+      "restaurants": "Restoranlar",
+      "cafe": "Kafe",
+      "corporate": "Korporativ"
+    },
+    "listing": {
+      "kicker": "Ochiq lavozimlar",
+      "title": "EBI Resources’ga qo‘shiling",
+      "body": "Indoneziya mehmondo‘stligi iliqligini Ipak yo‘liga olib keling — Indoneziya va O‘zbekiston bo‘ylab mehmonxonalar, ovqatlanish va ichimliklar hamda guruh operatsiyalari.",
+      "empty": "Bu filtr bo‘yicha ochiq lavozimlar hali yo‘q. Tez orada qayta tekshiring yoki boshqa yo‘nalishlarni ko‘ring.",
+      "viewRole": "Lavozimni ko‘rish",
+      "apply": "Ariza berish",
+      "prev": "Oldingi",
+      "next": "Keyingi",
+      "pageOf": "Sahifa {current} / {total}"
+    },
+    "detail": {
+      "metaTitle": "{title} — Karyera — EBI Resources",
+      "back": "Barcha lavozimlarga qaytish",
+      "summaryKicker": "Ushbu lavozim haqida",
+      "requirementsTitle": "Biz nimalarni qidiramiz",
+      "applyCta": "Ushbu lavozimga ariza berish"
+    },
+    "apply": {
+      "title": "Ushbu lavozimga ariza berish",
+      "intro": "Qisqa xabar qoldiring va email mijozingizni {email} manziliga yuborish uchun oching. Fayl yuklash yo‘q — CV yoki portfolio havolasini qo‘shing.",
+      "name": "To‘liq ism",
+      "email": "Email",
+      "phone": "Telefon",
+      "phoneHint": "(ixtiyoriy)",
+      "coverNote": "Qisqa xat",
+      "coverHint": "Nega bu lavozim, nega EBI?",
+      "cvLink": "CV / portfolio havolasi",
+      "cvHint": "LinkedIn, Drive yoki portfolio URL",
+      "submit": "Ariza uchun email ochish",
+      "mailtoNote": "Email ilovangiz qoralama bilan ochiladi. Ishga qabul qilish pochtasi tasdiqlanganda {email} manziliga yuboring.",
+      "confirm": "Bizning kadrlar jamoasi har bir arizani ko‘rib chiqadi va mos kelganda 5 ish kuni ichida bog‘lanadi. Ishga qabul qilish pochtasi taqdim etilguncha {email} manzilidan foydalaning.",
+      "nameRequired": "Iltimos, to‘liq ismingizni kiriting.",
+      "emailRequired": "Iltimos, emailingizni kiriting.",
+      "emailInvalid": "Iltimos, to‘g‘ri email manzilini kiriting."
+    },
+    "jobs": {
+      "hotel-marketing-manager": {
+        "title": "Mehmonxona marketing menejeri",
+        "location": "Jakarta Selatan, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "O‘rta daraja",
+        "summary": "Mehmondo‘stlik bo‘limimiz uchun kuchli muloqot qobiliyati va mijozlar bilan munosabatlar qurish.",
+        "requirements": [
+          "Mehmondo‘stlik marketingida isbotlangan tajriba",
+          "Mijozlar bilan munosabatlar qurish va boshqarish qobiliyati",
+          "Kuchli muloqot va muzokara ko‘nikmalari"
+        ]
+      },
+      "chef-uzbekistan": {
+        "title": "Oshpaz (Joylashtirish: O‘zbekiston)",
+        "location": "Toshkent / Samarqand, O‘zbekiston",
+        "type": "To‘liq vaqt",
+        "level": "O‘rta daraja",
+        "summary": "O‘zbekistondagi indoneziya mavzuli restoranlar va kafelar uchun oshxona operatsiyalarini boshqarish.",
+        "requirements": [
+          "Haqiqiy indoneziya oshxonasida kuchli tajriba",
+          "O‘zbekistonda joylashtirilishga tayyorlik (Toshkent/Samarqand)",
+          "Oshxona inventarini boshqarish va mahalliy xodimlarni o‘qitish qobiliyati"
+        ]
+      },
+      "hr-manager": {
+        "title": "HR va GA menejeri",
+        "location": "Jakarta Selatan, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "Menejer",
+        "summary": "EBI Resources’ning turli biznes yo‘nalishlari bo‘ylab jamoani samarali boshqara oladigan HR va GA menejeri.",
+        "requirements": [
+          "HR va GA menejeri sifatida kamida 5 yillik tajriba",
+          "Indoneziya mehnat qonunlarini chuqur tushunish",
+          "Iqtidorlarni jalb qilish va samaradorlikni boshqarish tajribasi"
+        ]
+      },
+      "cafe-manager": {
+        "title": "Kafe menejeri",
+        "location": "Jakarta Selatan, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "O‘rta daraja",
+        "summary": "Kundalik operatsiyalarni nazorat qilish, mijozlar qoniqishini ta’minlash va F&B nuqtalarimiz foydaliligini oshirish.",
+        "requirements": [
+          "Gavjum kafe yoki restoranni boshqarish tajribasi",
+          "Kuchli rahbarlik va jamoa boshqaruvi ko‘nikmalari",
+          "A’lo darajadagi mijozlarga xizmat ko‘rsatish va muammolarni hal qilish qobiliyati"
+        ]
+      },
+      "project-manager-construction": {
+        "title": "Loyiha menejeri (Yuqori xavfli qurilish)",
+        "location": "Jakarta Selatan, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "Katta daraja",
+        "summary": "Yuqori xavfli qurilish loyihalarini xavfsizlik standartlari, byudjet va muddatlarga qat’iy rioya qilgan holda boshqarish.",
+        "requirements": [
+          "Fuqarolik muhandisligi yoki arxitektura bo‘yicha bakalavr darajasi",
+          "Yuqori xavfli qurilish loyihalarini boshqarishda isbotlangan tajriba",
+          "Faol HSE/K3 sertifikati (Ahli K3 Konstruksi)"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "title": "EBI Resources",
+    "description": "EBI Resources — indoneziya mehmondo‘stligi issiqligini Ipak yo‘liga olib keluvchi holding: mehmonxonalar, ovqatlanish va ichimliklar hamda texnologiya — Indoneziya va O‘zbekiston bo‘ylab."
+  }
+}

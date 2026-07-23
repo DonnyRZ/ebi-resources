@@ -34,10 +34,8 @@ export type CafeBrandPageProps = {
     title: string;
     body: string;
     note?: string;
-    meccaLabel: string;
-    meccaHref: string;
-    restaurantsLabel?: string;
-    restaurantsHref?: string;
+    /** Confirmed hotel / venue outlets (e.g. Mecca + Hadith). */
+    outlets: Array<{ label: string; href: string; detail?: string }>;
   };
   products: {
     kicker: string;
@@ -78,6 +76,8 @@ export type CafeBrandPageProps = {
     body: string;
     backLabel: string;
     partnerLabel: string;
+    /** Defaults to Food & Beverage line hub. */
+    backHref?: string;
   };
 };
 
@@ -146,15 +146,19 @@ export function CafeBrandPage({
                   {placement.note}
                 </p>
               ) : null}
-              <div className="mt-6 flex flex-col gap-3">
-                <Button variant="text" href={placement.meccaHref}>
-                  {placement.meccaLabel}
-                </Button>
-                {placement.restaurantsHref && placement.restaurantsLabel ? (
-                  <Button variant="text" href={placement.restaurantsHref}>
-                    {placement.restaurantsLabel}
-                  </Button>
-                ) : null}
+              <div className="mt-6 flex flex-col gap-5">
+                {placement.outlets.map((outlet) => (
+                  <div key={outlet.href} className="border-t border-navy/10 pt-4 first:border-t-0 first:pt-0">
+                    {outlet.detail ? (
+                      <p className="mb-2 font-sans text-[12px] font-semibold uppercase tracking-[0.12em] text-text-muted">
+                        {outlet.detail}
+                      </p>
+                    ) : null}
+                    <Button variant="text" href={outlet.href}>
+                      {outlet.label}
+                    </Button>
+                  </div>
+                ))}
               </div>
             </div>
           </Reveal>
@@ -324,7 +328,11 @@ export function CafeBrandPage({
             <Button variant="filled" tone="navy" href="/contact">
               {cta.partnerLabel}
             </Button>
-            <Button variant="outline" tone="navy" href="/businesses">
+            <Button
+              variant="outline"
+              tone="navy"
+              href={cta.backHref ?? "/businesses/food-and-beverage"}
+            >
               {cta.backLabel}
             </Button>
           </div>

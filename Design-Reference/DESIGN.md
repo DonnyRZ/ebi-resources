@@ -241,7 +241,7 @@ Skala spacing berbasis **8px** (dengan 4px sebagai setengah-langkah):
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-│  PARTNER WITH US · CAREERS   EBI RESOURCES      🔍  ℹ  EN/ID │  ← utility bar
+│  PARTNER WITH US · CAREERS   EBI RESOURCES      🔍  ℹ  EN/UZ/RU │  ← utility bar
 ├───────────────────────────────────────────────────────────┤
 │      HOME    ABOUT    OUR BUSINESSES    CAREERS   CONTACT    │  ← main nav
 └───────────────────────────────────────────────────────────┘
@@ -666,7 +666,7 @@ Serif high-contrast dominan; whitespace ekstrem; emas paling terasa; kuratorial/
 
 **Rekomendasi token & pola khusus EBI:**
 - **Warna:** navy `#2A2B4E` korporat utama + emas/bronze aksen; base putih + cream.
-- **Header 2 tingkat:** utility (`PARTNER WITH US` / `CAREERS` + **wordmark teks "EBI RESOURCES"** center + toggle `EN/ID`, default English); main nav: **Home · About · Our Businesses · Careers · Contact**.
+- **Header 2 tingkat:** utility (`PARTNER WITH US` / `CAREERS` + **wordmark teks "EBI RESOURCES"** center + toggle `EN/UZ/RU`, default English); main nav: **Home · About · Our Businesses · Careers · Contact**.
 - **Sudut tajam 0px** di seluruh situs.
 - **Serif display** untuk brand/About/Businesses; **sans-light heading** boleh di Home/Contact/data.
 - **Sans humanis** untuk body/UI/data.

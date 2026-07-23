@@ -1,0 +1,14 @@
+---
+description: Always consult AGENTS.md Do’s & Don’ts before UI/content/performance work
+alwaysApply: true
+---
+
+# EBI Resources — mandatory agent lessons
+
+Before editing homepage, About, heroes, carousels, images, i18n, Header links, or performance/navigation:
+
+1. **Read and follow** the root file `AGENTS.md` (Do’s & Don’ts + past failure examples).
+2. Cross-check claims against `CONTENT-REFERENCE.md` (no EGI, no fabricated metrics).
+3. Follow `Design-Reference/DESIGN.md` for visual language.
+
+Do not repeat documented mistakes: portrait heroes, wrong venue imagery, dual carousel timers, ICU `.raw()` bugs, multi-`priority` LCP floods, missing `data-scroll-behavior`, Partner→careers mislink, or inventing About hub pages (Pattern B).

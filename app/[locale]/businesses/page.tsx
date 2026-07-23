@@ -7,10 +7,11 @@ import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Reveal } from "@/components/Reveal";
+import { isGrahaNusantaraVisible } from "@/lib/features";
 
 /**
- * Our Businesses hub — intro + five line cards (CONTENT-REFERENCE §C / §D).
- * Organized by business line first; property detail is Wave 2.
+ * Our Businesses hub — intro + four line cards (CONTENT-REFERENCE §C / §D).
+ * Organized by business line first; F&B merges restaurants + café.
  */
 export async function generateMetadata({
   params,
@@ -53,31 +54,23 @@ export default async function BusinessesHubPage({
       },
     },
     {
-      key: "restaurants" as const,
-      href: "/businesses/restaurants",
+      key: "fnb" as const,
+      href: "/businesses/food-and-beverage",
       image: {
         src: "/images/hadith/restaurant-dining.jpg",
-        alt: t("alt.restaurants"),
+        alt: t("alt.fnb"),
       },
-    },
-    {
-      key: "cafe" as const,
-      href: "/businesses/cafe",
-      image: {
-        src: "/images/seven-oz/cafe-interior.jpg",
-        alt: t("alt.cafe"),
-      },
-    },
-    {
-      key: "technology" as const,
-      href: "/businesses/technology",
-      image: undefined,
     },
     {
       key: "travel" as const,
       href: "/businesses/travel",
       image: undefined,
       comingSoon: true,
+    },
+    {
+      key: "technology" as const,
+      href: "/businesses/technology",
+      image: undefined,
     },
   ];
 
@@ -89,8 +82,10 @@ export default async function BusinessesHubPage({
         supporting={t("hero.supporting")}
         media={{
           type: "image",
-          src: "/images/graha-nusantara/exterior-day.jpg",
-          alt: t("alt.hero"),
+          src: isGrahaNusantaraVisible()
+            ? "/images/graha-nusantara/exterior-day.jpg"
+            : "/images/hadith/facade-night-landscape.jpg",
+          alt: isGrahaNusantaraVisible() ? t("alt.hero") : t("alt.hotels"),
         }}
         height="62vh"
         minHeight="420px"
@@ -123,13 +118,9 @@ export default async function BusinessesHubPage({
           </h2>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {lines.map((line, i) => (
-            <Reveal
-              key={line.key}
-              delay={i * 80}
-              className={i < 2 ? "lg:col-span-3" : "lg:col-span-2"}
-            >
+            <Reveal key={line.key} delay={i * 80}>
               <Card
                 href={line.href}
                 prefetch={false}

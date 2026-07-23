@@ -19,9 +19,9 @@
 
 - Use the brand name **“EBI Resources”** only in all public UI copy, alt text, metadata, and messages.
 - Prefer **qualitative** proof on marketing surfaces (landmark locations, certification names, positioning). Do **not** invent numeric stat-bands.
-- Use Contact placeholders **`[email]`**, **`[phone]`**, **`[address]`** until real HQ details exist.
-- Mark Vision & Mission / Board placeholder copy so it cannot be mistaken for finished corporate facts (lorem + visible “Placeholder” treatment where already established).
-- Keep EN as primary; ID must be a **real Indonesian translation**, not mirrored English.
+- Use Contact HQ details: **secretary@ebiresources.com**, **+62 21 3062 9515**, **Complex of Imam Al Bukhari, Samarkand, Uzbekistan**.
+- Mark Board of Directors placeholder treatment only where still needed; Vision & Mission now uses real drafted copy (client may refine).
+- Keep EN as primary; UZ (Uzbek, Latin script) and RU (Russian) must be **real translations**, not mirrored English.
 
 ### DON’T
 
@@ -85,13 +85,13 @@
 
 - Keep hero text **restrained, bottom-left**, not filling the viewport (DESIGN.md).
 - Reserve **safe top padding** on hero content for the fixed two-tier header (`pt-24 md:pt-32` pattern or equivalent) so kickers never collide with nav / “Partner With Us”.
-- Prefer **short headlines** (≈2 lines). Long ID translations that wrap to 4 lines will push kickers into the header even with padding.
+- Prefer **short headlines** (≈2 lines). Long UZ/RU translations that wrap to 4 lines will push kickers into the header even with padding.
 - Interior About heroes: shorter than homepage (~55–70vh), **single image**, not a carousel.
 - Header over homepage hero: transparent → solid on scroll. On **About** section, prefer **solid header** so sub-nav can sit in the first viewport (prefetch + no transparent overlap fights).
 
 ### DON’T
 
-- **Don’t** stack kickers under the nav without clearance (EN + especially ID overlap bugs).
+- **Don’t** stack kickers under the nav without clearance (EN + especially longer UZ/RU overlap bugs).
 - **Don’t** put thick Accor-style chrome that eats half the hero unless DESIGN explicitly requires it.
 - **Don’t** leave a full-bleed prev/next overlay capturing clicks without `pointer-events-none` on the shell and `pointer-events-auto` on the buttons — it blocks hero CTAs.
 - **Don’t** render CTAs / focusable links on **inactive** carousel slides; use `inert` + conditional CTAs.
@@ -100,7 +100,7 @@
 
 | Mistake | Symptom | Fix |
 |--------|---------|-----|
-| No hero top safe-area | “IMAM AL BUKHARI…” overlapped HOME / ABOUT; ID worse with “BERMITRA DENGAN KAMI” | Safe padding + shorter ID headline |
+| No hero top safe-area | “IMAM AL BUKHARI…” overlapped HOME / ABOUT; longer locale strings worse with partner CTA | Safe padding + shorter translated headlines |
 | Arrow buttons with white box borders | Looked cheap / noisy | Borderless arrows |
 | Overlay `inset` flex row without pointer-events fix | “Explore Our Businesses” unclickable | `pointer-events-none` + button `auto` |
 
@@ -186,7 +186,7 @@
 
 ### DO
 
-- Put UI strings in `messages/en.json` + `messages/id.json`.
+- Put UI strings in `messages/en.json`, `messages/uz.json`, and `messages/ru.json`.
 - For templates with placeholders filled in client code, use **`.raw()`** or pass ICU values correctly.
 - Keep locale routing via `next-intl` (`app/[locale]/…`, `middleware.ts`). Don’t rewrite i18n architecture casually.
 

@@ -32,6 +32,8 @@ export type CardProps = {
    * Pass `false` on dense Businesses grids to avoid prefetch storms.
    */
   prefetch?: boolean;
+  /** Tighter type + 2-line clamp — for filmstrips on short viewports. */
+  compact?: boolean;
   className?: string;
 };
 
@@ -46,6 +48,7 @@ export function Card({
   cta,
   sizes = "(max-width: 768px) 100vw, 33vw",
   prefetch,
+  compact = false,
   className = "",
 }: CardProps) {
   const inner = (
@@ -75,22 +78,40 @@ export function Card({
         )}
       </div>
 
-      <div className="flex flex-1 flex-col pt-3">
+      <div className={`flex flex-col ${compact ? "pt-2.5" : "pt-3"}`}>
         {kicker && (
-          <span className="mb-2 font-sans text-[11px] font-semibold uppercase tracking-[0.12em] text-gold">
+          <span
+            className={`font-sans font-semibold uppercase tracking-[0.12em] text-gold ${
+              compact ? "mb-1.5 text-[10px]" : "mb-2 text-[11px]"
+            }`}
+          >
             {kicker}
           </span>
         )}
-        <h3 className="font-serif text-[22px] font-light leading-snug text-navy">
+        <h3
+          className={`font-serif font-light leading-snug text-navy ${
+            compact ? "text-[18px] md:text-[20px]" : "text-[22px]"
+          }`}
+        >
           {title}
         </h3>
         {text && (
-          <p className="mt-2 font-sans text-[15px] leading-relaxed text-text-muted">
+          <p
+            className={`font-sans leading-relaxed text-text-muted ${
+              compact
+                ? "mt-1.5 line-clamp-2 text-[13px] md:text-[14px]"
+                : "mt-2 text-[15px]"
+            }`}
+          >
             {text}
           </p>
         )}
         {cta && (
-          <span className="mt-3 inline-flex items-center gap-2 font-sans text-[12px] font-semibold uppercase tracking-[0.1em] text-gold transition-colors duration-micro ease-quart group-hover:text-bronze">
+          <span
+            className={`inline-flex items-center gap-2 font-sans text-[12px] font-semibold uppercase tracking-[0.1em] text-gold transition-colors duration-micro ease-quart group-hover:text-bronze ${
+              compact ? "mt-2" : "mt-3"
+            }`}
+          >
             {cta}
             <span
               aria-hidden="true"
