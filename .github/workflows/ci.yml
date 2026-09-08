@@ -1,7 +1,8 @@
 name: CI
 
 # Continuous Integration untuk EBI Resources (Next.js App Router + Prisma).
-# Menjalankan lint & build pada setiap push ke main dan setiap pull request.
+# Lint & build pada setiap push/PR ke main. Push ke main yang hijau
+# otomatis deploy ke VPS (tidak perlu SSH manual).
 
 on:
   push:
@@ -47,3 +48,10 @@ jobs:
 
       - name: Build
         run: npm run build
+
+  deploy:
+    name: Deploy to production
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

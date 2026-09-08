@@ -2,12 +2,11 @@ name: Deploy to VPS
 
 # Deploy EBI Resources ke VPS Hostinger (Ubuntu) via SSH.
 #
-# TEMPLATE AMAN:
-# - Hanya berjalan saat push tag `v*` (rilis) atau dijalankan manual (workflow_dispatch),
-#   sehingga tidak auto-deploy sembarangan pada setiap push.
-# - Langkah SSH selalu dijalankan pada trigger di atas. Jika secrets belum diisi,
-#   step akan gagal dengan error jelas (GitHub Actions tidak mengizinkan `if:`
-#   yang mereferensikan `secrets.*`).
+# Kapan deploy jalan:
+# - Push ke `main` yang CI-nya hijau (dipanggil dari ci.yml — tidak perlu SSH ke VPS)
+# - Push tag rilis `v*`
+# - Manual (Actions → Deploy to VPS → Run workflow)
+# Jika secrets belum diisi, step SSH gagal dengan error jelas.
 #
 # GITHUB SECRETS YANG WAJIB DIISI (Settings > Secrets and variables > Actions):
 #   - VPS_HOST     : IP / hostname VPS Hostinger (mis. 123.45.67.89)
@@ -22,6 +21,7 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+  workflow_call:
 
 # Cegah dua deploy berjalan bersamaan.
 concurrency:
