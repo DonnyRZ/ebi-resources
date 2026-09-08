@@ -102,9 +102,8 @@ export function Button({
     );
   }
 
-  const { href: _href, ...buttonRest } = rest as ButtonAsButton;
   return (
-    <button className={classes} {...buttonRest}>
+    <button className={classes} {...(rest as ButtonAsButton)}>
       {content}
     </button>
   );

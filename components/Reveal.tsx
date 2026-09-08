@@ -34,32 +34,19 @@ export function Reveal({
 }: RevealProps) {
   const reducedMotion = useReducedMotion();
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(true);
+  // null = not measured yet (SSR / first paint stays visible).
+  const [intersecting, setIntersecting] = useState<boolean | null>(null);
 
   useEffect(() => {
-    if (reducedMotion) {
-      setVisible(true);
-      return;
-    }
+    if (reducedMotion) return;
     const node = ref.current;
     if (!node) return;
-
-    const rect = node.getBoundingClientRect();
-    // Already near/in viewport — leave SSR-visible state alone.
-    const nearViewport = rect.top < window.innerHeight * 0.9;
-    if (nearViewport) {
-      setVisible(true);
-      return;
-    }
-
-    // Below the fold: hide, then reveal on intersection.
-    setVisible(false);
 
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
+          setIntersecting(entry.isIntersecting);
           if (entry.isIntersecting) {
-            setVisible(true);
             observer.disconnect();
             break;
           }
@@ -70,6 +57,8 @@ export function Reveal({
     observer.observe(node);
     return () => observer.disconnect();
   }, [reducedMotion]);
+
+  const visible = reducedMotion || intersecting !== false;
 
   return (
     <Tag

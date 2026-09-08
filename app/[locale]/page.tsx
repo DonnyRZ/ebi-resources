@@ -100,9 +100,11 @@ export default async function Home({
     },
   ];
 
-  const slides = withoutGrahaNusantara(slidesAll).map(
-    ({ key: _key, ...slide }) => slide,
-  );
+  const slides = withoutGrahaNusantara(slidesAll).map((slide) => {
+    const rest = { ...slide };
+    delete (rest as { key?: string }).key;
+    return rest;
+  });
 
   const lines = [
     {

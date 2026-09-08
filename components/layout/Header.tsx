@@ -42,6 +42,11 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
+    setMenuOpen(false);
+  }
 
   /** Solid header on interior sections (About, Businesses, Careers, Contact). */
   const onInteriorSection =
@@ -72,11 +77,6 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
       document.body.style.overflow = original;
     };
   }, [menuOpen]);
-
-  // Close the overlay after navigating.
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
 
   const solid = scrolled || !effectiveOverHero;
 
