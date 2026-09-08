@@ -78,18 +78,17 @@ export default async function NewsArticlePage({
         </div>
       </section>
 
-      <div className="relative aspect-[16/9] w-full bg-navy/10 md:aspect-[2/1]">
-        <Image
-          src={article.image}
-          alt={t(`articles.${newsSlug}.alt`)}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
-
       <Section tone="white" width="read">
+        <div className="relative mb-10 aspect-[16/10] w-full max-h-[360px] overflow-hidden bg-navy/10">
+          <Image
+            src={article.image}
+            alt={t(`articles.${newsSlug}.alt`)}
+            fill
+            priority
+            sizes="(max-width: 800px) 100vw, 800px"
+            className="object-cover"
+          />
+        </div>
         <div className="space-y-6">
           {body.map((paragraph) => (
             <p
