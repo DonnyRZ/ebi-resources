@@ -16,6 +16,7 @@ export type NewsArticle = {
   slug: NewsSlug;
   publishedAt: string;
   image: string;
+  sourceUrl: string;
 };
 
 export const ARTICLES: NewsArticle[] = [
@@ -23,21 +24,29 @@ export const ARTICLES: NewsArticle[] = [
     slug: "gus-irfan-visits-hotel-kampoeng-indonesia",
     publishedAt: "2026-09-05",
     image: "/images/news/kampoeng-gus-irfan.jpg",
+    sourceUrl:
+      "https://egi-media.com/gus-irfan-kunjungi-hotel-kampoeng-indonesia-samarkand/",
   },
   {
     slug: "hadith-hotel-soft-opening-samarkand",
     publishedAt: "2026-09-05",
     image: "/images/news/hadith-soft-opening.jpg",
+    sourceUrl:
+      "https://egi-media.com/egi-resources-tancapkan-jejak-global-hadith-hotel-resmi-soft-opening-di-samarkand/",
   },
   {
     slug: "hadith-hotel-near-imam-bukhari",
     publishedAt: "2026-09-05",
     image: "/images/news/hadith-imam-bukhari.jpg",
+    sourceUrl:
+      "https://egi-media.com/egi-resources-soft-opening-hadith-hotel-samarkand-uzbekistan/",
   },
   {
     slug: "ambassador-meets-ceo-hadith-opening",
     publishedAt: "2026-08-31",
     image: "/images/news/ambassador-ceo-meeting.jpg",
+    sourceUrl:
+      "https://egi-media.com/egi-resources-investasi-uzbekistan-peresmian-hotel-hadith-kerja-sama-indonesia-uzbekistan/",
   },
 ];
 

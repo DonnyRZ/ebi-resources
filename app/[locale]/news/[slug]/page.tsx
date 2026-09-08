@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
+import { NewsSourceLink } from "@/components/news/NewsSourceLink";
 import {
   ARTICLES,
   NEWS_SLUGS,
@@ -98,6 +99,9 @@ export default async function NewsArticlePage({
               {paragraph}
             </p>
           ))}
+        </div>
+        <div className="mt-10">
+          <NewsSourceLink href={article.sourceUrl} label={t("sourceCta")} />
         </div>
       </Section>
 

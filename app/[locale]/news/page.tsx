@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { CareersHero } from "@/components/careers/CareersHero";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
+import { NewsSourceLink } from "@/components/news/NewsSourceLink";
 import { ARTICLES, formatNewsDate } from "@/lib/news";
 
 /**
@@ -62,7 +63,7 @@ export default async function NewsPage({
         ) : (
           <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {ARTICLES.map((article) => (
-              <li key={article.slug}>
+              <li key={article.slug} className="flex h-full flex-col">
                 <Card
                   href={`/news/${article.slug}`}
                   title={t(`articles.${article.slug}.title`)}
@@ -76,6 +77,12 @@ export default async function NewsPage({
                   cta={common("readMore")}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
+                <div className="mt-4">
+                  <NewsSourceLink
+                    href={article.sourceUrl}
+                    label={t("sourceCta")}
+                  />
+                </div>
               </li>
             ))}
           </ul>
