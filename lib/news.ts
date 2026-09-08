@@ -8,6 +8,14 @@ export const NEWS_SLUGS = [
   "hadith-hotel-soft-opening-samarkand",
   "hadith-hotel-near-imam-bukhari",
   "ambassador-meets-ceo-hadith-opening",
+  "wahdah-islamiyah-visits-ebi-resources",
+  "tabung-haji-chairman-hadith-hotel",
+  "tabung-haji-four-hotels-uzbekistan",
+  "hadith-hotel-hosts-ministers-islamic-forum",
+  "hadith-hotel-official-accommodation-islamic-forum",
+  "muzani-visits-hotel-kampoeng-indonesia",
+  "kampoeng-indonesia-uzbekistan-national-certificate",
+  "trade-vice-minister-visits-kampoeng-indonesia",
 ] as const;
 
 export type NewsSlug = (typeof NEWS_SLUGS)[number];
@@ -48,6 +56,62 @@ export const ARTICLES: NewsArticle[] = [
     sourceUrl:
       "https://egi-media.com/egi-resources-investasi-uzbekistan-peresmian-hotel-hadith-kerja-sama-indonesia-uzbekistan/",
   },
+  {
+    slug: "wahdah-islamiyah-visits-ebi-resources",
+    publishedAt: "2026-07-22",
+    image: "/images/news/wahdah-office-visit.jpg",
+    sourceUrl:
+      "https://egi-media.com/ketua-wahdah-islamiyah-kunjungi-egi-resources-bahas-investasi-dan-wisata-religi-uzbekistan/",
+  },
+  {
+    slug: "tabung-haji-chairman-hadith-hotel",
+    publishedAt: "2026-07-16",
+    image: "/images/news/tabung-haji-chairman.jpg",
+    sourceUrl:
+      "https://egi-media.com/chairman-tabung-haji-malaysia-terkesan-dengan-hadith-hotel-egi-resources-jajaki-kerja-sama-wisata-religi-uzbekistan/",
+  },
+  {
+    slug: "tabung-haji-four-hotels-uzbekistan",
+    publishedAt: "2026-07-16",
+    image: "/images/news/tabung-haji-four-hotels.jpg",
+    sourceUrl:
+      "https://egi-media.com/egi-resources-jajaki-kerja-sama-dengan-tabung-haji-malaysia-tawarkan-empat-hotel-di-uzbekistan/",
+  },
+  {
+    slug: "hadith-hotel-hosts-ministers-islamic-forum",
+    publishedAt: "2026-07-07",
+    image: "/images/news/hadith-forum-ministers.jpg",
+    sourceUrl:
+      "https://egi-media.com/hadith-hotel-jadi-akomodasi-resmi-forum-islam-internasional-i-di-uzbekistan-tampung-delegasi-menteri-dari-7-negara/",
+  },
+  {
+    slug: "hadith-hotel-official-accommodation-islamic-forum",
+    publishedAt: "2026-07-06",
+    image: "/images/news/hadith-forum-accommodation.jpg",
+    sourceUrl:
+      "https://egi-media.com/hadith-hotel-jadi-akomodasi-resmi-delegasi-forum-islam-internasional-di-uzbekistan-perkuat-posisi-investasi-indonesia-di-sektor-hospitality-premium/",
+  },
+  {
+    slug: "muzani-visits-hotel-kampoeng-indonesia",
+    publishedAt: "2026-07-04",
+    image: "/images/news/muzani-kampoeng.jpg",
+    sourceUrl:
+      "https://egi-media.com/usai-ziarah-ke-makam-imam-bukhari-muzani-kunjungi-hotel-kampoeng-indonesia-di-samarkand/",
+  },
+  {
+    slug: "kampoeng-indonesia-uzbekistan-national-certificate",
+    publishedAt: "2026-06-25",
+    image: "/images/news/kampoeng-certificate.jpg",
+    sourceUrl:
+      "https://egi-media.com/hotel-kampoeng-indonesia-samarkand-raih-sertifikat-kesesuaian-standar-nasional-uzbekistan/",
+  },
+  {
+    slug: "trade-vice-minister-visits-kampoeng-indonesia",
+    publishedAt: "2026-06-19",
+    image: "/images/news/wamen-perdagangan-kampoeng.jpg",
+    sourceUrl:
+      "https://egi-media.com/wamen-perdagangan-dorong-ekspor-produk-ri-di-uzbekistan-hotel-kampoeng-indonesia-jadi-simbol-penguatan-bisnis/",
+  },
 ];
 
 export function isNewsSlug(slug: string): slug is NewsSlug {
@@ -59,10 +123,22 @@ export function getArticle(slug: string): NewsArticle | undefined {
   return ARTICLES.find((article) => article.slug === slug);
 }
 
+/** Newest first. */
+export function getArticlesByDate(): NewsArticle[] {
+  return [...ARTICLES].sort((a, b) => {
+    const byDate = b.publishedAt.localeCompare(a.publishedAt);
+    return byDate !== 0 ? byDate : a.slug.localeCompare(b.slug);
+  });
+}
+
 /** Newest first; used on the homepage highlights strip. */
 export function getLatestArticles(limit = 3): NewsArticle[] {
-  return [...ARTICLES]
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+  return getArticlesByDate().slice(0, limit);
+}
+
+export function getRelatedArticles(slug: NewsSlug, limit = 2): NewsArticle[] {
+  return getArticlesByDate()
+    .filter((article) => article.slug !== slug)
     .slice(0, limit);
 }
 

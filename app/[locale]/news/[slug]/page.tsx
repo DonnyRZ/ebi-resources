@@ -8,10 +8,10 @@ import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
 import { NewsSourceLink } from "@/components/news/NewsSourceLink";
 import {
-  ARTICLES,
   NEWS_SLUGS,
   formatNewsDate,
   getArticle,
+  getRelatedArticles,
   type NewsSlug,
 } from "@/lib/news";
 
@@ -54,7 +54,7 @@ export default async function NewsArticlePage({
   const newsSlug: NewsSlug = article.slug;
   const t = await getTranslations("news");
   const body = t.raw(`articles.${newsSlug}.body`) as string[];
-  const related = ARTICLES.filter((item) => item.slug !== newsSlug).slice(0, 2);
+  const related = getRelatedArticles(newsSlug, 2);
 
   return (
     <main>

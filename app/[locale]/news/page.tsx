@@ -6,7 +6,7 @@ import { routing } from "@/i18n/routing";
 import { CareersHero } from "@/components/careers/CareersHero";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
-import { ARTICLES, formatNewsDate } from "@/lib/news";
+import { formatNewsDate, getArticlesByDate } from "@/lib/news";
 
 /**
  * News listing — editorial/listing archetype (DESIGN.md §6b).
@@ -41,6 +41,7 @@ export default async function NewsPage({
 
   const t = await getTranslations("news");
   const common = await getTranslations("common");
+  const articles = getArticlesByDate();
 
   return (
     <main>
@@ -55,13 +56,13 @@ export default async function NewsPage({
       />
 
       <Section tone="white">
-        {ARTICLES.length === 0 ? (
+        {articles.length === 0 ? (
           <p className="font-sans text-[16px] leading-[1.75] text-text-muted">
             {t("empty")}
           </p>
         ) : (
           <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-            {ARTICLES.map((article) => (
+            {articles.map((article) => (
               <li key={article.slug}>
                 <Card
                   href={`/news/${article.slug}`}
