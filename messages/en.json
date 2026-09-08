@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "businesses": "Our Businesses",
+    "news": "News",
     "careers": "Careers",
     "contact": "Contact"
   },
@@ -1472,6 +1473,69 @@
           "Bachelor Degree in Civil Engineering or Architecture",
           "Proven track record managing high-risk construction projects",
           "Active HSE/K3 certification (Ahli K3 Konstruksi)"
+        ]
+      }
+    }
+  },
+  "news": {
+    "meta": {
+      "title": "News — EBI Resources",
+      "description": "Group updates and highlights from EBI Resources."
+    },
+    "hero": {
+      "kicker": "EBI Resources",
+      "title": "News",
+      "supporting": "Visits, openings, and group updates from Samarkand and beyond."
+    },
+    "empty": "No stories have been published yet.",
+    "readStory": "Read Story",
+    "back": "All news",
+    "alt": {
+      "hero": "Hadith Hotel at golden hour, Samarkand"
+    },
+    "articles": {
+      "gus-irfan-visits-hotel-kampoeng-indonesia": {
+        "title": "Gus Irfan Visits Hotel Kampoeng Indonesia at the Imam Bukhari Complex, Samarkand",
+        "excerpt": "Indonesia’s Minister of Hajj and Umrah visited Hotel Kampoeng Indonesia during an official programme in Samarkand.",
+        "alt": "Official visit at Hotel Kampoeng Indonesia, Samarkand",
+        "location": "Samarkand",
+        "body": [
+          "Indonesia’s Minister of Hajj and Umrah, Mochamad Irfan Yusuf — known as Gus Irfan — visited Hotel Kampoeng Indonesia in the Imam Bukhari memorial complex, Samarkand, Uzbekistan. The visit took place during his official programme in Samarkand, after accepting an invitation from the Governor of Samarkand, Adiz Muzaffarovich Boboev. During the visit, Gus Irfan joined a midday meal of Indonesian dishes prepared at the hotel.",
+          "Gus Irfan welcomed Hotel Kampoeng Indonesia as part of EBI Resources’ investment from Indonesia in Uzbekistan. The Indonesian-concept hotel is regarded as a way to introduce Indonesian cuisine, culture, and identity in a place that draws travellers and pilgrims from many countries. The visit also offered a first-hand look at facilities that carry an Indonesian atmosphere within the Imam Bukhari complex.",
+          "In addition to Hotel Kampoeng Indonesia, Gus Irfan visited the Imam Bukhari memorial complex and paid respects at the shrine. He was accompanied by Indonesia’s Ambassador to Uzbekistan, Siti Ruhaini Dzuhayatin. The programme formed part of his working visit to Samarkand and of closer ties between Indonesia and Uzbekistan."
+        ]
+      },
+      "hadith-hotel-soft-opening-samarkand": {
+        "title": "Hadith Hotel Holds Soft Opening in Samarkand",
+        "excerpt": "Hadith Hotel marked its soft opening at the Imam Al Bukhari Complex on Saturday, 5 September 2026.",
+        "alt": "Hadith Hotel soft opening in Samarkand",
+        "location": "Samarkand",
+        "body": [
+          "EBI Resources held the soft opening of Hadith Hotel at the Imam Al Bukhari Complex, Samarkand, Uzbekistan, on Saturday, 5 September 2026. The hotel is a further step for Indonesian hospitality in Central Asia, a region with strong potential in tourism, hospitality, and pilgrimage travel.",
+          "The soft opening was attended by figures from Indonesia and Uzbekistan, including Indonesia’s Minister of Hajj and Umrah, Mochamad Irfan Yusuf; Indonesia’s Ambassador to Uzbekistan, Prof. Dr. Siti Ruhaini Dzuhayatin; and Indonesia’s Ambassador to Kazakhstan, M. Fadjroel Rachman. Their presence reflected closer Indonesia–Uzbekistan relations and the scope for economic and investment cooperation in the region.",
+          "Management of EBI Resources underlined that Hadith Hotel offers international-standard accommodation while carrying Indonesian hospitality onto a global stage. The hotel includes 114 rooms and suites, Indonesian dining, an Uzbek cuisine lounge, an indoor pool, spa, sauna, Turkish hammam, tennis, and a padel court. It is intended to support Samarkand’s international tourism and to strengthen EBI Resources’ presence abroad."
+        ]
+      },
+      "hadith-hotel-near-imam-bukhari": {
+        "title": "Near the Imam Bukhari Shrine, Hadith Hotel Brings an Indonesian Touch to Samarkand",
+        "excerpt": "Hadith Hotel opened beside the Imam Al Bukhari Complex, combining Uzbek setting with international comfort.",
+        "alt": "Hadith Hotel at the Imam Al Bukhari Complex, Samarkand",
+        "location": "Samarkand",
+        "body": [
+          "Hadith Hotel held its soft opening at the Imam Al Bukhari Complex, Samarkand, Uzbekistan, on Saturday, 5 September 2026. Less than a kilometre from the shrine of Imam Muhammad Al-Bukhari, the hotel — developed by EBI Resources — offers modern accommodation that brings together an Uzbek setting and international comfort.",
+          "Hadith Hotel has 114 rooms and suites, with occupancy for up to 250 guests. Five room types serve pilgrims, travellers, and VIP guests: 62 Standard Rooms, 23 Balcony Rooms, 18 Suites, 9 Junior Suites, and 2 President Suites. Its place within the Imam Al Bukhari precinct is well suited to visitors coming for pilgrimage and for Samarkand’s history and culture.",
+          "Beyond accommodation, Hadith Hotel offers Indonesian dining, an Uzbek cuisine lounge, an indoor pool, a fitness centre, spa, sauna, Turkish hammam, tennis, and a padel court. The hotel is intended to strengthen hospitality in Samarkand and to serve as a cultural bridge between Indonesia and Uzbekistan through travel and Nusantara hospitality."
+        ]
+      },
+      "ambassador-meets-ceo-hadith-opening": {
+        "title": "Indonesia’s Ambassador to Uzbekistan Meets the CEO of EBI Resources on Tourism Cooperation",
+        "excerpt": "In Jakarta on 31 August 2026, the ambassador and the CEO discussed investment in Uzbekistan and the inauguration of Hadith Hotel.",
+        "alt": "Meeting on tourism cooperation and the Hadith Hotel inauguration",
+        "location": "Jakarta",
+        "body": [
+          "Jakarta, 31 August 2026 — The CEO of EBI Resources received Indonesia’s Ambassador to Uzbekistan to discuss the next steps in the group’s investment in Uzbekistan. On that occasion the CEO invited the Ambassador to attend the inauguration of Hadith Hotel at the Imam Al Bukhari memorial complex in Samarkand, Uzbekistan. The two sides also discussed the potential for EBI Resources to expand its investment in Uzbekistan, and the importance of more Indonesian travellers visiting Uzbekistan for general tourism and pilgrimage.",
+          "The Ambassador welcomed the idea of more visitors travelling between Indonesia and Uzbekistan, which is expected to be supported by a planned direct flight between Jakarta and Tashkent in the near term. She expressed the hope that EBI Resources’ investment in Uzbekistan, together with that planned route, would strengthen tourism cooperation between the two countries.",
+          "Both sides also hoped that closer investment and socio-cultural ties would be matched by closer government-to-government cooperation, including high-level visits, to further strengthen bilateral relations between Indonesia and Uzbekistan."
         ]
       }
     }

@@ -25,5 +25,6 @@
 │           cybersecurity, blockchain, control systems,
 │           and data integration
 │
+├── News
 ├── Careers
 └── Contact

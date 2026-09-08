@@ -22,6 +22,7 @@ const NAV_ITEMS = [
   { key: "home", href: "/" },
   { key: "about", href: "/about" },
   { key: "businesses", href: "/businesses" },
+  { key: "news", href: "/news" },
   { key: "careers", href: "/careers" },
   { key: "contact", href: "/contact" },
 ] as const;
@@ -48,12 +49,14 @@ export function Header({ overHero = true, threshold = 80 }: HeaderProps) {
     setMenuOpen(false);
   }
 
-  /** Solid header on interior sections (About, Businesses, Careers, Contact). */
+  /** Solid header on interior sections (About, Businesses, News, Careers, Contact). */
   const onInteriorSection =
     pathname === "/about" ||
     pathname.startsWith("/about/") ||
     pathname === "/businesses" ||
     pathname.startsWith("/businesses/") ||
+    pathname === "/news" ||
+    pathname.startsWith("/news/") ||
     pathname === "/careers" ||
     pathname.startsWith("/careers/") ||
     pathname === "/contact" ||

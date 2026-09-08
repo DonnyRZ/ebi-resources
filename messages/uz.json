@@ -3,6 +3,7 @@
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
     "businesses": "Bizneslarimiz",
+    "news": "Yangiliklar",
     "careers": "Karyera",
     "contact": "Aloqa"
   },
@@ -1472,6 +1473,69 @@
           "Fuqarolik muhandisligi yoki arxitektura bo‘yicha bakalavr darajasi",
           "Yuqori xavfli qurilish loyihalarini boshqarishda isbotlangan tajriba",
           "Faol HSE/K3 sertifikati (Ahli K3 Konstruksi)"
+        ]
+      }
+    }
+  },
+  "news": {
+    "meta": {
+      "title": "Yangiliklar — EBI Resources",
+      "description": "EBI Resources guruhining yangilanishlari va muhim voqealari."
+    },
+    "hero": {
+      "kicker": "EBI Resources",
+      "title": "Yangiliklar",
+      "supporting": "Tashriflar, ochilishlar va guruh yangiliklari — Samarqand va undan tashqarida."
+    },
+    "empty": "Hozircha hech qanday maqola e’lon qilinmagan.",
+    "readStory": "O‘qish",
+    "back": "Barcha yangiliklar",
+    "alt": {
+      "hero": "Hadith Hotel oltin soatda, Samarqand"
+    },
+    "articles": {
+      "gus-irfan-visits-hotel-kampoeng-indonesia": {
+        "title": "Gus Irfan Samarqanddagi Imom Buxoriy majmuasida Hotel Kampoeng Indonesiani ziyorat qildi",
+        "excerpt": "Indoneziya Haj va Umra vaziri rasmiy dastur chog‘ida Hotel Kampoeng Indonesiani ziyorat qildi.",
+        "alt": "Hotel Kampoeng Indonesiada rasmiy tashrif, Samarqand",
+        "location": "Samarqand",
+        "body": [
+          "Indoneziya Haj va Umra vaziri Mochamad Irfan Yusuf — Gus Irfan nomi bilan tanilgan — O‘zbekiston, Samarqanddagi Imom Buxoriy xotira majmuasida joylashgan Hotel Kampoeng Indonesiani ziyorat qildi. Tashrif Samarqand hokimi Adiz Muzaffarovich Boboev taklifidan so‘ng, uning Samarqanddagi rasmiy dasturi chog‘ida bo‘ldi. Shu paytda Gus Irfan mehmonxonada tayyorlangan indoneziya taomlaridan tushlik qildi.",
+          "Gus Irfan Hotel Kampoeng Indonesiani O‘zbekistondagi EBI Resources sarmoyasining bir qismi sifatida olqishladi. Indoneziya konsepsiyasidagi mehmonxona ko‘plab mamlakatlardan keladigan sayyohlar va ziyoratchilar oqimidagi hududda indoneziya oshxonasi, madaniyati va qiyofasini tanitish vositasi sifatida baholanadi. Tashrif, shuningdek, Imom Buxoriy majmuasidagi indoneziya ruhidagi imkoniyatlarni bevosita ko‘rish uchun ham muhim bo‘ldi.",
+          "Hotel Kampoeng Indonesiadan tashqari, Gus Irfan Imom Buxoriy xotira majmuasiga ham bordi va buyuk olim qabrini ziyorat qildi. Ziyorat chog‘ida uni Indoneziyaning O‘zbekistondagi elchisi Siti Ruhaini Dzuhayatin hamrohligi qildi. Tadbir Gus Irfanning Samarqanddagi ish safari hamda Indoneziya–O‘zbekiston aloqalarini mustahkamlashning bir qismi bo‘ldi."
+        ]
+      },
+      "hadith-hotel-soft-opening-samarkand": {
+        "title": "Hadith Hotel Samarqandda soft opening o‘tkazdi",
+        "excerpt": "Hadith Hotel 2026-yil 5-sentabr, shanba kuni Imom Al-Buxoriy majmuasida soft openingini nishonladi.",
+        "alt": "Hadith Hotelning Samarqanddagi soft openingi",
+        "location": "Samarqand",
+        "body": [
+          "EBI Resources 2026-yil 5-sentabr, shanba kuni O‘zbekiston, Samarqanddagi Imom Al-Buxoriy majmuasida Hadith Hotelning soft openingini o‘tkazdi. Mehmonxona Markaziy Osiyoda — turizm, mehmondo‘stlik va ziyorat sayohati salohiyati yuqori bo‘lgan mintaqada — indoneziya mehmondo‘stligining navbatdagi qadamidir.",
+          "Soft openingda Indoneziya va O‘zbekistondan taniqli shaxslar ishtirok etdi, jumladan Indoneziya Haj va Umra vaziri Mochamad Irfan Yusuf, Indoneziyaning O‘zbekistondagi elchisi prof. dr. Siti Ruhaini Dzuhayatin hamda Indoneziyaning Qozog‘istondagi elchisi M. Fadjroel Rachman. Ularning ishtiroki Indoneziya–O‘zbekiston munosabatlarining mustahkamlanishi va mintaqadagi iqtisodiy hamda sarmoyaviy hamkorlik imkoniyatlarini aks ettirdi.",
+          "EBI Resources rahbariyati Hadith Hotel xalqaro me’yordagi joylashuv bilan birga indoneziya mehmondo‘stligini global maydonga olib chiqishini ta’kidladi. Mehmonxonada 114 ta xona va lyuks, indoneziya oshxonasi, o‘zbek taomlari launci, yopiq suzish havzasi, spa, sauna, turk hammomi, tennis va padel korti mavjud. U Samarqandning xalqaro turizm ekotizimini qo‘llab-quvvatlash va EBI Resourcesning xorijdagi mavqeini mustahkamlashga xizmat qiladi."
+        ]
+      },
+      "hadith-hotel-near-imam-bukhari": {
+        "title": "Imom Buxoriy ziyoratgohi yonida Hadith Hotel Samarqandga indoneziya siluetini olib keldi",
+        "excerpt": "Hadith Hotel Imom Al-Buxoriy majmuasi yonida ochilib, o‘zbek muhiti bilan xalqaro qulaylikni birlashtirdi.",
+        "alt": "Imom Al-Buxoriy majmuasidagi Hadith Hotel, Samarqand",
+        "location": "Samarqand",
+        "body": [
+          "Hadith Hotel 2026-yil 5-sentabr, shanba kuni O‘zbekiston, Samarqanddagi Imom Al-Buxoriy majmuasida soft opening o‘tkazdi. Imom Muhammad Al-Buxoriy ziyoratgohidan bir kilometrdan kamroq masofada joylashgan, EBI Resources tomonidan rivojlantirilgan mehmonxona o‘zbek muhiti va xalqaro qulaylikni uyg‘unlashtirgan zamonaviy joylashuvni taklif etadi.",
+          "Hadith Hotelda 114 ta xona va lyuks bor, sig‘imi 250 nafargacha mehmon. Besh xil xona turi ziyoratchilar, sayyohlar va VIP mehmonlar ehtiyojiga mo‘ljallangan: 62 ta Standard, 23 ta Balcony, 18 ta Suite, 9 ta Junior Suite va 2 ta President Suite. Imom Al-Buxoriy hududidagi joylashuvi ziyorat va Samarqandning tarixiy-madaniy merosini kashf etish uchun kelgan mehmonlarga qulay.",
+          "Joylashtirishdan tashqari, Hadith Hotel indoneziya oshxonasi, o‘zbek taomlari launci, yopiq suzish havzasi, fitnes markazi, spa, sauna, turk hammomi, tennis va padel kortini taklif etadi. Mehmonxona Samarqanddagi mehmondo‘stlik sohasini mustahkamlash va sayohat hamda Nusantara mehmondo‘stligi orqali Indoneziya bilan O‘zbekiston o‘rtasida madaniy ko‘prik bo‘lishi kutiladi."
+        ]
+      },
+      "ambassador-meets-ceo-hadith-opening": {
+        "title": "Indoneziyaning O‘zbekistondagi elchisi EBI Resources CEOsi bilan turizm hamkorligini muhokama qildi",
+        "excerpt": "2026-yil 31-avgust, Jakartada elchi va CEO O‘zbekistondagi sarmoya hamda Hadith Hotel ochilishini muhokama qildi.",
+        "alt": "Turizm hamkorligi va Hadith Hotel ochilishi bo‘yicha uchrashuv",
+        "location": "Jakarta",
+        "body": [
+          "Jakarta, 2026-yil 31-avgust — EBI Resources CEOsi Indoneziyaning O‘zbekistondagi elchisini qabul qilib, guruhning O‘zbekistondagi sarmoyasi bo‘yicha keyingi qadamlarni muhokama qildi. Shu uchrashuvda CEO elchini O‘zbekiston, Samarqanddagi Imom Al-Buxoriy xotira majmuasida Hadith Hotel ochilishiga taklif etdi. Tomonlar, shuningdek, EBI Resourcesning O‘zbekistondagi sarmoyasini kengaytirish imkoniyati va umumiy turizm hamda ziyorat doirasida Indoneziyalik sayyohlarning O‘zbekistonga tashrifini oshirish muhimligini muhokama qildi.",
+          "Elchi Indoneziya va O‘zbekiston o‘rtasida sayyohlar oqimini oshirish g‘oyasini olqishladi; bu yaqin orada rejalashtirilgan Jakarta–Toshkent to‘g‘ridan-to‘g‘ri reysi bilan qo‘llab-quvvatlanishi kutiladi. U EBI Resourcesning O‘zbekistondagi sarmoyasi va ushbu rejalashtirilgan yo‘nalish ikki davlat o‘rtasidagi turizm hamkorligini mustahkamlaydi, degan umidini bildirdi.",
+          "Tomonlar, shuningdek, sarmoya va ijtimoiy-madaniy aloqalar mustahkamlanishi yuqori martabali tashriflar orqali hukumatlararo hamkorlikning chuqurlashuvi bilan uyg‘unlashishini, Indoneziya–O‘zbekiston ikki tomonlama munosabatlarini yanada mustahkamlashini istashdi."
         ]
       }
     }
