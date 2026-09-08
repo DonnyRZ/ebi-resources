@@ -40,6 +40,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
+          password: ${{ secrets.VPS_PASSWORD }}
           port: ${{ secrets.VPS_PORT || 22 }}
           script_stop: true
           script: |
@@ -49,16 +50,12 @@ jobs:
             # Ambil kode terbaru dari repository.
             git pull --ff-only
 
-            # Bangun / tarik image terbaru, lalu jalankan container.
-            # Hanya stack ebi-resources di direktori ini (docker compose lokal).
-            # `docker compose pull` untuk image dari registry; bila image dibangun
-            # lokal dari Dockerfile, `build` di bawah yang akan dipakai.
-            docker compose pull || true
-            docker compose build
-            docker compose up -d
+            # Production VPS uses docker-compose.prod.yml (app on 127.0.0.1:3005).
+            # Do not use the default compose file — that stack also starts nginx:80.
+            docker compose -f docker-compose.prod.yml build
+            docker compose -f docker-compose.prod.yml up -d
 
-            # Jalankan migrasi database Prisma di dalam container app.
-            docker compose exec -T app npx prisma migrate deploy
+            # Schema is optional for the current static site; don't fail the release.
+            docker compose -f docker-compose.prod.yml exec -T app npx prisma migrate deploy || true
 
-            # Bersihkan image lama yang menggantung (opsional).
             docker image prune -f
