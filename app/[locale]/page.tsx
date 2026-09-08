@@ -12,6 +12,7 @@ import {
   isGrahaNusantaraVisible,
   withoutGrahaNusantara,
 } from "@/lib/features";
+import { formatNewsDate, getLatestArticles } from "@/lib/news";
 
 /**
  * EBI Resources — Homepage.
@@ -19,7 +20,7 @@ import {
  * Section flow (CONTENT-REFERENCE §F): rotating hero showcase → group intro
  * (overlapping collage) → business-lines overview (card row) → featured
  * properties (card row) → brand pillars (asymmetric mosaic + serif labels) →
- * qualitative credibility band → partnership / investor CTA.
+ * qualitative credibility band → news highlights → partnership / investor CTA.
  *
  * Photo presentation deliberately varies per section (DESIGN.md §4) and copy is
  * grounded — no fabricated metrics, no numeric stat-band (see decisions).
@@ -36,8 +37,10 @@ export default async function Home({
   setRequestLocale(locale);
 
   const t = await getTranslations("home");
+  const newsT = await getTranslations("news");
   const common = await getTranslations("common");
   const a = await getTranslations("a11y");
+  const latestNews = getLatestArticles(3);
 
   const heroCta = { label: t("hero.cta"), href: "/businesses" };
 
@@ -386,7 +389,49 @@ export default async function Home({
         </div>
       </Section>
 
-      {/* 7 — Partnership / investor CTA */}
+      {/* 7 — News & Highlights (DESIGN.md §6a) */}
+      <Section tone="white">
+        <Reveal className="mb-8 max-w-normal">
+          <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
+            {t("news.kicker")}
+          </p>
+          <h2 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] font-light text-navy">
+            {t("news.title")}
+          </h2>
+          <p className="mt-4 max-w-read font-sans text-[16px] leading-relaxed text-text-muted">
+            {t("news.intro")}
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {latestNews.map((article, i) => (
+            <Reveal key={article.slug} delay={i * 80}>
+              <Card
+                href={`/news/${article.slug}`}
+                title={newsT(`articles.${article.slug}.title`)}
+                kicker={`${newsT(`articles.${article.slug}.location`)} · ${formatNewsDate(article.publishedAt, locale)}`}
+                text={newsT(`articles.${article.slug}.excerpt`)}
+                image={{
+                  src: article.image,
+                  alt: newsT(`articles.${article.slug}.alt`),
+                }}
+                aspect="16 / 10"
+                compact
+                cta={common("readMore")}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="mt-10 flex justify-center">
+          <Button variant="text" tone="navy" href="/news">
+            {t("news.viewAll")}
+          </Button>
+        </Reveal>
+      </Section>
+
+      {/* 8 — Partnership / investor CTA */}
       <Section tone="cream" width="normal">
         <Reveal className="mx-auto max-w-read text-center">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">

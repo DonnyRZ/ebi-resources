@@ -59,6 +59,13 @@ export function getArticle(slug: string): NewsArticle | undefined {
   return ARTICLES.find((article) => article.slug === slug);
 }
 
+/** Newest first; used on the homepage highlights strip. */
+export function getLatestArticles(limit = 3): NewsArticle[] {
+  return [...ARTICLES]
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, limit);
+}
+
 const DATE_LOCALES: Record<string, string> = {
   en: "en-GB",
   uz: "uz-Latn",

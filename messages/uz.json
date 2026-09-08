@@ -155,6 +155,12 @@
         "text": "Indoneziya mehmondo‘stligi Ipak yo‘li merosi bilan uchrashadi — ikki xalq o‘rtasidagi ko‘prik."
       }
     },
+    "news": {
+      "kicker": "Yangiliklar",
+      "title": "Muhim voqealar",
+      "intro": "Mehmonxona va mehmondo‘stlik portfeli bo‘ylab tashriflar, ochilishlar va yangilanishlar.",
+      "viewAll": "Barcha yangiliklar"
+    },
     "cta": {
       "kicker": "Hamkorlik va investitsiya",
       "title": "Biz bilan uzoq muddatli narsa quring",

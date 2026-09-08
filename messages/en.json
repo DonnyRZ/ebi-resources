@@ -155,6 +155,12 @@
         "text": "Indonesian hospitality meeting Silk Road heritage — a bridge between two nations."
       }
     },
+    "news": {
+      "kicker": "News",
+      "title": "Highlights",
+      "intro": "Visits, openings, and developments from across the hospitality portfolio.",
+      "viewAll": "All news"
+    },
     "cta": {
       "kicker": "Partnership & Investment",
       "title": "Build Something Enduring With Us",
