@@ -4,6 +4,9 @@
  */
 
 export const NEWS_SLUGS = [
+  "indonesian-chess-team-hotel-kampoeng-indonesia",
+  "uzbekistan-tourism-hotels-direct-flights",
+  "tourism-investment-hotel-operations-uzbekistan",
   "gus-irfan-visits-hotel-kampoeng-indonesia",
   "hadith-hotel-soft-opening-samarkand",
   "hadith-hotel-near-imam-bukhari",
@@ -28,6 +31,27 @@ export type NewsArticle = {
 };
 
 export const ARTICLES: NewsArticle[] = [
+  {
+    slug: "indonesian-chess-team-hotel-kampoeng-indonesia",
+    publishedAt: "2026-09-19",
+    image: "/images/news/kampoeng-chess-olympiad.jpg",
+    sourceUrl:
+      "https://egi-media.com/kontingen-catur-indonesia-disambut-di-hotel-kampoeng-indonesia/",
+  },
+  {
+    slug: "uzbekistan-tourism-hotels-direct-flights",
+    publishedAt: "2026-09-10",
+    image: "/images/news/uzbekistan-tourism-talks.jpg",
+    sourceUrl:
+      "https://egi-media.com/uzbekistan-bidik-lebih-banyak-wisatawan-indonesia-promosi-wisata-religi-jadi-andalan/",
+  },
+  {
+    slug: "tourism-investment-hotel-operations-uzbekistan",
+    publishedAt: "2026-09-09",
+    image: "/images/news/tourism-committee-meeting.jpg",
+    sourceUrl:
+      "https://egi-media.com/egi-resources-dorong-percepatan-investasi-pariwisata-dan-operasional-hotel-di-uzbekistan/",
+  },
   {
     slug: "gus-irfan-visits-hotel-kampoeng-indonesia",
     publishedAt: "2026-09-05",
