@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { ComingSoonArtwork } from "@/components/ComingSoonArtwork";
 import { ComingSoonBadge } from "@/components/ComingSoonBadge";
 import { TechnologyArtwork } from "@/components/TechnologyArtwork";
+import { BrandNameText } from "@/components/BrandNameText";
 
 /**
  * Card — property / business-line card (DESIGN.md §3.6 `card/image`).
@@ -21,7 +22,12 @@ export type CardProps = {
   href?: string;
   kicker?: string;
   text?: string;
-  image?: { src: string; alt: string };
+  image?: {
+    src: string;
+    alt: string;
+    /** Contain preserves the whole image and disables the cropping hover zoom. */
+    fit?: "cover" | "contain";
+  };
   /** Aspect ratio of the media box. Defaults to 4/3. */
   aspect?: string;
   /** Optional badge, e.g. "COMING SOON". */
@@ -69,7 +75,11 @@ export function Card({
             alt={image.alt}
             fill
             sizes={sizes}
-            className="scale-105 object-cover transition-transform duration-image ease-quart group-hover:scale-[1.12]"
+            className={
+              image.fit === "contain"
+                ? "object-contain"
+                : "scale-105 object-cover transition-transform duration-image ease-quart group-hover:scale-[1.12]"
+            }
           />
         ) : mediaVariant === "technology" ? (
           <TechnologyArtwork />
@@ -96,7 +106,7 @@ export function Card({
               compact ? "mb-1.5 text-[10px]" : "mb-2 text-[11px]"
             }`}
           >
-            {kicker}
+            <BrandNameText text={kicker} />
           </span>
         )}
         <h3

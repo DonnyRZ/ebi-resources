@@ -82,8 +82,8 @@ export type CafeBrandPageProps = {
 };
 
 /**
- * 7OZ Espresso brand page — Pattern B: Café line lands on the single brand.
- * Facts-only; excludes 7OZ site placeholder team/lorem/hours/store.
+ * 7oz Espresso brand page — Pattern B: Café line lands on the single brand.
+ * Facts-only; excludes 7oz Espresso site placeholder team/lorem/hours/store.
  */
 export function CafeBrandPage({
   hero,
@@ -250,7 +250,7 @@ export function CafeBrandPage({
         <CafeGallery images={gallery.images} />
       </Section>
 
-      {/* Contact + 7OZ website */}
+      {/* Contact + 7oz Espresso website */}
       <Section tone="white" width="normal">
         <Reveal>
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">

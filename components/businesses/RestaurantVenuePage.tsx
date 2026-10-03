@@ -20,7 +20,7 @@ export type RestaurantVenueBlock = {
   kicker?: string;
   title: string;
   text: string;
-  /** Optional outbound / in-site link (e.g. Café line for 7OZ). */
+  /** Optional outbound / in-site link (e.g. Café line for 7oz Espresso). */
   linkHref?: string;
   linkLabel?: string;
 };

@@ -64,7 +64,7 @@
         "supporting": "Халяль-кухня и specialty-кофе — от плова при свечах до индонезийской выпечки."
       },
       "cafe": {
-        "kicker": "7OZ Espresso · Кафе",
+        "kicker": "7oz Espresso · Кафе",
         "title": "Из Джакарты на Шёлковый путь",
         "supporting": "Индонезийская культура specialty-кофе в Mecca и Hadith."
       }
@@ -182,8 +182,8 @@
       "hadithNight": "Hadith Hotel, освещённый ночью за фонтанами",
       "meccaFacade": "Бутик-отель Mecca на закате, Ташкент",
       "meccaRooftop": "Кафе на крыше Mecca с видом на Центр исламской цивилизации",
-      "sevenOzRooftop": "Кафе на крыше 7OZ Espresso на закате с видом на Центр исламской цивилизации Ташкента",
-      "sevenOzInterior": "Интерьер кафе 7OZ Espresso со стойкой кофе и витриной выпечки",
+      "sevenOzRooftop": "Кафе на крыше 7oz Espresso на закате с видом на Центр исламской цивилизации Ташкента",
+      "sevenOzInterior": "Интерьер кафе 7oz Espresso со стойкой кофе и витриной выпечки",
       "grahaVilla": "Вилла Graha Nusantara в золотой час у комплекса Имама Аль-Бухари",
       "grahaNight": "Ночная подсветка комплекса Имама Аль-Бухари, Самарканд",
       "kampoengFacade": "Hotel Kampoeng Indonesia, освещённый ночью, Самарканд",
@@ -267,7 +267,7 @@
         },
         "sevenOz": {
           "kicker": "Кафе",
-          "title": "7OZ Espresso",
+          "title": "7oz Espresso",
           "description": "Спешелти-кофе и индонезийская кофейная культура от Джакарты до Ташкента."
         }
       },
@@ -286,8 +286,8 @@
         "meccaRooftop": "Кафе на крыше Mecca с видом на Центр исламской цивилизации",
         "graha": "Вилла Graha Nusantara в золотой час, рядом с комплексом Имама Аль-Бухари",
         "kampoeng": "Hotel Kampoeng Indonesia, освещённый ночью, Самарканд",
-        "sevenOz": "Интерьер кафе 7OZ Espresso — кофейная стойка и витрина выпечки",
-        "sevenOzRooftop": "Кафе 7OZ Espresso на крыше на закате, Ташкент"
+        "sevenOz": "Интерьер кафе 7oz Espresso — кофейная стойка и витрина выпечки",
+        "sevenOzRooftop": "Кафе 7oz Espresso на крыше на закате, Ташкент"
       }
     },
     "visionMission": {
@@ -513,8 +513,8 @@
               "text": "Общий фонд 114 номеров согласно проектным материалам. Задокументированные примеры: Standard Rooms (62 номера, 35 m²) и Junior Suites (9 номеров, 71 m², 24-часовой батлер). Полный опубликованный список категорий будет предоставлен."
             },
             "dining": {
-              "title": "Питание и 7OZ Espresso",
-              "text": "The Restaurant — фирменный ресторан (120 мест) с узбекской, индонезийской и континентальной кухней, заявленной как halal. Bar & Lounge — индонезийская выпечка и specialty-кофе, включая Kopi Luwak. Подтверждено: 7OZ Espresso также работает в Hadith Hotel. Часы работы подлежат подтверждению."
+              "title": "Питание и 7oz Espresso",
+              "text": "The Restaurant — фирменный ресторан (120 мест) с узбекской, индонезийской и континентальной кухней, заявленной как halal. Bar & Lounge — индонезийская выпечка и specialty-кофе, включая Kopi Luwak. Подтверждено: 7oz Espresso также работает в Hadith Hotel. Часы работы подлежат подтверждению."
             },
             "wellness": {
               "title": "Wellness и отдых",
@@ -538,9 +538,9 @@
           },
           "related": {
             "kicker": "Рестораны и кафе",
-            "title": "7OZ Espresso в Hadith",
-            "body": "Hadith Hotel — подтверждённая площадка 7OZ Espresso, specialty-кофе бренда EBI Resources, также в Mecca Boutique Hotel в Ташкенте.",
-            "label": "Открыть 7OZ Espresso"
+            "title": "7oz Espresso в Hadith",
+            "body": "Hadith Hotel — подтверждённая площадка 7oz Espresso, specialty-кофе бренда EBI Resources, также в Mecca Boutique Hotel в Ташкенте.",
+            "label": "Открыть 7oz Espresso"
           },
           "alt": {
             "hero": "Hadith Hotel на закате с фонтанным бассейном, Самарканд — панорамный вид",
@@ -592,8 +592,8 @@
               "text": "Европейская кухня на втором этаже (452 m²) — включая свежую пасту, risotto, пizza на дровах, osso buco и tiramisu. Позиционируется как premium европейское питание. Меню и часы будут предоставлены."
             },
             "rooftop": {
-              "title": "Rooftop Café — 7OZ",
-              "text": "Террасное кафе 600,7 m² — кофе, лёгкие блюда и shisha согласно материалам — с видом на купол Центра исламской цивилизации. Это 7OZ Espresso, specialty-кофе бренд EBI Resources (также в Hadith Hotel в Самарканде). Как shisha сочетается с заявленной halal-сертификацией питания отеля — подлежит подтверждению с клиентом."
+              "title": "Rooftop Café — 7oz Espresso",
+              "text": "Террасное кафе 600,7 m² — кофе, лёгкие блюда и shisha согласно материалам — с видом на купол Центра исламской цивилизации. Это 7oz Espresso, specialty-кофе бренд EBI Resources (также в Hadith Hotel в Самарканде). Как shisha сочетается с заявленной halal-сертификацией питания отеля — подлежит подтверждению с клиентом."
             },
             "services": {
               "title": "Сервис для гостей",
@@ -609,16 +609,16 @@
           },
           "related": {
             "kicker": "Рестораны и кафе",
-            "title": "7OZ Espresso в Mecca",
-            "body": "Кафе на крыше Mecca — 7OZ Espresso, specialty-кофе бренд EBI Resources, также в Hadith Hotel в Самарканде.",
-            "label": "Открыть 7OZ Espresso"
+            "title": "7oz Espresso в Mecca",
+            "body": "Кафе на крыше Mecca — 7oz Espresso, specialty-кофе бренд EBI Resources, также в Hadith Hotel в Самарканде.",
+            "label": "Открыть 7oz Espresso"
           },
           "alt": {
             "hero": "Фасад Mecca Boutique Hotel в сумерках, Ташкент",
             "g1": "Фасад Mecca Hotel на бульваре, Ташкент",
             "g2": "Интерьер lobby Mecca Boutique Hotel",
             "g3": "Интерьер ресторана Mecca Boutique Hotel",
-            "g4": "Терраса на крыше Mecca Hotel в зимнем свете — дом 7OZ Espresso"
+            "g4": "Терраса на крыше Mecca Hotel в зимнем свете — дом 7oz Espresso"
           }
         },
         "graha": {
@@ -764,7 +764,7 @@
       "intro": {
         "kicker": "Направление",
         "title": "Столы и чашки на Шёлковом пути",
-        "body": "Направление ресторанов и кафе EBI Resources приносит индонезийскую кухню и specialty-кофе в Узбекистан — от ресторанов Mecca Hotel и rooftop 7OZ в Ташкенте до индонезийского питания в Kampoeng Indonesia и 7OZ в Hadith Hotel в Самарканде.",
+        "body": "Направление ресторанов и кафе EBI Resources приносит индонезийскую кухню и specialty-кофе в Узбекистан — от ресторанов Mecca Hotel и rooftop 7oz Espresso в Ташкенте до индонезийского питания в Kampoeng Indonesia и 7oz Espresso в Hadith Hotel в Самарканде.",
         "body2": "Несколько площадок заявлены как halal или halal-сертифицированные в исходных материалах; сертифицирующие органы и полный scope подлежат подтверждению. Меню, часы работы и количество мест в основном не опубликованы."
       },
       "grid": {
@@ -818,10 +818,10 @@
         "intro": "Фирменный ресторан Hadith Hotel, Самарканд",
         "mecca": "Интерьер ресторана Mecca Boutique Hotel, Ташкент",
         "kampoeng": "Обеденный зал Hotel Kampoeng Indonesia с накрытыми столами и индонезийским искусством, Самарканд",
-        "sevenOz": "Rooftop café 7OZ Espresso на закате с видом на Центр исламской цивилизации, Ташкент",
+        "sevenOz": "Rooftop café 7oz Espresso на закате с видом на Центр исламской цивилизации, Ташкент",
         "heroSlides": {
           "diningRoom": "Уютный обеденный зал с сервированными столами и люстрами",
-          "sevenOzCafe": "Интерьер кафе 7OZ Espresso с кофейной стойкой и надписью «Good Coffee Better Days»",
+          "sevenOzCafe": "Интерьер кафе 7oz Espresso с кофейной стойкой и надписью «Good Coffee Better Days»",
           "coffeeCorner": "Бариста готовит кофе в Indonesia Coffee Corner",
           "restaurantLounge": "Зона ресторана с обеденными столами и тёплым светом подвесных светильников",
           "atriumRestaurant": "Светлый двухуровневый ресторан под стеклянной крышей"
@@ -858,7 +858,7 @@
         "mecca": {
           "kicker": "Ташкент · Mecca Hotel",
           "title": "Рестораны Mecca Hotel",
-          "text": "Indonesia Resto и Europe Resto — плюс rooftop café (7OZ) — всё питание заявлено как halal-сертифицированное в исходных материалах."
+          "text": "Indonesia Resto и Europe Resto — плюс rooftop café (7oz Espresso) — всё питание заявлено как halal-сертифицированное в исходных материалах."
         },
         "kampoeng": {
           "kicker": "Самарканд · Kampoeng Indonesia",
@@ -929,17 +929,17 @@
       "mecca": {
         "meta": {
           "title": "Рестораны Mecca Hotel — EBI Resources",
-          "description": "Indonesia Resto и Europe Resto в Mecca Boutique Hotel, Ташкент — плюс rooftop café 7OZ."
+          "description": "Indonesia Resto и Europe Resto в Mecca Boutique Hotel, Ташкент — плюс rooftop café 7oz Espresso."
         },
         "hero": {
           "kicker": "Ташкент · Mecca Boutique Hotel",
           "title": "Рестораны Mecca Hotel",
-          "supporting": "Два ресторана — Indonesia Resto и Europe Resto — с rooftop café (7OZ) с видом на Центр исламской цивилизации."
+          "supporting": "Два ресторана — Indonesia Resto и Europe Resto — с rooftop café (7oz Espresso) с видом на Центр исламской цивилизации."
         },
         "concept": {
           "kicker": "Концепция",
           "title": "Бутиковый адрес с сильным F&B-ядром",
-          "body1": "Mecca Boutique Hotel & Restaurant в Ташкенте представляет три F&B-площадки: Indonesia Resto, Europe Resto и rooftop café под управлением 7OZ Espresso — specialty-кофе бренда EBI Resources (также в Hadith Hotel в Самарканде).",
+          "body1": "Mecca Boutique Hotel & Restaurant в Ташкенте представляет три F&B-площадки: Indonesia Resto, Europe Resto и rooftop café под управлением 7oz Espresso — specialty-кофе бренда EBI Resources (также в Hadith Hotel в Самарканде).",
           "body2": "Все питание заявлено как halal-сертифицированное в исходных материалах. Полные меню, часы работы и сертифицирующий орган будут предоставлены. Статус работы подлежит подтверждению с клиентом."
         },
         "place": {
@@ -963,9 +963,9 @@
           },
           "rooftop": {
             "kicker": "Rooftop · F&B",
-            "title": "Rooftop Café — 7OZ",
-            "text": "Террасное кафе для кофе, лёгких блюд и shisha согласно материалам, с видом на купол Центра исламской цивилизации. Это 7OZ Espresso — полностью представлен в линии ресторанов и кафе. Как shisha сочетается с заявленной halal-сертификацией питания отеля — подлежит подтверждению.",
-            "link": "Открыть 7OZ Espresso"
+            "title": "Rooftop Café — 7oz Espresso",
+            "text": "Террасное кафе для кофе, лёгких блюд и shisha согласно материалам, с видом на купол Центра исламской цивилизации. Это 7oz Espresso — полностью представлен в линии ресторанов и кафе. Как shisha сочетается с заявленной halal-сертификацией питания отеля — подлежит подтверждению.",
+            "link": "Открыть 7oz Espresso"
           }
         },
         "contact": {
@@ -981,7 +981,7 @@
           "hero": "Интерьер ресторана Mecca Boutique Hotel, Ташкент",
           "g1": "Обеденный зал Mecca Boutique Hotel",
           "g2": "Интерьер lobby Mecca Boutique Hotel",
-          "g3": "Терраса на крыше Mecca Hotel в зимнем свете — дом 7OZ Espresso",
+          "g3": "Терраса на крыше Mecca Hotel в зимнем свете — дом 7oz Espresso",
           "g4": "Фасад Mecca Hotel на бульваре, Ташкент"
         }
       },
@@ -1054,25 +1054,25 @@
     },
     "cafe": {
       "meta": {
-        "title": "7OZ Espresso — F&B — EBI Resources",
-        "description": "7OZ Espresso — specialty-кофе бренд EBI Resources в Mecca Boutique Hotel (Ташкент) и Hadith Hotel (Самарканд)."
+        "title": "7oz Espresso — F&B — EBI Resources",
+        "description": "7oz Espresso — specialty-кофе бренд EBI Resources в Mecca Boutique Hotel (Ташкент) и Hadith Hotel (Самарканд)."
       },
       "hero": {
         "kicker": "Наш бизнес · F&B",
-        "title": "7OZ Espresso",
+        "title": "7oz Espresso",
         "supporting": "Из Jakarta на Шёлковый путь — индонезийский specialty-кофе в Mecca и Hadith."
       },
       "brand": {
         "kicker": "Бренд",
         "title": "Из Jakarta на Шёлковый путь",
-        "body1": "7OZ Espresso — specialty-кофе café бренд EBI Resources — наследие индонезийского кофе, укоренённое в Jakarta, созданное для современной центральноазиатской аудитории. Больше, чем кафе: пространство, где встречаются мастерство и связь.",
-        "body2": "Название «7oz» указывает на идеальный объём для идеальной чашки. Отборные индонезийские зёрна, современное оборудование и specialty brewing — в центре опыта, без выдуманных наград, часов или полного опубликованного меню."
+        "body1": "7oz Espresso — specialty-кофе café бренд EBI Resources — наследие индонезийского кофе, укоренённое в Jakarta, созданное для современной центральноазиатской аудитории. Больше, чем кафе: пространство, где встречаются мастерство и связь.",
+        "body2": "Название «7oz Espresso» указывает на идеальный объём для идеальной чашки. Отборные индонезийские зёрна, современное оборудование и specialty brewing — в центре опыта, без выдуманных наград, часов или полного опубликованного меню."
       },
       "placement": {
         "kicker": "Где нас найти",
         "title": "Два отеля, один кофейный бренд",
-        "body": "7OZ Espresso работает в отелях EBI Resources — подтверждено в Mecca Boutique Hotel в Ташкенте и Hadith Hotel в Самарканде.",
-        "note": "7OZ находится в линии ресторанов и кафе как specialty-кофе бренд группы. Полные концепции питания в каждом отеле — на страницах отелей и F&B-площадок.",
+        "body": "7oz Espresso работает в отелях EBI Resources — подтверждено в Mecca Boutique Hotel в Ташкенте и Hadith Hotel в Самарканде.",
+        "note": "7oz Espresso находится в линии ресторанов и кафе как specialty-кофе бренд группы. Полные концепции питания в каждом отеле — на страницах отелей и F&B-площадок.",
         "outlets": {
           "mecca": {
             "detail": "Ташкент · Rooftop café",
@@ -1122,7 +1122,7 @@
       "location": {
         "kicker": "Локации",
         "title": "Ташкент и Самарканд",
-        "body": "Подтверждённые площадки: rooftop café в Mecca Boutique Hotel в Ташкенте и 7OZ Espresso в Hadith Hotel в Самарканде. Опубликованный адрес City Park для бренда всё ещё требует подтверждения клиентом, как он связан с rooftop Mecca.",
+        "body": "Подтверждённые площадки: rooftop café в Mecca Boutique Hotel в Ташкенте и 7oz Espresso в Hadith Hotel в Самарканде. Опубликованный адрес City Park для бренда всё ещё требует подтверждения клиентом, как он связан с rooftop Mecca.",
         "addressLabel": "Опубликованный адрес в Ташкенте",
         "address": "City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan",
         "identityLabel": "Идентичность адреса",
@@ -1140,7 +1140,7 @@
         "emailLabel": "Email",
         "phone": "+998 92 04 333 14",
         "email": "support@7oz-espresso.com",
-        "websiteLabel": "Посетить 7oz-espresso.com",
+        "websiteLabel": "Посетить 7oz Espresso",
         "websiteNote": "Сайт бренда указан в проектных материалах — подтвердите, что он работает и актуален. Часы работы опущены, пока нет единого подтверждённого расписания."
       },
       "cta": {
@@ -1151,11 +1151,11 @@
         "partner": "Стать партнёром"
       },
       "alt": {
-        "hero": "Rooftop café 7OZ Espresso на закате с видом на Центр исламской цивилизации, Ташкент",
-        "galleryRooftop": "Rooftop café 7OZ Espresso на закате с видом на Центр исламской цивилизации Ташкента",
-        "galleryWinter": "Терраса на крыше Mecca Hotel в зимнем свете, Ташкент — дом 7OZ Espresso",
-        "galleryHadith": "Specialty-кофе и pastry lounge в Hadith Hotel, Самарканд — атмосфера контекста outlet 7OZ",
-        "galleryFacade": "Фасад Mecca Boutique Hotel на бульваре, Ташкент — дом rooftop café 7OZ"
+        "hero": "Rooftop café 7oz Espresso на закате с видом на Центр исламской цивилизации, Ташкент",
+        "galleryRooftop": "Rooftop café 7oz Espresso на закате с видом на Центр исламской цивилизации Ташкента",
+        "galleryWinter": "Терраса на крыше Mecca Hotel в зимнем свете, Ташкент — дом 7oz Espresso",
+        "galleryHadith": "Specialty-кофе и pastry lounge в Hadith Hotel, Самарканд — атмосфера контекста outlet 7oz Espresso",
+        "galleryFacade": "Фасад Mecca Boutique Hotel на бульваре, Ташкент — дом rooftop café 7oz Espresso"
       }
     },
     "technology": {
@@ -1372,10 +1372,10 @@
           "websiteLabel": "Перейти на mecca-hotel.com"
         },
         "sevenOz": {
-          "name": "7OZ Espresso",
+          "name": "7oz Espresso",
           "city": "Ташкент и Самарканд",
           "note": "Specialty-кофе в Mecca Boutique Hotel (крыша в Ташкенте) и Hadith Hotel (Самарканд). Адрес на City Park на сайте бренда ещё требует подтверждения.",
-          "websiteLabel": "Перейти на 7oz-espresso.com"
+          "websiteLabel": "Перейти на сайт 7oz Espresso"
         }
       }
     }

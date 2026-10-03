@@ -64,7 +64,7 @@
         "supporting": "Halal dining and specialty coffee, from candlelit plov to Indonesian pastries."
       },
       "cafe": {
-        "kicker": "7OZ Espresso · Café",
+        "kicker": "7oz Espresso · Café",
         "title": "From Jakarta to the Silk Road",
         "supporting": "Indonesian specialty-coffee culture at Mecca and Hadith."
       }
@@ -182,8 +182,8 @@
       "hadithNight": "Hadith Hotel illuminated at night behind its fountains",
       "meccaFacade": "The Mecca boutique hotel at dusk, Tashkent",
       "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
-      "sevenOzRooftop": "7OZ Espresso rooftop café at sunset, overlooking Tashkent's Islamic Civilization Centre",
-      "sevenOzInterior": "Inside a 7OZ Espresso café, with its coffee counter and pastry display",
+      "sevenOzRooftop": "7oz Espresso rooftop café at sunset, overlooking Tashkent's Islamic Civilization Centre",
+      "sevenOzInterior": "Inside a 7oz Espresso café, with its coffee counter and pastry display",
       "grahaVilla": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
       "grahaNight": "The Imam al-Bukhari Complex illuminated at night, Samarkand",
       "kampoengFacade": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
@@ -267,7 +267,7 @@
         },
         "sevenOz": {
           "kicker": "Café",
-          "title": "7OZ Espresso",
+          "title": "7oz Espresso",
           "description": "Specialty coffee rooted in Indonesian coffee culture, from Jakarta to Tashkent."
         }
       },
@@ -286,8 +286,8 @@
         "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
         "graha": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
         "kampoeng": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
-        "sevenOz": "Inside a 7OZ Espresso café, with its coffee counter and pastry display",
-        "sevenOzRooftop": "7OZ Espresso rooftop café at sunset, Tashkent"
+        "sevenOz": "Inside a 7oz Espresso café, with its coffee counter and pastry display",
+        "sevenOzRooftop": "7oz Espresso rooftop café at sunset, Tashkent"
       }
     },
     "visionMission": {
@@ -513,8 +513,8 @@
               "text": "Total inventory of 114 rooms as stated in project materials. Documented examples include Standard Rooms (62 rooms, 35 m²) and Junior Suites (9 rooms, 71 m², 24-hour butler). A full published tier list is to be provided."
             },
             "dining": {
-              "title": "Dining & 7OZ Espresso",
-              "text": "The Restaurant — signature dining (120 seats) with Uzbek, Indonesian, and Continental cuisine, stated as halal. The Bar & Lounge — Indonesian pastries and specialty coffees, including Kopi Luwak. Confirmed: 7OZ Espresso also operates at Hadith Hotel. Opening hours are to be confirmed."
+              "title": "Dining & 7oz Espresso",
+              "text": "The Restaurant — signature dining (120 seats) with Uzbek, Indonesian, and Continental cuisine, stated as halal. The Bar & Lounge — Indonesian pastries and specialty coffees, including Kopi Luwak. Confirmed: 7oz Espresso also operates at Hadith Hotel. Opening hours are to be confirmed."
             },
             "wellness": {
               "title": "Wellness & Recreation",
@@ -538,9 +538,9 @@
           },
           "related": {
             "kicker": "Food & Beverage",
-            "title": "7OZ Espresso at Hadith",
-            "body": "Hadith Hotel is a confirmed home of 7OZ Espresso — EBI Resources' specialty-coffee brand, also at Mecca Boutique Hotel in Tashkent.",
-            "label": "Discover 7OZ Espresso"
+            "title": "7oz Espresso at Hadith",
+            "body": "Hadith Hotel is a confirmed home of 7oz Espresso — EBI Resources' specialty-coffee brand, also at Mecca Boutique Hotel in Tashkent.",
+            "label": "Discover 7oz Espresso"
           },
           "alt": {
             "hero": "Hadith Hotel at sunset with its fountain pool, Samarkand — landscape view",
@@ -592,8 +592,8 @@
               "text": "European cuisine on the second floor (452 m²) — including fresh pasta, risotto, wood-fired pizza, osso buco, and tiramisu as cited. Positioned as premium European dining. Menus and hours are to be provided."
             },
             "rooftop": {
-              "title": "Rooftop Café — 7OZ",
-              "text": "A 600.7 m² terrace café — coffee, light meals, and shisha as listed in source materials — with views to the Islamic Civilization Centre dome. This rooftop café is 7OZ Espresso, EBI Resources' specialty-coffee brand (also at Hadith Hotel in Samarkand). How shisha sits alongside the hotel's stated halal dining certification is to be confirmed with the client."
+              "title": "Rooftop Café — 7oz Espresso",
+              "text": "A 600.7 m² terrace café — coffee, light meals, and shisha as listed in source materials — with views to the Islamic Civilization Centre dome. This rooftop café is 7oz Espresso, EBI Resources' specialty-coffee brand (also at Hadith Hotel in Samarkand). How shisha sits alongside the hotel's stated halal dining certification is to be confirmed with the client."
             },
             "services": {
               "title": "Guest Services",
@@ -609,16 +609,16 @@
           },
           "related": {
             "kicker": "Food & Beverage",
-            "title": "7OZ Espresso at Mecca",
-            "body": "Mecca's rooftop café is 7OZ Espresso — EBI Resources' specialty-coffee brand, also at Hadith Hotel in Samarkand.",
-            "label": "Discover 7OZ Espresso"
+            "title": "7oz Espresso at Mecca",
+            "body": "Mecca's rooftop café is 7oz Espresso — EBI Resources' specialty-coffee brand, also at Hadith Hotel in Samarkand.",
+            "label": "Discover 7oz Espresso"
           },
           "alt": {
             "hero": "Mecca Boutique Hotel facade at dusk, Tashkent",
             "g1": "Mecca Hotel boulevard facade, Tashkent",
             "g2": "Lobby interior at Mecca Boutique Hotel",
             "g3": "Dining interior at Mecca Boutique Hotel",
-            "g4": "Mecca Hotel rooftop terrace in winter light — home to 7OZ Espresso"
+            "g4": "Mecca Hotel rooftop terrace in winter light — home to 7oz Espresso"
           }
         },
         "graha": {
@@ -764,7 +764,7 @@
       "intro": {
         "kicker": "The Line",
         "title": "Tables and Cups on the Silk Road",
-        "body": "EBI Resources' food & beverage line brings Indonesian cuisine and specialty coffee to Uzbekistan — from Mecca Hotel's restaurants and rooftop 7OZ in Tashkent, to Indonesian dining at Kampoeng Indonesia and 7OZ at Hadith Hotel in Samarkand.",
+        "body": "EBI Resources' food & beverage line brings Indonesian cuisine and specialty coffee to Uzbekistan — from Mecca Hotel's restaurants and rooftop 7oz Espresso in Tashkent, to Indonesian dining at Kampoeng Indonesia and 7oz Espresso at Hadith Hotel in Samarkand.",
         "body2": "Several venues are stated as halal or halal-certified in source materials; certifying bodies and full scopes are to be confirmed. Menus, opening hours, and seat counts are largely unpublished."
       },
       "grid": {
@@ -818,10 +818,10 @@
         "intro": "Signature restaurant dining at Hadith Hotel, Samarkand",
         "mecca": "Dining interior at Mecca Boutique Hotel, Tashkent",
         "kampoeng": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
-        "sevenOz": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
+        "sevenOz": "7oz Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
         "heroSlides": {
           "diningRoom": "Warmly lit dining room with chandelier lighting and set tables",
-          "sevenOzCafe": "7OZ Espresso café interior with coffee bar and the words Good Coffee Better Days",
+          "sevenOzCafe": "7oz Espresso café interior with coffee bar and the words Good Coffee Better Days",
           "coffeeCorner": "Barista preparing coffee at Indonesia Coffee Corner",
           "restaurantLounge": "Restaurant lounge with dining tables and warm pendant lighting",
           "atriumRestaurant": "Bright two-story restaurant beneath a glass ceiling"
@@ -858,7 +858,7 @@
         "mecca": {
           "kicker": "Tashkent · Mecca Hotel",
           "title": "Mecca Hotel Restaurants",
-          "text": "Indonesia Resto and Europe Resto — plus a rooftop café (7OZ) — all dining stated as halal-certified in source materials."
+          "text": "Indonesia Resto and Europe Resto — plus a rooftop café (7oz Espresso) — all dining stated as halal-certified in source materials."
         },
         "kampoeng": {
           "kicker": "Samarkand · Kampoeng Indonesia",
@@ -929,17 +929,17 @@
       "mecca": {
         "meta": {
           "title": "Mecca Hotel Restaurants — EBI Resources",
-          "description": "Indonesia Resto and Europe Resto at Mecca Boutique Hotel, Tashkent — plus the 7OZ rooftop café."
+          "description": "Indonesia Resto and Europe Resto at Mecca Boutique Hotel, Tashkent — plus the 7oz Espresso rooftop café."
         },
         "hero": {
           "kicker": "Tashkent · Mecca Boutique Hotel",
           "title": "Mecca Hotel Restaurants",
-          "supporting": "Two restaurants — Indonesia Resto and Europe Resto — with a rooftop café (7OZ) overlooking the Centre of Islamic Civilization."
+          "supporting": "Two restaurants — Indonesia Resto and Europe Resto — with a rooftop café (7oz Espresso) overlooking the Centre of Islamic Civilization."
         },
         "concept": {
           "kicker": "Concept",
           "title": "A Boutique Address with a Strong F&B Core",
-          "body1": "Mecca Boutique Hotel & Restaurant in Tashkent presents three F&B venues: Indonesia Resto, Europe Resto, and a rooftop café operated as 7OZ Espresso — EBI Resources’ specialty-coffee brand (also at Hadith Hotel in Samarkand).",
+          "body1": "Mecca Boutique Hotel & Restaurant in Tashkent presents three F&B venues: Indonesia Resto, Europe Resto, and a rooftop café operated as 7oz Espresso — EBI Resources’ specialty-coffee brand (also at Hadith Hotel in Samarkand).",
           "body2": "All dining is stated as halal-certified in source materials. Full menus, opening hours, and the certifying body are to be provided. Operating status is to be confirmed with the client."
         },
         "place": {
@@ -963,9 +963,9 @@
           },
           "rooftop": {
             "kicker": "Rooftop · F&B",
-            "title": "Rooftop Café — 7OZ",
-            "text": "A terrace café for coffee, light meals, and shisha as listed in source materials, with views to the Islamic Civilization Centre dome. This is 7OZ Espresso — presented fully on the Food & Beverage line. How shisha sits alongside the hotel’s stated halal dining certification is to be confirmed.",
-            "link": "Explore 7OZ Espresso"
+            "title": "Rooftop Café — 7oz Espresso",
+            "text": "A terrace café for coffee, light meals, and shisha as listed in source materials, with views to the Islamic Civilization Centre dome. This is 7oz Espresso — presented fully on the Food & Beverage line. How shisha sits alongside the hotel’s stated halal dining certification is to be confirmed.",
+            "link": "Explore 7oz Espresso"
           }
         },
         "contact": {
@@ -981,7 +981,7 @@
           "hero": "Dining interior at Mecca Boutique Hotel, Tashkent",
           "g1": "Dining room at Mecca Boutique Hotel",
           "g2": "Lobby interior at Mecca Boutique Hotel",
-          "g3": "Mecca Hotel rooftop terrace in winter light — home to 7OZ Espresso",
+          "g3": "Mecca Hotel rooftop terrace in winter light — home to 7oz Espresso",
           "g4": "Mecca Hotel boulevard facade, Tashkent"
         }
       },
@@ -1054,25 +1054,25 @@
     },
     "cafe": {
       "meta": {
-        "title": "7OZ Espresso — F&B — EBI Resources",
-        "description": "7OZ Espresso — EBI Resources' specialty-coffee brand at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
+        "title": "7oz Espresso — F&B — EBI Resources",
+        "description": "7oz Espresso — EBI Resources' specialty-coffee brand at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
       },
       "hero": {
         "kicker": "Our Businesses · F&B",
-        "title": "7OZ Espresso",
+        "title": "7oz Espresso",
         "supporting": "From Jakarta to the Silk Road — Indonesian specialty coffee at Mecca and Hadith."
       },
       "brand": {
         "kicker": "Brand",
         "title": "From Jakarta to the Silk Road",
-        "body1": "7OZ Espresso is EBI Resources' specialty-coffee café brand — Indonesian coffee heritage, rooted in Jakarta, crafted for a modern Central Asian audience. More than a café: a space where craftsmanship and connection meet.",
-        "body2": "The name \"7oz\" points to the ideal volume for a perfect cup. Selected Indonesian beans, modern equipment, and specialty brewing sit at the centre of the experience — without inventing awards, hours, or a full published menu."
+        "body1": "7oz Espresso is EBI Resources' specialty-coffee café brand — Indonesian coffee heritage, rooted in Jakarta, crafted for a modern Central Asian audience. More than a café: a space where craftsmanship and connection meet.",
+        "body2": "The name \"7oz Espresso\" points to the ideal volume for a perfect cup. Selected Indonesian beans, modern equipment, and specialty brewing sit at the centre of the experience — without inventing awards, hours, or a full published menu."
       },
       "placement": {
         "kicker": "Where You'll Find Us",
         "title": "Two Hotels, One Coffee Brand",
-        "body": "7OZ Espresso operates within EBI Resources hotels — confirmed at Mecca Boutique Hotel in Tashkent and at Hadith Hotel in Samarkand.",
-        "note": "7OZ sits on the Food & Beverage line as the group's specialty-coffee brand. Full dining concepts at each hotel are covered on the hotel and F&B venue pages.",
+        "body": "7oz Espresso operates within EBI Resources hotels — confirmed at Mecca Boutique Hotel in Tashkent and at Hadith Hotel in Samarkand.",
+        "note": "7oz Espresso sits on the Food & Beverage line as the group's specialty-coffee brand. Full dining concepts at each hotel are covered on the hotel and F&B venue pages.",
         "outlets": {
           "mecca": {
             "detail": "Tashkent · Rooftop café",
@@ -1122,7 +1122,7 @@
       "location": {
         "kicker": "Locations",
         "title": "Tashkent & Samarkand",
-        "body": "Confirmed outlets: the rooftop café at Mecca Boutique Hotel in Tashkent, and 7OZ Espresso at Hadith Hotel in Samarkand. A published City Park street address for the brand still needs client confirmation of how it relates to the Mecca rooftop.",
+        "body": "Confirmed outlets: the rooftop café at Mecca Boutique Hotel in Tashkent, and 7oz Espresso at Hadith Hotel in Samarkand. A published City Park street address for the brand still needs client confirmation of how it relates to the Mecca rooftop.",
         "addressLabel": "Published Tashkent address",
         "address": "City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan",
         "identityLabel": "Address identity",
@@ -1140,7 +1140,7 @@
         "emailLabel": "Email",
         "phone": "+998 92 04 333 14",
         "email": "support@7oz-espresso.com",
-        "websiteLabel": "Visit 7oz-espresso.com",
+        "websiteLabel": "Visit 7oz Espresso",
         "websiteNote": "Brand site listed in project materials — please confirm it remains live and current. Opening hours are omitted until a single confirmed schedule is available."
       },
       "cta": {
@@ -1151,11 +1151,11 @@
         "partner": "Partner With Us"
       },
       "alt": {
-        "hero": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
-        "galleryRooftop": "7OZ Espresso rooftop café at sunset overlooking Tashkent's Islamic Civilization Centre",
-        "galleryWinter": "Mecca Hotel rooftop terrace in winter light, Tashkent — home to 7OZ Espresso",
-        "galleryHadith": "Specialty coffee and pastry lounge at Hadith Hotel, Samarkand — atmosphere of the 7OZ outlet context",
-        "galleryFacade": "Mecca Boutique Hotel boulevard facade, Tashkent — home to the 7OZ rooftop café"
+        "hero": "7oz Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
+        "galleryRooftop": "7oz Espresso rooftop café at sunset overlooking Tashkent's Islamic Civilization Centre",
+        "galleryWinter": "Mecca Hotel rooftop terrace in winter light, Tashkent — home to 7oz Espresso",
+        "galleryHadith": "Specialty coffee and pastry lounge at Hadith Hotel, Samarkand — atmosphere of the 7oz Espresso outlet context",
+        "galleryFacade": "Mecca Boutique Hotel boulevard facade, Tashkent — home to the 7oz Espresso rooftop café"
       }
     },
     "technology": {
@@ -1372,10 +1372,10 @@
           "websiteLabel": "Visit mecca-hotel.com"
         },
         "sevenOz": {
-          "name": "7OZ Espresso",
+          "name": "7oz Espresso",
           "city": "Tashkent & Samarkand",
           "note": "Specialty coffee at Mecca Boutique Hotel (Tashkent rooftop) and Hadith Hotel (Samarkand). City Park street address on the brand site still needs confirmation.",
-          "websiteLabel": "Visit 7oz-espresso.com"
+          "websiteLabel": "Visit 7oz Espresso"
         }
       }
     }

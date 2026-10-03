@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { BrandNameText } from "@/components/BrandNameText";
 import { useEffect, useState, type CSSProperties } from "react";
 import { Button } from "@/components/ui/Button";
 import { ComingSoonBadge } from "@/components/ComingSoonBadge";
@@ -179,7 +180,7 @@ export function HeroContent({
             <p
               className={`mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-white/90 transition-opacity duration-struct ease-quart ${active ? "opacity-100" : "opacity-0"}`}
             >
-              {kicker}
+              <BrandNameText text={kicker} />
             </p>
           )}
           {/* Always a real h1 — animate visibility with opacity only (never swap to <p>). */}

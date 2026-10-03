@@ -64,7 +64,7 @@
         "supporting": "Halol ovqatlanish va maxsus qahva — sham chiroqli plovdan indoneziya pishiriqlarigacha."
       },
       "cafe": {
-        "kicker": "7OZ Espresso · Kafe",
+        "kicker": "7oz Espresso · Kafe",
         "title": "Jakartadan Ipak yo‘ligacha",
         "supporting": "Mecca va Hadith’da indoneziya maxsus qahva madaniyati."
       }
@@ -182,8 +182,8 @@
       "hadithNight": "Favvoralar ortida tungi yoritilgan Hadith Hotel",
       "meccaFacade": "Mecca butik mehmonxonasi shafaqda, Toshkent",
       "meccaRooftop": "Mecca tomidagi kafe — Islom sivilizatsiyasi markaziga qaragan manzara",
-      "sevenOzRooftop": "7OZ Espresso tom kafesi quyosh botishida, Toshkent Islom sivilizatsiyasi markaziga qaragan",
-      "sevenOzInterior": "7OZ Espresso kafesi ichida — qahva stoli va pishiriqlar vitrinasi",
+      "sevenOzRooftop": "7oz Espresso tom kafesi quyosh botishida, Toshkent Islom sivilizatsiyasi markaziga qaragan",
+      "sevenOzInterior": "7oz Espresso kafesi ichida — qahva stoli va pishiriqlar vitrinasi",
       "grahaVilla": "Oltin soatda Graha Nusantara villasi, Imom Al-Buxoriy majmuasi yonida",
       "grahaNight": "Tungi yoritilgan Imom Al-Buxoriy majmuasi, Samarqand",
       "kampoengFacade": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
@@ -267,7 +267,7 @@
         },
         "sevenOz": {
           "kicker": "Kafe",
-          "title": "7OZ Espresso",
+          "title": "7oz Espresso",
           "description": "Jakartadan Toshkentgacha — Indoneziya qahva madaniyatiga asoslangan maxsus qahvalar."
         }
       },
@@ -286,8 +286,8 @@
         "meccaRooftop": "Mecca tom qavatidagi kafe — Islom sivilizatsiyasi markaziga qaragan",
         "graha": "Oltin soatda Graha Nusantara villasi, Imom Al-Buxoriy majmuasi yonida",
         "kampoeng": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
-        "sevenOz": "7OZ Espresso kafe ichkarisi — qahva peshtaxtasi va pishiriqlar vitrinasi",
-        "sevenOzRooftop": "7OZ Espresso tom qavatidagi kafe, quyosh botishida, Toshkent"
+        "sevenOz": "7oz Espresso kafe ichkarisi — qahva peshtaxtasi va pishiriqlar vitrinasi",
+        "sevenOzRooftop": "7oz Espresso tom qavatidagi kafe, quyosh botishida, Toshkent"
       }
     },
     "visionMission": {
@@ -513,8 +513,8 @@
               "text": "Loyiha materiallarida ko‘rsatilganidek jami 114 xona. Hujjatlashtirilgan misollar: Standart xonalar (62 xona, 35 m²) va Junior Suites (9 xona, 71 m², 24 soatlik batler). To‘liq nashr etilgan toifalar ro‘yxati taqdim etilishi kerak."
             },
             "dining": {
-              "title": "Ovqatlanish va 7OZ Espresso",
-              "text": "The Restaurant — imzo ovqatlanish (120 o‘rin) o‘zbek, indoneziya va kontinental oshxonasi bilan, halol deb ko‘rsatilgan. Bar & Lounge — indoneziya pishiriqlari va maxsus qahvalar, jumladan Kopi Luwak. Tasdiqlangan: 7OZ Espresso Hadith Hotelda ham faoliyat yuritadi. Ish vaqtlari tasdiqlanishi kerak."
+              "title": "Ovqatlanish va 7oz Espresso",
+              "text": "The Restaurant — imzo ovqatlanish (120 o‘rin) o‘zbek, indoneziya va kontinental oshxonasi bilan, halol deb ko‘rsatilgan. Bar & Lounge — indoneziya pishiriqlari va maxsus qahvalar, jumladan Kopi Luwak. Tasdiqlangan: 7oz Espresso Hadith Hotelda ham faoliyat yuritadi. Ish vaqtlari tasdiqlanishi kerak."
             },
             "wellness": {
               "title": "Salomatlik va dam olish",
@@ -538,9 +538,9 @@
           },
           "related": {
             "kicker": "Ovqatlanish va ichimliklar",
-            "title": "Hadith’dagi 7OZ Espresso",
-            "body": "Hadith Hotel 7OZ Espresso ning tasdiqlangan manzili — EBI Resources maxsus qahva brendi, Toshkentdagi Mecca Boutique Hotelda ham mavjud.",
-            "label": "7OZ Espresso bilan tanishing"
+            "title": "Hadith’dagi 7oz Espresso",
+            "body": "Hadith Hotel 7oz Espresso ning tasdiqlangan manzili — EBI Resources maxsus qahva brendi, Toshkentdagi Mecca Boutique Hotelda ham mavjud.",
+            "label": "7oz Espresso bilan tanishing"
           },
           "alt": {
             "hero": "Hadith Hotel favvorali hovuzi bilan shafaq paytida, Samarqand — keng manzara",
@@ -592,8 +592,8 @@
               "text": "Ikkinchi qavatda Yevropa oshxonasi (452 m²) — yangi pasta, risotto, o‘t o‘chog‘i pizzasi, osso buco va tiramisu kabi taomlar keltirilgan. Premium Yevropa ovqatlanishi sifatida pozitsiyalangan. Menyu va ish vaqtlari taqdim etilishi kerak."
             },
             "rooftop": {
-              "title": "Tom kafe — 7OZ",
-              "text": "600,7 m² terasa kafe — qahva, yengil taomlar va shisha, manba materiallarda ko‘rsatilgan — Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Ushbu tom kafe 7OZ Espresso, EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham). Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi mijoz bilan tasdiqlanishi kerak."
+              "title": "Tom kafe — 7oz Espresso",
+              "text": "600,7 m² terasa kafe — qahva, yengil taomlar va shisha, manba materiallarda ko‘rsatilgan — Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Ushbu tom kafe 7oz Espresso, EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham). Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi mijoz bilan tasdiqlanishi kerak."
             },
             "services": {
               "title": "Mehmon xizmatlari",
@@ -609,16 +609,16 @@
           },
           "related": {
             "kicker": "Ovqatlanish va ichimliklar",
-            "title": "Mecca’dagi 7OZ Espresso",
-            "body": "Mecca tom kafesi 7OZ Espresso — EBI Resources maxsus qahva brendi, Samarqanddagi Hadith Hotelda ham mavjud.",
-            "label": "7OZ Espresso bilan tanishing"
+            "title": "Mecca’dagi 7oz Espresso",
+            "body": "Mecca tom kafesi 7oz Espresso — EBI Resources maxsus qahva brendi, Samarqanddagi Hadith Hotelda ham mavjud.",
+            "label": "7oz Espresso bilan tanishing"
           },
           "alt": {
             "hero": "Shom payti Mecca Boutique Hotel fasadi, Toshkent",
             "g1": "Mecca Hotel bulvar fasadi, Toshkent",
             "g2": "Mecca Boutique Hotel lobby interyeri",
             "g3": "Mecca Boutique Hotel ovqatlanish interyeri",
-            "g4": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7OZ Espresso manzili"
+            "g4": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7oz Espresso manzili"
           }
         },
         "graha": {
@@ -764,7 +764,7 @@
       "intro": {
         "kicker": "Yo‘nalish",
         "title": "Ipak yo‘lida stollar va finjonlar",
-        "body": "EBI Resources ovqatlanish va ichimliklar yo‘nalishi indoneziya oshxonasi va maxsus qahvani O‘zbekistonga olib keladi — Toshkentdagi Mecca Hotel restoranlari va tom 7OZ dan Samarqanddagi Kampoeng Indonesia indoneziya ovqatlanishi va Hadith Hotel 7OZ gacha.",
+        "body": "EBI Resources ovqatlanish va ichimliklar yo‘nalishi indoneziya oshxonasi va maxsus qahvani O‘zbekistonga olib keladi — Toshkentdagi Mecca Hotel restoranlari va tom 7oz Espresso dan Samarqanddagi Kampoeng Indonesia indoneziya ovqatlanishi va Hadith Hotel 7oz Espresso gacha.",
         "body2": "Bir qancha joylar manba materiallarda halol yoki halol sertifikatlangan deb ko‘rsatilgan; sertifikatlash organlari va to‘liq doirasi tasdiqlanishi kerak. Menyular, ish vaqtlari va o‘rinlar soni asosan nashr etilmagan."
       },
       "grid": {
@@ -818,10 +818,10 @@
         "intro": "Hadith Hotel imzo restoran ovqatlanishi, Samarqand",
         "mecca": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
         "kampoeng": "Hotel Kampoeng Indonesia ovqatlanish zali bezatilgan stollar va indoneziya san’ati bilan, Samarqand",
-        "sevenOz": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent",
+        "sevenOz": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7oz Espresso tom kafesi, Toshkent",
         "heroSlides": {
           "diningRoom": "Qandillar bilan yoritilgan, dasturxon yozilgan iliq restoran zali",
-          "sevenOzCafe": "Qahva bari va “Good Coffee Better Days” yozuvi tushirilgan 7OZ Espresso kafesi",
+          "sevenOzCafe": "Qahva bari va “Good Coffee Better Days” yozuvi tushirilgan 7oz Espresso kafesi",
           "coffeeCorner": "Indonesia Coffee Corner’da barista qahva tayyorlamoqda",
           "restaurantLounge": "Ovqatlanish stollari va iliq osma chiroqlari bor restoran dam olish zali",
           "atriumRestaurant": "Shisha shift ostidagi yorug‘ ikki qavatli restoran"
@@ -858,7 +858,7 @@
         "mecca": {
           "kicker": "Toshkent · Mecca Hotel",
           "title": "Mecca Hotel restoranlari",
-          "text": "Indonesia Resto va Europe Resto — shuningdek tom kafe (7OZ) — manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan."
+          "text": "Indonesia Resto va Europe Resto — shuningdek tom kafe (7oz Espresso) — manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan."
         },
         "kampoeng": {
           "kicker": "Samarqand · Kampoeng Indonesia",
@@ -929,17 +929,17 @@
       "mecca": {
         "meta": {
           "title": "Mecca Hotel restoranlari — EBI Resources",
-          "description": "Mecca Boutique Hotel, Toshkent — Indonesia Resto va Europe Resto, shuningdek 7OZ tom kafesi."
+          "description": "Mecca Boutique Hotel, Toshkent — Indonesia Resto va Europe Resto, shuningdek 7oz Espresso tom kafesi."
         },
         "hero": {
           "kicker": "Toshkent · Mecca Boutique Hotel",
           "title": "Mecca Hotel restoranlari",
-          "supporting": "Ikki restoran — Indonesia Resto va Europe Resto — Islom sivilizatsiyasi markaziga qaragan tom kafe (7OZ) bilan."
+          "supporting": "Ikki restoran — Indonesia Resto va Europe Resto — Islom sivilizatsiyasi markaziga qaragan tom kafe (7oz Espresso) bilan."
         },
         "concept": {
           "kicker": "Konsepsiya",
           "title": "Kuchli F&B markaziga ega butik manzil",
-          "body1": "Toshkentdagi Mecca Boutique Hotel & Restaurant uch F&B joyini taqdim etadi: Indonesia Resto, Europe Resto va 7OZ Espresso sifatida boshqariladigan tom kafe — EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham).",
+          "body1": "Toshkentdagi Mecca Boutique Hotel & Restaurant uch F&B joyini taqdim etadi: Indonesia Resto, Europe Resto va 7oz Espresso sifatida boshqariladigan tom kafe — EBI Resources maxsus qahva brendi (Samarqanddagi Hadith Hotelda ham).",
           "body2": "Manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan. To‘liq menyu, ish vaqtlari va sertifikatlash organi taqdim etilishi kerak. Faoliyat holati mijoz bilan tasdiqlanishi kerak."
         },
         "place": {
@@ -963,9 +963,9 @@
           },
           "rooftop": {
             "kicker": "Tom · F&B",
-            "title": "Tom kafe — 7OZ",
-            "text": "Qahva, yengil taomlar va shisha uchun terasa kafe, manba materiallarda ko‘rsatilgan, Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Bu 7OZ Espresso — Ovqatlanish va ichimliklar yo‘nalishida to‘liq taqdim etilgan. Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi tasdiqlanishi kerak.",
-            "link": "7OZ Espresso bilan tanishing"
+            "title": "Tom kafe — 7oz Espresso",
+            "text": "Qahva, yengil taomlar va shisha uchun terasa kafe, manba materiallarda ko‘rsatilgan, Islom sivilizatsiyasi markazi gumbaziga qarash bilan. Bu 7oz Espresso — Ovqatlanish va ichimliklar yo‘nalishida to‘liq taqdim etilgan. Shishaning mehmonxonaning halol ovqatlanish sertifikati bilan qanday uyg‘unlashishi tasdiqlanishi kerak.",
+            "link": "7oz Espresso bilan tanishing"
           }
         },
         "contact": {
@@ -981,7 +981,7 @@
           "hero": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
           "g1": "Mecca Boutique Hotel ovqatlanish zali",
           "g2": "Mecca Boutique Hotel lobby interyeri",
-          "g3": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7OZ Espresso manzili",
+          "g3": "Qish yorug‘ligida Mecca Hotel tom terrasi — 7oz Espresso manzili",
           "g4": "Mecca Hotel bulvar fasadi, Toshkent"
         }
       },
@@ -1054,25 +1054,25 @@
     },
     "cafe": {
       "meta": {
-        "title": "7OZ Espresso — F&B — EBI Resources",
-        "description": "7OZ Espresso — EBI Resources maxsus qahva brendi Mecca Boutique Hotel (Toshkent) va Hadith Hotel (Samarqand)da."
+        "title": "7oz Espresso — F&B — EBI Resources",
+        "description": "7oz Espresso — EBI Resources maxsus qahva brendi Mecca Boutique Hotel (Toshkent) va Hadith Hotel (Samarqand)da."
       },
       "hero": {
         "kicker": "Bizneslarimiz · F&B",
-        "title": "7OZ Espresso",
+        "title": "7oz Espresso",
         "supporting": "Jakartadan Ipak yo‘ligacha — Mecca va Hadith’da indoneziya maxsus qahvasi."
       },
       "brand": {
         "kicker": "Brend",
         "title": "Jakartadan Ipak yo‘ligacha",
-        "body1": "7OZ Espresso EBI Resources maxsus qahva kafe brendi — indoneziya qahva merosi, Jakartada ildizlangan, zamonaviy Markaziy Osiyo auditoriyasi uchun yaratilgan. Kafedan ko‘proq: hunarmandchilik va aloqa uchrashadigan joy.",
-        "body2": "«7oz» nomi mukammal finjon uchun ideal hajmga ishora qiladi. Tanlangan indoneziya donlari, zamonaviy uskunalar va maxsus qaynatish tajriba markazida — mukofotlar, ish vaqtlari yoki to‘liq nashr etilgan menyu ixtiro qilinmaydi."
+        "body1": "7oz Espresso EBI Resources maxsus qahva kafe brendi — indoneziya qahva merosi, Jakartada ildizlangan, zamonaviy Markaziy Osiyo auditoriyasi uchun yaratilgan. Kafedan ko‘proq: hunarmandchilik va aloqa uchrashadigan joy.",
+        "body2": "«7oz Espresso» nomi mukammal finjon uchun ideal hajmga ishora qiladi. Tanlangan indoneziya donlari, zamonaviy uskunalar va maxsus qaynatish tajriba markazida — mukofotlar, ish vaqtlari yoki to‘liq nashr etilgan menyu ixtiro qilinmaydi."
       },
       "placement": {
         "kicker": "Bizni qayerda topasiz",
         "title": "Ikki mehmonxona, bitta qahva brendi",
-        "body": "7OZ Espresso EBI Resources mehmonxonalarida faoliyat yuritadi — Toshkentdagi Mecca Boutique Hotel va Samarqanddagi Hadith Hotelda tasdiqlangan.",
-        "note": "7OZ Ovqatlanish va ichimliklar yo‘nalishida guruhning maxsus qahva brendi sifatida joylashgan. Har bir mehmonxonadagi to‘liq ovqatlanish konsepsiyalari mehmonxona va F&B joy sahifalarida qamrab olingan.",
+        "body": "7oz Espresso EBI Resources mehmonxonalarida faoliyat yuritadi — Toshkentdagi Mecca Boutique Hotel va Samarqanddagi Hadith Hotelda tasdiqlangan.",
+        "note": "7oz Espresso Ovqatlanish va ichimliklar yo‘nalishida guruhning maxsus qahva brendi sifatida joylashgan. Har bir mehmonxonadagi to‘liq ovqatlanish konsepsiyalari mehmonxona va F&B joy sahifalarida qamrab olingan.",
         "outlets": {
           "mecca": {
             "detail": "Toshkent · Tom kafe",
@@ -1122,7 +1122,7 @@
       "location": {
         "kicker": "Manzillar",
         "title": "Toshkent va Samarqand",
-        "body": "Tasdiqlangan joylar: Toshkentdagi Mecca Boutique Hotel tom kafesi va Samarqanddagi Hadith Hotel 7OZ Espresso. Brend uchun nashr etilgan City Park ko‘cha manzili Mecca tom bilan qanday bog‘liqligi hali mijoz tasdiqini talab qiladi.",
+        "body": "Tasdiqlangan joylar: Toshkentdagi Mecca Boutique Hotel tom kafesi va Samarqanddagi Hadith Hotel 7oz Espresso. Brend uchun nashr etilgan City Park ko‘cha manzili Mecca tom bilan qanday bog‘liqligi hali mijoz tasdiqini talab qiladi.",
         "addressLabel": "Nashr etilgan Toshkent manzili",
         "address": "City Park, Ukchi ko‘chasi 3A, 100011, Toshkent, O‘zbekiston",
         "identityLabel": "Manzil identifikatsiyasi",
@@ -1140,7 +1140,7 @@
         "emailLabel": "Email",
         "phone": "+998 92 04 333 14",
         "email": "support@7oz-espresso.com",
-        "websiteLabel": "7oz-espresso.com ga tashrif",
+        "websiteLabel": "7oz Espresso saytiga tashrif",
         "websiteNote": "Loyiha materiallarida ko‘rsatilgan brend sayti — faol va dolzarb ekanligini tasdiqlang. Ish vaqtlari bitta tasdiqlangan jadval mavjud bo‘lguncha keltirilmagan."
       },
       "cta": {
@@ -1151,11 +1151,11 @@
         "partner": "Hamkorlik"
       },
       "alt": {
-        "hero": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent",
-        "galleryRooftop": "Quyosh botishida Toshkent Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi",
-        "galleryWinter": "Qish yorug‘ligida Mecca Hotel tom terrasi, Toshkent — 7OZ Espresso manzili",
-        "galleryHadith": "Hadith Hotel maxsus qahva va pishiriq lounge, Samarqand — 7OZ joy konteksti muhiti",
-        "galleryFacade": "Mecca Boutique Hotel bulvar fasadi, Toshkent — 7OZ tom kafesi manzili"
+        "hero": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7oz Espresso tom kafesi, Toshkent",
+        "galleryRooftop": "Quyosh botishida Toshkent Islom sivilizatsiyasi markaziga qaragan 7oz Espresso tom kafesi",
+        "galleryWinter": "Qish yorug‘ligida Mecca Hotel tom terrasi, Toshkent — 7oz Espresso manzili",
+        "galleryHadith": "Hadith Hotel maxsus qahva va pishiriq lounge, Samarqand — 7oz Espresso joy konteksti muhiti",
+        "galleryFacade": "Mecca Boutique Hotel bulvar fasadi, Toshkent — 7oz Espresso tom kafesi manzili"
       }
     },
     "technology": {
@@ -1372,10 +1372,10 @@
           "websiteLabel": "mecca-hotel.com saytiga o‘ting"
         },
         "sevenOz": {
-          "name": "7OZ Espresso",
+          "name": "7oz Espresso",
           "city": "Toshkent va Samarqand",
           "note": "Maxsus qahva Mecca Boutique Hotel (Toshkent tom qavati) va Hadith Hotel (Samarqand)da. Brend saytidagi City Park ko‘cha manzili hali tasdiqlanishi kerak.",
-          "websiteLabel": "7oz-espresso.com saytiga o‘ting"
+          "websiteLabel": "7oz Espresso saytiga o‘ting"
         }
       }
     }

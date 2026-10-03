@@ -443,8 +443,9 @@ export default async function Home({
                 image={{
                   src: article.image,
                   alt: newsT(`articles.${article.slug}.alt`),
+                  fit: article.imageAspect === "square" ? "contain" : "cover",
                 }}
-                aspect="16 / 10"
+                aspect={article.imageAspect === "square" ? "1 / 1" : "16 / 10"}
                 compact
                 cta={common("readMore")}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { BrandNameText } from "@/components/BrandNameText";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -208,7 +209,9 @@ export default async function ContactPage({
                       rel="noopener noreferrer"
                       className="group/btn inline-flex items-center gap-2 font-sans text-[12px] font-semibold uppercase tracking-[0.1em] text-gold transition-colors duration-micro ease-quart hover:text-bronze"
                     >
-                      {t(`directory.properties.${item.key}.websiteLabel`)}
+                      <BrandNameText
+                        text={t(`directory.properties.${item.key}.websiteLabel`)}
+                      />
                       <span
                         aria-hidden="true"
                         className="transition-transform duration-micro ease-quart group-hover/btn:translate-x-1"
