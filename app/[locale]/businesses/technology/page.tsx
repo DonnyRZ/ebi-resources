@@ -1,9 +1,10 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -35,10 +36,12 @@ export async function generateMetadata({
     locale,
     namespace: "businesses.technology",
   });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/businesses/technology",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function TechnologyLinePage({
@@ -54,27 +57,29 @@ export default async function TechnologyLinePage({
 
   const t = await getTranslations("businesses.technology");
   const a = await getTranslations("a11y");
+  const common = await getTranslations("common");
   const shared = await getTranslations("businesses.shared");
+  const heroSlides = [
+    {
+      statusBadge: common("comingSoon"),
+      kicker: t("hero.kicker"),
+      title: t("hero.title"),
+      supporting: t("hero.supporting"),
+      primaryCta: { label: t("hero.cta"), href: "/contact" },
+      media: { type: "artwork" as const, variant: "technology" as const },
+    },
+  ];
 
   return (
-    <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        primaryCta={{
-          label: t("hero.cta"),
-          href: "/contact",
-        }}
-        height="62vh"
-        minHeight="420px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
+        labels={{ region: t("hero.title"), scrollCue: a("scrollDown") }}
       />
 
       {/* Overview / services intro */}
-      <Section tone="white" width="normal">
+      <Section id="overview-content" tone="white" width="normal">
         <Reveal>
           <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {t("overview.kicker")}
@@ -108,7 +113,7 @@ export default async function TechnologyLinePage({
         <div className="border-t border-border">
           {CAPABILITY_KEYS.map((key, i) => (
             <Reveal key={key} delay={i * 60}>
-              <article className="grid grid-cols-1 gap-4 border-b border-border py-10 md:grid-cols-12 md:gap-8 md:py-12">
+              <article className="grid grid-cols-1 gap-4 border-b border-border py-10 md:grid-cols-12 md:gap-4 md:py-12">
                 <div className="md:col-span-1">
                   <span
                     aria-hidden="true"
@@ -182,7 +187,12 @@ export default async function TechnologyLinePage({
             {t("contact.note")}
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button variant="filled" tone="light" href="/contact" prefetch={false}>
+            <Button
+              variant="filled"
+              tone="light"
+              href="/contact"
+              prefetch={false}
+            >
               {t("contact.primary")}
             </Button>
             <Button variant="outline" tone="light" href="/businesses">

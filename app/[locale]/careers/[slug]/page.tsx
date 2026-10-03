@@ -2,6 +2,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
@@ -30,10 +31,12 @@ export async function generateMetadata({
   }
   const slug: JobSlug = job.slug;
   const t = await getTranslations({ locale, namespace: "careers" });
-  return {
+  return pageMetadata({
+    locale,
+    path: `/careers/${slug}`,
     title: t("detail.metaTitle", { title: t(`jobs.${slug}.title`) }),
     description: t(`jobs.${slug}.summary`),
-  };
+  });
 }
 
 export default async function CareerDetailPage({

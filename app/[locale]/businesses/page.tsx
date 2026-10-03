@@ -1,13 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Reveal } from "@/components/Reveal";
-import { isGrahaNusantaraVisible } from "@/lib/features";
 
 /**
  * Our Businesses hub — intro + four line cards (CONTENT-REFERENCE §C / §D).
@@ -23,10 +23,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "businesses.hub" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/businesses",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function BusinessesHubPage({
@@ -43,21 +45,24 @@ export default async function BusinessesHubPage({
   const t = await getTranslations("businesses.hub");
   const common = await getTranslations("common");
   const a = await getTranslations("a11y");
+  const homeT = await getTranslations("home");
 
   const lines = [
     {
       key: "hotels" as const,
       href: "/businesses/hotels",
+      mediaVariant: undefined,
       image: {
-        src: "/images/hadith/facade-night-landscape.jpg",
+        src: "/images/hadith/hotel-exterior.webp",
         alt: t("alt.hotels"),
       },
     },
     {
       key: "fnb" as const,
       href: "/businesses/food-and-beverage",
+      mediaVariant: undefined,
       image: {
-        src: "/images/hadith/restaurant-dining.jpg",
+        src: "/images/hadith/resto-1.jpg",
         alt: t("alt.fnb"),
       },
     },
@@ -65,36 +70,62 @@ export default async function BusinessesHubPage({
       key: "travel" as const,
       href: "/businesses/travel",
       image: undefined,
+      mediaVariant: "travel" as const,
       comingSoon: true,
     },
     {
       key: "technology" as const,
       href: "/businesses/technology",
       image: undefined,
+      mediaVariant: "technology" as const,
+      comingSoon: true,
     },
   ];
 
+  const heroImages = [
+    {
+      src: "/images/businesses/overview/hero/01-hadith-golden-hour.webp",
+      alt: homeT("alt.hadithGolden"),
+    },
+    {
+      src: "/images/businesses/overview/hero/02-mecca-facade-dusk.webp",
+      alt: homeT("alt.meccaFacade"),
+    },
+    {
+      src: "/images/businesses/overview/hero/03-kampoeng-facade-daylight.webp",
+      alt: homeT("alt.kampoengFacadeDaylight"),
+    },
+    {
+      src: "/images/businesses/overview/hero/04-hadith-restaurant.webp",
+      alt: t("alt.fnb"),
+    },
+    {
+      src: "/images/businesses/overview/hero/05-sevenoz-cafe.webp",
+      alt: homeT("alt.sevenOzInterior"),
+    },
+  ];
+  const heroSlides = heroImages.map(({ src, alt }) => ({
+    kicker: t("hero.kicker"),
+    title: t("hero.title"),
+    supporting: t("hero.supporting"),
+    media: { type: "image" as const, src, alt },
+  }));
+
   return (
-    <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        media={{
-          type: "image",
-          src: isGrahaNusantaraVisible()
-            ? "/images/graha-nusantara/exterior-day.jpg"
-            : "/images/hadith/facade-night-landscape.jpg",
-          alt: isGrahaNusantaraVisible() ? t("alt.hero") : t("alt.hotels"),
-        }}
-        height="62vh"
-        minHeight="420px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
+        labels={{
+          region: t("hero.title"),
+          previous: a("previousSlide"),
+          next: a("nextSlide"),
+          goToSlide: a.raw("goToSlide"),
+          scrollCue: a("scrollDown"),
+        }}
       />
 
-      <Section tone="white" width="normal">
+      <Section tone="white" width="normal" id="overview-content">
         <Reveal>
           <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {t("intro.kicker")}
@@ -125,6 +156,7 @@ export default async function BusinessesHubPage({
                 href={line.href}
                 prefetch={false}
                 image={line.image}
+                mediaVariant={line.mediaVariant}
                 aspect="4 / 3"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 title={t(`lines.${line.key}.title`)}

@@ -1,10 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
+import { ComingSoonBadge } from "@/components/ComingSoonBadge";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -27,10 +29,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "businesses.travel" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/businesses/travel",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function TravelLinePage({
@@ -48,22 +52,26 @@ export default async function TravelLinePage({
   const a = await getTranslations("a11y");
   const common = await getTranslations("common");
   const shared = await getTranslations("businesses.shared");
+  const heroSlides = [
+    {
+      statusBadge: common("comingSoon"),
+      kicker: t("hero.kicker"),
+      title: t("hero.title"),
+      supporting: t("hero.supporting"),
+      media: { type: "artwork" as const, variant: "travel" as const },
+    },
+  ];
 
   return (
-    <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        height="58vh"
-        minHeight="400px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
+        labels={{ region: t("hero.title"), scrollCue: a("scrollDown") }}
       />
 
       {/* Brand + Coming Soon */}
-      <Section tone="white">
+      <Section id="overview-content" tone="white">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
             <div className="relative mx-auto flex aspect-[3/4] w-full max-w-[280px] items-center justify-center bg-cream p-8 lg:mx-0 lg:max-w-none">
@@ -80,9 +88,6 @@ export default async function TravelLinePage({
           </Reveal>
 
           <Reveal className="lg:col-span-7" delay={80}>
-            <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
-              {common("comingSoon")}
-            </p>
             <p className="mb-2 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-navy/50">
               {t("brand.kicker")}
             </p>
@@ -116,7 +121,7 @@ export default async function TravelLinePage({
         <div className="border-t border-border">
           {DESTINATION_KEYS.map((key, i) => (
             <Reveal key={key} delay={i * 70}>
-              <article className="grid grid-cols-1 gap-3 border-b border-border py-10 md:grid-cols-12 md:items-end md:gap-8 md:py-12">
+              <article className="grid grid-cols-1 gap-3 border-b border-border py-10 md:grid-cols-12 md:items-end md:gap-4 md:py-12">
                 <div className="md:col-span-1">
                   <span
                     aria-hidden="true"
@@ -151,9 +156,7 @@ export default async function TravelLinePage({
       {/* Status + CTA */}
       <Section tone="navy" width="normal">
         <Reveal className="mx-auto max-w-read text-center">
-          <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
-            {t("status.kicker")}
-          </p>
+          <ComingSoonBadge label={t("status.kicker")} className="mb-3" />
           <h2 className="font-serif text-[clamp(1.875rem,3.4vw,2.75rem)] font-light leading-[1.15] text-white">
             {t("status.title")}
           </h2>
@@ -161,7 +164,12 @@ export default async function TravelLinePage({
             {t("status.body")}
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Button variant="filled" tone="light" href="/contact" prefetch={false}>
+            <Button
+              variant="filled"
+              tone="light"
+              href="/contact"
+              prefetch={false}
+            >
               {t("status.primary")}
             </Button>
             <Button variant="outline" tone="light" href="/businesses">

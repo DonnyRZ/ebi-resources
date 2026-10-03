@@ -37,7 +37,7 @@ const CONTACT_PINS_ALL: readonly ContactPin[] = [
     shortLabel: "Hadith",
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=39.8149986,66.9444850",
-    thumbSrc: "/images/hadith/facade-night-landscape.jpg",
+    thumbSrc: "/images/hadith/hotel-exterior.webp",
     leftPct: hadith.leftPct,
     topPct: hadith.topPct,
     labelSide: "left",

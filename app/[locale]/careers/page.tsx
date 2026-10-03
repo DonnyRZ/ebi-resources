@@ -1,9 +1,9 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { CareersHero } from "@/components/careers/CareersHero";
 import {
   CareersListing,
   type JobCardCopy,
@@ -29,10 +29,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "careers" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/careers",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function CareersPage({
@@ -52,7 +54,6 @@ export default async function CareersPage({
     all: t("filters.all"),
     hospitality: t("filters.hospitality"),
     restaurants: t("filters.restaurants"),
-    cafe: t("filters.cafe"),
     corporate: t("filters.corporate"),
   };
 
@@ -71,16 +72,6 @@ export default async function CareersPage({
 
   return (
     <main>
-      <CareersHero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        image={{
-          src: "/images/hadith/grand-lobby.jpg",
-          alt: t("alt.hero"),
-        }}
-      />
-
       <Section tone="white" width="normal">
         <Reveal className="mb-10" durationClass="duration-struct">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">

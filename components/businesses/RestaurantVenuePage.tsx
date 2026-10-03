@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -99,7 +99,7 @@ export type RestaurantVenuePageProps = {
 
 /**
  * Shared dining-venue detail template for the Restaurants line.
- * Mirrors HotelPropertyPage section language; adds optional venue blocks + related link.
+ * Uses the portfolio's editorial language with optional venue blocks + related link.
  */
 export function RestaurantVenuePage({
   hero,
@@ -118,27 +118,27 @@ export function RestaurantVenuePage({
     Boolean(details?.phone) ||
     Boolean(details?.emails?.length) ||
     Boolean(details?.address);
+  const heroSlides = [hero.image, ...gallery.images].map((image) => ({
+    kicker: hero.kicker,
+    title: hero.title,
+    supporting: hero.supporting,
+    media: {
+      type: "image" as const,
+      src: image.src,
+      alt: image.alt,
+      objectPosition: image.objectPosition,
+    },
+  }));
 
   return (
-    <main>
-      <Hero
-        kicker={hero.kicker}
-        title={hero.title}
-        supporting={hero.supporting}
-        media={{
-          type: "image",
-          src: hero.image.src,
-          alt: hero.image.alt,
-          objectPosition: hero.image.objectPosition,
-        }}
-        height="60vh"
-        minHeight="400px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={scrollCueLabel}
+        labels={{ region: hero.title, scrollCue: scrollCueLabel }}
       />
 
-      <Section tone="white">
+      <Section id="overview-content" tone="white">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-7">
             <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">

@@ -12,12 +12,12 @@ import { useReducedMotion } from "@/lib/useReducedMotion";
 
 export type PropertyCarouselSlide = {
   key: string;
-  href: string;
+  href?: string;
   image: { src: string; alt: string };
   kicker: string;
   title: string;
-  text: string;
-  cta: string;
+  text?: string;
+  cta?: string;
 };
 
 export type PropertyCarouselLabels = {
@@ -35,10 +35,10 @@ type PropertyCarouselProps = {
 };
 
 const navBtnClass =
-  "flex size-9 shrink-0 items-center justify-center rounded-full border border-navy/20 bg-cream/90 text-navy shadow-sm backdrop-blur-sm transition-colors duration-micro ease-quart hover:border-gold hover:text-gold disabled:cursor-default disabled:opacity-30 disabled:hover:border-navy/20 disabled:hover:text-navy md:size-10";
+  "flex size-11 shrink-0 items-center justify-center border border-navy/20 bg-cream/90 text-navy transition-colors duration-micro ease-quart hover:border-gold hover:text-gold disabled:cursor-default disabled:opacity-30 disabled:hover:border-navy/20 disabled:hover:text-navy";
 
 /**
- * Quiet horizontal filmstrip for hotel properties (DESIGN.md §3.7 spirit).
+ * Quiet horizontal filmstrip for hospitality properties and venues (DESIGN.md §3.7 spirit).
  * Compact card height for laptop viewports; side arrows sit beside the media
  * so swipe controls stay in view without scrolling past the copy.
  */
@@ -156,7 +156,7 @@ export function PropertyCarousel({
         <div
           ref={trackRef}
           tabIndex={0}
-          className="flex min-w-0 flex-1 snap-x snap-mandatory items-start gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-1 outline-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold [-ms-overflow-style:none] [scrollbar-width:none] motion-reduce:scroll-auto md:gap-5 [&::-webkit-scrollbar]:hidden"
+          className="flex min-w-0 flex-1 snap-x snap-mandatory items-start gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-1 outline-none [-ms-overflow-style:none] [scrollbar-width:none] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold motion-reduce:scroll-auto md:gap-5 [&::-webkit-scrollbar]:hidden"
         >
           {slides.map((slide, i) => (
             <div
@@ -191,7 +191,7 @@ export function PropertyCarousel({
       </div>
 
       {count > 1 && (
-        <div className="mt-3 flex items-center justify-center gap-4 md:mt-4">
+        <div className="mt-3 flex items-center justify-center gap-2 md:mt-4 md:gap-4">
           <div className="flex md:hidden">{prevBtn}</div>
 
           <div className="flex items-center gap-2">
@@ -202,12 +202,12 @@ export function PropertyCarousel({
                 aria-label={goToLabel(i + 1)}
                 aria-current={i === index ? "true" : undefined}
                 onClick={() => scrollTo(i)}
-                className={`h-[3px] transition-[width,background-color] duration-struct ease-quart ${
-                  i === index
-                    ? "w-7 bg-navy"
-                    : "w-2.5 bg-navy/25 hover:bg-navy/45"
-                }`}
-              />
+                className="relative flex h-11 w-11 items-center justify-center"
+              >
+                <span
+                  className={`block h-[3px] transition-[width,background-color] duration-struct ${i === index ? "w-[28px] bg-navy" : "w-[10px] bg-navy/25"}`}
+                />
+              </button>
             ))}
           </div>
 

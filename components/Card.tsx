@@ -1,6 +1,9 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
+import { ComingSoonArtwork } from "@/components/ComingSoonArtwork";
+import { ComingSoonBadge } from "@/components/ComingSoonBadge";
+import { TechnologyArtwork } from "@/components/TechnologyArtwork";
 
 /**
  * Card — property / business-line card (DESIGN.md §3.6 `card/image`).
@@ -23,6 +26,8 @@ export type CardProps = {
   aspect?: string;
   /** Optional badge, e.g. "COMING SOON". */
   badge?: string;
+  /** Purposeful non-photo art for a card without an image. */
+  mediaVariant?: "travel" | "technology";
   /** Label for the read-more affordance; omit to hide it. */
   cta?: ReactNode;
   /** Responsive image sizes hint; defaults to a 3-col card layout. */
@@ -45,6 +50,7 @@ export function Card({
   image,
   aspect = "4 / 3",
   badge,
+  mediaVariant,
   cta,
   sizes = "(max-width: 768px) 100vw, 33vw",
   prefetch,
@@ -65,6 +71,10 @@ export function Card({
             sizes={sizes}
             className="scale-105 object-cover transition-transform duration-image ease-quart group-hover:scale-[1.12]"
           />
+        ) : mediaVariant === "technology" ? (
+          <TechnologyArtwork />
+        ) : badge || mediaVariant === "travel" ? (
+          <ComingSoonArtwork />
         ) : (
           <div
             aria-hidden="true"
@@ -72,9 +82,10 @@ export function Card({
           />
         )}
         {badge && (
-          <span className="absolute left-3 top-3 bg-navy px-2 py-1 font-sans text-[11px] font-semibold uppercase tracking-[0.12em] text-white">
-            {badge}
-          </span>
+          <ComingSoonBadge
+            label={badge}
+            className="absolute bottom-4 left-4 z-10 shadow-sm"
+          />
         )}
       </div>
 
@@ -126,6 +137,19 @@ export function Card({
   );
 
   if (href) {
+    if (/^https?:\/\//i.test(href)) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block h-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        >
+          {inner}
+        </a>
+      );
+    }
+
     return (
       <Link
         href={href}

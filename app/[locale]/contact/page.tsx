@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -8,6 +9,7 @@ import { Reveal } from "@/components/Reveal";
 import { WhereWeAreSection } from "@/components/contact/WhereWeAreSection";
 import { InquiryForm } from "./InquiryForm";
 import { withoutGrahaNusantara } from "@/lib/features";
+import { HOTEL_WEBSITES } from "@/lib/hotel-websites";
 
 /**
  * Contact — quiet-luxury shell (DESIGN archetype c).
@@ -18,22 +20,22 @@ import { withoutGrahaNusantara } from "@/lib/features";
 const DIRECTORY = withoutGrahaNusantara([
   {
     key: "hadith" as const,
-    href: "https://hadith-hotel.com",
+    href: HOTEL_WEBSITES.hadith,
     mode: "pending" as const,
   },
   {
     key: "kampoeng" as const,
-    href: "https://hotel-kampoengindonesia.com",
+    href: HOTEL_WEBSITES.kampoengIndonesia,
     mode: "confirm" as const,
   },
   {
     key: "graha" as const,
-    href: "https://grahanusantara-samarkand.com",
+    href: HOTEL_WEBSITES.grahaNusantara,
     mode: "confirm" as const,
   },
   {
     key: "mecca" as const,
-    href: "https://mecca-hotel.com",
+    href: HOTEL_WEBSITES.mecca,
     mode: "pending" as const,
   },
   {
@@ -53,10 +55,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "contact" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/contact",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function ContactPage({

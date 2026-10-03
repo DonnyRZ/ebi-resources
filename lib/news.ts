@@ -4,6 +4,7 @@
  */
 
 export const NEWS_SLUGS = [
+  "turkiye-chess-teams-samarkand-olympiad",
   "indonesian-chess-team-hotel-kampoeng-indonesia",
   "uzbekistan-tourism-hotels-direct-flights",
   "tourism-investment-hotel-operations-uzbekistan",
@@ -27,10 +28,18 @@ export type NewsArticle = {
   slug: NewsSlug;
   publishedAt: string;
   image: string;
+  imageAspect?: "square" | "landscape";
   sourceUrl: string;
 };
 
 export const ARTICLES: NewsArticle[] = [
+  {
+    slug: "turkiye-chess-teams-samarkand-olympiad",
+    publishedAt: "2026-09-27",
+    image: "/images/news/turkiye-chess-teams-olympiad.webp",
+    imageAspect: "square",
+    sourceUrl: "https://hadith-hotel.com/stories/chess-olympiad",
+  },
   {
     slug: "indonesian-chess-team-hotel-kampoeng-indonesia",
     publishedAt: "2026-09-19",

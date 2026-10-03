@@ -8,6 +8,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://ebiresources.com}
+        GOOGLE_SITE_VERIFICATION: ${GOOGLE_SITE_VERIFICATION:-}
     image: ebi-resources-app:latest
     restart: unless-stopped
     depends_on:
@@ -28,7 +31,7 @@ services:
       R2_PUBLIC_URL: ${R2_PUBLIC_URL:-}
       # Public (client-exposed) vars
       NEXT_PUBLIC_R2_PUBLIC_URL: ${NEXT_PUBLIC_R2_PUBLIC_URL:-}
-      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+      NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://ebiresources.com}
     env_file:
       - .env
     # Not published to the host directly: nginx terminates traffic and proxies

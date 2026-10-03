@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { Button } from "@/components/ui/Button";
+import { ComingSoonBadge } from "@/components/ComingSoonBadge";
+import { ComingSoonHeroArtwork } from "@/components/ComingSoonHeroArtwork";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
 /**
@@ -28,10 +30,18 @@ export type HeroCornerCta = {
 };
 
 export type HeroMedia =
-  | { type: "image"; src: string; alt: string; objectPosition?: string }
-  | { type: "video"; src: string; poster?: string; alt?: string };
+  | {
+      type: "image";
+      src: string;
+      alt: string;
+      objectPosition?: string;
+      mobileObjectPosition?: string;
+    }
+  | { type: "video"; src: string; poster?: string; alt?: string }
+  | { type: "artwork"; variant: "travel" | "technology" };
 
 export type HeroSlideContent = {
+  statusBadge?: string;
   kicker?: string;
   title: string;
   supporting?: string;
@@ -62,13 +72,16 @@ export function HeroMediaLayer({
   media,
   priority = false,
   active = true,
+  zoom = true,
 }: {
   media?: HeroMedia;
   priority?: boolean;
   active?: boolean;
+  /** Disable Ken Burns when the media is part of a still-image carousel. */
+  zoom?: boolean;
 }) {
   const reducedMotion = useReducedMotion();
-  const kenBurns = active ? "scale-105" : "scale-100";
+  const kenBurns = zoom ? (active ? "scale-105" : "scale-100") : "";
 
   if (!media) {
     return (
@@ -77,6 +90,10 @@ export function HeroMediaLayer({
         className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-footer"
       />
     );
+  }
+
+  if (media.type === "artwork") {
+    return <ComingSoonHeroArtwork variant={media.variant} />;
   }
 
   if (media.type === "video") {
@@ -115,8 +132,6 @@ export function HeroMediaLayer({
     );
   }
 
-  const objectPosition = media.objectPosition;
-
   return (
     <Image
       src={media.src}
@@ -126,14 +141,21 @@ export function HeroMediaLayer({
       loading={priority ? "eager" : undefined}
       fetchPriority={priority ? "high" : undefined}
       sizes="100vw"
-      className={`${kenBurns} object-cover`}
-      style={objectPosition ? { objectPosition } : undefined}
+      className={`hero-media__image ${kenBurns} object-cover`}
+      style={
+        {
+          "--hero-position": media.objectPosition ?? "50% 50%",
+          "--hero-position-mobile":
+            media.mobileObjectPosition ?? media.objectPosition ?? "50% 50%",
+        } as CSSProperties
+      }
     />
   );
 }
 
 /** Scrim + bottom-left text block. Shared by Hero and HeroCarousel. */
 export function HeroContent({
+  statusBadge,
   kicker,
   title,
   supporting,
@@ -146,10 +168,13 @@ export function HeroContent({
 
   return (
     <div
-      className={`relative z-10 flex h-full flex-col justify-end ${topPad}`}
+      className={`hero-content relative z-10 flex h-full flex-col justify-end ${topPad}`}
     >
       <div className="mx-auto w-full max-w-wide px-4 pb-14 md:px-6 md:pb-16">
         <div className="max-w-full md:max-w-[50%]">
+          {statusBadge ? (
+            <ComingSoonBadge label={statusBadge} className="mb-4" />
+          ) : null}
           {kicker && (
             <p
               className={`mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-white/90 transition-opacity duration-struct ease-quart ${active ? "opacity-100" : "opacity-0"}`}
@@ -191,7 +216,39 @@ export function HeroContent({
 }
 
 /** Bottom-center scroll cue chevron. */
-export function ScrollCue({ label }: { label: string }) {
+type ScrollCueProps =
+  | { label: string; variant?: "single"; href?: never }
+  | { label: string; variant: "double"; href: string };
+
+export function ScrollCue({ label, variant = "single", href }: ScrollCueProps) {
+  if (variant === "double") {
+    return (
+      <a href={href} aria-label={label} className="hero-carousel__scroll-cue">
+        <span className="sr-only">{label}</span>
+        <span aria-hidden="true" className="hero-carousel__scroll-arrows">
+          <svg width="24" height="12" viewBox="0 0 14 8" fill="none">
+            <path
+              d="M1 1.5L7 6.5L13 1.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg width="24" height="12" viewBox="0 0 14 8" fill="none">
+            <path
+              d="M1 1.5L7 6.5L13 1.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </a>
+    );
+  }
+
   return (
     <div className="pointer-events-none absolute inset-x-0 bottom-4 z-10 flex justify-center">
       <span className="sr-only">{label}</span>
@@ -234,18 +291,20 @@ export function Hero({
 
   return (
     <section
-      className={`relative w-full overflow-hidden ${className}`.trim()}
+      className={`page-hero relative w-full overflow-hidden ${className}`.trim()}
       style={{ height, minHeight }}
       aria-label={title}
     >
-      <HeroMediaLayer media={media} priority />
-      {/* Scrim: gradient concentrated toward the bottom-left text area, not a full darkening. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 z-0 bg-gradient-to-tr from-black/70 via-black/25 to-transparent"
-      />
+      <div className="hero-visual absolute inset-0">
+        <HeroMediaLayer media={media} priority />
+        {/* Scrim: gradient concentrated toward the bottom-left text area, not a full darkening. */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 z-0 bg-gradient-to-tr from-black/70 via-black/25 to-transparent"
+        />
+      </div>
       {cornerCta ? (
-        <div className="absolute top-4 right-4 z-20 md:top-6 md:right-6 lg:right-8">
+        <div className="absolute right-4 top-4 z-20 md:right-6 md:top-6 lg:right-8">
           {cornerCta.external ? (
             <a
               href={cornerCta.href}

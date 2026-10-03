@@ -51,12 +51,15 @@ export function Section({
 }: SectionProps) {
   const padding = flush ? "" : "py-16 md:py-24";
   return (
-    <Tag id={id} className={`${toneClasses[tone]} ${padding} ${className}`.trim()}>
+    <Tag
+      id={id}
+      className={`content-section ${toneClasses[tone]} ${padding} ${className}`.trim()}
+    >
       {bleed ? (
         children
       ) : (
         <div
-          className={`mx-auto w-full px-4 md:px-6 ${widthClasses[width]} ${containerClassName}`.trim()}
+          className={`section-container mx-auto w-full px-4 md:px-6 ${widthClasses[width]} ${containerClassName}`.trim()}
         >
           {children}
         </div>

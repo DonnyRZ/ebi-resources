@@ -1,18 +1,19 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
-import { PropertyCarousel } from "@/components/businesses/PropertyCarousel";
+import { PropertySpotlightCarousel } from "@/components/PropertySpotlightCarousel";
 
 /**
  * Food & Beverage line — dining + specialty coffee (merged restaurants + café).
- * Patterned after Hotels: hero → intro → PropertyCarousel → proof → CTA.
+ * Patterned after Hotels: hero → intro → venue carousel → proof → CTA.
  */
 export async function generateMetadata({
   params,
@@ -24,10 +25,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "businesses.fnb" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/businesses/food-and-beverage",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function FoodAndBeverageLinePage({
@@ -47,52 +50,78 @@ export default async function FoodAndBeverageLinePage({
 
   const venues = [
     {
-      key: "mecca" as const,
-      href: "/businesses/food-and-beverage/mecca",
+      key: "sajiNusantara" as const,
+      href: "https://saji-nusantara.com/en",
       image: {
-        src: "/images/mecca/dining.jpg",
-        alt: t("alt.mecca"),
-      },
-    },
-    {
-      key: "kampoeng" as const,
-      href: "/businesses/food-and-beverage/kampoeng-indonesia",
-      image: {
-        src: "/images/kampoeng-indonesia/dining.jpg",
-        alt: t("alt.kampoeng"),
+        src: "/images/businesses/food-and-beverage/venues/01-saji-nusantara.webp",
+        alt: t("alt.venues.sajiNusantara"),
+        fit: "cover" as const,
       },
     },
     {
       key: "sevenOz" as const,
-      href: "/businesses/food-and-beverage/seven-oz",
+      href: "https://7oz-espresso.com/",
       image: {
-        src: "/images/seven-oz/rooftop-sunset.jpg",
-        alt: t("alt.sevenOz"),
+        src: "/images/businesses/food-and-beverage/venues/02-7oz-espresso.webp",
+        alt: t("alt.venues.sevenOz"),
+        fit: "cover" as const,
+      },
+    },
+    {
+      key: "loungeBar" as const,
+      href: undefined,
+      image: {
+        src: "/images/businesses/food-and-beverage/venues/03-lounge-bar.webp",
+        alt: t("alt.venues.loungeBar"),
+        fit: "cover" as const,
       },
     },
   ];
 
+  const heroImages = [
+    {
+      src: "/images/businesses/food-and-beverage/hero/01-dining-room.webp",
+      alt: t("alt.heroSlides.diningRoom"),
+    },
+    {
+      src: "/images/businesses/food-and-beverage/hero/02-sevenoz-cafe.webp",
+      alt: t("alt.heroSlides.sevenOzCafe"),
+    },
+    {
+      src: "/images/businesses/food-and-beverage/hero/03-coffee-corner.webp",
+      alt: t("alt.heroSlides.coffeeCorner"),
+    },
+    {
+      src: "/images/businesses/food-and-beverage/hero/04-restaurant-lounge.webp",
+      alt: t("alt.heroSlides.restaurantLounge"),
+    },
+    {
+      src: "/images/businesses/food-and-beverage/hero/05-atrium-restaurant.webp",
+      alt: t("alt.heroSlides.atriumRestaurant"),
+    },
+  ];
+
   const proof = ["indonesian", "halal", "landmarks"] as const;
+  const heroSlides = heroImages.map((image) => ({
+    kicker: t("hero.kicker"),
+    title: t("hero.title"),
+    supporting: t("hero.supporting"),
+    media: {
+      type: "image" as const,
+      src: image.src,
+      alt: image.alt,
+    },
+  }));
 
   return (
-    <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        media={{
-          type: "image",
-          src: "/images/hadith/restaurant-dining.jpg",
-          alt: t("alt.hero"),
-        }}
-        height="58vh"
-        minHeight="400px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
+        labels={{ region: t("hero.title"), scrollCue: a("scrollDown") }}
       />
 
-      <Section tone="white">
+      <Section id="overview-content" tone="white">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <Reveal className="lg:col-span-5">
             <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
@@ -112,7 +141,7 @@ export default async function FoodAndBeverageLinePage({
           <Reveal delay={120} className="lg:col-span-7">
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
-                src="/images/hadith/restaurant.jpg"
+                src="/images/hadith/buffet.webp"
                 alt={t("alt.intro")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
@@ -137,21 +166,22 @@ export default async function FoodAndBeverageLinePage({
         </Reveal>
 
         <Reveal delay={80}>
-          <PropertyCarousel
+          <PropertySpotlightCarousel
+            size="large"
             labels={{
               region: t("grid.carouselLabel"),
-              previous: a("previousSlide"),
-              next: a("nextSlide"),
-              goToSlide: a.raw("goToSlide"),
+              previous: common("previous"),
+              next: common("next"),
+              previousAria: a("previousSlide"),
+              nextAria: a("nextSlide"),
             }}
             slides={venues.map((v) => ({
               key: v.key,
-              href: v.href,
+              ...(v.href ? { href: v.href, cta: common("discover") } : {}),
+              city: t(`venues.${v.key}.kicker`),
               image: v.image,
-              kicker: t(`venues.${v.key}.kicker`),
               title: t(`venues.${v.key}.title`),
               text: t(`venues.${v.key}.text`),
-              cta: common("discover"),
             }))}
           />
         </Reveal>

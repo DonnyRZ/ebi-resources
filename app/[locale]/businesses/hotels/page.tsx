@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -13,10 +14,11 @@ import {
   isGrahaNusantaraVisible,
   withoutGrahaNusantara,
 } from "@/lib/features";
+import { HOTEL_WEBSITES } from "@/lib/hotel-websites";
 
 /**
  * Hotels line — quiet-luxury portfolio page (CONTENT-REFERENCE §D.1 / §E).
- * Property cards link through to full detail pages (Wave 2).
+ * Property cards link directly to each hotel's official website.
  */
 export async function generateMetadata({
   params,
@@ -28,10 +30,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "businesses.hotels" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/businesses/hotels",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function HotelsLinePage({
@@ -46,21 +50,22 @@ export default async function HotelsLinePage({
   setRequestLocale(locale);
 
   const t = await getTranslations("businesses.hotels");
+  const homeT = await getTranslations("home");
   const common = await getTranslations("common");
   const a = await getTranslations("a11y");
 
   const properties = withoutGrahaNusantara([
     {
       key: "hadith" as const,
-      href: "/businesses/hotels/hadith",
+      href: HOTEL_WEBSITES.hadith,
       image: {
-        src: "/images/hadith/facade-night-landscape.jpg",
+        src: "/images/hadith/hotel-exterior.webp",
         alt: t("alt.hadith"),
       },
     },
     {
       key: "mecca" as const,
-      href: "/businesses/hotels/mecca",
+      href: HOTEL_WEBSITES.mecca,
       image: {
         src: "/images/mecca/facade-dusk.jpg",
         alt: t("alt.mecca"),
@@ -68,7 +73,7 @@ export default async function HotelsLinePage({
     },
     {
       key: "graha" as const,
-      href: "/businesses/hotels/graha-nusantara",
+      href: HOTEL_WEBSITES.grahaNusantara,
       image: {
         src: "/images/graha-nusantara/villa-golden-hour.jpg",
         alt: t("alt.graha"),
@@ -76,7 +81,7 @@ export default async function HotelsLinePage({
     },
     {
       key: "kampoeng" as const,
-      href: "/businesses/hotels/kampoeng-indonesia",
+      href: HOTEL_WEBSITES.kampoengIndonesia,
       image: {
         src: "/images/kampoeng-indonesia/facade-night.jpg",
         alt: t("alt.kampoeng"),
@@ -85,27 +90,37 @@ export default async function HotelsLinePage({
   ]);
 
   const proof = ["landmarks", "tiers", "hospitality"] as const;
+  const heroImages = [
+    {
+      src: "/images/businesses/overview/hero/01-hadith-golden-hour.webp",
+      alt: homeT("alt.hadithGolden"),
+    },
+    {
+      src: "/images/businesses/overview/hero/02-mecca-facade-dusk.webp",
+      alt: homeT("alt.meccaFacade"),
+    },
+    {
+      src: "/images/businesses/overview/hero/03-kampoeng-facade-daylight.webp",
+      alt: homeT("alt.kampoengFacadeDaylight"),
+    },
+  ];
+  const heroSlides = heroImages.map(({ src, alt }) => ({
+    kicker: t("hero.kicker"),
+    title: t("hero.title"),
+    supporting: t("hero.supporting"),
+    media: { type: "image" as const, src, alt },
+  }));
 
   return (
-    <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        media={{
-          type: "image",
-          src: "/images/mecca/facade-boulevard.jpg",
-          alt: t("alt.hero"),
-        }}
-        height="58vh"
-        minHeight="400px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
+        labels={{ region: t("hero.title"), scrollCue: a("scrollDown") }}
       />
 
       {/* Line intro — editorial split, one job */}
-      <Section tone="white">
+      <Section id="overview-content" tone="white">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <Reveal className="lg:col-span-5">
             <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
@@ -128,7 +143,7 @@ export default async function HotelsLinePage({
                 src={
                   isGrahaNusantaraVisible()
                     ? "/images/graha-nusantara/complex-night.jpg"
-                    : "/images/hadith/facade-night-landscape.jpg"
+                    : "/images/hadith/hotel-exterior.webp"
                 }
                 alt={
                   isGrahaNusantaraVisible() ? t("alt.intro") : t("alt.hadith")

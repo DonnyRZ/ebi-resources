@@ -70,7 +70,7 @@
     --site-header-height: 4.25rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     html {
       --site-header-height: 6.75rem;
     }
@@ -104,6 +104,399 @@
   }
   to {
     width: 100%;
+  }
+}
+
+/* Homepage hero follows Hadith 2's full-bleed, sticky image-stage pattern. */
+.home-overview {
+  position: relative;
+}
+
+.home-overview .hero-carousel {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 100svh;
+  min-height: min(560px, 100svh);
+  background: #171614;
+  isolation: isolate;
+}
+
+/* Interior hubs reserve space above the hero for the solid header and subnav. */
+.home-overview--about .hero-carousel,
+.home-overview--businesses .hero-carousel {
+  height: calc(100svh - var(--site-header-height) - 68px);
+  min-height: min(420px, calc(100svh - var(--site-header-height) - 68px));
+}
+
+.home-overview > section:not(.hero-carousel) {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-carousel__slide {
+  transition: opacity 350ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero-carousel__scroll-cue {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 12px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  color: rgb(255 255 255 / 85%);
+  text-decoration: none;
+}
+
+.hero-carousel__scroll-arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: -3px;
+  animation: hero-scroll-arrows 1.8s ease-in-out infinite;
+}
+
+.hero-carousel__scroll-arrows svg {
+  display: block;
+  margin-block: -3px;
+}
+
+.hero-carousel__scroll-arrows svg:first-child {
+  color: rgb(255 255 255 / 55%);
+}
+
+.hero-carousel__scroll-cue:hover {
+  color: white;
+}
+
+.hero-carousel__scroll-cue:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@keyframes hero-scroll-arrows {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 0.65;
+  }
+}
+
+.hero-media__image {
+  object-position: var(--hero-position, 50% 50%);
+}
+
+.hero-loading {
+  position: relative;
+  min-height: 60vh;
+}
+.hero-loading__media {
+  position: absolute;
+  inset: 0;
+}
+.hero-loading__copy {
+  position: relative;
+  padding: 280px 24px 64px;
+}
+
+@media (min-width: 1024px) {
+  .hero-carousel .hero-content > div {
+    padding-bottom: 112px;
+  }
+  .hero-carousel__progress {
+    bottom: 35px;
+  }
+}
+
+/* Hadith Hotel 2 mobile method: non-sticky, 4:3 media, no viewport height floor.
+   Copy flows beneath the photo. Overlapping grid rows reserve the tallest slide
+   height so autoplay does not shift the sections below the carousel. */
+@media (max-width: 1023px) {
+  :root {
+    --page-gutter: clamp(20px, 5vw, 32px);
+  }
+  .site-header {
+    color: var(--color-navy-text);
+    background: white;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .site-header__logo {
+    height: 44px;
+    filter: none;
+  }
+  .site-header button {
+    color: var(--color-navy-text);
+  }
+  .site-header button[aria-pressed="true"] {
+    color: var(--color-gold);
+  }
+  .mobile-menu {
+    height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .mobile-menu > * {
+    flex-shrink: 0;
+  }
+
+  .home-overview:not(.home-overview--about):not(.home-overview--businesses) {
+    padding-top: var(--site-header-height);
+  }
+  .section-subnav__track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 8px var(--page-gutter);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    scroll-padding-inline: var(--page-gutter);
+  }
+  .section-subnav__track::-webkit-scrollbar {
+    display: none;
+  }
+  .section-subnav__track > a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  .section-subnav__track > a > span {
+    bottom: 6px;
+  }
+
+  .home-overview .hero-carousel,
+  .home-overview--about .hero-carousel,
+  .home-overview--businesses .hero-carousel,
+  .page-hero {
+    position: relative;
+    display: grid;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none;
+    background: var(--color-cream);
+  }
+  .hero-carousel__slide {
+    position: relative;
+    inset: auto;
+    grid-area: 1 / 1;
+    min-width: 0;
+    visibility: hidden;
+  }
+  .hero-carousel__slide[aria-hidden="false"] {
+    visibility: visible;
+  }
+  .hero-visual {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #171614;
+  }
+  .hero-visual > [aria-hidden="true"]:last-child {
+    background: linear-gradient(to top, rgb(0 0 0 / 15%), transparent 50%);
+  }
+  .hero-media__image {
+    object-position: var(--hero-position-mobile, var(--hero-position, 50% 50%));
+    transform: none;
+  }
+  .hero-content {
+    height: auto;
+    padding-top: 0;
+  }
+  .hero-loading {
+    min-height: 0;
+  }
+  .hero-loading__media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+  .hero-loading__copy {
+    padding: 28px var(--page-gutter) 32px;
+  }
+  .hero-content > div {
+    padding: 28px var(--page-gutter) 32px;
+  }
+  .hero-content > div > div {
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    color: var(--color-navy-text);
+    font-size: clamp(1.75rem, 6.4vw, 2.5rem);
+    line-height: 1.18;
+    text-wrap: balance;
+  }
+  .hero-content p {
+    color: var(--color-text-muted);
+  }
+  .hero-content p:first-child {
+    margin-bottom: 12px;
+    color: var(--color-gold);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+  .hero-content h1 + p {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .hero-content a {
+    border-color: var(--color-navy-text);
+    color: var(--color-navy-text);
+  }
+  .hero-carousel__controls {
+    top: 28.125vw;
+    bottom: auto;
+    transform: translateY(-50%);
+    padding-inline: 16px;
+  }
+  .hero-carousel__controls button {
+    width: 44px;
+    height: 44px;
+  }
+  .hero-carousel__progress {
+    top: calc(56.25vw - 44px);
+    bottom: auto;
+    padding-inline: var(--page-gutter);
+  }
+  .hero-carousel__scroll-cue,
+  .page-hero > .pointer-events-none {
+    display: none;
+  }
+
+  .editorial-hero > div > div:first-child {
+    padding: 32px var(--page-gutter) 40px;
+  }
+  .editorial-hero > div > div:last-child {
+    order: -1;
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Exact 4:3 mobile stage used by both Hadith 2 hero variants. */
+  .hero-visual,
+  .hero-loading__media,
+  .editorial-hero > div > div:last-child {
+    aspect-ratio: 4 / 3;
+  }
+  .hero-carousel__controls {
+    top: 37.5vw;
+  }
+  .hero-carousel__progress {
+    top: calc(75vw - 44px);
+  }
+  .content-section {
+    scroll-margin-top: calc(var(--site-header-height) + 16px);
+  }
+  .section-container {
+    padding-inline: var(--page-gutter);
+  }
+  main h1,
+  main h2,
+  main h3 {
+    overflow-wrap: anywhere;
+  }
+  main p,
+  main li,
+  main dd,
+  main a {
+    overflow-wrap: break-word;
+  }
+  main input,
+  main textarea,
+  main select,
+  .content-section input,
+  .content-section textarea,
+  .content-section select {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  main [class*="grid-cols-"] > * {
+    min-width: 0;
+  }
+
+  .property-spotlight {
+    padding-inline: var(--page-gutter);
+  }
+  .property-spotlight--large {
+    padding-inline: 0;
+  }
+  .property-spotlight__image {
+    aspect-ratio: 4 / 3 !important;
+  }
+  .property-spotlight__image img {
+    object-fit: cover;
+  }
+  .property-spotlight__card {
+    margin: 0;
+    padding: 20px;
+    border-top: 0;
+  }
+  .property-spotlight__card > p:first-child {
+    font-size: 10px;
+  }
+  .property-spotlight__card h3 {
+    font-size: 25px;
+  }
+  .property-spotlight__card h3 + p {
+    font-size: 14px;
+    -webkit-line-clamp: unset;
+  }
+  .property-spotlight__card a {
+    min-height: 44px;
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  .career-filters {
+    gap: 8px 20px;
+    margin-bottom: 24px;
+  }
+  .career-filters button {
+    min-height: 44px;
+    padding-block: 10px;
+    font-size: 11px;
+  }
+  .career-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .career-actions > a {
+    justify-content: center;
+    text-align: center;
+    padding-inline: 12px;
+    min-height: 48px;
+  }
+  .career-pagination button {
+    min-height: 44px;
+  }
+  .career-pagination button > span[aria-hidden] {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel__slide {
+    transition: none;
+  }
+
+  .hero-carousel__scroll-arrows {
+    animation: none;
   }
 }
 

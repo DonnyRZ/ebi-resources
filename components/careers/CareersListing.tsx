@@ -52,7 +52,6 @@ export function CareersListing({
       all: jobs.length,
       hospitality: 0,
       restaurants: 0,
-      cafe: 0,
       corporate: 0,
     };
     for (const job of jobs) {
@@ -62,8 +61,7 @@ export function CareersListing({
   }, [jobs]);
 
   const filtered = useMemo(
-    () =>
-      filter === "all" ? jobs : jobs.filter((j) => j.line === filter),
+    () => (filter === "all" ? jobs : jobs.filter((j) => j.line === filter)),
     [jobs, filter],
   );
 
@@ -85,7 +83,7 @@ export function CareersListing({
       <div
         role="group"
         aria-label={filterAria}
-        className="mb-10 flex flex-wrap gap-x-6 gap-y-3 border-b border-border"
+        className="career-filters mb-10 flex flex-wrap gap-x-6 gap-y-3 border-b border-border"
       >
         {tabs.map((key) => {
           const active = filter === key;
@@ -125,7 +123,7 @@ export function CareersListing({
             if (!card) return null;
             return (
               <li key={job.slug} className="group">
-                <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-12 md:items-start md:gap-6">
+                <div className="grid grid-cols-1 gap-4 py-[32px] md:grid-cols-12 md:items-start md:gap-6 md:py-8">
                   <div className="md:col-span-8">
                     <p className="mb-2 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-gold">
                       {card.lineLabel}
@@ -153,7 +151,7 @@ export function CareersListing({
                       {card.summary}
                     </p>
                   </div>
-                  <div className="flex flex-wrap items-center gap-3 md:col-span-4 md:justify-end md:pt-8">
+                  <div className="career-actions flex flex-wrap items-center gap-3 md:col-span-4 md:justify-end md:pt-8">
                     <Link
                       href={`/careers/${job.slug}`}
                       className="inline-flex items-center gap-2 border border-navy px-[22px] py-[12px] font-sans text-[12px] font-semibold uppercase tracking-[0.1em] text-navy transition-colors duration-micro ease-quart hover:bg-navy hover:text-white"
@@ -175,7 +173,7 @@ export function CareersListing({
       )}
 
       {filtered.length > CAREERS_PAGE_SIZE && (
-        <div className="mt-10 flex items-center justify-between gap-4">
+        <div className="career-pagination mt-10 flex items-center justify-between gap-4">
           <button
             type="button"
             disabled={safePage === 0}
@@ -189,7 +187,7 @@ export function CareersListing({
             >
               ←
             </span>
-            {prevLabel}
+            <span className="hidden sm:inline">{prevLabel}</span>
           </button>
           <p className="font-sans text-[12px] uppercase tracking-[0.1em] text-text-muted">
             {t("pageOf", { current: safePage + 1, total: pageCount })}
@@ -201,7 +199,7 @@ export function CareersListing({
             className="inline-flex items-center gap-3 font-sans text-[12px] font-semibold uppercase tracking-[0.12em] text-navy transition-opacity duration-micro ease-quart disabled:cursor-not-allowed disabled:opacity-30"
             aria-label={nextLabel}
           >
-            {nextLabel}
+            <span className="hidden sm:inline">{nextLabel}</span>
             <span
               aria-hidden="true"
               className="flex h-10 w-10 items-center justify-center border border-navy"

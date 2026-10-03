@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { BRAND_NAME, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
 const playfair = Playfair_Display({
@@ -36,8 +41,29 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    applicationName: BRAND_NAME,
+    publisher: BRAND_NAME,
+    icons: {
+      icon: [{ url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    ...(process.env.GOOGLE_SITE_VERIFICATION
+      ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+      : {}),
   };
 }
 
@@ -60,6 +86,7 @@ export default async function LocaleLayout({
   const messages = {
     nav: allMessages.nav,
     header: allMessages.header,
+    a11y: allMessages.a11y,
     footer: allMessages.footer,
     about: {
       subnav: allMessages.about.subnav,

@@ -1,6 +1,10 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: https://ebiresources.com
+        GOOGLE_SITE_VERIFICATION: ${GOOGLE_SITE_VERIFICATION:-}
     container_name: ebi-resources-app
     restart: unless-stopped
     ports:

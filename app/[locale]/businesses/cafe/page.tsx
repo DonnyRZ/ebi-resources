@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { redirect } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
-/** Legacy Café line → 7OZ under Food & Beverage. */
+/** Legacy Café line → Food & Beverage overview. */
 export default async function CafeRedirect({
   params,
 }: {
@@ -13,5 +13,5 @@ export default async function CafeRedirect({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  redirect({ href: "/businesses/food-and-beverage/seven-oz", locale });
+  redirect({ href: "/businesses/food-and-beverage", locale });
 }

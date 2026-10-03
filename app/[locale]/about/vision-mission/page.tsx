@@ -1,9 +1,9 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -25,10 +25,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "about.visionMission" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/about/vision-mission",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function VisionMissionPage({
@@ -43,29 +45,11 @@ export default async function VisionMissionPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("about.visionMission");
-  const a = await getTranslations("a11y");
 
   return (
     <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        media={{
-          type: "image",
-          src: "/images/mecca/balcony.jpg",
-          alt: t("alt.hero"),
-          objectPosition: "center 40%",
-        }}
-        height="58vh"
-        minHeight="400px"
-        overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
-      />
-
       {/* Two-column Vision | Mission */}
-      <Section tone="cream" flush className="!py-0">
+      <Section id="overview-content" tone="cream" flush className="!py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <Reveal>
             <div className="flex h-full flex-col border-b border-border px-4 py-16 md:px-8 md:py-24 lg:border-b-0 lg:border-r lg:px-12 xl:px-16">

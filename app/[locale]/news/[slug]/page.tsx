@@ -7,6 +7,8 @@ import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
 import { NewsSourceLink } from "@/components/news/NewsSourceLink";
+import { StructuredData } from "@/components/StructuredData";
+import { absoluteUrl, localizedUrl, organizationSchema, pageMetadata } from "@/lib/seo";
 import {
   NEWS_SLUGS,
   formatNewsDate,
@@ -30,10 +32,15 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "news" });
-  return {
+  return pageMetadata({
+    locale,
+    path: `/news/${article.slug}`,
     title: `${t(`articles.${article.slug}.title`)} — EBI Resources`,
     description: t(`articles.${article.slug}.excerpt`),
-  };
+    image: article.image,
+    imageAlt: t(`articles.${article.slug}.alt`),
+    article: { publishedTime: article.publishedAt },
+  });
 }
 
 export default async function NewsArticlePage({
@@ -58,6 +65,21 @@ export default async function NewsArticlePage({
 
   return (
     <main>
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "@id": `${localizedUrl(locale, `/news/${newsSlug}`)}#article`,
+          mainEntityOfPage: localizedUrl(locale, `/news/${newsSlug}`),
+          headline: t(`articles.${newsSlug}.title`),
+          description: t(`articles.${newsSlug}.excerpt`),
+          image: [absoluteUrl(article.image)],
+          datePublished: article.publishedAt,
+          inLanguage: locale,
+          publisher: organizationSchema(),
+          isBasedOn: article.sourceUrl,
+        }}
+      />
       <section className="border-b border-border bg-cream">
         <div className="mx-auto max-w-wide px-4 py-12 md:px-6 md:py-16">
           <Link
@@ -80,7 +102,13 @@ export default async function NewsArticlePage({
       </section>
 
       <Section tone="white" width="read">
-        <div className="relative mb-10 aspect-[16/10] w-full max-h-[360px] overflow-hidden bg-navy/10">
+        <div
+          className={`relative mb-10 w-full overflow-hidden bg-navy/10 ${
+            article.imageAspect === "square"
+              ? "mx-auto aspect-square max-w-[560px]"
+              : "aspect-[16/10] max-h-[360px]"
+          }`}
+        >
           <Image
             src={article.image}
             alt={t(`articles.${newsSlug}.alt`)}

@@ -36,6 +36,12 @@ COPY . .
 # Disable Next.js telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Metadata and sitemaps are generated at build time, not when the container starts.
+ARG NEXT_PUBLIC_SITE_URL=https://ebiresources.com
+ARG GOOGLE_SITE_VERIFICATION=
+ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+ENV GOOGLE_SITE_VERIFICATION=${GOOGLE_SITE_VERIFICATION}
+
 # Requires `output: 'standalone'` in next.config.* -> emits .next/standalone.
 RUN npm run build
 

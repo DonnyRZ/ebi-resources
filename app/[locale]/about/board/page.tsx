@@ -1,10 +1,10 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
-import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 
@@ -22,10 +22,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "about.board" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/about/board",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function BoardPage({
@@ -40,28 +42,10 @@ export default async function BoardPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("about.board");
-  const a = await getTranslations("a11y");
 
   return (
     <main>
-      <Hero
-        kicker={t("hero.kicker")}
-        title={t("hero.title")}
-        supporting={t("hero.supporting")}
-        media={{
-          type: "image",
-          src: "/images/hadith/grand-lobby.jpg",
-          alt: t("alt.hero"),
-          objectPosition: "center 42%",
-        }}
-        height="58vh"
-        minHeight="400px"
-        overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={a("scrollDown")}
-      />
-
-      <Section tone="white">
+      <Section id="overview-content" tone="white">
         <Reveal className="mb-8 max-w-normal">
           <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {t("intro.kicker")}

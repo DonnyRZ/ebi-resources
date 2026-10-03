@@ -11,7 +11,8 @@
     "partner": "Partner With Us",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "close": "Close"
+    "close": "Close",
+    "language": "Language"
   },
   "footer": {
     "tagline": "A holding built on trust."
@@ -20,6 +21,7 @@
     "scrollDown": "Scroll down",
     "previousSlide": "Previous slide",
     "nextSlide": "Next slide",
+    "expandImage": "Expand image",
     "goToSlide": "Go to slide {number}",
     "highlights": "Featured properties and experiences"
   },
@@ -27,6 +29,8 @@
     "readMore": "Read More",
     "learnMore": "Learn More",
     "discover": "Discover",
+    "previous": "Previous",
+    "next": "Next",
     "comingSoon": "Coming Soon",
     "language": "Language",
     "skipToContent": "Skip to content"
@@ -86,7 +90,7 @@
       },
       "travel": {
         "title": "Travel",
-        "text": "PT EGI Travel Buana — connecting Uzbekistan and Indonesia. Coming soon."
+        "text": "Connecting Uzbekistan and Indonesia."
       },
       "tech": {
         "title": "IT & Technology",
@@ -170,11 +174,11 @@
     },
     "alt": {
       "hadithGolden": "Hadith Hotel at golden hour, mirrored in its reflecting pool, Samarkand",
-      "hadithLobby": "The grand lobby of Hadith Hotel, with marble floors and a sweeping staircase",
-      "hadithExterior": "Hadith Hotel's illuminated facade at night above its fountains, within the Imam Al Bukhari Complex, Samarkand",
-      "hadithLounge": "The Bar & Lounge at Hadith Hotel, with its pastry counter and warm lighting",
-      "hadithRestaurant": "The restaurant at Hadith Hotel, warmly lit for candlelit dining beneath a carved marble arch",
-      "hadithDining": "The dining hall at Hadith Hotel, set with elegant tables and floral centerpieces",
+      "hadithLobby": "The Junior Suite at Hadith Hotel, Samarkand",
+      "hadithExterior": "Hadith Hotel illuminated at night and reflected in its pool, Samarkand",
+      "hadithLounge": "The Bar & Lounge interior at Hadith Hotel",
+      "hadithRestaurant": "The buffet counter in Hadith Hotel's restaurant",
+      "hadithDining": "The restaurant dining room at Hadith Hotel, Samarkand",
       "hadithNight": "Hadith Hotel illuminated at night behind its fountains",
       "meccaFacade": "The Mecca boutique hotel at dusk, Tashkent",
       "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
@@ -182,7 +186,9 @@
       "sevenOzInterior": "Inside a 7OZ Espresso café, with its coffee counter and pastry display",
       "grahaVilla": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
       "grahaNight": "The Imam al-Bukhari Complex illuminated at night, Samarkand",
-      "kampoengFacade": "Hotel Kampoeng Indonesia illuminated at night, Samarkand"
+      "kampoengFacade": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
+      "kampoengFacadeDaylight": "Hotel Kampoeng Indonesia's facade in daylight, Samarkand",
+      "kampoengDining": "Dining atrium at Hotel Kampoeng Indonesia beneath a glass roof, Samarkand"
     }
   },
   "about": {
@@ -241,23 +247,28 @@
         "cta": "Explore Our Businesses",
         "hadith": {
           "kicker": "Samarkand",
-          "title": "Hadith Hotel"
+          "title": "Hadith Hotel",
+          "description": "Five-star flagship within the Imam Al Bukhari Complex, Samarkand."
         },
         "mecca": {
           "kicker": "Tashkent",
-          "title": "Mecca Boutique Hotel"
+          "title": "Mecca Boutique Hotel",
+          "description": "Boutique hospitality opposite Tashkent’s Centre of Islamic Civilization."
         },
         "graha": {
           "kicker": "Samarkand",
-          "title": "Graha Nusantara"
+          "title": "Graha Nusantara",
+          "description": "Villa residences beside the Imam Al Bukhari Complex in Samarkand."
         },
         "kampoeng": {
           "kicker": "Samarkand",
-          "title": "Hotel Kampoeng Indonesia"
+          "title": "Hotel Kampoeng Indonesia",
+          "description": "An Indonesian village inspired stay at the Imam Al Bukhari Memorial Complex."
         },
         "sevenOz": {
           "kicker": "Café",
-          "title": "7OZ Espresso"
+          "title": "7OZ Espresso",
+          "description": "Specialty coffee rooted in Indonesian coffee culture, from Jakarta to Tashkent."
         }
       },
       "cta": {
@@ -347,7 +358,7 @@
         }
       },
       "alt": {
-        "hero": "Grand lobby atrium of Hadith Hotel, Samarkand",
+        "hero": "Junior Suite interior at Hadith Hotel, Samarkand",
         "erslan": "Portrait of Erslan Ibrahim, Chairman and CEO of EBI Resources"
       }
     }
@@ -392,7 +403,7 @@
         },
         "travel": {
           "title": "Travel",
-          "text": "PT EGI Travel Buana — destinations across Tashkent–Samarkand, Jakarta, and Denpasar. Coming soon."
+          "text": "Destinations across Tashkent–Samarkand, Jakarta, and Denpasar."
         },
         "technology": {
           "title": "IT & Technology",
@@ -401,7 +412,7 @@
       },
       "alt": {
         "hero": "Graha Nusantara villa compounds by day near the Imam al-Bukhari Complex, Samarkand",
-        "hotels": "Hadith Hotel facade illuminated at night, Samarkand",
+        "hotels": "Hadith Hotel at sunset with its fountain pool, Samarkand",
         "fnb": "Dining room at Hadith Hotel with set tables and warm lighting"
       }
     },
@@ -532,11 +543,11 @@
             "label": "Discover 7OZ Espresso"
           },
           "alt": {
-            "hero": "Hadith Hotel facade illuminated at night, Samarkand — landscape view",
+            "hero": "Hadith Hotel at sunset with its fountain pool, Samarkand — landscape view",
             "g1": "Heated swimming pool at Hadith Hotel",
             "g2": "The Restaurant dining room at Hadith Hotel",
             "g3": "Bar & Lounge at Hadith Hotel with specialty coffee service",
-            "g4": "Grand lobby at Hadith Hotel"
+            "g4": "Junior Suite at Hadith Hotel, Samarkand"
           }
         },
         "mecca": {
@@ -734,7 +745,7 @@
       "alt": {
         "hero": "Mecca Boutique Hotel boulevard facade, Tashkent",
         "intro": "Graha Nusantara complex illuminated at night near the Imam al-Bukhari Complex, Samarkand",
-        "hadith": "Hadith Hotel facade illuminated at night, Samarkand",
+        "hadith": "Hadith Hotel at sunset with its fountain pool, Samarkand",
         "kampoeng": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
         "graha": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
         "mecca": "The Mecca boutique hotel at dusk, Tashkent"
@@ -759,24 +770,24 @@
       "grid": {
         "kicker": "Venues",
         "title": "Where to Dine & Drink",
-        "intro": "Three destinations on the F&B line — Mecca Hotel restaurants, Kampoeng Indonesia dining, and 7OZ Espresso at Mecca and Hadith.",
+        "intro": "Explore Saji Nusantara, 7oz Espresso, and Lounge Bar across the EBI Resources hospitality portfolio.",
         "carouselLabel": "Food & beverage venues"
       },
       "venues": {
-        "mecca": {
-          "kicker": "Tashkent · Mecca Hotel",
-          "title": "Mecca Hotel Restaurants",
-          "text": "Indonesia Resto and Europe Resto — plus a rooftop café (7OZ) — all dining stated as halal-certified in source materials."
-        },
-        "kampoeng": {
-          "kicker": "Samarkand · Kampoeng Indonesia",
-          "title": "Indonesian Dining On Site",
-          "text": "Authentic Indonesian cuisine at Hotel Kampoeng Indonesia. The outlet name is not published — detail to be provided by the client."
+        "sajiNusantara": {
+          "kicker": "Indonesian dining",
+          "title": "Saji Nusantara",
+          "text": "Indonesian dining and hospitality."
         },
         "sevenOz": {
-          "kicker": "Tashkent & Samarkand · 7OZ",
-          "title": "7OZ Espresso",
-          "text": "Indonesian specialty coffee at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
+          "kicker": "Specialty coffee",
+          "title": "7oz Espresso",
+          "text": "Specialty coffee and espresso."
+        },
+        "loungeBar": {
+          "kicker": "Lounge",
+          "title": "Lounge Bar",
+          "text": "A comfortable lounge space within the hospitality portfolio."
         }
       },
       "proof": {
@@ -807,7 +818,19 @@
         "intro": "Signature restaurant dining at Hadith Hotel, Samarkand",
         "mecca": "Dining interior at Mecca Boutique Hotel, Tashkent",
         "kampoeng": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
-        "sevenOz": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent"
+        "sevenOz": "7OZ Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
+        "heroSlides": {
+          "diningRoom": "Warmly lit dining room with chandelier lighting and set tables",
+          "sevenOzCafe": "7OZ Espresso café interior with coffee bar and the words Good Coffee Better Days",
+          "coffeeCorner": "Barista preparing coffee at Indonesia Coffee Corner",
+          "restaurantLounge": "Restaurant lounge with dining tables and warm pendant lighting",
+          "atriumRestaurant": "Bright two-story restaurant beneath a glass ceiling"
+        },
+        "venues": {
+          "sajiNusantara": "Saji Nusantara dining room with chandelier lighting and set tables",
+          "sevenOz": "7oz Espresso café interior with a coffee counter and pastry display",
+          "loungeBar": "Lounge Bar interior with seating and an Indonesia Coffee Corner counter"
+        }
       }
     },
     "restaurants": {
@@ -1199,18 +1222,18 @@
     },
     "travel": {
       "meta": {
-        "title": "Travel — PT EGI Travel Buana — EBI Resources",
-        "description": "PT EGI Travel Buana — EBI Resources' travel line. Destinations include Tashkent–Samarkand, Jakarta, and Denpasar. Coming soon."
+        "title": "Travel — EBI Resources",
+        "description": "Explore the upcoming travel line of EBI Resources, connecting Tashkent and Samarkand with Jakarta and Denpasar. Contact us for partnerships."
       },
       "hero": {
         "kicker": "Our Businesses · Travel",
-        "title": "PT EGI Travel Buana",
-        "supporting": "Connecting guests across Uzbekistan and Indonesia — coming soon."
+        "title": "Travel",
+        "supporting": "Connecting guests across Uzbekistan and Indonesia."
       },
       "brand": {
         "kicker": "The Brand",
-        "title": "PT EGI Travel Buana",
-        "body1": "PT EGI Travel Buana is the travel company within the EBI Resources group — prepared to connect guests between the Silk Road cities of Uzbekistan and destinations in Indonesia.",
+        "title": "Travel",
+        "body1": "The travel line of EBI Resources is preparing to connect guests between the Silk Road cities of Uzbekistan and destinations in Indonesia.",
         "body2": "Services, schedules, and booking details are not yet published. This page introduces the brand and the destinations in focus while the line remains in preparation."
       },
       "destinations": {
@@ -1238,11 +1261,11 @@
       "status": {
         "kicker": "Coming Soon",
         "title": "In Preparation",
-        "body": "PT EGI Travel Buana is not open for bookings yet. For partnership or early conversations, reach the EBI Resources team.",
+        "body": "Our travel line is not open for bookings yet. For partnership or early conversations, reach the EBI Resources team.",
         "primary": "Contact Us"
       },
       "alt": {
-        "logo": "PT EGI Travel Buana logo"
+        "logo": "Logo of the travel business within EBI Resources"
       }
     }
   },
@@ -1368,20 +1391,18 @@
       "supporting": "Browse open positions across our hospitality and corporate lines. New roles open on a rolling basis as the group scales."
     },
     "alt": {
-      "hero": "Grand lobby of an EBI Resources hospitality property"
+      "hero": "Junior Suite interior at Hadith Hotel, Samarkand"
     },
     "filters": {
       "aria": "Filter roles by business line",
       "all": "All",
       "hospitality": "Property & Hospitality",
       "restaurants": "Restaurants",
-      "cafe": "Café",
       "corporate": "Corporate"
     },
     "lines": {
       "hospitality": "Property & Hospitality",
       "restaurants": "Restaurants",
-      "cafe": "Café",
       "corporate": "Corporate"
     },
     "listing": {
@@ -1421,64 +1442,112 @@
       "emailInvalid": "Please enter a valid email address."
     },
     "jobs": {
+      "purchasing-procurement-expeditor-junior-manager": {
+        "title": "Purchasing, Procurement & Expeditor Junior Manager",
+        "location": "South Jakarta, Indonesia",
+        "type": "Full-time",
+        "level": "Junior Manager",
+        "summary": "Manage procurement, supplier relationships, import processes, and logistics operations.",
+        "requirements": [
+          "Experience in purchasing or procurement",
+          "Ability to coordinate supplier, import, and logistics processes",
+          "Strong organization and communication skills"
+        ]
+      },
+      "finance-accounting-tax-supervisor": {
+        "title": "Finance Accounting Tax Supervisor",
+        "location": "South Jakarta, Indonesia",
+        "type": "Full-time",
+        "level": "Supervisor",
+        "summary": "Support finance, accounting, and tax activities for EBI Resources.",
+        "requirements": [
+          "Relevant experience in finance, accounting, or tax",
+          "Accuracy in financial records and documentation",
+          "Ability to meet reporting deadlines"
+        ]
+      },
       "hotel-marketing-manager": {
         "title": "Hotel Marketing Manager",
-        "location": "Jakarta Selatan, Indonesia",
+        "location": "South Jakarta, Indonesia",
         "type": "Full-time",
-        "level": "Mid Level",
-        "summary": "Strong interpersonal skills and ability to build client relationships for our hospitality division.",
+        "level": "Manager",
+        "summary": "Strong interpersonal skills and ability to build client relationships.",
         "requirements": [
-          "Proven experience in hospitality marketing",
-          "Ability to build and manage client relationships",
-          "Strong communication and negotiation skills"
+          "Strong interpersonal skills",
+          "Ability to build client relationships",
+          "Experience supporting hotel or hospitality marketing"
+        ]
+      },
+      "marketing-manager-hotel": {
+        "title": "Marketing Manager Hotel",
+        "location": "South Jakarta, Indonesia",
+        "type": "Full-time",
+        "level": "Manager",
+        "summary": "Manage marketing initiatives for EBI Resources’ hotel business.",
+        "requirements": [
+          "Experience in marketing or communications",
+          "Ability to plan and coordinate marketing initiatives",
+          "Strong communication and collaboration skills"
+        ]
+      },
+      "it-engineer-manager-hotel-uzbekistan": {
+        "title": "IT Engineer Manager Hotel (Placement: Uzbekistan)",
+        "location": "South Jakarta, Indonesia · Placement in Uzbekistan",
+        "type": "Full-time",
+        "level": "Manager",
+        "summary": "Manage hotel IT engineering for an EBI Resources placement in Uzbekistan.",
+        "requirements": [
+          "Relevant experience in hotel IT or engineering operations",
+          "Ability to coordinate technical operations and teams",
+          "Willingness to take a placement in Uzbekistan"
+        ]
+      },
+      "therapist-spa-wellness-uzbekistan": {
+        "title": "Therapist / SPA / Wellness (Placement: Uzbekistan)",
+        "location": "South Jakarta, Indonesia · Placement in Uzbekistan",
+        "type": "Full-time",
+        "level": "Therapist",
+        "summary": "Provide spa and wellness services for a hospitality assignment in Uzbekistan.",
+        "requirements": [
+          "Experience in spa, massage, or wellness services",
+          "Guest-focused communication and service",
+          "Willingness to take a placement in Uzbekistan"
+        ]
+      },
+      "room-manager-hotel-uzbekistan": {
+        "title": "Room Manager Hotel (Placement: Uzbekistan)",
+        "location": "South Jakarta, Indonesia · Placement in Uzbekistan",
+        "type": "Full-time",
+        "level": "Room Manager",
+        "summary": "Oversee room operations and guest service at a hotel in Uzbekistan.",
+        "requirements": [
+          "Relevant experience in hotel room operations",
+          "Ability to coordinate guest service and daily operations",
+          "Willingness to take a placement in Uzbekistan"
+        ]
+      },
+      "general-manager-hotel-samarkand": {
+        "title": "General Manager Hotel (Placement: Samarkand, Uzbekistan)",
+        "location": "South Jakarta, Indonesia · Placement in Samarkand, Uzbekistan",
+        "type": "Contract",
+        "level": "General Manager",
+        "summary": "Lead hotel operations for an EBI Resources placement in Samarkand.",
+        "requirements": [
+          "Leadership experience in hotel operations",
+          "Ability to lead teams across hotel functions",
+          "Willingness to take a placement in Samarkand, Uzbekistan"
         ]
       },
       "chef-uzbekistan": {
         "title": "Chef (Placement: Uzbekistan)",
-        "location": "Tashkent / Samarkand, Uzbekistan",
-        "type": "Full-time",
-        "level": "Mid Level",
-        "summary": "Lead the kitchen operations for our Indonesian-themed restaurants and cafés in Uzbekistan.",
+        "location": "South Jakarta, Indonesia · Placement in Uzbekistan",
+        "type": "Contract",
+        "level": "Chef",
+        "summary": "Support kitchen operations for a culinary role based in Uzbekistan.",
         "requirements": [
-          "Strong experience in authentic Indonesian cuisine",
-          "Willingness to be placed in Uzbekistan (Tashkent/Samarkand)",
-          "Ability to manage kitchen inventory and train local staff"
-        ]
-      },
-      "hr-manager": {
-        "title": "HR & GA Manager",
-        "location": "Jakarta Selatan, Indonesia",
-        "type": "Full-time",
-        "level": "Manager",
-        "summary": "HR & GA Manager capable of leading the team effectively across EBI Resources' diverse business lines.",
-        "requirements": [
-          "Minimum 5 years experience as HR & GA Manager",
-          "Strong understanding of Indonesian labor laws",
-          "Experience in talent acquisition and performance management"
-        ]
-      },
-      "cafe-manager": {
-        "title": "Café Manager",
-        "location": "Jakarta Selatan, Indonesia",
-        "type": "Full-time",
-        "level": "Mid Level",
-        "summary": "Oversee daily operations, ensure customer satisfaction, and drive profitability for our F&B outlets.",
-        "requirements": [
-          "Prior experience managing a busy café or restaurant",
-          "Strong leadership and team management skills",
-          "Excellent customer service and problem-solving abilities"
-        ]
-      },
-      "project-manager-construction": {
-        "title": "Project Manager (High Risk Construction)",
-        "location": "Jakarta Selatan, Indonesia",
-        "type": "Full-time",
-        "level": "Senior Level",
-        "summary": "Lead high-risk construction projects ensuring strict adherence to safety standards, budget, and timeline.",
-        "requirements": [
-          "Bachelor Degree in Civil Engineering or Architecture",
-          "Proven track record managing high-risk construction projects",
-          "Active HSE/K3 certification (Ahli K3 Konstruksi)"
+          "Relevant experience in professional kitchen operations",
+          "Knowledge of food preparation and kitchen standards",
+          "Willingness to take a placement in Uzbekistan"
         ]
       }
     }
@@ -1495,12 +1564,23 @@
     },
     "empty": "No stories have been published yet.",
     "readStory": "Read Story",
-    "sourceCta": "Read original article on EGI Media",
+    "sourceCta": "Read original story",
     "back": "All news",
     "alt": {
       "hero": "Hadith Hotel at golden hour, Samarkand"
     },
     "articles": {
+      "turkiye-chess-teams-samarkand-olympiad": {
+        "title": "Türkiye’s Chess Teams Finish Strong at the Samarkand Olympiad",
+        "excerpt": "Türkiye’s Open and Women’s teams secured top-15 finishes at the 46th FIDE Chess Olympiad in Samarkand.",
+        "alt": "Türkiye’s Open and Women’s chess teams pose on the grand staircase at the 46th FIDE Chess Olympiad in Samarkand.",
+        "location": "Samarkand",
+        "body": [
+          "The 46th FIDE Chess Olympiad concluded in Samarkand on 27 September 2026, after 11 rounds of competition among national teams from around the world.",
+          "Türkiye finished 13th in the Open section with 15 match points and 11th in the Women’s section with 16. Grandmaster Yağız Kaan Erdoğmuş also won individual silver on board one, scoring 8/10 without a loss.",
+          "The team portraits capture a memorable moment from the tournament. HADITH Hotel celebrates Samarkand’s international spirit and the visitors who bring the city’s heritage to life."
+        ]
+      },
       "indonesian-chess-team-hotel-kampoeng-indonesia": {
         "title": "Indonesian Chess Contingent Welcomed at Hotel Kampoeng Indonesia",
         "excerpt": "Indonesia’s teams for the 46th FIDE Chess Olympiad in Samarkand stayed at Hotel Kampoeng Indonesia in the Imam Al Bukhari Complex.",
@@ -1669,7 +1749,7 @@
     }
   },
   "metadata": {
-    "title": "EBI Resources",
-    "description": "EBI Resources — a holding company bringing the warmth of Indonesian hospitality to the Silk Road: hotels, food & beverage, and technology across Indonesia and Uzbekistan."
+    "title": "EBI Resources — Hotels, Dining, Travel & Technology",
+    "description": "Explore EBI Resources: Indonesian hospitality, hotels, dining, travel and technology connecting Indonesia and Uzbekistan."
   }
 }

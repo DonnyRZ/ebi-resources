@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { redirect } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
-/** Legacy Kampoeng restaurants route → F&B venue. */
+/** Legacy Kampoeng restaurants route → F&B overview. */
 export default async function KampoengRestaurantsRedirect({
   params,
 }: {
@@ -14,7 +14,7 @@ export default async function KampoengRestaurantsRedirect({
     notFound();
   }
   redirect({
-    href: "/businesses/food-and-beverage/kampoeng-indonesia",
+    href: "/businesses/food-and-beverage",
     locale,
   });
 }

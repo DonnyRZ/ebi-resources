@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -22,10 +23,12 @@ export async function generateMetadata({
     notFound();
   }
   const t = await getTranslations({ locale, namespace: "news" });
-  return {
+  return pageMetadata({
+    locale,
+    path: "/news",
     title: t("meta.title"),
     description: t("meta.description"),
-  };
+  });
 }
 
 export default async function NewsPage({
@@ -50,7 +53,7 @@ export default async function NewsPage({
         title={t("hero.title")}
         supporting={t("hero.supporting")}
         image={{
-          src: "/images/hadith/facade-night-landscape.jpg",
+          src: "/images/hadith/hotel-exterior.webp",
           alt: t("alt.hero"),
         }}
       />
@@ -73,7 +76,7 @@ export default async function NewsPage({
                     src: article.image,
                     alt: t(`articles.${article.slug}.alt`),
                   }}
-                  aspect="16 / 10"
+                  aspect={article.imageAspect === "square" ? "1 / 1" : "16 / 10"}
                   cta={common("readMore")}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />

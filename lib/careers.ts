@@ -1,5 +1,5 @@
 /**
- * Careers catalog — open roles from research/careers.md (re-branded EBI).
+ * Careers catalog — current EGI Resources roles listed on JobStreet.
  * Copy lives in messages; this file owns slugs, filter lines, and ordering.
  */
 
@@ -10,22 +10,24 @@ export type CareerFilter =
   | "all"
   | "hospitality"
   | "restaurants"
-  | "cafe"
   | "corporate";
 
 export const CAREER_FILTERS: Exclude<CareerFilter, "all">[] = [
   "hospitality",
   "restaurants",
-  "cafe",
   "corporate",
 ];
 
 export const JOB_SLUGS = [
+  "purchasing-procurement-expeditor-junior-manager",
+  "finance-accounting-tax-supervisor",
   "hotel-marketing-manager",
+  "marketing-manager-hotel",
+  "it-engineer-manager-hotel-uzbekistan",
+  "therapist-spa-wellness-uzbekistan",
+  "room-manager-hotel-uzbekistan",
+  "general-manager-hotel-samarkand",
   "chef-uzbekistan",
-  "hr-manager",
-  "cafe-manager",
-  "project-manager-construction",
 ] as const;
 
 export type JobSlug = (typeof JOB_SLUGS)[number];
@@ -37,11 +39,15 @@ export type JobDefinition = {
 };
 
 export const JOBS: JobDefinition[] = [
+  { slug: "purchasing-procurement-expeditor-junior-manager", line: "corporate" },
+  { slug: "finance-accounting-tax-supervisor", line: "corporate" },
   { slug: "hotel-marketing-manager", line: "hospitality" },
+  { slug: "marketing-manager-hotel", line: "hospitality" },
+  { slug: "it-engineer-manager-hotel-uzbekistan", line: "hospitality" },
+  { slug: "therapist-spa-wellness-uzbekistan", line: "hospitality" },
+  { slug: "room-manager-hotel-uzbekistan", line: "hospitality" },
+  { slug: "general-manager-hotel-samarkand", line: "hospitality" },
   { slug: "chef-uzbekistan", line: "restaurants" },
-  { slug: "hr-manager", line: "corporate" },
-  { slug: "cafe-manager", line: "cafe" },
-  { slug: "project-manager-construction", line: "hospitality" },
 ];
 
 export const CAREERS_PAGE_SIZE = 4;

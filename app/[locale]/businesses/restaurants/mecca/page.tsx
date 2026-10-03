@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { redirect } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
-/** Legacy Mecca restaurants route → F&B venue. */
+/** Legacy Mecca restaurants route → F&B overview. */
 export default async function MeccaRestaurantsRedirect({
   params,
 }: {
@@ -13,5 +13,5 @@ export default async function MeccaRestaurantsRedirect({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  redirect({ href: "/businesses/food-and-beverage/mecca", locale });
+  redirect({ href: "/businesses/food-and-beverage", locale });
 }

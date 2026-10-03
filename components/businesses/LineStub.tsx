@@ -1,4 +1,5 @@
-import { Hero } from "@/components/Hero";
+import { HeroCarousel } from "@/components/HeroCarousel";
+import { ComingSoonBadge } from "@/components/ComingSoonBadge";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { PlaceholderNotice } from "@/components/about/PlaceholderNotice";
@@ -31,30 +32,29 @@ export function LineStub({
   badge?: string;
   backLabel: string;
 }) {
+  const heroSlides = [
+    {
+      kicker,
+      title,
+      supporting,
+      media: heroMedia
+        ? { type: "image" as const, src: heroMedia.src, alt: heroMedia.alt }
+        : undefined,
+    },
+  ];
+
   return (
-    <main>
-      <Hero
-        kicker={kicker}
-        title={title}
-        supporting={supporting}
-        media={
-          heroMedia
-            ? { type: "image", src: heroMedia.src, alt: heroMedia.alt }
-            : undefined
-        }
-        height="58vh"
-        minHeight="400px"
+    <main className="home-overview home-overview--businesses">
+      <HeroCarousel
+        slides={heroSlides}
         overlayHeader={false}
-        showScrollCue
-        scrollCueLabel={scrollCueLabel}
+        labels={{ region: title, scrollCue: scrollCueLabel }}
       />
 
-      <Section tone="white" width="normal">
+      <Section id="overview-content" tone="white" width="normal">
         <Reveal>
           {badge && (
-            <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
-              {badge}
-            </p>
+            <ComingSoonBadge label={badge} className="mb-4" />
           )}
           {placeholderLabel && placeholderDetail && (
             <PlaceholderNotice

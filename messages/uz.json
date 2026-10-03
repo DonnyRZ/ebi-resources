@@ -11,7 +11,8 @@
     "partner": "Hamkorlik",
     "openMenu": "Menyuni ochish",
     "closeMenu": "Menyuni yopish",
-    "close": "Yopish"
+    "close": "Yopish",
+    "language": "Til"
   },
   "footer": {
     "tagline": "Ishonch ustiga qurilgan holding."
@@ -20,6 +21,7 @@
     "scrollDown": "Pastga aylantirish",
     "previousSlide": "Oldingi slayd",
     "nextSlide": "Keyingi slayd",
+    "expandImage": "Rasmni kattalashtirish",
     "goToSlide": "{number}-slaydga o‘tish",
     "highlights": "Tanlangan mulklar va tajribalar"
   },
@@ -27,6 +29,8 @@
     "readMore": "Batafsil",
     "learnMore": "Ko‘proq bilish",
     "discover": "Kashf etish",
+    "previous": "Oldingi",
+    "next": "Keyingi",
     "comingSoon": "Tez orada",
     "language": "Til",
     "skipToContent": "Asosiy kontentga o‘tish"
@@ -86,7 +90,7 @@
       },
       "travel": {
         "title": "Sayohat",
-        "text": "PT EGI Travel Buana — O‘zbekiston va Indoneziyani bog‘laydi. Tez orada."
+        "text": "O‘zbekiston va Indoneziyani bog‘laydi."
       },
       "tech": {
         "title": "IT va texnologiya",
@@ -170,11 +174,11 @@
     },
     "alt": {
       "hadithGolden": "Oltin soatda Hadith Hotel, aks ettiruvchi hovuzda aks etgan holda, Samarqand",
-      "hadithLobby": "Hadith Hotelning marmar polli va keng zinapoyali katta lobbisi",
-      "hadithExterior": "Imom Al-Buxoriy majmuasidagi Hadith Hotelning tungi yoritilgan fasadi va favvoralari, Samarqand",
-      "hadithLounge": "Hadith Hotel Bar & Lounge — pishiriqlar vitrinasi va iliqlik yoritish",
-      "hadithRestaurant": "Hadith Hotel restorani — o‘yilgan marmar ark ostida sham chiroqli kechki ovqat",
-      "hadithDining": "Hadith Hotel ovqat zali — nafis stollar va gulli kompozitsiyalar",
+      "hadithLobby": "Hadith Hotel Junior Suite xonasi, Samarqand",
+      "hadithExterior": "Hadith Hotel tungi chiroqlar bilan yoritilib, hovuzda aks etgan, Samarqand",
+      "hadithLounge": "Hadith Hotel Bar & Lounge interyeri",
+      "hadithRestaurant": "Hadith Hotel restoranidagi buffet peshtaxtasi",
+      "hadithDining": "Hadith Hotel restorani ovqatlanish zali, Samarqand",
       "hadithNight": "Favvoralar ortida tungi yoritilgan Hadith Hotel",
       "meccaFacade": "Mecca butik mehmonxonasi shafaqda, Toshkent",
       "meccaRooftop": "Mecca tomidagi kafe — Islom sivilizatsiyasi markaziga qaragan manzara",
@@ -182,7 +186,9 @@
       "sevenOzInterior": "7OZ Espresso kafesi ichida — qahva stoli va pishiriqlar vitrinasi",
       "grahaVilla": "Oltin soatda Graha Nusantara villasi, Imom Al-Buxoriy majmuasi yonida",
       "grahaNight": "Tungi yoritilgan Imom Al-Buxoriy majmuasi, Samarqand",
-      "kampoengFacade": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand"
+      "kampoengFacade": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
+      "kampoengFacadeDaylight": "Kunduzgi Hotel Kampoeng Indonesia fasadi, Samarqand",
+      "kampoengDining": "Hotel Kampoeng Indonesia mehmonxonasining shisha tom ostidagi ovqatlanish atriumi, Samarqand"
     }
   },
   "about": {
@@ -241,23 +247,28 @@
         "cta": "Bizneslarimizni o‘rganing",
         "hadith": {
           "kicker": "Samarqand",
-          "title": "Hadith Hotel"
+          "title": "Hadith Hotel",
+          "description": "Samarqanddagi Imom Al-Buxoriy majmuasida joylashgan besh yulduzli flagman mehmonxona."
         },
         "mecca": {
           "kicker": "Toshkent",
-          "title": "Mecca Boutique Hotel"
+          "title": "Mecca Boutique Hotel",
+          "description": "Toshkentdagi Islom sivilizatsiyasi markazi qarshisidagi butik mehmonxona."
         },
         "graha": {
           "kicker": "Samarqand",
-          "title": "Graha Nusantara"
+          "title": "Graha Nusantara",
+          "description": "Samarqanddagi Imom Al-Buxoriy majmuasi yonidagi villa turar joylari."
         },
         "kampoeng": {
           "kicker": "Samarqand",
-          "title": "Hotel Kampoeng Indonesia"
+          "title": "Hotel Kampoeng Indonesia",
+          "description": "Imom Al-Buxoriy yodgorlik majmuasidagi Indoneziya qishlog‘i ruhidagi mehmonxona."
         },
         "sevenOz": {
           "kicker": "Kafe",
-          "title": "7OZ Espresso"
+          "title": "7OZ Espresso",
+          "description": "Jakartadan Toshkentgacha — Indoneziya qahva madaniyatiga asoslangan maxsus qahvalar."
         }
       },
       "cta": {
@@ -347,7 +358,7 @@
         }
       },
       "alt": {
-        "hero": "Hadith Hotel grand lobisidagi atrium, Samarqand",
+        "hero": "Hadith Hotel Junior Suite xonasi interyeri, Samarqand",
         "erslan": "Erslan Ibrahim portreti, EBI Resources raisi va bosh direktori"
       }
     }
@@ -392,7 +403,7 @@
         },
         "travel": {
           "title": "Sayohat",
-          "text": "PT EGI Travel Buana — Toshkent–Samarqand, Jakarta va Denpasar bo‘ylab manzillar. Tez orada."
+          "text": "Toshkent–Samarqand, Jakarta va Denpasar bo‘ylab manzillar."
         },
         "technology": {
           "title": "IT va texnologiya",
@@ -401,7 +412,7 @@
       },
       "alt": {
         "hero": "Kunduzi Imom al-Buxoriy majmuasi yonidagi Graha Nusantara villa majmualari, Samarqand",
-        "hotels": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand",
+        "hotels": "Hadith Hotel favvorali hovuzi bilan shafaq paytida, Samarqand",
         "fnb": "Hadith Hotel ovqatlanish zali — bezatilgan stollar va iliq yoritish"
       }
     },
@@ -532,11 +543,11 @@
             "label": "7OZ Espresso bilan tanishing"
           },
           "alt": {
-            "hero": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand — landshaft ko‘rinishi",
+            "hero": "Hadith Hotel favvorali hovuzi bilan shafaq paytida, Samarqand — keng manzara",
             "g1": "Hadith Hotel isitilgan basseyni",
             "g2": "Hadith Hotel The Restaurant ovqatlanish zali",
             "g3": "Hadith Hotel Bar & Lounge maxsus qahva xizmati bilan",
-            "g4": "Hadith Hotel grand lobby"
+            "g4": "Hadith Hotel Junior Suite xonasi, Samarqand"
           }
         },
         "mecca": {
@@ -734,7 +745,7 @@
       "alt": {
         "hero": "Mecca Boutique Hotel bulvar fasadi, Toshkent",
         "intro": "Tungi yoritilgan Graha Nusantara majmuasi Imom al-Buxoriy majmuasi yonida, Samarqand",
-        "hadith": "Tungi yoritilgan Hadith Hotel fasadi, Samarqand",
+        "hadith": "Hadith Hotel favvorali hovuzi bilan shafaq paytida, Samarqand",
         "kampoeng": "Tungi yoritilgan Hotel Kampoeng Indonesia, Samarqand",
         "graha": "Oltin soatda Graha Nusantara villasi, Imom al-Buxoriy majmuasi yonida",
         "mecca": "Shom payti Mecca butik mehmonxonasi, Toshkent"
@@ -759,24 +770,24 @@
       "grid": {
         "kicker": "Joylar",
         "title": "Qayerda ovqatlanish va ichish",
-        "intro": "F&B yo‘nalishidagi uch manzil — Mecca Hotel restoranlari, Kampoeng Indonesia ovqatlanishi hamda Mecca va Hadith’dagi 7OZ Espresso.",
+        "intro": "EBI Resources mehmondo‘stlik portfelidagi Saji Nusantara, 7oz Espresso va Lounge Bar bilan tanishing.",
         "carouselLabel": "Ovqatlanish va ichimlik joylari"
       },
       "venues": {
-        "mecca": {
-          "kicker": "Toshkent · Mecca Hotel",
-          "title": "Mecca Hotel restoranlari",
-          "text": "Indonesia Resto va Europe Resto — shuningdek tom kafe (7OZ) — manba materiallarda barcha ovqatlanish halol sertifikatlangan deb ko‘rsatilgan."
-        },
-        "kampoeng": {
-          "kicker": "Samarqand · Kampoeng Indonesia",
-          "title": "Joydagi indoneziya ovqatlanishi",
-          "text": "Hotel Kampoeng Indonesia’da haqiqiy indoneziya oshxonasi. Joy nomi nashr etilmagan — tafsilotlar mijoz tomonidan taqdim etiladi."
+        "sajiNusantara": {
+          "kicker": "Indoneziya taomlari",
+          "title": "Saji Nusantara",
+          "text": "Indoneziya taomlari va mehmondo‘stlik."
         },
         "sevenOz": {
-          "kicker": "Toshkent va Samarqand · 7OZ",
-          "title": "7OZ Espresso",
-          "text": "Indoneziya maxsus qahvasi Mecca Boutique Hotel (Toshkent) va Hadith Hotel (Samarqand)da."
+          "kicker": "Maxsus qahva",
+          "title": "7oz Espresso",
+          "text": "Maxsus qahva va espresso."
+        },
+        "loungeBar": {
+          "kicker": "Dam olish zali",
+          "title": "Lounge Bar",
+          "text": "Mehmondo‘stlik portfelidagi qulay dam olish maskani."
         }
       },
       "proof": {
@@ -807,7 +818,19 @@
         "intro": "Hadith Hotel imzo restoran ovqatlanishi, Samarqand",
         "mecca": "Mecca Boutique Hotel ovqatlanish interyeri, Toshkent",
         "kampoeng": "Hotel Kampoeng Indonesia ovqatlanish zali bezatilgan stollar va indoneziya san’ati bilan, Samarqand",
-        "sevenOz": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent"
+        "sevenOz": "Quyosh botishida Islom sivilizatsiyasi markaziga qaragan 7OZ Espresso tom kafesi, Toshkent",
+        "heroSlides": {
+          "diningRoom": "Qandillar bilan yoritilgan, dasturxon yozilgan iliq restoran zali",
+          "sevenOzCafe": "Qahva bari va “Good Coffee Better Days” yozuvi tushirilgan 7OZ Espresso kafesi",
+          "coffeeCorner": "Indonesia Coffee Corner’da barista qahva tayyorlamoqda",
+          "restaurantLounge": "Ovqatlanish stollari va iliq osma chiroqlari bor restoran dam olish zali",
+          "atriumRestaurant": "Shisha shift ostidagi yorug‘ ikki qavatli restoran"
+        },
+        "venues": {
+          "sajiNusantara": "Qandillar va dasturxon yozilgan stollar bilan Saji Nusantara ovqatlanish zali",
+          "sevenOz": "Qahva bari va pishiriqlar vitrinasiga ega 7oz Espresso kafesi",
+          "loungeBar": "O‘rindiqlar va Indonesia Coffee Corner peshtaxtasi bor Lounge Bar interyeri"
+        }
       }
     },
     "restaurants": {
@@ -1199,18 +1222,18 @@
     },
     "travel": {
       "meta": {
-        "title": "Sayohat — PT EGI Travel Buana — EBI Resources",
-        "description": "PT EGI Travel Buana — EBI Resources sayohat yo‘nalishi. Manzillar: Toshkent–Samarqand, Jakarta va Denpasar. Tez orada."
+        "title": "Sayohat — EBI Resources",
+        "description": "EBI Resources’ning sayohat yo‘nalishi: Toshkent va Samarqandni Jakarta va Denpasar bilan bog‘laydi. Tez orada. Hamkorlik uchun biz bilan bog‘laning."
       },
       "hero": {
         "kicker": "Bizneslarimiz · Sayohat",
-        "title": "PT EGI Travel Buana",
-        "supporting": "O‘zbekiston va Indoneziya bo‘ylab mehmonlarni bog‘lash — tez orada."
+        "title": "Sayohat",
+        "supporting": "O‘zbekiston va Indoneziya bo‘ylab mehmonlarni bog‘lash."
       },
       "brand": {
         "kicker": "Brend",
-        "title": "PT EGI Travel Buana",
-        "body1": "PT EGI Travel Buana EBI Resources guruhi ichidagi sayohat kompaniyasi — O‘zbekistonning Ipak yo‘li shaharlarini va Indoneziyadagi manzillarni mehmonlar o‘rtasida bog‘lashga tayyor.",
+        "title": "Sayohat",
+        "body1": "EBI Resources’ning sayohat yo‘nalishi mehmonlarni O‘zbekistonning Ipak yo‘li shaharlari va Indoneziyadagi manzillar o‘rtasida bog‘lashga tayyorlanmoqda.",
         "body2": "Xizmatlar, jadvallar va band qilish tafsilotlari hali nashr etilmagan. Ushbu sahifa yo‘nalish tayyorgarlikda bo‘lganida brend va diqqat markazidagi manzillarni tanishtiradi."
       },
       "destinations": {
@@ -1238,11 +1261,11 @@
       "status": {
         "kicker": "Tez orada",
         "title": "Tayyorgarlikda",
-        "body": "PT EGI Travel Buana hali band qilish uchun ochiq emas. Hamkorlik yoki erta suhbatlar uchun EBI Resources jamoasiga murojaat qiling.",
+        "body": "Sayohat yo‘nalishimiz hali band qilish uchun ochiq emas. Hamkorlik yoki dastlabki suhbatlar uchun EBI Resources jamoasiga murojaat qiling.",
         "primary": "Biz bilan bog‘laning"
       },
       "alt": {
-        "logo": "PT EGI Travel Buana logotipi"
+        "logo": "EBI Resources tarkibidagi sayohat yo‘nalishi logotipi"
       }
     }
   },
@@ -1368,20 +1391,18 @@
       "supporting": "Mehmondo‘stlik va korporativ yo‘nalishlar bo‘ylab ochiq pozitsiyalarni ko‘ring. Guruh kengaygan sari yangi lavozimlar doimiy ochiladi."
     },
     "alt": {
-      "hero": "EBI Resources mehmondo‘stlik mulkining grand lobisi"
+      "hero": "Hadith Hotel Junior Suite xonasi interyeri, Samarqand"
     },
     "filters": {
       "aria": "Lavozimlarni biznes yo‘nalishi bo‘yicha filtrlash",
       "all": "Barchasi",
       "hospitality": "Mulk va mehmondo‘stlik",
       "restaurants": "Restoranlar",
-      "cafe": "Kafe",
       "corporate": "Korporativ"
     },
     "lines": {
       "hospitality": "Mulk va mehmondo‘stlik",
       "restaurants": "Restoranlar",
-      "cafe": "Kafe",
       "corporate": "Korporativ"
     },
     "listing": {
@@ -1421,64 +1442,112 @@
       "emailInvalid": "Iltimos, to‘g‘ri email manzilini kiriting."
     },
     "jobs": {
+      "purchasing-procurement-expeditor-junior-manager": {
+        "title": "Xaridlar, ta’minot va ekspeditorlik bo‘yicha kichik menejer",
+        "location": "Janubiy Jakarta, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "Kichik menejer",
+        "summary": "Xaridlar, yetkazib beruvchilar bilan aloqalar, import jarayonlari va logistika ishlarini boshqarish.",
+        "requirements": [
+          "Xarid yoki ta’minot sohasida tajriba",
+          "Yetkazib beruvchilar, import va logistika jarayonlarini muvofiqlashtirish qobiliyati",
+          "Kuchli tashkiliy va muloqot ko‘nikmalari"
+        ]
+      },
+      "finance-accounting-tax-supervisor": {
+        "title": "Moliya, buxgalteriya va soliq bo‘yicha supervayzer",
+        "location": "Janubiy Jakarta, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "Supervayzer",
+        "summary": "EBI Resources uchun moliya, buxgalteriya va soliq ishlarini qo‘llab-quvvatlash.",
+        "requirements": [
+          "Moliya, buxgalteriya yoki soliq yo‘nalishida tegishli tajriba",
+          "Moliyaviy hujjatlar bilan ishlashda aniqlik",
+          "Hisobot muddatlariga rioya qilish qobiliyati"
+        ]
+      },
       "hotel-marketing-manager": {
         "title": "Mehmonxona marketing menejeri",
-        "location": "Jakarta Selatan, Indoneziya",
+        "location": "Janubiy Jakarta, Indoneziya",
         "type": "To‘liq vaqt",
-        "level": "O‘rta daraja",
-        "summary": "Mehmondo‘stlik bo‘limimiz uchun kuchli muloqot qobiliyati va mijozlar bilan munosabatlar qurish.",
+        "level": "Menejer",
+        "summary": "Kuchli shaxslararo muloqot va mijozlar bilan munosabatlarni rivojlantirish ko‘nikmalari.",
         "requirements": [
-          "Mehmondo‘stlik marketingida isbotlangan tajriba",
-          "Mijozlar bilan munosabatlar qurish va boshqarish qobiliyati",
-          "Kuchli muloqot va muzokara ko‘nikmalari"
+          "Kuchli shaxslararo muloqot ko‘nikmalari",
+          "Mijozlar bilan munosabatlarni rivojlantira olish",
+          "Mehmonxona yoki mehmondo‘stlik marketingida tajriba"
+        ]
+      },
+      "marketing-manager-hotel": {
+        "title": "Marketing menejeri — mehmonxonalar",
+        "location": "Janubiy Jakarta, Indoneziya",
+        "type": "To‘liq vaqt",
+        "level": "Menejer",
+        "summary": "EBI Resources mehmonxonalari uchun marketing tashabbuslarini boshqarish.",
+        "requirements": [
+          "Marketing yoki kommunikatsiya sohasida tajriba",
+          "Marketing tashabbuslarini rejalashtirish va muvofiqlashtirish qobiliyati",
+          "Kuchli muloqot va hamkorlik ko‘nikmalari"
+        ]
+      },
+      "it-engineer-manager-hotel-uzbekistan": {
+        "title": "Mehmonxona IT va muhandislik menejeri (O‘zbekiston)",
+        "location": "Janubiy Jakarta, Indoneziya · O‘zbekistonda ish joyi",
+        "type": "To‘liq vaqt",
+        "level": "Menejer",
+        "summary": "O‘zbekistondagi EBI Resources mehmonxonasining IT va muhandislik ishlarini boshqarish.",
+        "requirements": [
+          "Mehmonxona IT yoki muhandislik operatsiyalarida tegishli tajriba",
+          "Texnik jarayonlar va jamoalarni muvofiqlashtirish qobiliyati",
+          "O‘zbekistonda ishlashga tayyorlik"
+        ]
+      },
+      "therapist-spa-wellness-uzbekistan": {
+        "title": "Terapevt / SPA / wellness mutaxassisi (O‘zbekiston)",
+        "location": "Janubiy Jakarta, Indoneziya · O‘zbekistonda ish joyi",
+        "type": "To‘liq vaqt",
+        "level": "Terapevt",
+        "summary": "O‘zbekistondagi mehmondo‘stlik loyihasida SPA va wellness xizmatlarini ko‘rsatish.",
+        "requirements": [
+          "SPA, massaj yoki wellness xizmatlarida tajriba",
+          "Mehmonlarga yo‘naltirilgan muloqot va xizmat ko‘rsatish",
+          "O‘zbekistonda ishlashga tayyorlik"
+        ]
+      },
+      "room-manager-hotel-uzbekistan": {
+        "title": "Mehmonxona xonalar bo‘limi menejeri (O‘zbekiston)",
+        "location": "Janubiy Jakarta, Indoneziya · O‘zbekistonda ish joyi",
+        "type": "To‘liq vaqt",
+        "level": "Xonalar bo‘limi menejeri",
+        "summary": "O‘zbekistondagi mehmonxonada xonalar faoliyati va mehmonlarga xizmat ko‘rsatishni nazorat qilish.",
+        "requirements": [
+          "Mehmonxona xonalar faoliyatida tegishli tajriba",
+          "Mehmonlarga xizmat va kundalik ishlarni muvofiqlashtirish qobiliyati",
+          "O‘zbekistonda ishlashga tayyorlik"
+        ]
+      },
+      "general-manager-hotel-samarkand": {
+        "title": "Mehmonxona bosh menejeri (Samarqand, O‘zbekiston)",
+        "location": "Janubiy Jakarta, Indoneziya · Samarqandda ish joyi",
+        "type": "Shartnoma",
+        "level": "Bosh menejer",
+        "summary": "EBI Resources’ning Samarqanddagi mehmonxona faoliyatiga rahbarlik qilish.",
+        "requirements": [
+          "Mehmonxona operatsiyalariga rahbarlik qilish tajribasi",
+          "Mehmonxonaning turli bo‘limlaridagi jamoalarni boshqarish qobiliyati",
+          "Samarqand, O‘zbekistonda ishlashga tayyorlik"
         ]
       },
       "chef-uzbekistan": {
-        "title": "Oshpaz (Joylashtirish: O‘zbekiston)",
-        "location": "Toshkent / Samarqand, O‘zbekiston",
-        "type": "To‘liq vaqt",
-        "level": "O‘rta daraja",
-        "summary": "O‘zbekistondagi indoneziya mavzuli restoranlar va kafelar uchun oshxona operatsiyalarini boshqarish.",
+        "title": "Oshpaz (O‘zbekiston)",
+        "location": "Janubiy Jakarta, Indoneziya · O‘zbekistonda ish joyi",
+        "type": "Shartnoma",
+        "level": "Oshpaz",
+        "summary": "O‘zbekistondagi oshpazlik loyihasida oshxona ishlarini qo‘llab-quvvatlash.",
         "requirements": [
-          "Haqiqiy indoneziya oshxonasida kuchli tajriba",
-          "O‘zbekistonda joylashtirilishga tayyorlik (Toshkent/Samarqand)",
-          "Oshxona inventarini boshqarish va mahalliy xodimlarni o‘qitish qobiliyati"
-        ]
-      },
-      "hr-manager": {
-        "title": "HR va GA menejeri",
-        "location": "Jakarta Selatan, Indoneziya",
-        "type": "To‘liq vaqt",
-        "level": "Menejer",
-        "summary": "EBI Resources’ning turli biznes yo‘nalishlari bo‘ylab jamoani samarali boshqara oladigan HR va GA menejeri.",
-        "requirements": [
-          "HR va GA menejeri sifatida kamida 5 yillik tajriba",
-          "Indoneziya mehnat qonunlarini chuqur tushunish",
-          "Iqtidorlarni jalb qilish va samaradorlikni boshqarish tajribasi"
-        ]
-      },
-      "cafe-manager": {
-        "title": "Kafe menejeri",
-        "location": "Jakarta Selatan, Indoneziya",
-        "type": "To‘liq vaqt",
-        "level": "O‘rta daraja",
-        "summary": "Kundalik operatsiyalarni nazorat qilish, mijozlar qoniqishini ta’minlash va F&B nuqtalarimiz foydaliligini oshirish.",
-        "requirements": [
-          "Gavjum kafe yoki restoranni boshqarish tajribasi",
-          "Kuchli rahbarlik va jamoa boshqaruvi ko‘nikmalari",
-          "A’lo darajadagi mijozlarga xizmat ko‘rsatish va muammolarni hal qilish qobiliyati"
-        ]
-      },
-      "project-manager-construction": {
-        "title": "Loyiha menejeri (Yuqori xavfli qurilish)",
-        "location": "Jakarta Selatan, Indoneziya",
-        "type": "To‘liq vaqt",
-        "level": "Katta daraja",
-        "summary": "Yuqori xavfli qurilish loyihalarini xavfsizlik standartlari, byudjet va muddatlarga qat’iy rioya qilgan holda boshqarish.",
-        "requirements": [
-          "Fuqarolik muhandisligi yoki arxitektura bo‘yicha bakalavr darajasi",
-          "Yuqori xavfli qurilish loyihalarini boshqarishda isbotlangan tajriba",
-          "Faol HSE/K3 sertifikati (Ahli K3 Konstruksi)"
+          "Professional oshxona faoliyatida tegishli tajriba",
+          "Taom tayyorlash va oshxona standartlarini bilish",
+          "O‘zbekistonda ishlashga tayyorlik"
         ]
       }
     }
@@ -1495,12 +1564,23 @@
     },
     "empty": "Hozircha hech qanday maqola e’lon qilinmagan.",
     "readStory": "O‘qish",
-    "sourceCta": "Asl maqolani EGI Media’da o‘qish",
+    "sourceCta": "Asl hikoyani o‘qish",
     "back": "Barcha yangiliklar",
     "alt": {
       "hero": "Hadith Hotel oltin soatda, Samarqand"
     },
     "articles": {
+      "turkiye-chess-teams-samarkand-olympiad": {
+        "title": "Turkiya shaxmat jamoalari Samarqand Olimpiadasini muvaffaqiyatli yakunladi",
+        "excerpt": "Turkiyaning Open va Women’s jamoalari Samarqandda o‘tgan 46-FIDE shaxmat Olimpiadasida kuchli 15 talikka kirdi.",
+        "alt": "Turkiyaning Open va Women’s shaxmat jamoalari Samarqanddagi 46-FIDE shaxmat Olimpiadasida hashamatli zinapoyada suratga tushmoqda.",
+        "location": "Samarqand",
+        "body": [
+          "46-FIDE shaxmat Olimpiadasi 2026-yil 27-sentabr kuni Samarqandda yakunlandi. Dunyoning turli mamlakatlari milliy jamoalari 11 tur davomida bellashdi.",
+          "Turkiyaning Open jamoasi 15 match ochkosi bilan 13-o‘rinni, Women’s jamoasi esa 16 ochko bilan 11-o‘rinni egalladi. Grossmeyster Yağız Kaan Erdoğmuş birinchi taxtada mag‘lubiyatsiz 8/10 natija qayd etib, individual kumush medalni ham qo‘lga kiritdi.",
+          "Jamoalarning portret suratlari turnirdagi unutilmas lahzani aks ettiradi. HADITH Hotel Samarqandning xalqaro ruhini va shahar merosini kashf etishga kelayotgan mehmonlarni qadrlaydi."
+        ]
+      },
       "indonesian-chess-team-hotel-kampoeng-indonesia": {
         "title": "Indoneziya shaxmat terma jamoasi Hotel Kampoeng Indonesiada kutib olindi",
         "excerpt": "Samarqanddagi 46-FIDE shaxmat olimpiadasi uchun Indoneziya jamoalari Imom Al-Buxoriy majmuasidagi Hotel Kampoeng Indonesiada joylashdi.",
@@ -1669,7 +1749,7 @@
     }
   },
   "metadata": {
-    "title": "EBI Resources",
-    "description": "EBI Resources — indoneziya mehmondo‘stligi issiqligini Ipak yo‘liga olib keluvchi holding: mehmonxonalar, ovqatlanish va ichimliklar hamda texnologiya — Indoneziya va O‘zbekiston bo‘ylab."
+    "title": "EBI Resources — Mehmonxonalar, restoranlar, sayohat va texnologiya",
+    "description": "EBI Resources bilan tanishing: Indoneziya va O‘zbekistonni bog‘lovchi mehmonxonalar, restoranlar, sayohat xizmatlari va texnologiya."
   }
 }

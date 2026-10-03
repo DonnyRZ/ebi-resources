@@ -19,7 +19,7 @@ export type ButtonVariant = "filled" | "outline" | "text";
 export type ButtonTone = "navy" | "light";
 
 const base =
-  "inline-flex items-center gap-2 font-sans text-[12px] font-semibold uppercase leading-none tracking-[0.1em] transition-colors duration-micro ease-quart focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
+  "inline-flex min-h-11 max-w-full items-center justify-center gap-2 text-center font-sans text-[12px] font-semibold uppercase leading-relaxed tracking-[0.1em] transition-colors duration-micro ease-quart focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
 
 const padded = "px-[28px] py-[14px]";
 
@@ -77,7 +77,8 @@ export function Button({
   ...rest
 }: ButtonProps) {
   const showArrow = arrow ?? variant === "text";
-  const classes = `group/btn ${base} ${styles[variant][tone]} ${className}`.trim();
+  const classes =
+    `group/btn ${base} ${styles[variant][tone]} ${className}`.trim();
 
   const content = (
     <>
@@ -88,6 +89,23 @@ export function Button({
 
   if ("href" in rest && rest.href !== undefined) {
     const { href, prefetch, ...linkRest } = rest as ButtonAsLink;
+    if (/^https?:\/\//i.test(href)) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes}
+          {...(linkRest as Omit<
+            ComponentPropsWithoutRef<"a">,
+            "href" | "className"
+          >)}
+        >
+          {content}
+        </a>
+      );
+    }
+
     // Skip prefetch only when explicitly requested (all primary routes exist or are owned).
     const skipPrefetch = prefetch === false;
     return (

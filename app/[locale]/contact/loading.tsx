@@ -23,7 +23,7 @@ export default function ContactLoading() {
       <div className="bg-cream px-4 py-16 md:px-6 md:py-24">
         <div className="mx-auto max-w-wide">
           <div className="mb-10 h-8 w-[min(100%,22rem)] bg-navy/15" />
-          <div className="aspect-[16/10] max-h-[75vh] min-h-[420px] border border-border bg-beige" />
+          <div className="aspect-[3/2] max-h-[75vh] border border-border bg-beige md:aspect-[16/10] md:min-h-[420px]" />
         </div>
       </div>
     </div>

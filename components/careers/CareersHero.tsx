@@ -20,11 +20,11 @@ export function CareersHero({
 }: CareersHeroProps) {
   return (
     <section
-      className="border-b border-border bg-cream"
+      className="editorial-hero border-b border-border bg-cream"
       aria-label={title}
     >
       <div className="mx-auto grid max-w-wide grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col justify-end px-4 py-14 md:px-6 md:py-20 lg:pr-12 lg:pl-6">
+        <div className="flex flex-col justify-end px-4 py-14 md:px-6 md:py-20 lg:pl-6 lg:pr-12">
           <p className="mb-4 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {kicker}
           </p>
@@ -35,7 +35,7 @@ export function CareersHero({
             {supporting}
           </p>
         </div>
-        <div className="relative min-h-[240px] aspect-[16/10] w-full lg:aspect-auto lg:min-h-[420px]">
+        <div className="relative aspect-[16/10] min-h-[240px] w-full lg:aspect-auto lg:min-h-[420px]">
           <Image
             src={image.src}
             alt={image.alt}

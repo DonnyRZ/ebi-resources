@@ -24,7 +24,7 @@ jobs:
     # Nilai ini hanya placeholder untuk keperluan build (tidak konek DB sungguhan).
     env:
       DATABASE_URL: "postgresql://user:password@localhost:5432/ebi_resources?schema=public"
-      NEXT_PUBLIC_SITE_URL: "http://localhost:3000"
+      NEXT_PUBLIC_SITE_URL: "https://ebiresources.com"
       NEXT_TELEMETRY_DISABLED: "1"
 
     steps:
