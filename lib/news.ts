@@ -4,6 +4,7 @@
  */
 
 export const NEWS_SLUGS = [
+  "raja-muda-perlis-swan-x-2026",
   "turkiye-chess-teams-samarkand-olympiad",
   "indonesian-chess-team-hotel-kampoeng-indonesia",
   "uzbekistan-tourism-hotels-direct-flights",
@@ -28,11 +29,22 @@ export type NewsArticle = {
   slug: NewsSlug;
   publishedAt: string;
   image: string;
-  imageAspect?: "square" | "landscape";
-  sourceUrl: string;
+  imageAspect?: "square" | "landscape" | "photo";
+  gallery?: string[];
+  sourceUrl?: string;
 };
 
 export const ARTICLES: NewsArticle[] = [
+  {
+    slug: "raja-muda-perlis-swan-x-2026",
+    publishedAt: "2026-10-07",
+    image: "/images/news/perlis-delegation-cover.webp",
+    imageAspect: "photo",
+    gallery: [
+      "/images/news/perlis-delegation-hospitality.webp",
+      "/images/news/perlis-delegation-group.webp",
+    ],
+  },
   {
     slug: "turkiye-chess-teams-samarkand-olympiad",
     publishedAt: "2026-09-27",

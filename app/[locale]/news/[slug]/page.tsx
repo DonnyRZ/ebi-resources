@@ -8,7 +8,12 @@ import { Link } from "@/i18n/navigation";
 import { Section } from "@/components/Section";
 import { NewsSourceLink } from "@/components/news/NewsSourceLink";
 import { StructuredData } from "@/components/StructuredData";
-import { absoluteUrl, localizedUrl, organizationSchema, pageMetadata } from "@/lib/seo";
+import {
+  absoluteUrl,
+  localizedUrl,
+  organizationSchema,
+  pageMetadata,
+} from "@/lib/seo";
 import {
   NEWS_SLUGS,
   formatNewsDate,
@@ -61,6 +66,10 @@ export default async function NewsArticlePage({
   const newsSlug: NewsSlug = article.slug;
   const t = await getTranslations("news");
   const body = t.raw(`articles.${newsSlug}.body`) as string[];
+  const gallery = article.gallery ?? [];
+  const galleryAlts = gallery.length
+    ? (t.raw(`articles.${newsSlug}.galleryAlt`) as string[])
+    : [];
   const related = getRelatedArticles(newsSlug, 2);
 
   return (
@@ -73,11 +82,11 @@ export default async function NewsArticlePage({
           mainEntityOfPage: localizedUrl(locale, `/news/${newsSlug}`),
           headline: t(`articles.${newsSlug}.title`),
           description: t(`articles.${newsSlug}.excerpt`),
-          image: [absoluteUrl(article.image)],
+          image: [article.image, ...(article.gallery ?? [])].map(absoluteUrl),
           datePublished: article.publishedAt,
           inLanguage: locale,
           publisher: organizationSchema(),
-          isBasedOn: article.sourceUrl,
+          ...(article.sourceUrl ? { isBasedOn: article.sourceUrl } : {}),
         }}
       />
       <section className="border-b border-border bg-cream">
@@ -88,7 +97,7 @@ export default async function NewsArticlePage({
           >
             ← {t("back")}
           </Link>
-          <p className="mt-8 mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
+          <p className="mb-3 mt-8 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
             {t(`articles.${newsSlug}.location`)}
             <span className="mx-2 opacity-40" aria-hidden="true">
               ·
@@ -106,7 +115,9 @@ export default async function NewsArticlePage({
           className={`relative mb-10 w-full overflow-hidden bg-navy/10 ${
             article.imageAspect === "square"
               ? "mx-auto aspect-square max-w-[560px]"
-              : "aspect-[16/10] max-h-[360px]"
+              : article.imageAspect === "photo"
+                ? "mx-auto aspect-[4/3] max-w-[800px]"
+                : "aspect-[16/10] max-h-[360px]"
           }`}
         >
           <Image
@@ -115,7 +126,11 @@ export default async function NewsArticlePage({
             fill
             priority
             sizes="(max-width: 800px) 100vw, 800px"
-            className="object-cover"
+            className={
+              article.imageAspect === "photo"
+                ? "object-contain"
+                : "object-cover"
+            }
           />
         </div>
         <div className="space-y-6">
@@ -128,9 +143,29 @@ export default async function NewsArticlePage({
             </p>
           ))}
         </div>
-        <div className="mt-10">
-          <NewsSourceLink href={article.sourceUrl} label={t("sourceCta")} />
-        </div>
+        {gallery.length > 0 && (
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {gallery.map((image, index) => (
+              <figure
+                key={image}
+                className="relative aspect-[4/3] overflow-hidden bg-cream"
+              >
+                <Image
+                  src={image}
+                  alt={galleryAlts[index] ?? t(`articles.${newsSlug}.alt`)}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-contain"
+                />
+              </figure>
+            ))}
+          </div>
+        )}
+        {article.sourceUrl && (
+          <div className="mt-10">
+            <NewsSourceLink href={article.sourceUrl} label={t("sourceCta")} />
+          </div>
+        )}
       </Section>
 
       {related.length > 0 && (
@@ -141,10 +176,7 @@ export default async function NewsArticlePage({
           <ul className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {related.map((item) => (
               <li key={item.slug}>
-                <Link
-                  href={`/news/${item.slug}`}
-                  className="group block"
-                >
+                <Link href={`/news/${item.slug}`} className="group block">
                   <h2 className="font-serif text-[1.35rem] font-light leading-snug text-navy transition-colors duration-micro ease-quart group-hover:text-gold">
                     {t(`articles.${item.slug}.title`)}
                   </h2>

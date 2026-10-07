@@ -75,9 +75,19 @@ export default async function NewsPage({
                   image={{
                     src: article.image,
                     alt: t(`articles.${article.slug}.alt`),
-                    fit: article.imageAspect === "square" ? "contain" : "cover",
+                    fit:
+                      article.imageAspect === "square" ||
+                      article.imageAspect === "photo"
+                        ? "contain"
+                        : "cover",
                   }}
-                  aspect={article.imageAspect === "square" ? "1 / 1" : "16 / 10"}
+                  aspect={
+                    article.imageAspect === "square"
+                      ? "1 / 1"
+                      : article.imageAspect === "photo"
+                        ? "4 / 3"
+                        : "16 / 10"
+                  }
                   cta={common("readMore")}
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
