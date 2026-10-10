@@ -9,6 +9,8 @@ export type AboutPortfolioSlide = {
   description: string;
   kicker: string;
   title: string;
+  width: number;
+  height: number;
 };
 
 type AboutPortfolioCarouselProps = {
@@ -34,7 +36,12 @@ export function AboutPortfolioCarousel({
         labels={labels}
         slides={images.map((image) => ({
           key: image.src,
-          image: { src: image.src, alt: image.alt, fit: "cover" },
+          image: {
+            src: image.src,
+            alt: image.alt,
+            aspectRatio: image.width / image.height,
+            fit: "contain",
+          },
           href: image.href,
           city: image.kicker,
           title: image.title,

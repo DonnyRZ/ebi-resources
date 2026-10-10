@@ -10,6 +10,7 @@ import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
 import { PropertySpotlightCarousel } from "@/components/PropertySpotlightCarousel";
+import { FNB_HERO_IMAGES, REVISED_MEDIA } from "@/lib/revised-media";
 
 /**
  * Food & Beverage line — dining + specialty coffee (merged restaurants + café).
@@ -45,6 +46,7 @@ export default async function FoodAndBeverageLinePage({
   setRequestLocale(locale);
 
   const t = await getTranslations("businesses.fnb");
+  const homeT = await getTranslations("home");
   const common = await getTranslations("common");
   const a = await getTranslations("a11y");
 
@@ -53,63 +55,48 @@ export default async function FoodAndBeverageLinePage({
       key: "sajiNusantara" as const,
       href: "https://saji-nusantara.com/en",
       image: {
-        src: "/images/businesses/food-and-beverage/venues/01-saji-nusantara.webp",
+        src: REVISED_MEDIA.sajiDining.src,
         alt: t("alt.venues.sajiNusantara"),
         fit: "cover" as const,
+        aspectRatio:
+          REVISED_MEDIA.sajiDining.width / REVISED_MEDIA.sajiDining.height,
       },
     },
     {
       key: "sevenOz" as const,
       href: "https://7oz-espresso.com/",
       image: {
-        src: "/images/businesses/food-and-beverage/venues/02-7oz-espresso.webp",
+        src: REVISED_MEDIA.sevenOzTerrace.src,
         alt: t("alt.venues.sevenOz"),
         fit: "cover" as const,
+        aspectRatio:
+          REVISED_MEDIA.sevenOzTerrace.width /
+          REVISED_MEDIA.sevenOzTerrace.height,
       },
     },
     {
       key: "loungeBar" as const,
       href: undefined,
       image: {
-        src: "/images/businesses/food-and-beverage/venues/03-lounge-bar.webp",
+        src: REVISED_MEDIA.loungeInterior.src,
         alt: t("alt.venues.loungeBar"),
         fit: "cover" as const,
+        aspectRatio:
+          REVISED_MEDIA.loungeInterior.width /
+          REVISED_MEDIA.loungeInterior.height,
       },
     },
   ];
 
-  const heroImages = [
-    {
-      src: "/images/businesses/food-and-beverage/hero/01-dining-room.webp",
-      alt: t("alt.heroSlides.diningRoom"),
-    },
-    {
-      src: "/images/businesses/food-and-beverage/hero/02-sevenoz-cafe.webp",
-      alt: t("alt.heroSlides.sevenOzCafe"),
-    },
-    {
-      src: "/images/businesses/food-and-beverage/hero/03-coffee-corner.webp",
-      alt: t("alt.heroSlides.coffeeCorner"),
-    },
-    {
-      src: "/images/businesses/food-and-beverage/hero/04-restaurant-lounge.webp",
-      alt: t("alt.heroSlides.restaurantLounge"),
-    },
-    {
-      src: "/images/businesses/food-and-beverage/hero/05-atrium-restaurant.webp",
-      alt: t("alt.heroSlides.atriumRestaurant"),
-    },
-  ];
-
   const proof = ["indonesian", "halal", "landmarks"] as const;
-  const heroSlides = heroImages.map((image) => ({
+  const heroSlides = FNB_HERO_IMAGES.map((image) => ({
     kicker: t("hero.kicker"),
     title: t("hero.title"),
     supporting: t("hero.supporting"),
     media: {
       type: "image" as const,
       src: image.src,
-      alt: image.alt,
+      alt: homeT(`alt.${image.altKey}`),
     },
   }));
 
@@ -141,8 +128,8 @@ export default async function FoodAndBeverageLinePage({
           <Reveal delay={120} className="lg:col-span-7">
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
-                src="/images/hadith/buffet.webp"
-                alt={t("alt.intro")}
+                src={REVISED_MEDIA.kampoengAtrium.src}
+                alt={homeT("alt.kampoengDining")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover"

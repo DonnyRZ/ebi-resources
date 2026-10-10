@@ -20,7 +20,6 @@ Menampilkan portofolio hotel yang berada di bawah EBI Resources:
 * Hadith Hotel
 * Kampoeng Indonesia Hotel
 * Graha Nusantara Hotel
-* Mecca Hotel
 
 Informasi utama:
 
@@ -36,7 +35,6 @@ Informasi utama:
 Menampilkan bisnis restoran yang dimiliki atau dikelola grup:
 
 * Kampoeng Indonesia Restaurant
-* Mecca Hotel Restaurants
 
 Informasi utama:
 

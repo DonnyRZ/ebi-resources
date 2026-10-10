@@ -35,11 +35,6 @@ const DIRECTORY = withoutGrahaNusantara([
     mode: "confirm" as const,
   },
   {
-    key: "mecca" as const,
-    href: HOTEL_WEBSITES.mecca,
-    mode: "pending" as const,
-  },
-  {
     key: "sevenOz" as const,
     href: "https://7oz-espresso.com/",
     mode: "confirm" as const,
@@ -210,7 +205,9 @@ export default async function ContactPage({
                       className="group/btn inline-flex items-center gap-2 font-sans text-[12px] font-semibold uppercase tracking-[0.1em] text-gold transition-colors duration-micro ease-quart hover:text-bronze"
                     >
                       <BrandNameText
-                        text={t(`directory.properties.${item.key}.websiteLabel`)}
+                        text={t(
+                          `directory.properties.${item.key}.websiteLabel`,
+                        )}
                       />
                       <span
                         aria-hidden="true"

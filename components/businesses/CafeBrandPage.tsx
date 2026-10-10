@@ -34,7 +34,7 @@ export type CafeBrandPageProps = {
     title: string;
     body: string;
     note?: string;
-    /** Confirmed hotel / venue outlets (e.g. Mecca + Hadith). */
+    /** Confirmed hotel / venue outlets. */
     outlets: Array<{ label: string; href: string; detail?: string }>;
   };
   products: {
@@ -132,7 +132,7 @@ export function CafeBrandPage({
           </Reveal>
 
           <Reveal delay={100} className="lg:col-span-5">
-            <div className="border-t border-navy/15 pt-6 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
+            <div className="border-t border-navy/15 pt-6 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
               <p className="mb-3 font-sans text-[12px] font-semibold uppercase tracking-[0.14em] text-gold">
                 {placement.kicker}
               </p>
@@ -149,7 +149,10 @@ export function CafeBrandPage({
               ) : null}
               <div className="mt-6 flex flex-col gap-5">
                 {placement.outlets.map((outlet) => (
-                  <div key={outlet.href} className="border-t border-navy/10 pt-4 first:border-t-0 first:pt-0">
+                  <div
+                    key={outlet.href}
+                    className="border-t border-navy/10 pt-4 first:border-t-0 first:pt-0"
+                  >
                     {outlet.detail ? (
                       <p className="mb-2 font-sans text-[12px] font-semibold uppercase tracking-[0.12em] text-text-muted">
                         {outlet.detail}

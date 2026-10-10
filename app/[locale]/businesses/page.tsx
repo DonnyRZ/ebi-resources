@@ -8,6 +8,7 @@ import { HeroCarousel } from "@/components/HeroCarousel";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Reveal } from "@/components/Reveal";
+import { BUSINESS_HERO_IMAGES, REVISED_MEDIA } from "@/lib/revised-media";
 
 /**
  * Our Businesses hub — intro + four line cards (CONTENT-REFERENCE §C / §D).
@@ -53,7 +54,7 @@ export default async function BusinessesHubPage({
       href: "/businesses/hotels",
       mediaVariant: undefined,
       image: {
-        src: "/images/hadith/hotel-exterior.webp",
+        src: REVISED_MEDIA.hadithSunset.src,
         alt: t("alt.hotels"),
       },
     },
@@ -62,8 +63,8 @@ export default async function BusinessesHubPage({
       href: "/businesses/food-and-beverage",
       mediaVariant: undefined,
       image: {
-        src: "/images/hadith/resto-1.jpg",
-        alt: t("alt.fnb"),
+        src: REVISED_MEDIA.sajiDining.src,
+        alt: homeT("alt.sajiDining"),
       },
     },
     {
@@ -82,33 +83,11 @@ export default async function BusinessesHubPage({
     },
   ];
 
-  const heroImages = [
-    {
-      src: "/images/businesses/overview/hero/01-hadith-golden-hour.webp",
-      alt: homeT("alt.hadithGolden"),
-    },
-    {
-      src: "/images/businesses/overview/hero/02-mecca-facade-dusk.webp",
-      alt: homeT("alt.meccaFacade"),
-    },
-    {
-      src: "/images/businesses/overview/hero/03-kampoeng-facade-daylight.webp",
-      alt: homeT("alt.kampoengFacadeDaylight"),
-    },
-    {
-      src: "/images/businesses/overview/hero/04-hadith-restaurant.webp",
-      alt: t("alt.fnb"),
-    },
-    {
-      src: "/images/businesses/overview/hero/05-sevenoz-cafe.webp",
-      alt: homeT("alt.sevenOzInterior"),
-    },
-  ];
-  const heroSlides = heroImages.map(({ src, alt }) => ({
+  const heroSlides = BUSINESS_HERO_IMAGES.map(({ src, altKey }) => ({
     kicker: t("hero.kicker"),
     title: t("hero.title"),
     supporting: t("hero.supporting"),
-    media: { type: "image" as const, src, alt },
+    media: { type: "image" as const, src, alt: homeT(`alt.${altKey}`) },
   }));
 
   return (

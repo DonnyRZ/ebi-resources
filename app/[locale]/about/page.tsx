@@ -11,6 +11,8 @@ import { Section } from "@/components/Section";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/Reveal";
 import { withoutGrahaNusantara } from "@/lib/features";
+import { HOTEL_WEBSITES } from "@/lib/hotel-websites";
+import { ABOUT_HERO_IMAGES, REVISED_MEDIA } from "@/lib/revised-media";
 
 /**
  * About — Company Overview (`/about`).
@@ -61,20 +63,10 @@ export default async function AboutOverviewPage({
   const portfolio = withoutGrahaNusantara([
     {
       key: "hadith",
-      href: "/businesses/hotels/hadith",
+      href: HOTEL_WEBSITES.hadith,
       image: {
-        src: "/images/about/portfolio/hadith.webp",
+        src: REVISED_MEDIA.hadithSunset.src,
         alt: t("alt.hadithGolden"),
-        width: 1672,
-        height: 941,
-      },
-    },
-    {
-      key: "mecca",
-      href: "/businesses/hotels/mecca",
-      image: {
-        src: "/images/about/portfolio/mecca.webp",
-        alt: t("alt.mecca"),
         width: 1672,
         height: 941,
       },
@@ -91,9 +83,9 @@ export default async function AboutOverviewPage({
     },
     {
       key: "kampoeng",
-      href: "/businesses/hotels/kampoeng-indonesia",
+      href: HOTEL_WEBSITES.kampoengIndonesia,
       image: {
-        src: "/images/about/portfolio/kampoeng.webp",
+        src: REVISED_MEDIA.kampoengFacade.src,
         alt: homeT("alt.kampoengFacadeDaylight"),
         width: 1920,
         height: 1280,
@@ -101,12 +93,22 @@ export default async function AboutOverviewPage({
     },
     {
       key: "sevenOz",
-      href: "/businesses/food-and-beverage",
+      href: "https://7oz-espresso.com/",
       image: {
-        src: "/images/about/portfolio/sevenoz.webp",
-        alt: t("alt.sevenOz"),
-        width: 1672,
-        height: 941,
+        src: REVISED_MEDIA.sevenOzTerrace.src,
+        alt: homeT("alt.sevenOzTerrace"),
+        width: REVISED_MEDIA.sevenOzTerrace.width,
+        height: REVISED_MEDIA.sevenOzTerrace.height,
+      },
+    },
+    {
+      key: "sajiNusantara",
+      href: "https://saji-nusantara.com/en",
+      image: {
+        src: REVISED_MEDIA.sajiDining.src,
+        alt: homeT("alt.sajiDining"),
+        width: REVISED_MEDIA.sajiDining.width,
+        height: REVISED_MEDIA.sajiDining.height,
       },
     },
   ] as const);
@@ -118,50 +120,22 @@ export default async function AboutOverviewPage({
     description: t(`portfolio.${item.key}.description`),
   }));
 
-  const heroImages = [
-    {
-      src: "/images/about/hero/01-hadith.png",
-      alt: homeT("alt.hadithExterior"),
-    },
-    {
-      src: "/images/about/hero/02-suite.png",
-      alt: homeT("alt.hadithLobby"),
-    },
-    {
-      src: "/images/about/hero/03-dining.png",
-      alt: homeT("alt.hadithDining"),
-    },
-    {
-      src: "/images/about/hero/04-kampoeng-dining.png",
-      alt: homeT("alt.kampoengDining"),
-    },
-  ] as const;
-  const heroSlides = heroImages.map(({ src, alt }) => ({
+  const heroSlides = ABOUT_HERO_IMAGES.map(({ src, altKey }) => ({
     kicker: t("hero.kicker"),
     title: t("hero.title"),
     supporting: t("hero.supporting"),
-    media: { type: "image" as const, src, alt },
+    media: { type: "image" as const, src, alt: homeT(`alt.${altKey}`) },
   }));
   const whoImages = [
-    {
-      src: "/images/about/who-we-are/hadith-suite.webp",
-      alt: homeT("alt.hadithLobby"),
-      width: 1536,
-      height: 1024,
-    },
-    {
-      src: "/images/about/who-we-are/hadith-dining.webp",
-      alt: homeT("alt.hadithDining"),
-      width: 1672,
-      height: 941,
-    },
-    {
-      src: "/images/about/who-we-are/sevenoz-cafe.webp",
-      alt: homeT("alt.sevenOzInterior"),
-      width: 1672,
-      height: 941,
-    },
-  ];
+    REVISED_MEDIA.suiteLounge,
+    REVISED_MEDIA.sajiDining,
+    REVISED_MEDIA.sevenOzTerrace,
+  ].map(({ src, width, height, altKey }) => ({
+    src,
+    width,
+    height,
+    alt: homeT(`alt.${altKey}`),
+  }));
 
   return (
     <main className="home-overview home-overview--about">

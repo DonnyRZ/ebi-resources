@@ -10,7 +10,8 @@ import { Card } from "@/components/Card";
 import { PropertySpotlightCarousel } from "@/components/PropertySpotlightCarousel";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/Reveal";
-import { isGrahaNusantaraVisible, withoutGrahaNusantara } from "@/lib/features";
+import { withoutGrahaNusantara } from "@/lib/features";
+import { HOME_HERO_ITEMS, REVISED_MEDIA } from "@/lib/revised-media";
 import { formatNewsDate, getLatestArticles } from "@/lib/news";
 import { HOTEL_WEBSITES } from "@/lib/hotel-websites";
 import { organizationSchema, pageMetadata, websiteSchema } from "@/lib/seo";
@@ -60,60 +61,17 @@ export default async function Home({
   const a = await getTranslations("a11y");
   const latestNews = getLatestArticles(3);
 
-  const slides = [
-    {
-      kicker: t("hero.hadith.kicker"),
-      title: t("hero.hadith.title"),
-      supporting: t("hero.hadith.supporting"),
-      media: {
-        type: "image" as const,
-        src: "/images/homepage/hero/01-hadith.png",
-        alt: t("alt.hadithGolden"),
-        mobileObjectPosition: "50% 52%",
-      },
+  const slides = HOME_HERO_ITEMS.map(({ image, copyKey }) => ({
+    kicker: t(`hero.${copyKey}.kicker`),
+    title: t(`hero.${copyKey}.title`),
+    supporting: t(`hero.${copyKey}.supporting`),
+    media: {
+      type: "image" as const,
+      src: image.src,
+      alt: t(`alt.${image.altKey}`),
+      mobileObjectPosition: "50% 52%",
     },
-    {
-      kicker: t("hero.mecca.kicker"),
-      title: t("hero.mecca.title"),
-      supporting: t("hero.mecca.supporting"),
-      media: {
-        type: "image" as const,
-        src: "/images/homepage/hero/02-mecca.png",
-        alt: t("alt.meccaFacade"),
-      },
-    },
-    {
-      kicker: t("hero.kampoeng.kicker"),
-      title: t("hero.kampoeng.title"),
-      supporting: t("hero.kampoeng.supporting"),
-      media: {
-        type: "image" as const,
-        src: "/images/homepage/hero/03-kampoeng.jpg",
-        alt: t("alt.kampoengFacadeDaylight"),
-      },
-    },
-    {
-      kicker: t("hero.dining.kicker"),
-      title: t("hero.dining.title"),
-      supporting: t("hero.dining.supporting"),
-      media: {
-        type: "image" as const,
-        src: "/images/homepage/hero/04-dining.png",
-        alt: t("alt.hadithDining"),
-        mobileObjectPosition: "50% 52%",
-      },
-    },
-    {
-      kicker: t("hero.cafe.kicker"),
-      title: t("hero.cafe.title"),
-      supporting: t("hero.cafe.supporting"),
-      media: {
-        type: "image" as const,
-        src: "/images/homepage/hero/05-cafe.png",
-        alt: t("alt.sevenOzInterior"),
-      },
-    },
-  ];
+  }));
 
   const lines = [
     {
@@ -121,7 +79,7 @@ export default async function Home({
       href: "/businesses/hotels",
       mediaVariant: undefined,
       image: {
-        src: "/images/hadith/hotel-exterior.webp",
+        src: REVISED_MEDIA.hadithSunset.src,
         alt: t("alt.hadithGolden"),
       },
     },
@@ -129,7 +87,7 @@ export default async function Home({
       key: "fnb",
       href: "/businesses/food-and-beverage",
       mediaVariant: undefined,
-      image: { src: "/images/hadith/resto-1.jpg", alt: t("alt.hadithDining") },
+      image: { src: REVISED_MEDIA.sajiDining.src, alt: t("alt.sajiDining") },
     },
     {
       key: "travel",
@@ -153,19 +111,9 @@ export default async function Home({
       href: HOTEL_WEBSITES.hadith,
       city: "Samarkand",
       image: {
-        src: "/images/homepage/hero/01-hadith.png",
+        src: REVISED_MEDIA.hadithSunset.src,
         alt: t("alt.hadithGolden"),
         aspectRatio: 1672 / 941,
-      },
-    },
-    {
-      key: "mecca",
-      href: HOTEL_WEBSITES.mecca,
-      city: "Tashkent",
-      image: {
-        src: "/images/homepage/hero/02-mecca.png",
-        alt: t("alt.meccaFacade"),
-        aspectRatio: 16 / 9,
       },
     },
     {
@@ -182,7 +130,7 @@ export default async function Home({
       href: HOTEL_WEBSITES.kampoengIndonesia,
       city: "Samarkand",
       image: {
-        src: "/images/homepage/hero/03-kampoeng.jpg",
+        src: REVISED_MEDIA.kampoengFacade.src,
         alt: t("alt.kampoengFacadeDaylight"),
         aspectRatio: 2560 / 1707,
       },
@@ -244,16 +192,8 @@ export default async function Home({
             <div className="relative mx-auto aspect-[5/4] w-full max-w-[560px]">
               <div className="absolute right-0 top-0 h-[74%] w-[82%] overflow-hidden">
                 <Image
-                  src={
-                    isGrahaNusantaraVisible()
-                      ? "/images/graha-nusantara/complex-night.jpg"
-                      : "/images/homepage/hero/02-mecca.png"
-                  }
-                  alt={
-                    isGrahaNusantaraVisible()
-                      ? t("alt.grahaNight")
-                      : t("alt.meccaFacade")
-                  }
+                  src={REVISED_MEDIA.kampoengWide.src}
+                  alt={t("alt.kampoengFacadeDaylight")}
                   fill
                   sizes="(max-width: 1024px) 82vw, 40vw"
                   className="object-cover"
@@ -261,8 +201,8 @@ export default async function Home({
               </div>
               <div className="absolute bottom-0 left-0 h-[54%] w-[56%] overflow-hidden shadow-hair">
                 <Image
-                  src="/images/homepage/hero/05-cafe.png"
-                  alt={t("alt.sevenOzInterior")}
+                  src={REVISED_MEDIA.sevenOzTerrace.src}
+                  alt={t("alt.sevenOzTerrace")}
                   fill
                   sizes="(max-width: 1024px) 56vw, 26vw"
                   className="object-cover"

@@ -43,11 +43,6 @@
         "title": "Samarkand's Heritage, Indonesian Warmth",
         "supporting": "Hadith Hotel — a five-star landmark set within the spiritual heart of Samarkand."
       },
-      "mecca": {
-        "kicker": "Opposite the Centre of Islamic Civilization · Tashkent",
-        "title": "A Boutique Address, Deliberate in Position",
-        "supporting": "Mecca — halal-aligned hospitality facing Tashkent's flagship Islamic landmark."
-      },
       "graha": {
         "kicker": "Beside the Imam al-Bukhari Complex · Samarkand",
         "title": "Elevating Elegance in Ancient Samarkand",
@@ -59,14 +54,54 @@
         "supporting": "Hotel Kampoeng Indonesia — the warmth of an Indonesian village at a place of pilgrimage."
       },
       "dining": {
-        "kicker": "Restaurants",
+        "kicker": "Saji Nusantara · Indonesian Dining",
         "title": "Indonesian Flavour, Silk Road Setting",
-        "supporting": "Halal dining and specialty coffee, from candlelit plov to Indonesian pastries."
+        "supporting": "Saji Nusantara — Indonesian dining in a warm, elegant setting."
       },
       "cafe": {
         "kicker": "7oz Espresso · Café",
         "title": "From Jakarta to the Silk Road",
-        "supporting": "Indonesian specialty-coffee culture at Mecca and Hadith."
+        "supporting": "Indonesian specialty coffee and a welcoming terrace at 7oz Espresso."
+      },
+      "suite": {
+        "kicker": "Guest Suites",
+        "title": "Space to Feel at Home",
+        "supporting": "Thoughtful interiors and a comfortable lounge for a restful stay."
+      },
+      "balcony": {
+        "kicker": "Outdoor Spaces",
+        "title": "A Quiet Moment Outdoors",
+        "supporting": "A welcoming balcony to pause, relax, and enjoy the surroundings."
+      },
+      "kampoengDining": {
+        "kicker": "Hotel Kampoeng Indonesia · Dining",
+        "title": "Gather in the Heart of Kampoeng",
+        "supporting": "A light-filled dining atrium with Indonesian warmth and hospitality."
+      },
+      "pool": {
+        "kicker": "Wellness · Indoor Pool",
+        "title": "Time to Slow Down",
+        "supporting": "An indoor pool and a calm setting for moments of relaxation."
+      },
+      "hammam": {
+        "kicker": "Wellness · Hammam",
+        "title": "A Space for Renewal",
+        "supporting": "A marble-lined hammam designed for quiet relaxation."
+      },
+      "bedroom": {
+        "kicker": "Guest Rooms",
+        "title": "Rest in Comfort",
+        "supporting": "A peaceful room with warm finishes and space to unwind."
+      },
+      "roomDetails": {
+        "kicker": "Thoughtful Interiors",
+        "title": "Comfort in Every Detail",
+        "supporting": "Welcoming seating and a dedicated desk complement the guest room."
+      },
+      "privateDining": {
+        "kicker": "Dining Spaces",
+        "title": "A Table for Shared Moments",
+        "supporting": "An intimate dining space for conversation and connection."
       }
     },
     "intro": {
@@ -82,7 +117,7 @@
       "intro": "A diversified group built around hospitality, craft, and technology.",
       "hotels": {
         "title": "Hotels",
-        "text": "A portfolio spanning five-star, boutique, and heritage-village stays across Samarkand and Tashkent."
+        "text": "Hadith Hotel and Hotel Kampoeng Indonesia — Indonesian hospitality in Samarkand."
       },
       "fnb": {
         "title": "Food & Beverage",
@@ -100,14 +135,10 @@
     "featured": {
       "kicker": "Featured Properties",
       "title": "A Real, Multi-Property Portfolio",
-      "intro": "Landmark-adjacent hotels and residences across Samarkand and Tashkent.",
+      "intro": "Landmark-adjacent hotels at the Imam Al Bukhari Complex in Samarkand.",
       "hadith": {
         "title": "Hadith Hotel",
         "positioning": "Five-star flagship within the Imam Al Bukhari Complex, Samarkand."
-      },
-      "mecca": {
-        "title": "Mecca Boutique Hotel",
-        "positioning": "Four-star boutique hotel opposite the Tashkent Centre of Islamic Civilization."
       },
       "graha": {
         "title": "Graha Nusantara",
@@ -144,7 +175,7 @@
       "intro": "Credibility grounded in real assets, prime locations, and verifiable credentials.",
       "locations": {
         "title": "Landmark-Adjacent Locations",
-        "text": "Properties set at or beside the Imam Al Bukhari Complex, and opposite the Tashkent Centre of Islamic Civilization."
+        "text": "Hotels set within the Imam Al Bukhari Complex in Samarkand, close to the city’s spiritual heritage."
       },
       "certification": {
         "title": "Nationally Certified",
@@ -152,7 +183,7 @@
       },
       "tiers": {
         "title": "A Full Range of Tiers",
-        "text": "Five-star, four-star boutique, and three-star hotels, plus luxury heritage villas."
+        "text": "A five-star flagship and a three-star hotel inspired by Indonesian village hospitality."
       },
       "positioning": {
         "title": "A Distinctive Positioning",
@@ -174,21 +205,27 @@
     },
     "alt": {
       "hadithGolden": "Hadith Hotel at golden hour, mirrored in its reflecting pool, Samarkand",
-      "hadithLobby": "The Junior Suite at Hadith Hotel, Samarkand",
+      "hadithLobby": "Guest suite lounge with blue sofas, chandeliers, and a patterned rug.",
       "hadithExterior": "Hadith Hotel illuminated at night and reflected in its pool, Samarkand",
-      "hadithLounge": "The Bar & Lounge interior at Hadith Hotel",
+      "hadithLounge": "Bright lounge with a blue coffee bar, stools, and comfortable seating.",
       "hadithRestaurant": "The buffet counter in Hadith Hotel's restaurant",
-      "hadithDining": "The restaurant dining room at Hadith Hotel, Samarkand",
+      "hadithDining": "Saji Nusantara dining room with chandeliers, patterned ceilings, and set tables.",
       "hadithNight": "Hadith Hotel illuminated at night behind its fountains",
-      "meccaFacade": "The Mecca boutique hotel at dusk, Tashkent",
-      "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
-      "sevenOzRooftop": "7oz Espresso rooftop café at sunset, overlooking Tashkent's Islamic Civilization Centre",
-      "sevenOzInterior": "Inside a 7oz Espresso café, with its coffee counter and pastry display",
+      "sevenOzInterior": "Coffee lounge with cream chairs, round tables, and a pastry counter.",
       "grahaVilla": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
       "grahaNight": "The Imam al-Bukhari Complex illuminated at night, Samarkand",
       "kampoengFacade": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
       "kampoengFacadeDaylight": "Hotel Kampoeng Indonesia's facade in daylight, Samarkand",
-      "kampoengDining": "Dining atrium at Hotel Kampoeng Indonesia beneath a glass roof, Samarkand"
+      "kampoengDining": "Dining atrium at Hotel Kampoeng Indonesia beneath a glass roof, Samarkand",
+      "sevenOzTerrace": "7oz Espresso entrance and terrace with teal parasols, café seating, and planters.",
+      "sajiDining": "Saji Nusantara dining room with chandeliers, patterned ceilings, and set tables.",
+      "suiteLounge": "Guest suite lounge with blue sofas, chandeliers, and a patterned rug.",
+      "hotelBalcony": "Hotel balcony with a table and blue chairs overlooking the courtyard.",
+      "indoorPool": "Bright indoor swimming pool with lounge chairs and floor-to-ceiling windows.",
+      "hammam": "Marble hammam with a central stone platform and wall seating.",
+      "guestBedroom": "Guest bedroom with an arched headboard and warm chandelier lighting.",
+      "guestRoomDetails": "Guest room seating, a wooden desk, and a television near the window.",
+      "privateDining": "Private dining room with a round table, upholstered chairs, and chandelier lighting."
     }
   },
   "about": {
@@ -243,17 +280,12 @@
       "portfolio": {
         "kicker": "Our Portfolio",
         "title": "A Real, Multi-Property Presence",
-        "intro": "Hotels, residences, dining, and café across Samarkand and Tashkent — without invented scale figures.",
+        "intro": "Hotels, Indonesian dining, and specialty coffee in Samarkand — discover our hospitality portfolio.",
         "cta": "Explore Our Businesses",
         "hadith": {
           "kicker": "Samarkand",
           "title": "Hadith Hotel",
           "description": "Five-star flagship within the Imam Al Bukhari Complex, Samarkand."
-        },
-        "mecca": {
-          "kicker": "Tashkent",
-          "title": "Mecca Boutique Hotel",
-          "description": "Boutique hospitality opposite Tashkent’s Centre of Islamic Civilization."
         },
         "graha": {
           "kicker": "Samarkand",
@@ -268,7 +300,12 @@
         "sevenOz": {
           "kicker": "Café",
           "title": "7oz Espresso",
-          "description": "Specialty coffee rooted in Indonesian coffee culture, from Jakarta to Tashkent."
+          "description": "Specialty coffee rooted in Indonesian coffee culture, with a welcoming café terrace."
+        },
+        "sajiNusantara": {
+          "kicker": "Indonesian Dining",
+          "title": "Saji Nusantara",
+          "description": "Indonesian cuisine and hospitality in a refined dining room."
         }
       },
       "cta": {
@@ -282,12 +319,9 @@
         "hero": "Hadith Hotel facade at golden hour under a glowing sky, Samarkand",
         "hadith": "Hadith Hotel's illuminated facade at night, Samarkand",
         "hadithGolden": "Hadith Hotel at golden hour, mirrored in its reflecting pool",
-        "mecca": "The Mecca boutique hotel at dusk, Tashkent",
-        "meccaRooftop": "The rooftop café at Mecca overlooking the Centre of Islamic Civilization",
         "graha": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
-        "kampoeng": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
-        "sevenOz": "Inside a 7oz Espresso café, with its coffee counter and pastry display",
-        "sevenOzRooftop": "7oz Espresso rooftop café at sunset, Tashkent"
+        "kampoeng": "Hotel Kampoeng Indonesia's facade in daylight, Samarkand",
+        "sevenOz": "7oz Espresso entrance and terrace with teal parasols, café seating, and planters."
       }
     },
     "visionMission": {
@@ -330,10 +364,7 @@
       },
       "closing": "These commitments shape how we present the group, steward our destinations, and welcome conversation with partners and investors.",
       "ctaContact": "Contact Us",
-      "ctaAbout": "Company Overview",
-      "alt": {
-        "hero": "Rooftop balcony and bar at Mecca Boutique Hotel at sunset, Tashkent"
-      }
+      "ctaAbout": "Company Overview"
     },
     "board": {
       "meta": {
@@ -395,7 +426,7 @@
         "title": "Where We Operate",
         "hotels": {
           "title": "Hotels",
-          "text": "Landmark hotels and residences in Samarkand and Tashkent, rooted in Indonesian hospitality and Silk Road heritage."
+          "text": "Hadith Hotel and Hotel Kampoeng Indonesia in Samarkand, rooted in Indonesian hospitality and Silk Road heritage."
         },
         "fnb": {
           "title": "Food & Beverage",
@@ -413,29 +444,29 @@
       "alt": {
         "hero": "Graha Nusantara villa compounds by day near the Imam al-Bukhari Complex, Samarkand",
         "hotels": "Hadith Hotel at sunset with its fountain pool, Samarkand",
-        "fnb": "Dining room at Hadith Hotel with set tables and warm lighting"
+        "fnb": "Saji Nusantara dining room with chandeliers and set tables."
       }
     },
     "hotels": {
       "meta": {
         "title": "Hotels — EBI Resources",
-        "description": "EBI Resources hotel portfolio in Samarkand and Tashkent — Hadith, Mecca Boutique Hotel, and Hotel Kampoeng Indonesia."
+        "description": "Discover EBI Resources hotels in Samarkand: Hadith Hotel and Hotel Kampoeng Indonesia at the Imam Al Bukhari Complex."
       },
       "hero": {
         "kicker": "Our Businesses · Hotels",
         "title": "Hotels",
-        "supporting": "Indonesian hospitality at Silk Road landmarks — Samarkand and Tashkent."
+        "supporting": "Indonesian hospitality at the heart of Samarkand’s Silk Road heritage."
       },
       "intro": {
         "kicker": "The Line",
         "title": "Warmth from Indonesia, Setting on the Silk Road",
         "body": "EBI Resources' hotels bring Indonesian hospitality to Uzbekistan's heritage cities — oriented to faith, pilgrimage, and halal travelers who seek comfort beside significant Islamic landmarks.",
-        "body2": "The portfolio spans contemporary star-rated hotels and luxury villa compounds in Samarkand and Tashkent — each with its own format, united by a shared hospitality ethos."
+        "body2": "Hadith Hotel and Hotel Kampoeng Indonesia offer distinct settings in Samarkand, united by Indonesian warmth and attentive hospitality."
       },
       "grid": {
         "kicker": "Portfolio",
         "title": "Our Properties",
-        "intro": "Across Samarkand and Tashkent — from a five-star landmark hotel to boutique, villa, and village-inspired stays.",
+        "intro": "Explore Hadith Hotel and Hotel Kampoeng Indonesia at the Imam Al Bukhari Complex in Samarkand.",
         "carouselLabel": "Hotel properties"
       },
       "proof": {
@@ -443,11 +474,11 @@
         "title": "Grounded in Place and Hospitality",
         "landmarks": {
           "title": "Landmark Adjacency",
-          "text": "Properties sit within or beside the Imam Al Bukhari Complex in Samarkand, and opposite the Tashkent Centre of Islamic Civilization."
+          "text": "Our hotels sit within the Imam Al Bukhari Complex in Samarkand, connecting guests with Islamic heritage and pilgrimage settings."
         },
         "tiers": {
           "title": "Contemporary Quality Across Tiers",
-          "text": "Five-star, four-star boutique, and three-star positioning as presented in source materials — plus luxury heritage villas — formats matched to different guest journeys. Certifying authorities are to be confirmed where not named."
+          "text": "A five-star flagship and a three-star village-inspired hotel offer different ways to experience Indonesian hospitality in Samarkand."
         },
         "hospitality": {
           "title": "Indonesian Hospitality Abroad",
@@ -539,7 +570,7 @@
           "related": {
             "kicker": "Food & Beverage",
             "title": "7oz Espresso at Hadith",
-            "body": "Hadith Hotel is a confirmed home of 7oz Espresso — EBI Resources' specialty-coffee brand, also at Mecca Boutique Hotel in Tashkent.",
+            "body": "Hadith Hotel is home to 7oz Espresso — EBI Resources’ specialty-coffee brand in Samarkand.",
             "label": "Discover 7oz Espresso"
           },
           "alt": {
@@ -548,77 +579,6 @@
             "g2": "The Restaurant dining room at Hadith Hotel",
             "g3": "Bar & Lounge at Hadith Hotel with specialty coffee service",
             "g4": "Junior Suite at Hadith Hotel, Samarkand"
-          }
-        },
-        "mecca": {
-          "meta": {
-            "title": "Mecca Boutique Hotel — EBI Resources",
-            "description": "Mecca Boutique Hotel & Restaurant opposite the Tashkent Centre of Islamic Civilization."
-          },
-          "kicker": "Tashkent · Four-star boutique",
-          "title": "Mecca Boutique Hotel",
-          "location": "Tashkent — opposite the Centre of Islamic Civilization",
-          "text": "A boutique halal address opposite Uzbekistan's flagship Islamic landmark — compact in scale, deliberate in position.",
-          "hero": {
-            "kicker": "Tashkent · Four-star boutique",
-            "title": "Mecca Boutique Hotel",
-            "supporting": "A boutique halal address opposite Uzbekistan's flagship Islamic landmark — compact in scale, deliberate in position."
-          },
-          "concept": {
-            "kicker": "Concept",
-            "title": "Boutique Scale, Landmark Position",
-            "body1": "Mecca Boutique Hotel & Restaurant is a four-star boutique hotel with 30 rooms inspired by the 30 Juz of the Qur'an — designed for Asia halal travellers, regional business guests, and pilgrims.",
-            "body2": "All dining venues are stated as halal-certified. Operating status and opening date are to be confirmed with the client."
-          },
-          "place": {
-            "kicker": "Location",
-            "title": "Opposite the Centre of Islamic Civilization",
-            "body": "Tashkent, Uzbekistan — directly opposite the Tashkent Centre of Islamic Civilization, with boulevard frontage. Approximately 30 minutes to the airport and 20 minutes to the railway station, as stated in source materials.",
-            "landmark": "Rooftop views look toward the Islamic Civilization Centre dome — anchoring the hotel's sense of place."
-          },
-          "highlights": {
-            "kicker": "Highlights",
-            "title": "Rooms, Dining & Hospitality",
-            "rooms": {
-              "title": "30 Guest Rooms",
-              "text": "Thirty uniform guest rooms (~18 m², queen), qibla-marked and provided with a prayer mat. Three floors plus rooftop; land area 3,000 m²; built-up area 3,038.7 m² as stated."
-            },
-            "indonesiaResto": {
-              "title": "Indonesia Resto",
-              "text": "Authentic Indonesian dining on the ground floor (497 m²), with Indonesian chefs. Named dishes in source materials include Rendang, Nasi Goreng, Sate, Soto, and Gado-Gado. Full menus and hours are to be provided."
-            },
-            "europeResto": {
-              "title": "Europe Resto",
-              "text": "European cuisine on the second floor (452 m²) — including fresh pasta, risotto, wood-fired pizza, osso buco, and tiramisu as cited. Positioned as premium European dining. Menus and hours are to be provided."
-            },
-            "rooftop": {
-              "title": "Rooftop Café — 7oz Espresso",
-              "text": "A 600.7 m² terrace café — coffee, light meals, and shisha as listed in source materials — with views to the Islamic Civilization Centre dome. This rooftop café is 7oz Espresso, EBI Resources' specialty-coffee brand (also at Hadith Hotel in Samarkand). How shisha sits alongside the hotel's stated halal dining certification is to be confirmed with the client."
-            },
-            "services": {
-              "title": "Guest Services",
-              "text": "Double-height lobby and reading lounge; prayer room; 24-hour concierge; multilingual front desk (Uzbek, Russian, English, Indonesian, Arabic). Event capability up to 500 guests (banquet/event capacity). No spa, gym, or pool is listed in sources."
-            },
-            "rating": {
-              "title": "Class",
-              "text": "Presented as a four-star (4★) boutique hotel in source materials. Certifying authority is to be confirmed."
-            }
-          },
-          "contact": {
-            "toBeProvided": "Property phone and email are to be provided by the client. A public website is listed in source materials — please confirm it is live before relying on it."
-          },
-          "related": {
-            "kicker": "Food & Beverage",
-            "title": "7oz Espresso at Mecca",
-            "body": "Mecca's rooftop café is 7oz Espresso — EBI Resources' specialty-coffee brand, also at Hadith Hotel in Samarkand.",
-            "label": "Discover 7oz Espresso"
-          },
-          "alt": {
-            "hero": "Mecca Boutique Hotel facade at dusk, Tashkent",
-            "g1": "Mecca Hotel boulevard facade, Tashkent",
-            "g2": "Lobby interior at Mecca Boutique Hotel",
-            "g3": "Dining interior at Mecca Boutique Hotel",
-            "g4": "Mecca Hotel rooftop terrace in winter light — home to 7oz Espresso"
           }
         },
         "graha": {
@@ -743,18 +703,17 @@
         }
       },
       "alt": {
-        "hero": "Mecca Boutique Hotel boulevard facade, Tashkent",
+        "hero": "Hadith Hotel and its reflecting pool at sunset, Samarkand.",
         "intro": "Graha Nusantara complex illuminated at night near the Imam al-Bukhari Complex, Samarkand",
         "hadith": "Hadith Hotel at sunset with its fountain pool, Samarkand",
         "kampoeng": "Hotel Kampoeng Indonesia illuminated at night, Samarkand",
-        "graha": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex",
-        "mecca": "The Mecca boutique hotel at dusk, Tashkent"
+        "graha": "A Graha Nusantara villa at golden hour, near the Imam al-Bukhari Complex"
       }
     },
     "fnb": {
       "meta": {
         "title": "Food & Beverage — EBI Resources",
-        "description": "EBI Resources food & beverage — Indonesian dining and specialty coffee in landmark settings across Samarkand and Tashkent."
+        "description": "Saji Nusantara, 7oz Espresso, and Lounge Bar — Indonesian dining, specialty coffee, and lounge spaces in the EBI Resources portfolio."
       },
       "hero": {
         "kicker": "Our Businesses · F&B",
@@ -764,7 +723,7 @@
       "intro": {
         "kicker": "The Line",
         "title": "Tables and Cups on the Silk Road",
-        "body": "EBI Resources' food & beverage line brings Indonesian cuisine and specialty coffee to Uzbekistan — from Mecca Hotel's restaurants and rooftop 7oz Espresso in Tashkent, to Indonesian dining at Kampoeng Indonesia and 7oz Espresso at Hadith Hotel in Samarkand.",
+        "body": "EBI Resources brings Indonesian cuisine and specialty coffee to its hospitality portfolio through Saji Nusantara, 7oz Espresso, and Lounge Bar, alongside dining at Hotel Kampoeng Indonesia in Samarkand.",
         "body2": "Several venues are stated as halal or halal-certified in source materials; certifying bodies and full scopes are to be confirmed. Menus, opening hours, and seat counts are largely unpublished."
       },
       "grid": {
@@ -795,15 +754,15 @@
         "title": "Cuisine, Care, and Place",
         "indonesian": {
           "title": "Indonesian Cuisine Abroad",
-          "text": "From Mecca's Indonesia Resto to Kampoeng Indonesia's on-site dining and Hadith's Indonesian offerings — a consistent thread of Indonesian hospitality at the table."
+          "text": "Saji Nusantara and dining at Hotel Kampoeng Indonesia bring Indonesian flavours and hospitality to the table."
         },
         "halal": {
           "title": "Halal-Aligned Framing",
-          "text": "Mecca's dining is stated as halal-certified; Hadith's The Restaurant is stated as halal. Certifying bodies and alcohol/shisha policy details are to be confirmed where not published."
+          "text": "Hadith Hotel’s restaurant is presented as halal in source materials. Certification details and the scope of each venue’s offering are confirmed individually."
         },
         "landmarks": {
           "title": "Landmark Settings",
-          "text": "Tables and terraces sit opposite the Tashkent Centre of Islamic Civilization, within or beside the Imam Al Bukhari Complex in Samarkand — F&B tied to place."
+          "text": "Dining rooms and café terraces in Samarkand connect Indonesian hospitality with the setting of the Imam Al Bukhari Complex."
         }
       },
       "cta": {
@@ -814,348 +773,14 @@
         "secondary": "All Business Lines"
       },
       "alt": {
-        "hero": "Dining room at Hadith Hotel with set tables and warm lighting",
-        "intro": "Signature restaurant dining at Hadith Hotel, Samarkand",
-        "mecca": "Dining interior at Mecca Boutique Hotel, Tashkent",
+        "hero": "Saji Nusantara dining room with chandeliers, patterned ceilings, and set tables.",
+        "intro": "Saji Nusantara restaurant with a chandelier-lit dining room.",
         "kampoeng": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
-        "sevenOz": "7oz Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
-        "heroSlides": {
-          "diningRoom": "Warmly lit dining room with chandelier lighting and set tables",
-          "sevenOzCafe": "7oz Espresso café interior with coffee bar and the words Good Coffee Better Days",
-          "coffeeCorner": "Barista preparing coffee at Indonesia Coffee Corner",
-          "restaurantLounge": "Restaurant lounge with dining tables and warm pendant lighting",
-          "atriumRestaurant": "Bright two-story restaurant beneath a glass ceiling"
-        },
         "venues": {
           "sajiNusantara": "Saji Nusantara dining room with chandelier lighting and set tables",
-          "sevenOz": "7oz Espresso café interior with a coffee counter and pastry display",
-          "loungeBar": "Lounge Bar interior with seating and an Indonesia Coffee Corner counter"
+          "sevenOz": "7oz Espresso café entrance and outdoor terrace with teal parasols.",
+          "loungeBar": "Lounge Bar with blue bar stools and a bright seating area."
         }
-      }
-    },
-    "restaurants": {
-      "meta": {
-        "title": "Restaurants — EBI Resources",
-        "description": "Dining concepts across the EBI Resources portfolio — Indonesian cuisine and more, in landmark settings."
-      },
-      "hero": {
-        "kicker": "Our Businesses · Restaurants",
-        "title": "Restaurants",
-        "supporting": "Authentic Indonesian cuisine — with European and Central Asian notes — in landmark settings."
-      },
-      "intro": {
-        "kicker": "The Line",
-        "title": "Indonesian Tables on the Silk Road",
-        "body": "EBI Resources operates dining concepts within its hotels and related venues — led by Indonesian cuisine, complemented by European dining at Mecca and Uzbek–Continental offerings at Hadith.",
-        "body2": "Several venues are stated as halal or halal-certified in source materials; certifying bodies and full scopes are to be confirmed. Menus, opening hours, and seat counts are largely unpublished."
-      },
-      "grid": {
-        "kicker": "Featured Dining",
-        "title": "Restaurant Destinations",
-        "intro": "Two primary restaurant profiles in the sitemap — Mecca Hotel’s restaurants in Tashkent, and Indonesian dining at Hotel Kampoeng Indonesia in Samarkand."
-      },
-      "venues": {
-        "mecca": {
-          "kicker": "Tashkent · Mecca Hotel",
-          "title": "Mecca Hotel Restaurants",
-          "text": "Indonesia Resto and Europe Resto — plus a rooftop café (7oz Espresso) — all dining stated as halal-certified in source materials."
-        },
-        "kampoeng": {
-          "kicker": "Samarkand · Kampoeng Indonesia",
-          "title": "Indonesian Dining On Site",
-          "text": "Authentic Indonesian cuisine at Hotel Kampoeng Indonesia. The outlet name is not published — detail to be provided by the client."
-        }
-      },
-      "context": {
-        "kicker": "Also Within the Portfolio",
-        "title": "Dining at Our Hotels",
-        "intro": "Additional dining concepts live inside the hotel line. Explore them on the property pages — there are no separate restaurant routes for these outlets.",
-        "hotelCta": "View Hotel",
-        "hadith": {
-          "kicker": "Samarkand · Hadith Hotel",
-          "title": "The Restaurant, Bar & Lounge, Outdoor Café",
-          "text": "Signature dining (Uzbek · Indonesian · Continental, stated as halal), plus Bar & Lounge and Outdoor Café. Menus and hours are to be confirmed."
-        },
-        "graha": {
-          "kicker": "Samarkand · Graha Nusantara",
-          "title": "Silk Road Dining",
-          "text": "A dining concept fusing Central Asian spices with Indonesian archipelago flavours — not a separately branded standalone restaurant."
-        }
-      },
-      "note": {
-        "kicker": "Availability",
-        "title": "Menus, Hours & Covers",
-        "body": "Full menus, opening hours, and seat counts are largely unpublished across the portfolio. Where source materials name signature dishes or floor areas, we cite them carefully; everything else is marked as content to be provided by the client."
-      },
-      "proof": {
-        "kicker": "What Defines the Line",
-        "title": "Cuisine, Care, and Place",
-        "indonesian": {
-          "title": "Indonesian Cuisine Abroad",
-          "text": "From Mecca’s Indonesia Resto to Kampoeng Indonesia’s on-site dining and Hadith’s Indonesian offerings — a consistent thread of Indonesian hospitality at the table."
-        },
-        "halal": {
-          "title": "Halal-Aligned Framing",
-          "text": "Mecca’s dining is stated as halal-certified; Hadith’s The Restaurant is stated as halal. Certifying bodies and alcohol/shisha policy details are to be confirmed where not published."
-        },
-        "landmarks": {
-          "title": "Landmark Settings",
-          "text": "Tables sit opposite the Tashkent Centre of Islamic Civilization, within or beside the Imam Al Bukhari Complex in Samarkand — dining tied to place."
-        }
-      },
-      "cta": {
-        "kicker": "Partnership",
-        "title": "Partner on Dining Destinations",
-        "body": "Explore collaboration or institutional engagement with EBI Resources’ restaurant concepts and hospitality portfolio.",
-        "primary": "Partner With Us",
-        "secondary": "All Business Lines"
-      },
-      "venueDetail": {
-        "back": "Back to Food & Beverage",
-        "partner": "Partner With Us",
-        "visitWebsite": "Visit Website (confirm)",
-        "websiteNote": "Listed in source materials — please confirm the site is live and current before relying on it.",
-        "phone": "Phone",
-        "email": "Email",
-        "address": "Address",
-        "ctaKicker": "Partnership",
-        "ctaTitle": "Partner With EBI Resources",
-        "ctaBody": "Explore collaboration or institutional engagement with these dining concepts and the wider portfolio.",
-        "contactKicker": "Contact",
-        "contactTitle": "Get in Touch",
-        "galleryKicker": "Gallery",
-        "galleryTitle": "Spaces & Atmosphere"
-      },
-      "mecca": {
-        "meta": {
-          "title": "Mecca Hotel Restaurants — EBI Resources",
-          "description": "Indonesia Resto and Europe Resto at Mecca Boutique Hotel, Tashkent — plus the 7oz Espresso rooftop café."
-        },
-        "hero": {
-          "kicker": "Tashkent · Mecca Boutique Hotel",
-          "title": "Mecca Hotel Restaurants",
-          "supporting": "Two restaurants — Indonesia Resto and Europe Resto — with a rooftop café (7oz Espresso) overlooking the Centre of Islamic Civilization."
-        },
-        "concept": {
-          "kicker": "Concept",
-          "title": "A Boutique Address with a Strong F&B Core",
-          "body1": "Mecca Boutique Hotel & Restaurant in Tashkent presents three F&B venues: Indonesia Resto, Europe Resto, and a rooftop café operated as 7oz Espresso — EBI Resources’ specialty-coffee brand (also at Hadith Hotel in Samarkand).",
-          "body2": "All dining is stated as halal-certified in source materials. Full menus, opening hours, and the certifying body are to be provided. Operating status is to be confirmed with the client."
-        },
-        "place": {
-          "kicker": "Location",
-          "title": "Opposite the Centre of Islamic Civilization",
-          "body": "Tashkent, Uzbekistan — directly opposite the Tashkent Centre of Islamic Civilization, with boulevard frontage. Guests and local residents alike are part of the dining audience described in source materials.",
-          "landmark": "Rooftop views look toward the Islamic Civilization Centre dome — anchoring the hotel’s sense of place."
-        },
-        "venues": {
-          "kicker": "The Venues",
-          "title": "Indonesia Resto, Europe Resto & Rooftop Café",
-          "indonesia": {
-            "kicker": "Ground floor",
-            "title": "Indonesia Resto",
-            "text": "Authentic Indonesian dining with Indonesian chefs. Named dishes in source materials include Rendang, Nasi Goreng, Sate, Soto, and Gado-Gado. Floor area stated at 497 m². Full menus and hours are to be provided."
-          },
-          "europe": {
-            "kicker": "Second floor",
-            "title": "Europe Resto",
-            "text": "European cuisine — including fresh pasta, risotto, wood-fired pizza, osso buco, and tiramisu as cited. Floor area stated at 452 m²; positioned as premium European dining. Menus and hours are to be provided."
-          },
-          "rooftop": {
-            "kicker": "Rooftop · F&B",
-            "title": "Rooftop Café — 7oz Espresso",
-            "text": "A terrace café for coffee, light meals, and shisha as listed in source materials, with views to the Islamic Civilization Centre dome. This is 7oz Espresso — presented fully on the Food & Beverage line. How shisha sits alongside the hotel’s stated halal dining certification is to be confirmed.",
-            "link": "Explore 7oz Espresso"
-          }
-        },
-        "contact": {
-          "toBeProvided": "Restaurant-specific phone and email are to be provided by the client. Property contacts for Mecca are not listed in source decks. A public website is listed — please confirm it is live before relying on it."
-        },
-        "related": {
-          "kicker": "Related",
-          "title": "Mecca Boutique Hotel",
-          "body": "See the full hotel profile — rooms, guest services, and positioning — on the Hotels line.",
-          "label": "View Mecca Hotel"
-        },
-        "alt": {
-          "hero": "Dining interior at Mecca Boutique Hotel, Tashkent",
-          "g1": "Dining room at Mecca Boutique Hotel",
-          "g2": "Lobby interior at Mecca Boutique Hotel",
-          "g3": "Mecca Hotel rooftop terrace in winter light — home to 7oz Espresso",
-          "g4": "Mecca Hotel boulevard facade, Tashkent"
-        }
-      },
-      "kampoeng": {
-        "meta": {
-          "title": "Kampoeng Indonesia Dining — EBI Resources",
-          "description": "Authentic Indonesian dining at Hotel Kampoeng Indonesia, Samarkand. Outlet name to be provided."
-        },
-        "hero": {
-          "kicker": "Samarkand · Hotel Kampoeng Indonesia",
-          "title": "Indonesian Dining On Site",
-          "supporting": "Authentic Indonesian cuisine at a village-inspired hotel beside the Imam Al Bukhari Memorial Complex — outlet name not yet published."
-        },
-        "concept": {
-          "kicker": "Concept",
-          "title": "Indonesian Hospitality at the Table",
-          "body1": "Hotel Kampoeng Indonesia serves authentic Indonesian cuisine on-site as part of its village (kampoeng) hospitality experience — a peaceful setting for pilgrims and guests after exploration at the memorial complex.",
-          "body2": "No named restaurant outlet, menu, or opening hours have been published. We do not invent a brand name here — full dining detail is to be provided by the client."
-        },
-        "place": {
-          "kicker": "Location",
-          "title": "At the Imam Al Bukhari Memorial Complex",
-          "body": "Samarkand, Uzbekistan — at or directly in front of the Imam Al Bukhari Memorial Complex. Address as listed: Samarqand, Payariq region, Khuja Ismoil district, Shokh street 34.",
-          "landmark": "Press materials note the property’s ability to host a delegation luncheon — framing dining as part of hospitality for faith and heritage guests."
-        },
-        "highlights": {
-          "kicker": "What We Know",
-          "title": "Cuisine & Setting",
-          "cuisine": {
-            "title": "Authentic Indonesian Cuisine",
-            "text": "On-site Indonesian dining is documented in source and press materials. Signature dishes, menus, and service style details are to be provided by the client."
-          },
-          "setting": {
-            "title": "Village Warmth Beside a Landmark",
-            "text": "Dining sits within a three-star Indonesian-village hotel experience oriented to Indonesian and Malaysian Muslim pilgrims and religious (halal) tourists — secondary business and diplomatic travelers also noted."
-          },
-          "detail": {
-            "title": "Outlet Name & Hours",
-            "text": "The restaurant outlet name is not published. Opening hours, seat counts, and booking information are to be provided. Generic hotel hours published elsewhere should not be read as restaurant hours."
-          }
-        },
-        "contact": {
-          "phone": "+998 90 463 04 04",
-          "emails": "info@hotel-kampoengindonesia.com",
-          "address": "Samarqand, Payariq region, Khuja Ismoil district, Shokh street 34, Uzbekistan",
-          "toBeConfirmed": "Contacts below are listed for Hotel Kampoeng Indonesia in source materials — please confirm they remain current and suitable for dining inquiries before publishing externally."
-        },
-        "related": {
-          "kicker": "Related",
-          "title": "Hotel Kampoeng Indonesia",
-          "body": "See the full hotel profile — certification, amenities, and positioning — on the Hotels line.",
-          "label": "View Kampoeng Indonesia Hotel"
-        },
-        "alt": {
-          "hero": "Atrium dining hall at Hotel Kampoeng Indonesia with set tables and central fountain, Samarkand",
-          "g1": "Dining room at Hotel Kampoeng Indonesia with set tables and Indonesian art, Samarkand",
-          "g2": "Atrium restaurant at Hotel Kampoeng Indonesia with dining tables under a glass roof, Samarkand",
-          "g3": "Wide view of the Kampoeng Indonesia restaurant atrium with fountain and set tables, Samarkand",
-          "g4": "Kampoeng Indonesia restaurant atrium with fountain and dining tables, Samarkand"
-        }
-      },
-      "alt": {
-        "hero": "Dining room at Hadith Hotel with set tables and warm lighting",
-        "intro": "Signature restaurant dining at Hadith Hotel, Samarkand",
-        "mecca": "Dining interior at Mecca Boutique Hotel, Tashkent",
-        "kampoeng": "Daytime facade of Hotel Kampoeng Indonesia, Samarkand",
-        "hadith": "The Restaurant at Hadith Hotel with set tables",
-        "graha": "Interior of a Graha Nusantara compound, Samarkand"
-      }
-    },
-    "cafe": {
-      "meta": {
-        "title": "7oz Espresso — F&B — EBI Resources",
-        "description": "7oz Espresso — EBI Resources' specialty-coffee brand at Mecca Boutique Hotel (Tashkent) and Hadith Hotel (Samarkand)."
-      },
-      "hero": {
-        "kicker": "Our Businesses · F&B",
-        "title": "7oz Espresso",
-        "supporting": "From Jakarta to the Silk Road — Indonesian specialty coffee at Mecca and Hadith."
-      },
-      "brand": {
-        "kicker": "Brand",
-        "title": "From Jakarta to the Silk Road",
-        "body1": "7oz Espresso is EBI Resources' specialty-coffee café brand — Indonesian coffee heritage, rooted in Jakarta, crafted for a modern Central Asian audience. More than a café: a space where craftsmanship and connection meet.",
-        "body2": "The name \"7oz Espresso\" points to the ideal volume for a perfect cup. Selected Indonesian beans, modern equipment, and specialty brewing sit at the centre of the experience — without inventing awards, hours, or a full published menu."
-      },
-      "placement": {
-        "kicker": "Where You'll Find Us",
-        "title": "Two Hotels, One Coffee Brand",
-        "body": "7oz Espresso operates within EBI Resources hotels — confirmed at Mecca Boutique Hotel in Tashkent and at Hadith Hotel in Samarkand.",
-        "note": "7oz Espresso sits on the Food & Beverage line as the group's specialty-coffee brand. Full dining concepts at each hotel are covered on the hotel and F&B venue pages.",
-        "outlets": {
-          "mecca": {
-            "detail": "Tashkent · Rooftop café",
-            "label": "Mecca Boutique Hotel"
-          },
-          "hadith": {
-            "detail": "Samarkand · Hadith Hotel",
-            "label": "Hadith Hotel"
-          },
-          "meccaDining": {
-            "detail": "Tashkent · Hotel restaurants",
-            "label": "Mecca Hotel restaurants"
-          }
-        }
-      },
-      "products": {
-        "kicker": "Offerings",
-        "title": "Menu Categories",
-        "intro": "Categories as published for the brand — no prices, and no full itemised menu. Online store content is not live and is not mirrored here.",
-        "categories": {
-          "espresso": {
-            "title": "Hot Coffee",
-            "text": "Espresso, americano, cappuccino, latte, flat white, and raf."
-          },
-          "brew": {
-            "title": "Manual & Single-Origin Brews",
-            "text": "V60, Aeropress, and batch brew."
-          },
-          "matchaChocolate": {
-            "title": "Matcha & Chocolate",
-            "text": "Matcha and chocolate drinks alongside the coffee programme."
-          },
-          "tea": {
-            "title": "Teas",
-            "text": "A tea selection for guests who prefer a quieter cup."
-          },
-          "refreshments": {
-            "title": "Refreshments",
-            "text": "Lemonades, mojito-style and flavoured drinks, and milkshakes."
-          },
-          "juices": {
-            "title": "Fresh & Detox Juices",
-            "text": "Fresh and detox juices as a published category. Detailed listings are to be confirmed with the client."
-          }
-        }
-      },
-      "location": {
-        "kicker": "Locations",
-        "title": "Tashkent & Samarkand",
-        "body": "Confirmed outlets: the rooftop café at Mecca Boutique Hotel in Tashkent, and 7oz Espresso at Hadith Hotel in Samarkand. A published City Park street address for the brand still needs client confirmation of how it relates to the Mecca rooftop.",
-        "addressLabel": "Published Tashkent address",
-        "address": "City Park, Ukchi ko‘chasi 3A, 100011, Tashkent, Uzbekistan",
-        "identityLabel": "Address identity",
-        "identityDetail": "Hotel placements are confirmed: Mecca (Tashkent) and Hadith (Samarkand). The City Park street address still needs confirmation — whether it names the Mecca rooftop location or a separate outlet.",
-        "heritageNote": "Brand materials also show a heritage banner — Tashkent · Jakarta · Samarkand · Bali. Confirmed operating hotel outlets are Mecca and Hadith; other cities remain heritage or aspirational until confirmed."
-      },
-      "gallery": {
-        "kicker": "Gallery",
-        "title": "Craft & Place"
-      },
-      "contact": {
-        "kicker": "Contact",
-        "title": "Get in Touch",
-        "phoneLabel": "Phone",
-        "emailLabel": "Email",
-        "phone": "+998 92 04 333 14",
-        "email": "support@7oz-espresso.com",
-        "websiteLabel": "Visit 7oz Espresso",
-        "websiteNote": "Brand site listed in project materials — please confirm it remains live and current. Opening hours are omitted until a single confirmed schedule is available."
-      },
-      "cta": {
-        "kicker": "Partnership",
-        "title": "Partner With EBI Resources",
-        "body": "Explore collaboration around specialty coffee, hospitality F&B, or the wider EBI Resources portfolio.",
-        "back": "Back to Food & Beverage",
-        "partner": "Partner With Us"
-      },
-      "alt": {
-        "hero": "7oz Espresso rooftop café at sunset overlooking the Islamic Civilization Centre, Tashkent",
-        "galleryRooftop": "7oz Espresso rooftop café at sunset overlooking Tashkent's Islamic Civilization Centre",
-        "galleryWinter": "Mecca Hotel rooftop terrace in winter light, Tashkent — home to 7oz Espresso",
-        "galleryHadith": "Specialty coffee and pastry lounge at Hadith Hotel, Samarkand — atmosphere of the 7oz Espresso outlet context",
-        "galleryFacade": "Mecca Boutique Hotel boulevard facade, Tashkent — home to the 7oz Espresso rooftop café"
       }
     },
     "technology": {
@@ -1309,7 +934,7 @@
     "whereWeAre": {
       "kicker": "Where We Are",
       "title": "Properties along the Silk Road",
-      "supporting": "Landmark settings in Samarkand and Tashkent.",
+      "supporting": "Hotels at the Imam Al Bukhari Complex in Samarkand.",
       "listHeading": "Locations",
       "opensMaps": "Opens Google Maps",
       "placeholder": "Interactive atlas arrives in this band.",
@@ -1328,11 +953,6 @@
           "name": "Graha Nusantara",
           "city": "Samarkand",
           "aria": "Graha Nusantara, Samarkand. Opens Google Maps."
-        },
-        "mecca": {
-          "name": "Mecca Boutique Hotel",
-          "city": "Tashkent",
-          "aria": "Mecca Boutique Hotel, near the Islamic Civilization Centre, Tashkent. Opens Google Maps."
         }
       },
       "cities": {
@@ -1343,7 +963,7 @@
     "directory": {
       "kicker": "Property Directory",
       "title": "Hotels & Café",
-      "supporting": "Public websites listed in source materials — confirm each site is live before relying on it. Hadith and Mecca phone/email are omitted until the client provides them.",
+      "supporting": "Explore the official websites of our hotels and café. Contact EBI Resources for corporate and partnership inquiries.",
       "websiteLabel": "Website",
       "hedgeWebsite": "Listed in project materials — please confirm the site is live and current.",
       "hedgePending": "Property phone and email are to be provided by the client.",
@@ -1366,15 +986,10 @@
           "city": "Samarkand",
           "websiteLabel": "Visit grahanusantara-samarkand.com"
         },
-        "mecca": {
-          "name": "Mecca Boutique Hotel",
-          "city": "Tashkent",
-          "websiteLabel": "Visit mecca-hotel.com"
-        },
         "sevenOz": {
           "name": "7oz Espresso",
           "city": "Tashkent & Samarkand",
-          "note": "Specialty coffee at Mecca Boutique Hotel (Tashkent rooftop) and Hadith Hotel (Samarkand). City Park street address on the brand site still needs confirmation.",
+          "note": "Indonesian specialty coffee at 7oz Espresso. Visit the official café website for venue details.",
           "websiteLabel": "Visit 7oz Espresso"
         }
       }
@@ -1614,7 +1229,7 @@
         "location": "Tashkent",
         "body": [
           "Indonesia–Uzbekistan tourism ties continue to deepen. On 10 September 2026, EBI Resources CEO Erslan G. Ibrahim met Abdulaziz Akkulov, chairman of Uzbekistan’s Tourism Committee, to discuss investment and cooperation — from Indonesian hotels and restaurants to the prospect of direct flights to Samarkand and Bukhara.",
-          "The talks also addressed how more Indonesian travellers might visit Uzbekistan. Projects discussed included Hadith Hotel at the Imam Bukhari complex in Samarkand, Mecca Hotel in Tashkent, and Hotel Kampoeng Indonesia. Both sides considered a familiarization tour for Indonesian travel-industry figures, to introduce Uzbekistan’s destinations — especially religious and cultural travel — at first hand.",
+          "The talks also addressed how more Indonesian travellers might visit Uzbekistan. Projects discussed included Hadith Hotel at the Imam Bukhari complex in Samarkand and Hotel Kampoeng Indonesia. Both sides considered a familiarization tour for Indonesian travel-industry figures, to introduce Uzbekistan’s destinations — especially religious and cultural travel — at first hand.",
           "Cooperation then turned to promotion and communications. Deputy chairman S. Tadjiev met Iwel Sastra to discuss introducing Uzbekistan to Indonesian audiences through media, influencers, events, concerts, and religious-tourism promotion. The Government of Uzbekistan is preparing a survey of Indonesian traveller interest and has proposed a press tour for Indonesian influencers. The EBI Resources delegation was also invited to the Tashkent International Tourism Fair (TITF-2026)."
         ]
       },
@@ -1680,7 +1295,7 @@
         "location": "Jakarta",
         "body": [
           "The chairman of Wahdah Islamiyah and head of ukhuwah at the Indonesian Ulema Council, Muhammad Zaitun Rasmin, visited the offices of EBI Resources. He was received by founder and CEO Erslan G. Ibrahim together with members of the board and the company’s advisors. The meeting was a courtesy call and an exchange of views on cooperation in investment and tourism.",
-          "Ustaz Zaitun Rasmin spoke of his visits to Hotel Kampoeng Indonesia and Hadith Hotel at the Imam Bukhari Complex in Samarkand, and to Mecca Hotel in Tashkent — properties that form part of EBI Resources’ investment in Uzbekistan. He commended their facilities and service, and the comfort they offer travellers, especially Indonesian visitors to Islamic heritage sites in Uzbekistan.",
+          "Ustaz Zaitun Rasmin spoke of his visits to Hotel Kampoeng Indonesia and Hadith Hotel at the Imam Bukhari Complex in Samarkand — properties that form part of EBI Resources’ investment in Uzbekistan. He commended their facilities and service, and the comfort they offer travellers, especially Indonesian visitors to Islamic heritage sites in Uzbekistan.",
           "The two sides also discussed the growing interest among Indonesians in religious tourism in Uzbekistan, and the scope for collaboration among businesses, institutions, and communities to strengthen tourism and investment links between Indonesia and Uzbekistan. The meeting closed with a shared meal and a commitment to future cooperation."
         ]
       },
@@ -1696,12 +1311,12 @@
         ]
       },
       "tabung-haji-four-hotels-uzbekistan": {
-        "title": "EBI Resources Explores Cooperation with Tabung Haji Malaysia Across Four Hotels in Uzbekistan",
-        "excerpt": "In Kuala Lumpur, EBI Resources presented Hadith Hotel, Hotel Kampoeng Indonesia, Graha Nusantara, and Mecca Hotel to Tabung Haji leadership.",
+        "title": "EBI Resources Explores Hospitality Cooperation with Tabung Haji Malaysia",
+        "excerpt": "In Kuala Lumpur, EBI Resources presented its Uzbekistan hospitality portfolio to Tabung Haji leadership.",
         "alt": "EBI Resources and Tabung Haji Malaysia discuss hospitality cooperation",
         "location": "Kuala Lumpur",
         "body": [
-          "EBI Resources visited the offices of Lembaga Tabung Haji Malaysia in Kuala Lumpur to explore cooperation in religious tourism. Representatives Agus Ruhiat and Iwel Sastra presented four hotels in Uzbekistan: Hadith Hotel, Hotel Kampoeng Indonesia, and Graha Nusantara at the Imam Bukhari Complex in Samarkand, and Mecca Hotel in Tashkent.",
+          "EBI Resources visited the offices of Lembaga Tabung Haji Malaysia in Kuala Lumpur to explore cooperation in religious tourism. Representatives Agus Ruhiat and Iwel Sastra presented the group’s hospitality portfolio in Uzbekistan, including Hadith Hotel and Hotel Kampoeng Indonesia at the Imam Bukhari Complex in Samarkand.",
           "The visit was received by Tabung Haji chairman Tan Sri Abdul Rashid Hussain, who introduced the chairman of TH Travel & Services, Mohamed Izam bin Mohamed Yusof, and its CEO, YM Tengku Dato’ Badlishah Shukri bin Tengku Ibrahim. The discussion focused on travel and accommodation for Malaysian visitors to Uzbekistan.",
           "Both sides considered Uzbekistan’s promotion of Islamic heritage destinations in Samarkand and Tashkent, and the possibility that EBI Resources hotels could serve Malaysian travellers — in particular pilgrims and guests visiting historic Islamic sites."
         ]

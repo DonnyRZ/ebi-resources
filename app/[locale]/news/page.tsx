@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { REVISED_MEDIA } from "@/lib/revised-media";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -53,7 +54,7 @@ export default async function NewsPage({
         title={t("hero.title")}
         supporting={t("hero.supporting")}
         image={{
-          src: "/images/hadith/hotel-exterior.webp",
+          src: REVISED_MEDIA.hadithSunset.src,
           alt: t("alt.hero"),
         }}
       />

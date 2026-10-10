@@ -10,11 +10,9 @@ import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/Button";
 import { PropertyCarousel } from "@/components/businesses/PropertyCarousel";
-import {
-  isGrahaNusantaraVisible,
-  withoutGrahaNusantara,
-} from "@/lib/features";
+import { isGrahaNusantaraVisible, withoutGrahaNusantara } from "@/lib/features";
 import { HOTEL_WEBSITES } from "@/lib/hotel-websites";
+import { HOTEL_HERO_IMAGES, REVISED_MEDIA } from "@/lib/revised-media";
 
 /**
  * Hotels line — quiet-luxury portfolio page (CONTENT-REFERENCE §D.1 / §E).
@@ -59,16 +57,8 @@ export default async function HotelsLinePage({
       key: "hadith" as const,
       href: HOTEL_WEBSITES.hadith,
       image: {
-        src: "/images/hadith/hotel-exterior.webp",
+        src: REVISED_MEDIA.hadithSunset.src,
         alt: t("alt.hadith"),
-      },
-    },
-    {
-      key: "mecca" as const,
-      href: HOTEL_WEBSITES.mecca,
-      image: {
-        src: "/images/mecca/facade-dusk.jpg",
-        alt: t("alt.mecca"),
       },
     },
     {
@@ -83,32 +73,18 @@ export default async function HotelsLinePage({
       key: "kampoeng" as const,
       href: HOTEL_WEBSITES.kampoengIndonesia,
       image: {
-        src: "/images/kampoeng-indonesia/facade-night.jpg",
-        alt: t("alt.kampoeng"),
+        src: REVISED_MEDIA.kampoengFacade.src,
+        alt: homeT("alt.kampoengFacadeDaylight"),
       },
     },
   ]);
 
   const proof = ["landmarks", "tiers", "hospitality"] as const;
-  const heroImages = [
-    {
-      src: "/images/businesses/overview/hero/01-hadith-golden-hour.webp",
-      alt: homeT("alt.hadithGolden"),
-    },
-    {
-      src: "/images/businesses/overview/hero/02-mecca-facade-dusk.webp",
-      alt: homeT("alt.meccaFacade"),
-    },
-    {
-      src: "/images/businesses/overview/hero/03-kampoeng-facade-daylight.webp",
-      alt: homeT("alt.kampoengFacadeDaylight"),
-    },
-  ];
-  const heroSlides = heroImages.map(({ src, alt }) => ({
+  const heroSlides = HOTEL_HERO_IMAGES.map(({ src, altKey }) => ({
     kicker: t("hero.kicker"),
     title: t("hero.title"),
     supporting: t("hero.supporting"),
-    media: { type: "image" as const, src, alt },
+    media: { type: "image" as const, src, alt: homeT(`alt.${altKey}`) },
   }));
 
   return (
@@ -143,10 +119,12 @@ export default async function HotelsLinePage({
                 src={
                   isGrahaNusantaraVisible()
                     ? "/images/graha-nusantara/complex-night.jpg"
-                    : "/images/hadith/hotel-exterior.webp"
+                    : REVISED_MEDIA.kampoengWide.src
                 }
                 alt={
-                  isGrahaNusantaraVisible() ? t("alt.intro") : t("alt.hadith")
+                  isGrahaNusantaraVisible()
+                    ? t("alt.intro")
+                    : homeT("alt.kampoengFacadeDaylight")
                 }
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"

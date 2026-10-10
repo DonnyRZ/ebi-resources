@@ -27,8 +27,8 @@
 
 | Lini Bisnis | Unit / Brand |
 |---|---|
-| **Hotels** | Hadith, Kampoeng Indonesia, Graha Nusantara, Mecca |
-| **Restaurants** | Kampoeng Indonesia, Mecca Hotel Restaurants |
+| **Hotels** | Hadith Hotel, Hotel Kampoeng Indonesia |
+| **Food & Beverage** | Saji Nusantara, 7oz Espresso, Lounge Bar |
 | **Café** | 7oz Espresso |
 | **IT & Technology** | AI, Cybersecurity, Blockchain, Automatic Control Systems, Data Integration |
 | **Travel** | *Coming Soon* |
@@ -230,7 +230,7 @@ Skala spacing berbasis **8px** (dengan 4px sebagai setengah-langkah):
 - **Utility bar (atas):** CTA sekunder kiri (mis. `PARTNER WITH US` / `CAREERS`), **wordmark teks center** — tulisan **"EBI RESOURCES"** dengan **font serif** (bukan gambar logo), kanan: search + info + toggle bahasa (`EN / ID`, default **English**).
 - **Main nav (bawah):** ~5 item menu UPPERCASE ber-tracking lebar. Item aktif = **emas + underline**.
 
-> **Catatan logo (ditangguhkan):** belum ada file logo untuk saat ini. **EBI Resources belum punya logo, dan Mecca belum punya logo**; sebagian besar properti lain punya. Untuk sementara, elemen tengah header = **wordmark teks serif "EBI RESOURCES"**. Ganti ke gambar logo hanya setelah aset logo resmi disediakan.
+> **Logo disetujui:** Gunakan gambar logo EBI Resources dari folder revisi. Logo tetap di tengah header; pada mobile, tombol menu berada di kanan dan pilihan bahasa ada di dalam menu.
 
 **State (perilaku scroll — PENTING):**
 - **Di atas hero (scroll = 0): header TRANSPARAN** — tanpa background, menumpang di atas media hero. Wordmark & item nav berwarna **terang (putih)** agar terbaca di atas foto/video. Tujuannya: **100% tinggi hero menjadi milik media**, tidak "dimakan" oleh header.
@@ -285,7 +285,7 @@ HOME  /  OUR BUSINESSES  /  IT & TECHNOLOGY
 
 **Varian A-Homepage — Rotating showcase (carousel):**
 - Homepage memakai hero **berputar (auto-advance)** ala Tata: tiap slide = **1 properti** dengan kicker + judul sendiri, plus **progress bar** + scroll cue.
-- **Isi & urutan slide (hotel diprioritaskan):** Hadith (flagship 5★) → Mecca → Graha Nusantara → Kampoeng Indonesia → **1 slide restoran** (foto F&B terbaik) → **7OZ (café)** bila ada foto yang bagus. Target ~5–6 slide.
+- **Isi & urutan slide:** Gunakan seluruh 12 foto dalam `revisi-gambar/Homepage/Hero-section` sesuai urutan nomor, dengan judul yang cocok dengan kategori foto. Gunakan hanya gambar aktif dan tetangga terdekat; pertahankan metode hero mobile yang memisahkan foto dari teks.
 - **Kurasi foto hero (kriteria):** landscape/16:9, resolusi tinggi, sinematik (utamakan folder **Render / Exterior / Night Scene**), **bersih** (tanpa watermark, layout plan, logo, atau wajah yang terlalu identifiable), **distinct** (tanpa duplikat/near-duplikat), dan **mood antar-slide konsisten**.
 - **JANGAN** menaruh statistik/angka yang belum dikonfirmasi di hero (lihat guardrail anti-fabrikasi).
 
@@ -655,8 +655,8 @@ Serif high-contrast dominan; whitespace ekstrem; emas paling terasa; kuratorial/
 | **Home** | (a) Homepage | **Hero rotating showcase** (Varian A-Homepage §3.4): slide per properti (hotel diprioritaskan → 1 resto → 7OZ), teks ringkas kiri-bawah + scroll cue, header transparan→solid. "Our Universe" = kartu **5 unit bisnis**; **Travel** = badge `COMING SOON`. News & Highlights. Newsletter/CTA **kemitraan**. **Hindari statistik yang belum dikonfirmasi** (jangan tampilkan angka fabrikasi). |
 | **About EBI** — Company Overview, Vision & Mission, Board of Directors | (d) Showcase + editorial | Narasi heritage & visi holding; galeri mosaik (kantor/tim/milestone) + label puitis nilai (*Trusted*, *Crafted*, *Enduring*). Timeline/accordion sejarah. Board of Directors = grid kartu portrait. Fokus **membangun trust investor**. |
 | **Our Businesses** (landing) | (b) Editorial/Listing | Grid kartu per unit (**portrait overlay + "+"**). Klik → sub-halaman Showcase per unit. |
-| → **Hotels** (Hadith, Kampoeng Indonesia, Graha Nusantara, Mecca) | (d) Showcase | Hero full-bleed properti + galeri mosaik + statistik per hotel. |
-| → **Restaurants** (Kampoeng Indonesia, Mecca) | (d) Showcase | Fotografi kuliner warm sinematik + editorial. |
+| → **Hotels** (Hadith, Kampoeng Indonesia) | (d) Showcase | Hero properti dengan foto terbaru dan carousel hotel. |
+| → **Food & Beverage** (Saji Nusantara, 7oz Espresso, Lounge Bar) | (d) Showcase | Fotografi venue terbaru dan carousel. |
 | → **Café** (7oz Espresso) | (d) Showcase | Showcase brand café, mood hangat. |
 | → **IT & Technology** (AI, Cybersecurity, Blockchain, Automatic Control Systems, Data Integration) | (d) Showcase + (b) | **Ruang khusus untuk calon klien IT:** kartu layanan, studi kasus, deret **logo klien monokrom**. Nada modern-presisi (boleh sans-light heading). CTA `TALK TO OUR TEAM`. |
 | → **Travel** | Kartu Coming Soon | Kartu **`COMING SOON` elegan** (portrait overlay + badge), tanpa sub-halaman penuh. |
@@ -692,7 +692,7 @@ Serif high-contrast dominan; whitespace ekstrem; emas paling terasa; kuratorial/
 - [ ] Blok download PDF + Investor Relations tab tahun.
 - [ ] ~~Footer 5 kolom + bottom bar navy `#0B1330`.~~ **Ditangguhkan** — build awal pakai footer minimal (skip kolom link, sosial, legal, copyright). Lihat §3.14.
 - [ ] ~~Newsletter/CTA band cream berorientasi kemitraan.~~ **Ditangguhkan** — skip band newsletter di build awal. Lihat §3.13.
-- [ ] Elemen tengah header = **wordmark teks serif "EBI RESOURCES"** (belum ada gambar logo; EBI & Mecca belum punya logo). Lihat §3.1.
+- [ ] Elemen tengah header menggunakan logo resmi EBI Resources. Menu mobile di kanan; bahasa di dalam menu.
 - [ ] Toggle bahasa `EN / ID` dengan **default English** (bilingual: EN utama, ID sekunder).
 - [ ] Travel = kartu `COMING SOON` elegan.
 - [ ] IT & Technology = showcase + logo klien monokrom + CTA klien.

@@ -8,12 +8,9 @@
 
 import { withoutGrahaNusantara } from "@/lib/features";
 import { UZBEKISTAN_ATLAS_CITIES } from "@/lib/contact/uzbekistanPaths";
+import { REVISED_MEDIA } from "@/lib/revised-media";
 
-export type ContactPinId =
-  | "hadith"
-  | "kampoeng-indonesia"
-  | "graha-nusantara"
-  | "mecca";
+export type ContactPinId = "hadith" | "kampoeng-indonesia" | "graha-nusantara";
 
 export type ContactPin = {
   id: ContactPinId;
@@ -29,7 +26,6 @@ export type ContactPin = {
 };
 
 const hadith = UZBEKISTAN_ATLAS_CITIES.hadith;
-const mecca = UZBEKISTAN_ATLAS_CITIES.mecca;
 
 const CONTACT_PINS_ALL: readonly ContactPin[] = [
   {
@@ -37,7 +33,7 @@ const CONTACT_PINS_ALL: readonly ContactPin[] = [
     shortLabel: "Hadith",
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=39.8149986,66.9444850",
-    thumbSrc: "/images/hadith/hotel-exterior.webp",
+    thumbSrc: REVISED_MEDIA.hadithSunset.src,
     leftPct: hadith.leftPct,
     topPct: hadith.topPct,
     labelSide: "left",
@@ -47,7 +43,7 @@ const CONTACT_PINS_ALL: readonly ContactPin[] = [
     shortLabel: "Kampoeng",
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Hotel%20Kampoeng%20Indonesia%20Shokh%20street%2034%20Khuja%20Ismoil%20Payariq%20Samarkand%20Uzbekistan",
-    thumbSrc: "/images/kampoeng-indonesia/facade-day.jpg",
+    thumbSrc: REVISED_MEDIA.kampoengFacade.src,
     // Fan SE of Hadith cluster (same Imam Al-Bukhari locale)
     leftPct: hadith.leftPct + 3.2,
     topPct: hadith.topPct + 4.5,
@@ -64,19 +60,8 @@ const CONTACT_PINS_ALL: readonly ContactPin[] = [
     topPct: hadith.topPct + 5,
     labelSide: "left",
   },
-  {
-    id: "mecca",
-    shortLabel: "Mecca",
-    googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Islamic+Civilization+Centre+Tashkent",
-    thumbSrc: "/images/mecca/facade-boulevard.jpg",
-    leftPct: mecca.leftPct,
-    topPct: mecca.topPct,
-    labelSide: "left",
-  },
 ] as const;
 
 /** Public atlas pins — Graha omitted while `SHOW_GRAHA_NUSANTARA` is false. */
-export const CONTACT_PINS: readonly ContactPin[] = withoutGrahaNusantara(
-  CONTACT_PINS_ALL,
-);
+export const CONTACT_PINS: readonly ContactPin[] =
+  withoutGrahaNusantara(CONTACT_PINS_ALL);
