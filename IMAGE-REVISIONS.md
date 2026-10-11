@@ -4,6 +4,8 @@ The supplied folder contains 38 files representing 17 distinct images, including
 
 ## Placement
 
+- 11 October override: homepage hero slide 10 uses `hadith-hotel-2/revisi-gambar/0. Room/President Suite/1.png`, encoded at 1920 × 1080 as `/images/portfolio/2026-10/hadith-president-bedroom-v2.webp`. This supersedes the original EBI `Homepage/Hero-section/10.png` source. The revised bed has charcoal cushions and a charcoal bed runner. Kampoeng Indonesia room photography remains unchanged.
+
 - Homepage hero: all twelve images in numeric order, with matching hotel, café, dining, room, pool and hammam copy.
 - Homepage introduction: Kampoeng Indonesia facade and the updated 7oz Espresso terrace.
 - Homepage featured hotels: the approved Hadith and Kampoeng Indonesia photographs.
@@ -54,7 +56,7 @@ The supplied folder contains 38 files representing 17 distinct images, including
 | `revisi-gambar/Our-Businesses/Overview/FnB/5.png` | `/images/portfolio/2026-10/kampoeng-dining-atrium.webp` |
 | `revisi-gambar/Homepage/Hero-section/8.png` | `/images/portfolio/2026-10/indoor-pool.webp` |
 | `revisi-gambar/Homepage/Hero-section/9.png` | `/images/portfolio/2026-10/hammam.webp` |
-| `revisi-gambar/Homepage/Hero-section/10.png` | `/images/portfolio/2026-10/guest-bedroom.webp` |
+| `revisi-gambar/Homepage/Hero-section/10.png` — superseded by the 11 October President Suite revision above | `/images/portfolio/2026-10/hadith-president-bedroom-v2.webp` |
 | `revisi-gambar/Homepage/Hero-section/11.png` | `/images/portfolio/2026-10/guest-room-details.webp` |
 | `revisi-gambar/Homepage/Hero-section/12.png` | `/images/portfolio/2026-10/private-dining.webp` |
 | `revisi-gambar/About/Hero-section/1.png` | `/images/portfolio/2026-10/hadith-night.webp` |
