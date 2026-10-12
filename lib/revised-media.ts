@@ -1,5 +1,5 @@
 /** Approved image revision catalog, audited against revisi-gambar on 10 October 2026.
- * President Suite bedroom updated from the Hadith revision on 11 October 2026.
+ * President Suite bedroom updated from the Hadith revision on 12 October 2026.
  * Shared photographs use the same versioned asset throughout the site.
  * Alt keys are localized under home.alt (EN/UZ/RU). See IMAGE-REVISIONS.md.
  */
@@ -59,7 +59,7 @@ export const REVISED_MEDIA = {
     altKey: "hammam",
   },
   bedroom: {
-    src: "/images/portfolio/2026-10/hadith-president-bedroom-v2.webp",
+    src: "/images/portfolio/2026-10/hadith-president-bedroom-v3.webp",
     width: 1920,
     height: 1080,
     altKey: "guestBedroom",
