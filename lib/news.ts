@@ -4,6 +4,7 @@
  */
 
 export const NEWS_SLUGS = [
+  "ustaz-adi-hidayat-samarkand",
   "raja-muda-perlis-swan-x-2026",
   "turkiye-chess-teams-samarkand-olympiad",
   "indonesian-chess-team-hotel-kampoeng-indonesia",
@@ -35,6 +36,12 @@ export type NewsArticle = {
 };
 
 export const ARTICLES: NewsArticle[] = [
+  {
+    slug: "ustaz-adi-hidayat-samarkand",
+    publishedAt: "2026-10-29",
+    image: "/images/news/ustaz-adi-hidayat-samarkand.webp",
+    imageAspect: "landscape",
+  },
   {
     slug: "raja-muda-perlis-swan-x-2026",
     publishedAt: "2026-10-07",

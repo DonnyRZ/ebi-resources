@@ -385,6 +385,7 @@ export default async function Home({
                   alt: newsT(`articles.${article.slug}.alt`),
                   fit:
                     article.imageAspect === "square" ||
+                    article.imageAspect === "landscape" ||
                     article.imageAspect === "photo"
                       ? "contain"
                       : "cover",
@@ -392,9 +393,11 @@ export default async function Home({
                 aspect={
                   article.imageAspect === "square"
                     ? "1 / 1"
-                    : article.imageAspect === "photo"
-                      ? "4 / 3"
-                      : "16 / 10"
+                    : article.imageAspect === "landscape"
+                      ? "16 / 9"
+                      : article.imageAspect === "photo"
+                        ? "4 / 3"
+                        : "16 / 10"
                 }
                 compact
                 cta={common("readMore")}

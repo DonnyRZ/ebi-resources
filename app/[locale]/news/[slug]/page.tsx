@@ -115,9 +115,11 @@ export default async function NewsArticlePage({
           className={`relative mb-10 w-full overflow-hidden bg-navy/10 ${
             article.imageAspect === "square"
               ? "mx-auto aspect-square max-w-[560px]"
-              : article.imageAspect === "photo"
-                ? "mx-auto aspect-[4/3] max-w-[800px]"
-                : "aspect-[16/10] max-h-[360px]"
+              : article.imageAspect === "landscape"
+                ? "mx-auto aspect-video max-w-[800px]"
+                : article.imageAspect === "photo"
+                  ? "mx-auto aspect-[4/3] max-w-[800px]"
+                  : "aspect-[16/10] max-h-[360px]"
           }`}
         >
           <Image
@@ -127,7 +129,8 @@ export default async function NewsArticlePage({
             priority
             sizes="(max-width: 800px) 100vw, 800px"
             className={
-              article.imageAspect === "photo"
+              article.imageAspect === "photo" ||
+              article.imageAspect === "landscape"
                 ? "object-contain"
                 : "object-cover"
             }
